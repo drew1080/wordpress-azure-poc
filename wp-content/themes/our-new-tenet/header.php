@@ -109,6 +109,17 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	st_header();
 	st_below_header();
 	?>
+	<?php
+  if ( is_user_logged_in() ) {
+    echo "<div class='logout'>";
+    echo "<a href=" . wp_login_url(); . "title='Login'>Login</a>";
+    echo "</div>";
+  } else {
+    echo "<div class='logout'>";
+    wp_logout();
+    echo "</div>";
+  }
+  ?>
 	<div class="loginout">
 	  <?php wp_loginout(); ?>
 	</div>

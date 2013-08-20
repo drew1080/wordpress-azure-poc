@@ -25,12 +25,16 @@ margin-left: 20px;
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
   width: 112px;
   height: 104px;
+  position: fixed;
+  right: 20%;
 }
 
 .logout {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
   width: 112px;
   height: 104px;
+  position: fixed;
+  right: 20%;
 }
 
 .resize {

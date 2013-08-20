@@ -112,12 +112,12 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	<?php
   if ( is_user_logged_in() ) {
     echo "<div class='logout'>";
-    echo "<a href=" . wp_logout_url() . "title='Logout'>Logout</a>";
+    echo "<a href='" . wp_logout_url() . "' title='Logout'>Logout</a>";
     echo "</div>";
    
   } else {
     echo "<div class='login'>";
-    echo "<a href=" . wp_login_url() . "title='Login'>Login</a>";
+    echo "<a href='" . wp_login_url() . "' title='Login'>Login</a>";
     echo "</div>";
   }
   ?>

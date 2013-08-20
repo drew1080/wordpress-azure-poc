@@ -25,3 +25,7 @@ Template:       skeleton
   width: 112px;
   height: 104px;
 }
+
+.resize {
+display:none;
+}

@@ -9,10 +9,10 @@ Template:       skeleton
 
 @import url("../skeleton/style.css");
 
-.content ul {
+.entry-content ul {
 list-style-type: disc;
 }
-.content li {
+.entry-content li {
 margin-left: 20px;
 }
 

@@ -9,6 +9,13 @@ Template:       skeleton
 
 @import url("../skeleton/style.css");
 
+ul, menu, dir {
+list-style-type: disc;
+}
+li {
+margin-left: 20px;
+}
+
 /* Hiding the nav bar */
 #navigation {
   display: none;

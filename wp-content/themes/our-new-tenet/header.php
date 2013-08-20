@@ -112,17 +112,15 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	<?php
   if ( is_user_logged_in() ) {
     echo "<div class='logout'>";
-    echo "<a href=" . wp_login_url(); . "title='Login'>Login</a>";
+    echo "<a href=" . wp_logout_url() . "title='Logout'>Logout</a>";
     echo "</div>";
+   
   } else {
-    echo "<div class='logout'>";
-    wp_logout();
+    echo "<div class='login'>";
+    echo "<a href=" . wp_login_url() . "title='Login'>Login</a>";
     echo "</div>";
   }
   ?>
-	<div class="loginout">
-	  <?php wp_loginout(); ?>
-	</div>
 	<?php st_navbar(); ?>
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH

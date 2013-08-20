@@ -13,3 +13,15 @@ Template:       skeleton
 #navigation {
   display: none;
 }
+
+.login {
+  background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
+  width: 112px;
+  height: 104px;
+}
+
+.logout {
+  background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
+  width: 112px;
+  height: 104px;
+}

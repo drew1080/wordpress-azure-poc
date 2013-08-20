@@ -14,10 +14,10 @@ body {
 }
 
 .entry-content ul {
-list-style-type: disc;
+  list-style-type: disc;
 }
 .entry-content li {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Hiding the nav bar */
@@ -46,5 +46,5 @@ margin-left: 20px;
 }
 
 .resize {
-display:none;
+  display:none;
 }

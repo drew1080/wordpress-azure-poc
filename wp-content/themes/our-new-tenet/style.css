@@ -8,3 +8,8 @@ Template:       skeleton
 */
 
 @import url("../skeleton/style.css");
+
+/* Hiding the nav bar */
+#navigation {
+  display: none;
+}

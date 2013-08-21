@@ -24,6 +24,10 @@ body {
 #navigation {
   display: none;
 }
+#header .inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 #header #site-title.graphic a {
   max-width: 100%;
@@ -35,6 +39,7 @@ body {
 
 .login a {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
+  background-size: contain;
   width: 112px;
   height: 104px;
   display:block;
@@ -44,7 +49,8 @@ body {
 }
 
 .logout a {
-  background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
+  background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png); 
+  background-size: contain;
   width: 112px;
   height: 104px;
   display:block;
@@ -55,4 +61,34 @@ body {
 
 .resize {
   display:none;
+}
+
+@media (max-width: 975px) {
+  #header #site-title.graphic a {
+    height: 150px;
+  }
+  .login a, .logout a {
+    width: 50px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 784px) {
+  #header #site-title.graphic a {
+    height: 130px;
+  }
+  .login a, .logout a {
+    width: 85px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 496px) {
+  #header #site-title.graphic a {
+    height: 100px;
+  }
+  .login a, .logout a {
+    width: 50px;
+    height: 45px;
+  }
 }

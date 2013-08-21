@@ -20,6 +20,10 @@ body {
   margin-left: 20px;
 }
 
+#content {
+  margin-top: -20px;
+}
+
 /* Hiding the nav bar */
 #navigation {
   display: none;

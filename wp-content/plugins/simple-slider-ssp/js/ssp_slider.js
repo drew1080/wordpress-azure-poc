@@ -280,7 +280,11 @@ jQuery(function ($) {
 
 		if ( $(this).val() == 'html' ) {
 			html.show();
-			image.hide();
+			//CUSTOMIZATION FOR TENET: can use the image upload for the html thumbnail
+			//image.hide();
+			image.show();
+			
+			//END CUSTOMIZATION FOR TENET
 		}
 
 		return;
@@ -300,7 +304,10 @@ jQuery(function ($) {
 
 		if ( $(this).val() == 'html' ) {
 			html.show();
-			image.hide();
+			//CUSTOMIZATION FOR TENET: can use the image upload for the html thumbnail
+			//image.hide();
+			image.show();
+			//END CUSTOMIZATION FOR TENET
 		}
 
 		return;
@@ -328,4 +335,7 @@ jQuery(function ($) {
 	if ( pagenow == 'ssp_slider' )
 		$('.add-new-h2').hide();
 
+	//CUSTOMIZATION FOR TENET: can use the image upload for the html thumbnail
+	$(".slide_image .description").append(" For HTML slides, upload the navigation thumbnail.");
+	//END CUSTOMIZATION FOR TENET
 });

@@ -67,6 +67,14 @@ body {
   display:none;
 }
 
+.faq-body {
+  margin-bottom: 15px;
+}
+
+.faq-body h2 {
+  font-size: 17px;
+}
+
 @media only screen and (max-width: 960px) and (min-width: 767px)  {
   #header .inner #site-title.graphic a {
     height: 150px;

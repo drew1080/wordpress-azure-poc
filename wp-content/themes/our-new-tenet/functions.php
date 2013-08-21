@@ -41,4 +41,12 @@ function redirectOnFirstLogin( $redirect_to, $requested_redirect_to, $user ) {
 }
 
 add_filter( 'login_redirect', 'redirectOnFirstLogin', 10, 3 );
+
+// Hide the admin bar for users who cannot edit posts
+add_action('set_current_user', 'csstricks_hide_admin_bar');
+function csstricks_hide_admin_bar() {
+  if (!current_user_can('edit_posts')) {
+    show_admin_bar(false);
+  }
+}
 ?>

@@ -25,6 +25,11 @@ body {
   display: none;
 }
 
+#header #site-title.graphic a {
+max-width: 100%;
+background-size: contain;
+}
+
 .login a {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
   width: 112px;

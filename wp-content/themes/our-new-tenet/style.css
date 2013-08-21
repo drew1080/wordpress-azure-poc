@@ -26,8 +26,11 @@ body {
 }
 
 #header #site-title.graphic a {
-max-width: 100%;
-background-size: contain;
+  max-width: 100%;
+  background-size: contain;
+}
+.flexslider {
+  margin: 0 0 10px;
 }
 
 .login a {

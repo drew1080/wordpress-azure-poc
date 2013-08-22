@@ -126,6 +126,9 @@ body {
 .wpcf7 span.wpcf7-not-valid-tip {
   top: -5px;
   left: 102%;
+  background-color: #a02112;
+  color: #ffffff;
+  border-color: #6d1a10;
 }
 
 @media only screen and (max-width: 960px) and (min-width: 767px)  {

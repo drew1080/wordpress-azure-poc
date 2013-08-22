@@ -80,15 +80,15 @@ body {
 }
 
 .tenet-faq p.trigger, .tenet-faq p.trigger.active {
-padding-left: 0;
-background-image: none;
-border-top: 0px;
-font-size: 150%;
+  padding-left: 0;
+  background-image: none;
+  border-top: 0px;
+  font-size: 150%;
 }
 
 .tenet-faq p.trigger, .tenet-faq p.trigger a {
-color: #1d527a;
- }
+  color: #1d527a;
+}
 
 .faq-body {
   margin-bottom: 15px;

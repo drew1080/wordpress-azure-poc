@@ -49,4 +49,24 @@ function csstricks_hide_admin_bar() {
     show_admin_bar(false);
   }
 }
+
+function logged_in_logo_redirect( $prev_logo) {
+	// Displays H1 or DIV based on whether we are on the home page or not (SEO)
+	$heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div';
+	if (of_get_option('use_logo_image')) {
+		$class="graphic";
+	} else {
+		$class="text"; 		
+	}
+	$home_url = esc_url( home_url( '/' ) );
+	if ( is_user_logged_in() ) { 
+		$home_url = esc_url( home_url( '/employees/' ) );
+	}
+	// echo of_get_option('header_logo')
+	$child_logo  = '<'.$heading_tag.' id="site-title" class="'.$class.'"><a href="'.$home_url.'" title="'.esc_attr( get_bloginfo('name','display')).'">'.get_bloginfo('name').'</a></'.$heading_tag.'>'. "\n";
+	$child_logo .= '<span class="site-desc '.$class.'">'.get_bloginfo('description').'</span>'. "\n";
+	return $child_logo;
+}
+
+add_filter('child_logo','logged_in_logo_redirect');
 ?>

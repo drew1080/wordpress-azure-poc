@@ -123,7 +123,7 @@ body {
   margin-left: 10px;
 }
 
-span.wpcf7-not-valid-tip {
+.wpcf7 span.wpcf7-not-valid-tip {
   top: -5px;
   left: 102%;
 }

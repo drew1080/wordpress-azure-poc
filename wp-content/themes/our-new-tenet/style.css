@@ -123,6 +123,11 @@ body {
   margin-left: 10px;
 }
 
+span.wpcf7-not-valid-tip {
+  top: -5px;
+  left: 102%;
+}
+
 @media only screen and (max-width: 960px) and (min-width: 767px)  {
   #header .inner #site-title.graphic a {
     height: 150px;

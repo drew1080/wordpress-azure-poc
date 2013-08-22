@@ -149,6 +149,10 @@ body {
     width: 85px;
     height: 75px;
   }
+  .wpcf7 span.wpcf7-not-valid-tip {
+    top: 20%;
+    left: 20%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -158,5 +162,9 @@ body {
   .login a, .logout a {
     width: 50px;
     height: 45px;
+  }
+  .wpcf7 span.wpcf7-not-valid-tip {
+    top: 20%;
+    left: 20%;
   }
 }

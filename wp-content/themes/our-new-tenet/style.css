@@ -49,6 +49,11 @@ body {
   margin: 0 0 10px;
 }
 
+.wsp_default_skin .slide {
+  text-align: center;
+}
+
+
 .login a {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
   background-size: contain;

@@ -36,6 +36,39 @@ body {
 #navigation {
   display: none;
 } */
+
+#wrap #header {
+  max-width: 400px;
+  float: left;
+}
+
+#wrap #navigation {
+  max-width: 500px;
+  float: right;
+  clear: none;
+}
+
+#navigation ul {
+  background: none;
+  border: none;
+}
+
+#navigation ul li {
+  background: none;
+  border: none;
+}
+
+#navigation ul li a {
+  border: none;
+  padding: 8px 0px 8px 24px;
+}
+
+#navigation ul li.active a {
+  /* TODO use real color*/
+  background: lightgray;
+  border: none;
+}
+
 #header .inner {
   padding-top: 0px;
   padding-bottom: 0px;

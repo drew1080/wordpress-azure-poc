@@ -51,8 +51,12 @@ body {
 
 #navigation ul {
   background: none;
+  background-color: #FFF;
   border: none;
   box-shadow: none;
+  border-radius: none;
+  border-color: none;
+  -webkit-border-radius: none;
 }
 
 #navigation ul li {
@@ -66,6 +70,13 @@ body {
   margin: 0px 7px;
   color: #353737;
   font-weight: normal;
+  text-shadow: none;
+}
+
+ul li:hover a, #navigation ul li a:hover {
+  color: #353737;
+  background: #F0F0F0;
+  border: none;
 }
 
 #navigation ul li.active a {

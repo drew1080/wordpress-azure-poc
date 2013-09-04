@@ -184,6 +184,23 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   border-color: #6d1a10;
 }
 
+/* Slider styling */
+
+.advanced-slider .thumbnail {  
+    opacity: .5;  
+    cursor: pointer;  
+}
+
+.advanced-slider .thumbnail.select {  
+    opacity: 1;  
+    cursor: pointer;  
+}
+
+.advanced-slider .thumbnail:hover {  
+    opacity: 1;  
+    cursor: pointer;  
+}
+
 @media only screen and (max-width: 960px) and (min-width: 767px)  {
   #header .inner #site-title.graphic a {
     height: 150px;

@@ -54,9 +54,9 @@ body {
   background-color: #FFF;
   border: none;
   box-shadow: none;
-  border-radius: none;
-  border-color: none;
-  -webkit-border-radius: none;
+  border-radius: 0;
+  border-color: #FFF;
+  -webkit-border-radius: 0;
 }
 
 #navigation ul li {

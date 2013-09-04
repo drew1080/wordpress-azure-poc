@@ -197,7 +197,7 @@ a.themeauthor {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     -pie-box-shadow: 0 1px 1px #ccc;
     position: relative;
-    behavior: url("./wp-content/themes/skeleton/PIE.php");
+/*    behavior: url("./wp-content/themes/skeleton/PIE.php");*/
 }
 	
 
@@ -208,7 +208,7 @@ a.themeauthor {
 	background-image: none;
 	border-right: 1px solid #e3e3e3;
     position: relative;
-    behavior: url("./wp-content/themes/skeleton/PIE.php");
+/*    behavior: url("./wp-content/themes/skeleton/PIE.php");*/
 }
 
 #navigation ul li a {

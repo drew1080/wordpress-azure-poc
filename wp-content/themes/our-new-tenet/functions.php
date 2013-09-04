@@ -59,9 +59,9 @@ function logged_in_logo_redirect( $prev_logo) {
 		$class="text"; 		
 	}
 	$home_url = esc_url( home_url( '/' ) );
-	if ( is_user_logged_in() ) { 
-		$home_url = esc_url( home_url( '/employees/' ) );
-	}
+	// if ( is_user_logged_in() ) { 
+	//     $home_url = esc_url( home_url( '/employees/' ) );
+	//   }
 	// echo of_get_option('header_logo')
 	$child_logo  = '<'.$heading_tag.' id="site-title" class="'.$class.'"><a href="'.$home_url.'" title="'.esc_attr( get_bloginfo('name','display')).'">'.get_bloginfo('name').'</a></'.$heading_tag.'>'. "\n";
 	$child_logo .= '<span class="site-desc '.$class.'">'.get_bloginfo('description').'</span>'. "\n";

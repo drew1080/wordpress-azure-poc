@@ -14,4 +14,4 @@ wp-content/backups/
 sitemap.xml
 sitemap.xml.gz
 wp-content/bps-backup/
-#wp-content/plugins/slider-pro/includes/timthumb/cache/*
+wp-content/plugins/slider-pro/includes/timthumb/cache/*

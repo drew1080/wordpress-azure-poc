@@ -43,14 +43,16 @@ body {
 }
 
 #wrap #navigation {
-  max-width: 500px;
+  max-width: 520px;
   float: right;
   clear: none;
+  margin-top: 10px;
 }
 
 #navigation ul {
   background: none;
   border: none;
+  box-shadow: none;
 }
 
 #navigation ul li {
@@ -60,14 +62,23 @@ body {
 
 #navigation ul li a {
   border: none;
-  padding: 8px 0px 8px 24px;
+  padding: 10px;
+  margin: 0px 7px;
+  color: #353737;
+  font-weight: normal;
 }
 
 #navigation ul li.active a {
-  /* TODO use real color*/
-  background: lightgray;
+  background: #F0F0F0;
   border: none;
 }
+
+/* Logout image
+#menu-item-51 {
+  background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/logout-circle.png) !important;
+}*/
+/* Login image
+http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png*/
 
 #header .inner {
   padding-top: 0px;

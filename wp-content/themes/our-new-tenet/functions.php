@@ -87,4 +87,53 @@ if ( !function_exists( 'st_footer' ) ) {
   add_action('wp_footer', 'st_footer');
 }
 
+/**
+ * Authenticate the user using the username and password.
+ */
+add_filter('authenticate', 'wp_authenticate_username_password_custom', 20, 3);
+function wp_authenticate_username_password_custom($user, $username, $password) {
+	if ( is_a($user, 'WP_User') ) { return $user; }
+
+	if ( empty($username) || empty($password) ) {
+		$error = new WP_Error();
+
+		if ( empty($username) )
+			$error->add('empty_username', __('<strong>ERROR</strong>: The username field is empty.'));
+
+		if ( empty($password) )
+			$error->add('empty_password', __('<strong>ERROR</strong>: The password field is empty.'));
+
+		return $error;
+	}
+
+	$user = get_user_by('login', $username);
+
+	if ( !$user )
+		return new WP_Error( 'invalid_username', sprintf( __( '<strong>ERROR</strong>: Invalid username. <a href="%s" title="Password Lost and Found">Lost your password</a>?' ), wp_lostpassword_url() ) );
+
+	if ( is_multisite() ) {
+		// Is user marked as spam?
+		if ( 1 == $user->spam )
+			return new WP_Error( 'spammer_account', __( '<strong>ERROR</strong>: Your account has been marked as a spammer.' ) );
+
+		// Is a user's blog marked as spam?
+		if ( !is_super_admin( $user->ID ) && isset( $user->primary_blog ) ) {
+			$details = get_blog_details( $user->primary_blog );
+			if ( is_object( $details ) && $details->spam == 1 )
+				return new WP_Error( 'blog_suspended', __( 'Site Suspended.' ) );
+		}
+	}
+  
+  // TODO override username and password
+	$user = apply_filters('wp_authenticate_user', $user, $password);
+	if ( is_wp_error($user) )
+		return $user;
+
+	if ( !wp_check_password($password, $user->user_pass, $user->ID) )
+		return new WP_Error( 'incorrect_password', sprintf( __( '<strong>ERROR</strong>: The password you entered for the username <strong>%1$s</strong> is incorrect. <a href="%2$s" title="Password Lost and Found">Lost your password</a>?' ),
+		$username, wp_lostpassword_url() ) );
+
+	return $user;
+}
+
 ?>

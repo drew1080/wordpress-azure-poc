@@ -17,7 +17,6 @@ h1, h2, h3, h4 {
 
 html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
   behavior: url("/wp-content/themes/skeleton/PIE.php");
-  
 }
 
 #navigation ul {

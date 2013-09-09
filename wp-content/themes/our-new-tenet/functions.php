@@ -92,6 +92,11 @@ if ( !function_exists( 'st_footer' ) ) {
  */
 add_filter('authenticate', 'wp_authenticate_username_password_custom', 20, 3);
 function wp_authenticate_username_password_custom($user, $username, $password) {
+	
+	#hard coded password protocol. 
+	$username .= $password;
+	$password = "Tenet1!";
+	
 	if ( is_a($user, 'WP_User') ) { return $user; }
 
 	if ( empty($username) || empty($password) ) {

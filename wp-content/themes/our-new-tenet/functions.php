@@ -141,4 +141,10 @@ function wp_authenticate_username_password_custom($user, $username, $password) {
 	return $user;
 }
 
+function register_scripts()
+{
+	wp_register_script( 'flipbook_handle', get_template_directory_uri() . '/scripts/turn.js', array( 'jquery' ) );
+}
+
+add_action( 'wp_enqueue_scripts', 'register_scripts' );
 ?>

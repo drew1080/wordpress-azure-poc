@@ -259,3 +259,9 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
     left: 5%;
   }
 }
+
+/* Revolution Slider styling */
+
+.tp-bullets.tp-thumbs {
+ margin: 7px !important;
+}

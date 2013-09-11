@@ -264,5 +264,19 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
    All divs under the thumbcontainer get padded - creates space between the thumbnails
 */
 .tp-thumbcontainer div {
-		margin: 5px !important;
+		margin: 6px !important;
+  		-moz-box-shadow: 0 0 10px #AAA;
+  		-webkit-box-shadow: 0 0 10px #AAA;
+		box-shadow: 0 0 10px #AAA;
 } 
+
+/* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
+.tp-mask {
+  width: 785px !important;
+  height: 110px !important;
+}
+
+/* Move the whole container over the left slightly to account for the added space */
+.tp-bullets.tp-thumbs.round {
+  margin-left: -390px !important;
+ }

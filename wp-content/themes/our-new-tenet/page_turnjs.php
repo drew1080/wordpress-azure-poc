@@ -24,7 +24,7 @@ get_footer();
 
 // Add the turn.js javascript
 // Make sure the $in_footer argument is true. 
-// Other arguments take default, except the script handle defined in functions.php
-wp_enqueue_script( 'flipbook_handle', false, array(), false, true );
+// Other arguments take default, except the jquery dependency and the script handle defined in functions.php
+wp_enqueue_script( 'flipbook_handle', false, array('jquery', 'jquery_flipbook'), false, true );
 
 ?>

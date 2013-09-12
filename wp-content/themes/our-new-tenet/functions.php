@@ -143,7 +143,9 @@ function wp_authenticate_username_password_custom($user, $username, $password) {
 
 function register_scripts()
 {
-	wp_register_script( 'flipbook_handle', get_template_directory_uri() . '/scripts/turn.js', array( 'jquery' ) );
+	//Turn.js jquery dependency
+	wp_register_sciprt( 'jquery_flipook', "http://code.jquery.com/jquery-1.7.1.min.js" );
+	wp_register_script( 'flipbook_handle', get_template_directory_uri() . '/scripts/turn.js', array( 'jquery', 'jquery_flipbook' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'register_scripts' );

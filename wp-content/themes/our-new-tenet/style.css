@@ -270,6 +270,14 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 		box-shadow: 0 0 10px #AAA;
 } 
 
+/* Make the currently selected thumbnail have a darker shadowbox border */
+
+.bullet.thumb.selected {
+  		-moz-box-shadow: 0 0 10px #363636;
+  		-webkit-box-shadow: 0 0 10px #363636;
+		box-shadow: 0 0 10px #363636;
+}
+
 /* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
 .tp-mask {
   width: 785px !important;

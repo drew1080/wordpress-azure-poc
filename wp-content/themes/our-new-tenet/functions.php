@@ -152,9 +152,16 @@ function my_jquery_enqueue() {
 }
 
 /*Register nav menus*/
-register_nav_menus( array(
-	'side_nav' => 'Side Navigation',
-	'top_nav' => 'Top Navigation'
-) );
+function register_my_menus() {
+
+    register_nav_menus( 
+		array(
+		'side_nav' => 'Side Navigation',
+		'top_nav' => 'Top Navigation'
+		) 
+	);
+}
+
+add_action( 'init', 'register_my_menus' );
 
 ?>

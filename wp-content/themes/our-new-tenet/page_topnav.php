@@ -22,4 +22,6 @@ get_template_part( 'loop', 'page' );
 st_after_content();
 get_sidebar('page');
 get_footer();
+
+wp_nav_menu( 'Side Navigation' );
 ?>

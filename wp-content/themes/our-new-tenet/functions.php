@@ -151,7 +151,10 @@ function my_jquery_enqueue() {
    wp_enqueue_script('jquery');
 }
 
-/*Register nav menus*/
+/* failed experiment adding menus per template - might be useful later.
+
+* Register nav menus
+
 function register_my_menus() {
 
     register_nav_menus( 
@@ -163,5 +166,5 @@ function register_my_menus() {
 }
 
 add_action( 'init', 'register_my_menus' );
-
+*/
 ?>

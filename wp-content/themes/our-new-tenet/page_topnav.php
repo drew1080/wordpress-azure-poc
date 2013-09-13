@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Top Nav
+ * Description: Template for pages using top navigation
+ * Originally copied from page.php from skeleton theme
  *
  * This is the template that displays all pages by default.
  * Please note that this is the wordpress construct of pages

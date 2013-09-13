@@ -2,12 +2,14 @@
 
 
 
-/*
+/* Some code taken from the following:
+
 Plugin Name: Peter's Redirect On First Login (user-meta based)
 Description: Standalone functionality to redirect users to a special page on their first login(s)
 Author: Peter
 Version: 1.0
 Author URI: http://www.theblog.ca/wordpress-redirect-first-login
+
 */
 
 // Send new users to a special page
@@ -93,7 +95,9 @@ if ( !function_exists( 'st_footer' ) ) {
 add_filter('authenticate', 'wp_authenticate_username_password_custom', 20, 3);
 function wp_authenticate_username_password_custom($user, $username, $password) {
 	
-	#hard coded password protocol. 
+	/* Funky login method. Username is actually given username concated with given pass. Password is hardcoded. 
+	   This is to allow people to use userID = last 4 of social, pass = DOB in MMDDYYYY format, while underlying username is really concat of those 2 things, to provide more uniqueness. 
+	*/ 
 	$username .= $password;
 	$password = "Tenet1!";
 	
@@ -129,7 +133,6 @@ function wp_authenticate_username_password_custom($user, $username, $password) {
 		}
 	}
   
-  // TODO override username and password
 	$user = apply_filters('wp_authenticate_user', $user, $password);
 	if ( is_wp_error($user) )
 		return $user;
@@ -147,5 +150,7 @@ function my_jquery_enqueue() {
    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
    wp_enqueue_script('jquery');
 }
+
+
 
 ?>

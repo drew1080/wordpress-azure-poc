@@ -122,9 +122,12 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
   //   }
   ?>
 	<?php 
-	if ( is_front_page() ) {
-	  st_navbar();
-	}
+	// If we need to only show the nav on the homepage
+  // if ( is_front_page() ) {
+  //   st_navbar();
+  // }
+	
+	st_navbar();
 	?>
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH

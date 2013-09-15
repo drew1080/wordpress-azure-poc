@@ -121,7 +121,11 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
   //     echo "</div>";
   //   }
   ?>
-	<?php st_navbar(); ?>
+	<?php 
+	if ( is_front_page() ) {
+	  st_navbar();
+	}
+	?>
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH
 	if ( is_singular() && current_theme_supports( 'post-thumbnails' ) && has_post_thumbnail( $post->ID ) 

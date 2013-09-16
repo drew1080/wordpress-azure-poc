@@ -236,6 +236,17 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   padding: 0;
 }
 
+.fast-fact {
+  width: 684px;
+  height: 41px;
+}
+
+.fast-fact-content {
+  margin-left: 110px;
+  display: block;
+  padding: 12px 10px 10px 6px;
+}
+
 /*.login a {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
   background-size: contain;

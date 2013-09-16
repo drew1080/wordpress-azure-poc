@@ -1,6 +1,7 @@
 <?php
 include("functions/integration_update_widget.php");
 
+add_shortcode('fast_facts', 'fast_facts_func');
 
 /* Some code taken from the following:
 
@@ -216,6 +217,34 @@ function create_fast_fact_init()
 add_action('init', 'create_fast_fact_init');
 
 
+function fast_facts_func($atts, $content = null) {
+  $fast_fact_text = '';
+  
+  //colors: blue, gold, green, blue
+  $background_colors = array("blue", "gold", "green", "blue");
+  $rand_keys = array_rand($background_colors, 2);
+  
+  query_posts('post_type="fast_fact"&posts_per_page=1&orderby=rand');
+  if (have_posts()) : 
+  	while (have_posts()) : the_post(); 
+  		$fast_fact_text = '<div class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys[0]] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div>';
+  	endwhile;
+  endif; 
+  wp_reset_query();
+  
+  $html = '<div class="slider ' . $has_excerpt_class . ' ' . $class . '" style="background-image: url(' . $image_url . '); background-repeat: no-repeat;">
+	          <div class="slider-content" >
+    			    <div class="inner-content">
+    			      <h1 class="entry-title">' . $title . '</h1>
+        			  <p>' . $excerpt . '</p>
+      			  </div>
+            </div>
+            <div class="clear"></div>
+          </div>';
+
+	return $fast_fact_text;
+  
+}
 
 
 ?>

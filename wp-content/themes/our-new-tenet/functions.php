@@ -242,9 +242,6 @@ function fast_facts_func($atts, $content = null) {
             <div class="clear"></div>
           </div>';
 
-	return $fast_fact_text;
-  
+	return $fast_fact_text; 
 }
-
-
 ?>

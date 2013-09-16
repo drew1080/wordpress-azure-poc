@@ -20,8 +20,16 @@ html
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='scale')";
 }
 
-h1, h2, h3, h4 {
-  color: #008080;
+h1{
+  color: #2c3f6c;
+}
+
+h2{
+  color: #267496;
+}
+
+h3, h4 {
+  color: #3c3c39;
 }
 
 /* TODO investigate what is needed from this...removing as it shows a background on the nav html.ie #navigation, */

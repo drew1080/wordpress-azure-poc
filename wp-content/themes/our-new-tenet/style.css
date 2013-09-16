@@ -54,20 +54,26 @@ body {
 #wrap #header {
   max-width: 400px;
   float: left;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+#header #site-title.graphic a {
+  width: 200px !important;
+  height: 44px !important;
 }
 
 #wrap #navigation {
-  max-width: 520px;
+  max-width: 490px;
   clear: none;
-  margin: 0 0 10px 0;
+  margin: 10px 0;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
 }
 
-#navigation ul {
+#navigation ul#menu-top-nav {
   background: none;
   background-color: #FFF;
   border: none;
@@ -75,6 +81,7 @@ body {
   border-radius: 0;
   border-color: #FFF;
   -webkit-border-radius: 0;
+  margin-left: 4px;
 }
 
 #navigation .menu-header ul li {
@@ -84,14 +91,15 @@ body {
 
 #navigation .menu-header ul li a {
   border: none;
-  padding: 10px;
+  background: none;
+  padding: 4px 10px;
   padding-right: 20px;
   margin: 0px 4px;
   color: #c8c7c6;
   text-transform: uppercase;
   font-weight: 300;
   text-shadow: none;
-  border-right: 1px solid;
+  border-right: 1px solid #c8c7c6;
 }
 
 #navigation .menu-header ul li a:hover {
@@ -100,9 +108,17 @@ body {
   border: none;
   background: none;
   text-shadow: none;
-  border-right: 1px solid;
+  border-right: 1px solid #c8c7c6;
+  border-bottom: none;
 }
 
+#navigation .menu-header ul li.lastnav a {
+  border-right: none;
+}
+
+#navigation .menu-header ul li.lastnav a:hover {
+  border-right: none;
+}
 
 #navigation ul li.menu-item-login-logout {
   background-image: url(images/img-login.png);
@@ -110,18 +126,26 @@ body {
   width: 90px;
   height: 87px;
   display:block;
-  margin-left: 48px;
+  margin-left: 15px;
+  position: absolute;
+  right: 14px;
+  top: -10px;
 /*  text-indent:-9999px;*/
 }
 
 #navigation ul li.menu-item-login-logout a {
   color: #FFF;
+  font-weight: normal;
   margin: 44px 0 0 0;
-  padding: 10px;
+  padding: 10px 0;
+  border-right: none;
+  text-align: center;
+  font-size: 16px;
 }
 
 #navigation ul li.menu-item-login-logout:hover {
   cursor: pointer;
+  position: absolute;
 }
 
 #navigation ul li.menu-item-login-logout a:hover {

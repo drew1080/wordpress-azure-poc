@@ -263,6 +263,39 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   border-color: #6d1a10;
 }
 
+/*Sidebar styling*/
+
+#sidebar.five.columns {
+  width: 220px;
+}
+
+li.menu-item {
+  text-align: right;
+}
+
+.menu-side-nav-container .menu-item a {
+  font-weight: 300;
+  font-family: Lato;
+  border-bottom: none;
+  background: none;
+  color: #c8c7c6;
+  text-transform: uppercase;
+  line-height: 140%;
+  padding: 8px 24px 8px 24px;
+}
+
+.menu-side-nav-container li.menu-item a:hover {
+  color: #3c3c39;
+  font-weight: normal;
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 182px 13px;
+}
+
+.menu-side-nav-container li.menu-item.current-menu-item a {
+  color: #3c3c39;
+  font-weight: normal;
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 182px 13px;
+}
+
 /* Slider styling */
 
 .advanced-slider .thumbnail {  

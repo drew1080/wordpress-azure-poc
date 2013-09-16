@@ -63,7 +63,7 @@ body {
 }
 
 #content {
-  margin-top: -20px;
+  margin-top: 5px;
 }
 
 
@@ -75,10 +75,14 @@ body {
 #wrap #header {
   max-width: 400px;
   float: left;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 40px;
 }
 
+.header-wrap {
+  height: 100px;
+  margin-bottom: 40px;
+}
 
 #header #site-title.graphic a {
   width: 200px !important;
@@ -354,6 +358,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 
 #sidebar.five.columns {
   width: 220px;
+  margin: 0 10px;
 }
 
 li.menu-item {

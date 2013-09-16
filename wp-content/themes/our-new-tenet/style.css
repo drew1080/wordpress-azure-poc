@@ -32,6 +32,14 @@ h3, h4 {
   color: #3c3c39;
 }
 
+h1 {
+  color: #2c3f6c;
+}
+
+h3 {
+  color: #267496;
+}
+
 /* TODO investigate what is needed from this...removing as it shows a background on the nav html.ie #navigation, */
 
 html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
@@ -408,6 +416,58 @@ li.menu-item {
 .advanced-slider .thumbnail:hover {  
     opacity: 1;  
     cursor: pointer;  
+}
+
+/*FAQ Styling*/
+
+p.trigger {
+  color: #3c3c39;
+  padding: 10px 25px 6px 0;
+  background: url(images/toggle-updown-lg-ltgray.png) no-repeat 620px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: none;
+}
+
+p.trigger:hover {
+  background: url(images/toggle-updown-lg-orange.png) no-repeat 620px 10px;
+}
+
+p.trigger:hover a {
+  color: #d3792e;
+}
+
+p.trigger a {
+  color: #3c3c39;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+p.trigger a:hover {
+  color: #d3792e;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+p.trigger.active a {
+  color: #d3792e;
+  text-shadow: none;
+}
+p.trigger.active a:hover {
+  color: #d3792e;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+p.trigger.active {
+  background: none;
+  border: none;
+  padding-left: 0;
+}
+
+.toggle_container {
+  background: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 10px 10px 0;
 }
 
 @media only screen and (max-width: 960px) and (min-width: 767px)  {

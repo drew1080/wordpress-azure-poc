@@ -11,7 +11,7 @@ Template:       skeleton
 
 html
 {
-   background: url(/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg) no-repeat center center fixed; 
+   background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,7 +39,6 @@ html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.
 }
 
 body {
-  background:#FFFFFF;
   height: 100%
 }
 

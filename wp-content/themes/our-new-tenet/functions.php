@@ -221,13 +221,13 @@ function fast_facts_func($atts, $content = null) {
   $fast_fact_text = '';
   
   //colors: blue, gold, green, blue
-  $background_colors = array("blue", "gold", "green", "blue");
-  $rand_keys = array_rand($background_colors, 2);
+  $background_colors = array("blue", "gold", "green", "orange");
+  $rand_keys = array_rand($background_colors, 1);
   
   query_posts('post_type="fast_fact"&posts_per_page=1&orderby=rand');
   if (have_posts()) : 
   	while (have_posts()) : the_post(); 
-  		$fast_fact_text = '<div class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys[0]] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div>';
+  		$fast_fact_text = '<div class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div>';
   	endwhile;
   endif; 
   wp_reset_query();
@@ -242,9 +242,6 @@ function fast_facts_func($atts, $content = null) {
             <div class="clear"></div>
           </div>';
 
-	return $fast_fact_text;
-  
+	return $fast_fact_text; 
 }
-
-
 ?>

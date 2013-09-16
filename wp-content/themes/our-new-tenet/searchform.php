@@ -4,7 +4,7 @@
 </map> -->
 
 <form role="search" class="search-form" method="get" action="<?php echo home_url( '/' ); ?>" role="search">
-	<input class="search-input-box" type="search" name="s" placeholder="Search" usemap="#searchbutton">
+	<input class="search-input-box" type="text" name="s" placeholder="Search" usemap="#searchbutton">
   <input type="submit" id="searchsubmit" class="search-button" value="">
 </form>
 <!-- /search -->

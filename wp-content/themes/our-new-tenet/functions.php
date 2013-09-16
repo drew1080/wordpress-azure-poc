@@ -78,11 +78,8 @@ if ( !function_exists( 'st_footer' ) ) {
   	get_sidebar( 'footer' );
   	// prints site credits
   	echo '<div id="credits">';
-  	echo '<span>Copyright </span>';
-    echo date("Y");
-    echo ' | ';
   	echo of_get_option('footer_text');
-  	echo '<br /><a class="themeauthor" href="http://www.simplethemes.com" title="Simple WordPress Themes">WordPress Themes</a></div>';
+  	//echo '<br /><a class="themeauthor" href="http://www.simplethemes.com" title="Simple WordPress Themes">WordPress Themes</a></div>';
   }
   
   //remove_action('wp_footer', 'st_footer');

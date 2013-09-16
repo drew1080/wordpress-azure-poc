@@ -31,7 +31,8 @@ body {
   background-color:#FFFFFF;
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x.jpg);
   background-position: 0 150px;
-  background-size: 100% 353px;
+  background-size: auto 353px;
+  background-repeat: repeat-x;
 }
 
 .entry-content ul {

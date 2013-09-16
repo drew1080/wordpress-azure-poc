@@ -111,31 +111,14 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	st_header();
 	st_below_header();
 	?>
-	<?php
-  // if ( is_user_logged_in() ) {
-  //     echo "<div class='logout'>";
-  //     echo "<a href='" . wp_logout_url() . "' title='Logout'>Logout</a>";
-  //     echo "</div>";
-  //    
-  //   } else {
-  //     echo "<div class='login'>";
-  //     echo "<a href='" . wp_login_url() . "' title='Login'>Login</a>";
-  //     echo "</div>";
-  //   }
-  ?>
 	<?php 
-	// If we need to only show the nav on the homepage
-  // if ( is_front_page() ) {
-  //   st_navbar();
-  // }
-	
 	st_navbar();
 	?>
 	<?php if ( is_user_logged_in () ) { ?>
 	<div class="search-form">
-    <?php get_search_form(); ?>
-  </div>
-  <? } ?>
+		<?php get_search_form(); ?>
+	</div>
+	<?php } ?>
 	
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH

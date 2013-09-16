@@ -49,6 +49,11 @@ body {
   background-repeat: repeat-x;
 }
 
+.home.page #content.sixteen.columns {
+  width: 960px;
+  margin: 5px 0 0 0;
+}
+
 .containter {
   height: auto; 
   min-height: 100%;
@@ -62,7 +67,7 @@ body {
 }
 
 #content {
-  margin-top: 5px;
+  margin: 5px 40px 0 0;
 }
 
 
@@ -74,13 +79,12 @@ body {
 #wrap #header {
   max-width: 400px;
   float: left;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin: 40px 0 0 0;
 }
 
 .header-wrap {
   height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #header #site-title.graphic a {
@@ -89,7 +93,7 @@ body {
 }
 
 #wrap #navigation {
-  max-width: 490px;
+  max-width: 520px;
   clear: none;
   margin: 10px 0;
   position: absolute;
@@ -100,13 +104,12 @@ body {
 
 #navigation ul#menu-top-nav {
   background: none;
-  background-color: #FFF;
   border: none;
   box-shadow: none;
   border-radius: 0;
   border-color: #FFF;
   -webkit-border-radius: 0;
-  margin-left: 4px;
+  margin-left: 50px;
 }
 
 #navigation .menu-header ul li {
@@ -160,7 +163,7 @@ body {
   display:block;
   margin-left: 15px;
   position: absolute;
-  right: 14px;
+  right: 48px;
   top: -10px;
   border-right: none;
 /*  text-indent:-9999px;*/
@@ -217,8 +220,8 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   margin: -25px 0 0 -46px;
   z-index: 100;
   position: absolute;
-  right: 79px;
-  top: 56px;
+  right: 55px;
+  top: 51px;
   width: 180px;
 }
 

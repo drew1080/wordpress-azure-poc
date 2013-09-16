@@ -72,22 +72,19 @@ function logged_in_logo_redirect( $prev_logo) {
 
 add_filter('child_logo','logged_in_logo_redirect');
 
-if ( !function_exists( 'st_footer' ) ) {	
-  function st_footer() {
+
+function st_footer() {
   	//loads sidebar-footer.php
   	get_sidebar( 'footer' );
   	// prints site credits
   	echo '<div id="credits">';
-  	echo '<span>Copyright </span>';
-    echo date("Y");
-    echo ' | ';
   	echo of_get_option('footer_text');
-  	echo '<br /><a class="themeauthor" href="http://www.simplethemes.com" title="Simple WordPress Themes">WordPress Themes</a></div>';
-  }
-  
-  //remove_action('wp_footer', 'st_footer');
-  add_action('wp_footer', 'st_footer');
+  	//echo '<br /><a class="themeauthor" href="http://www.simplethemes.com" title="Simple WordPress Themes">WordPress Themes</a></div>';
 }
+  
+//remove_action('wp_footer', 'st_footer');
+add_action('wp_footer', 'st_footer');
+
 
 /**
  * Authenticate the user using the username and password.

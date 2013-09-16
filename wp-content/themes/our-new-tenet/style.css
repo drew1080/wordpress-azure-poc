@@ -77,24 +77,26 @@ body {
   border: none;
 }
 
-#navigation ul li a {
+#navigation .menu-header ul li a {
   border: none;
   padding: 10px;
   margin: 0px 7px;
-  color: #353737;
-  font-weight: normal;
+  color: #c8c7c6;
+  text-transform: uppercase;
+  font-weight: 300;
   text-shadow: none;
+  border-right: 1px solid;
 }
 
-ul li:hover a, #navigation ul li a:hover {
-  color: #353737;
-  background: #F0F0F0;
+ul li:hover a, #navigation .menu-header ul li a:hover {
+  color: #3c3c39;
   border: none;
+  background: none;
 }
 
 #navigation ul li.active a {
-  background: #F0F0F0;
   border: none;
+  text-shadow: none;
 }
 
 #navigation ul li.menu-item-login-logout {

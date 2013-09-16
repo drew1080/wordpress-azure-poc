@@ -322,6 +322,9 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 
 #sidebar.five.columns {
   width: 220px;
+  position: fixed;
+  left: 200px;
+  top: 110px;
 }
 
 li.menu-item {

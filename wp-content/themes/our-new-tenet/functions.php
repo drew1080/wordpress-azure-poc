@@ -1,5 +1,5 @@
 <?php
-
+include("functions/integration_update_widget.php");
 
 
 /* Some code taken from the following:
@@ -184,4 +184,38 @@ if (!function_exists('st_after_footer'))  {
 			}
     }
 }
+
+
+
+function create_integration_update_init()
+{
+    $args = array(
+        'public' => true,
+        'label' => 'Integration Updates',
+        'singular_label' => 'Integration Update',
+        'supports' => array('title','editor')
+     );
+    register_post_type('integration_update', $args);
+}
+
+// Disabling the technology_item post type
+add_action('init', 'create_integration_update_init');
+
+function create_fast_fact_init()
+{
+    $args = array(
+        'public' => true,
+        'label' => 'Fast Facts',
+        'singular_label' => 'Fast Fact',
+        'supports' => array('title','editor')
+     );
+    register_post_type('fast_fact', $args);
+}
+
+// Disabling the technology_item post type
+add_action('init', 'create_fast_fact_init');
+
+
+
+
 ?>

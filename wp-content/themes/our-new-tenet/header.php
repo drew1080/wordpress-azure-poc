@@ -129,6 +129,10 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	
 	st_navbar();
 	?>
+	<div class="search-form">
+    <?php get_search_form(); ?>
+  </div>
+	
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH
 	if ( is_singular() && current_theme_supports( 'post-thumbnails' ) && has_post_thumbnail( $post->ID ) 

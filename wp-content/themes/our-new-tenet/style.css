@@ -54,9 +54,12 @@ body {
 
 #wrap #navigation {
   max-width: 520px;
-  float: right;
   clear: none;
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 #navigation ul {
@@ -145,6 +148,28 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   text-align: center;
 }
 
+.search-form {
+  margin: -25px 0 0 -46px;
+  z-index: 100;
+  position: absolute;
+  right: 79px;
+  top: 56px;
+}
+
+.search-input-box {
+    background:url(/wp-content/themes/our-new-tenet/images/img-searchbox.png);
+    background-repeat: no-repeat;
+/*    cursor:pointer;*/
+    width: 176px;
+    height: 24px;
+    border: none !important;
+    padding: 0px 0px 6px 6px !important;
+}
+
+.search-input-box:focus{
+  outline: 0;
+  box-shadow: none;
+}
 
 /*.login a {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);

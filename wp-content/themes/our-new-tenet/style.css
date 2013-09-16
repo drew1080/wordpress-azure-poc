@@ -112,19 +112,19 @@ body {
 #navigation .menu-header ul li {
   background: none;
   border: none;
+  border-right: 1px solid #c8c7c6;
 }
 
 #navigation .menu-header ul li a {
   border: none;
   background: none;
-  padding: 4px 10px;
-  padding-right: 20px;
-  margin: 0px 4px;
+  padding: 3px 10px;
+  margin: 0px 5px;
   color: #c8c7c6;
   text-transform: uppercase;
   font-weight: 300;
   text-shadow: none;
-  border-right: 1px solid #c8c7c6;
+  text-align: left;
 }
 
 #navigation .menu-header ul li a:hover {
@@ -133,17 +133,24 @@ body {
   border: none;
   background: none;
   text-shadow: none;
-  border-right: 1px solid #c8c7c6;
   border-bottom: none;
 }
 
-#navigation .menu-header ul li.lastnav a {
+#menu-item-2881 a {
+  width: 130px;
+}
+
+#menu-item-2801 a {
+  width: 88px;
+}
+
+#navigation .menu-header ul li.last-nav {
   border-right: none;
 }
 
-#navigation .menu-header ul li.lastnav a:hover {
+/*#navigation .menu-header ul li.lastnav:hover {
   border-right: none;
-}
+}*/
 
 #navigation ul li.menu-item-login-logout {
   background-image: url(images/img-login.png);
@@ -155,6 +162,7 @@ body {
   position: absolute;
   right: 14px;
   top: -10px;
+  border-right: none;
 /*  text-indent:-9999px;*/
 }
 
@@ -163,7 +171,6 @@ body {
   font-weight: normal;
   margin: 44px 0 0 0;
   padding: 10px 0;
-  border-right: none;
   text-align: center;
   font-size: 16px;
 }

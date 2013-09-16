@@ -1,5 +1,6 @@
 // ajaxLoop.js
 jQuery(function($){
+    var $host = window.location.host;
     var page = 1;
     var loading = true;
     var $window = $(window);
@@ -9,7 +10,7 @@ jQuery(function($){
                 type       : "GET",
                 data       : {numPosts : 1},
                 dataType   : "html",
-                url        : "http://localhost:8888/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
+                url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
                 success    : function(data){
                     $data = $(data);
                     if($data.length){

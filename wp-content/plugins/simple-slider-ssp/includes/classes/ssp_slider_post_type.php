@@ -390,8 +390,6 @@ class SSP_SLIDER_POST_TYPE {
 
 	function custom_update_messages( $messages ) {
 
-
-
 		global $post;
 		$messages[SLIDER_PLUGIN_SLIDER_POST_TYPE] = array(
 			0 => '',

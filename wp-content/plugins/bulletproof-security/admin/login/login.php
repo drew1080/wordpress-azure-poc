@@ -13,33 +13,32 @@ if ( !current_user_can('manage_options') ){
 
 <!-- Begin Rating CSS - needs to be inline to load on first launch -->
 <style type="text/css">
-div.bps-star-container { float:right; position: relative; top:-55px; right:-153px; height:19px; width:100px; font-size:19px;}
+div.bps-star-container { float:right; position: relative; top:-10px; right:-100px; height:19px; width:100px; font-size:19px;}
 div.bps-star {height: 100%; position:absolute; top:0px; left:0px; background-color: transparent; letter-spacing:1ex; border:none;}
 .bps-star1 {width:20%;} .bps-star2 {width:40%;} .bps-star3 {width:60%;} .bps-star4 {width:80%;} .bps-star5 {width:100%;}
 .bps-star.bps-star-rating {background-color: #fc0;}
 .bps-star img{display:block; position:absolute; right:0px; border:none; text-decoration:none;}
 div.bps-star img {width:19px; height:19px; border-left:1px solid #fff; border-right:1px solid #fff;}
-.bps-downloaded {float:right; position: relative; top:-33px; right:0px; }
-.bps-star-link {float:right; position: relative; top:-19px; right:-253px; }
+.bps-downloaded {float:right; position: relative; top:15px; right:0px; }
+.bps-star-link {position: relative; top:43px; right:0px; font-size:12px;}
 </style>
 <!-- End Rating CSS - needs to be inline to load on first launch -->
 
-<h2 style="margin-left:70px;"><?php _e('BulletProof Security ~ Login Security & Monitoring', 'bulletproof-security'); ?></h2>
 <?php
 if (function_exists('get_transient')) {
 require_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
 
 	if (false === ($bpsapi = get_transient('bulletproof-security_info'))) {
-	$bpsapi = plugins_api('plugin_information', array('slug' => stripslashes( 'bulletproof-security' ) ));
+		$bpsapi = plugins_api('plugin_information', array('slug' => stripslashes( 'bulletproof-security' ) ));
 	
 	if ( !is_wp_error($bpsapi) ) {
-	$bpsexpire = 60 * 15; // Cache data for 15 minutes
-	set_transient('bulletproof-security_info', $bpsapi, $bpsexpire);
+		$bpsexpire = 60 * 15; // Cache data for 15 minutes
+		set_transient('bulletproof-security_info', $bpsapi, $bpsexpire);
 	}
 	}
   
 	if ( !is_wp_error($bpsapi) ) {
-	$plugins_allowedtags = array('a' => array('href' => array(), 'title' => array(), 'target' => array()),
+		$plugins_allowedtags = array('a' => array('href' => array(), 'title' => array(), 'target' => array()),
 								'abbr' => array('title' => array()), 'acronym' => array('title' => array()),
 								'code' => array(), 'pre' => array(), 'em' => array(), 'strong' => array(),
 								'div' => array(), 'p' => array(), 'ul' => array(), 'ol' => array(), 'li' => array(),
@@ -51,26 +50,31 @@ require_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
 	foreach ( array('version', 'author', 'requires', 'tested', 'homepage', 'downloaded', 'slug') as $key )
 		$bpsapi->$key = wp_kses($bpsapi->$key, $plugins_allowedtags);
 
-      if ( !empty($bpsapi->downloaded) ) {
-        echo '<div class="bps-downloaded">'.sprintf(__('Downloaded %s times', 'bulletproof-security'),number_format_i18n($bpsapi->downloaded)).'.</div>';
+	  if ( !empty($bpsapi->downloaded) ) {
+        echo '<div class="bps-downloaded">'.sprintf(__('%s Downloads', 'bulletproof-security'),number_format_i18n($bpsapi->downloaded)).'</div>';
       }
 ?>
 		<?php if ( !empty($bpsapi->rating) ) : ?>
-		<div class="bps-star-container" title="<?php echo esc_attr(sprintf(__('Average Rating (%s ratings)', 'bulletproof-security'),number_format_i18n($bpsapi->num_ratings))); ?>">
+		<div class="bps-star-container" title="<?php //echo esc_attr(sprintf(__('Average Rating (%s ratings)', 'bulletproof-security'),number_format_i18n($bpsapi->num_ratings))); ?>">
 			<div class="bps-star bps-star-rating" style="width: <?php echo esc_attr($bpsapi->rating) ?>px"></div>
 			<div class="bps-star bps-star5"><img src="<?php echo plugins_url('/bulletproof-security/admin/images/star.png'); ?>" alt="<?php _e('5 stars', 'bulletproof-security') ?>" /></div>
 			<div class="bps-star bps-star4"><img src="<?php echo plugins_url('/bulletproof-security/admin/images/star.png'); ?>" alt="<?php _e('4 stars', 'bulletproof-security') ?>" /></div>
 			<div class="bps-star bps-star3"><img src="<?php echo plugins_url('/bulletproof-security/admin/images/star.png'); ?>" alt="<?php _e('3 stars', 'bulletproof-security') ?>" /></div>
 			<div class="bps-star bps-star2"><img src="<?php echo plugins_url('/bulletproof-security/admin/images/star.png'); ?>" alt="<?php _e('2 stars', 'bulletproof-security') ?>" /></div>
 			<div class="bps-star bps-star1"><img src="<?php echo plugins_url('/bulletproof-security/admin/images/star.png'); ?>" alt="<?php _e('1 star', 'bulletproof-security') ?>" /></div>
-		</div>
-		<div class="bps-star-link"><a target="_blank" title="Link opens in new browser window" href="http://wordpress.org/extend/plugins/<?php echo $bpsapi->slug ?>/"> <?php _e('Please Rate BPS', 'bulletproof-security'); ?></a> <small><?php echo sprintf(__('%s Ratings', 'bulletproof-security'),number_format_i18n($bpsapi->num_ratings)); ?> </small></div>
+		
+        <div class="bps-star-link"><a target="_blank" title="Link opens in new browser window" href="http://wordpress.org/extend/plugins/<?php echo $bpsapi->slug ?>/"> <?php _e('Rate BPS', 'bulletproof-security'); ?></a> <small><?php //echo sprintf(__('%s Ratings', 'bulletproof-security'),number_format_i18n($bpsapi->num_ratings)); ?> </small></div>
+        
+        </div>
+		
         <br />
 		<?php endif; 
 	  } // if ( !is_wp_error($bpsapi)
  }// end if (function_exists('get_transient'
 ?>
 
+
+<h2 style="margin-left:70px;"><?php _e('BulletProof Security ~ Login Security & Monitoring', 'bulletproof-security'); ?></h2>
 <div id="message" class="updated" style="border:1px solid #999999; margin-left:70px;">
 
 <?php
@@ -179,7 +183,7 @@ if ( !current_user_can('manage_options') ) { _e('Permission Denied', 'bulletproo
 <strong><label for="bps-monitor-email" style="margin:0px 8px 0px 0px;vertical-align:middle;"><?php _e('Send Email Alerts Bcc:', 'bulletproof-security'); ?> </label></strong>
 <input type="text" name="bulletproof_security_options_email[bps_send_email_bcc]" class="regular-text-long-fixed" style="width:200px; margin:0px 0px 20px 0px;" value="<?php echo $options['bps_send_email_bcc']; ?>" /><br />
 <input type="hidden" name="bpsEMA" value="bps-EMA" />
-<strong><label for="bps-monitor-email" style="margin:0px 0px 0px 0px;"><?php _e('Send Email Alert When...', 'bulletproof-security'); ?></label></strong><br />
+<strong><label for="bps-monitor-email" style="margin:0px 0px 0px 0px;"><?php _e('Send Login Security Email Alert When...', 'bulletproof-security'); ?></label></strong><br />
 <select name="bulletproof_security_options_email[bps_login_security_email]" style="width:340px;">
 <option value="lockoutOnly" <?php selected( $options['bps_login_security_email'], 'lockoutOnly'); ?>><?php _e('A User Account Is Locked Out', 'bulletproof-security'); ?></option>
 <option value="adminLoginOnly" <?php selected( $options['bps_login_security_email'], 'adminLoginOnly'); ?>><?php _e('An Administrator Logs In', 'bulletproof-security'); ?></option>
@@ -187,6 +191,11 @@ if ( !current_user_can('manage_options') ) { _e('Permission Denied', 'bulletproo
 <option value="anyUserLoginLock" <?php selected( $options['bps_login_security_email'], 'anyUserLoginLock'); ?>><?php _e('Any User Logs In & A User Account is Locked Out', 'bulletproof-security'); ?></option>
 <option value="no" <?php selected( $options['bps_login_security_email'], 'no'); ?>><?php _e('Do Not Send Email Alerts', 'bulletproof-security'); ?></option>
 </select><br /><br />
+<!-- <strong><label for="bps-monitor-email" style="margin:0px 0px 0px 0px;"><?php //_e('BPS Plugin Upgrade Email Notification', 'bulletproof-security'); ?></label></strong><br />
+<select name="bulletproof_security_options_email[bps_upgrade_email]" style="width:340px;">
+<option value="yes" <?php //selected( @$options['bps_upgrade_email'], 'yes'); ?>><?php //_e('Send Email Alerts', 'bulletproof-security'); ?></option>
+<option value="no" <?php //selected( @$options['bps_upgrade_email'], 'no'); ?>><?php //_e('Do Not Send Email Alerts', 'bulletproof-security'); ?></option>
+</select><br /><br /> -->
 <input type="submit" name="bpsEmailAlertSubmit" class="bps-blue-button" style="margin:5px 0px 0px 0px;" value="<?php esc_attr_e('Save Options', 'bulletproof-security') ?>" />
 </form>
 </div>

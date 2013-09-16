@@ -284,7 +284,7 @@
 					</label>
 				</p>
 
-
+				<?php do_action( 'ssp_options_end_control_options', $slider_id ); ?>
 
 			</td>
 		</tr>

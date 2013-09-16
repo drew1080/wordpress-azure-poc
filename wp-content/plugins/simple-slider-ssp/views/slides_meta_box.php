@@ -59,7 +59,7 @@
 							</td>
 
 							<td class="field_type">
-								<?php echo mb_strtoupper( $slide['type'] ) ?> 
+								<?php echo strtoupper( $slide['type'] ) ?> 
 							</td>
 
 						</tr>

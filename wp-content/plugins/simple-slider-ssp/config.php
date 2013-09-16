@@ -36,4 +36,4 @@ define( 'SLIDER_PLUGIN_MAIN_FILE', SLIDER_PLUGIN_PATH . 'slider.php' );
 
 define( 'SLIDER_PLUGIN_SLIDER_SHORTCODE', 'slider' );
 
-define( 'SLIDER_PLUGIN_VERSION', '0.7' );
+define( 'SLIDER_PLUGIN_VERSION', '0.8' );

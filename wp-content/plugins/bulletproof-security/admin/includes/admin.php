@@ -120,7 +120,8 @@ function bulletproof_security_admin_menu() {
 // Add Plugins here that load their js and css scripts throughout other plugins pages and the WP Dashboard
 // to block these scripts from loading in BPS Pro plugin pages and breaking BPS Pro scripts.
 // Remember to add the global
-$plugin_var1 = 'smart-slideshow-widget/smart-slideshow-widget.php';
+//$plugin_var1 = 'smart-slideshow-widget/smart-slideshow-widget.php';
+$plugin_var1 = 'all-in-one-webmaster/all-in-one-webmaster.php';
 $plugin_var2 = 'facebook-members/facebook-members.php';
 $plugin_var3 = 'easyrotator-for-wordpress/easyrotator.php';
 $return_var = in_array( $plugin_var1 || $plugin_var2 || $plugin_var3, apply_filters('active_plugins', get_option('active_plugins')));
@@ -142,8 +143,15 @@ global $bulletproof_security, $plugin_var1, $plugin_var2, $plugin_var3, $return_
 	
 	if ( $return_var == 1) { // 1 equals active	
 	// Block SSW from loading its scripts in BPS Pro pages and breaking BPS Pro scripts/menus/etc
-	wp_dequeue_script( 'jQuery-UI-Effects', plugins_url('/smart-slideshow-widget/js/jquery-ui.min.js') );
-	wp_dequeue_script( 'SSW', plugins_url('/smart-slideshow-widget/js/smart-slideshow-widget.js') );
+	//wp_dequeue_script( 'jQuery-UI-Effects', plugins_url('/smart-slideshow-widget/js/jquery-ui.min.js') );
+	//wp_dequeue_script( 'SSW', plugins_url('/smart-slideshow-widget/js/smart-slideshow-widget.js') );
+
+	// Block All in One Webmaster plugin from loading its scripts in BPS Pro pages and breaking BPS Pro scripts/menus/etc
+	wp_dequeue_script( 'aiow-plugin-script3', plugins_url('/all-in-one-webmaster/js/myscript.js') );
+	wp_dequeue_script( 'aiow-plugin-script4', plugins_url('/all-in-one-webmaster/js/jquery.powertip.js') );  	
+	wp_dequeue_style( 'aiow-plugin-css', plugins_url('/all-in-one-webmaster/css/jquery-ui.css') );
+	wp_dequeue_style( 'aiow-tip-plugin-css', plugins_url('/all-in-one-webmaster/css/jquery.powertip.css') );		
+	wp_dequeue_style( 'aiow-member-plugin-css', plugins_url('/all-in-one-webmaster/css/all-in-one-webmaster.css') );
 
 	// Block Facebook Members plugin from loading its scripts in BPS Pro pages and breaking BPS Pro scripts/menus/etc
 	wp_dequeue_script( 'facebook-plugin-script4', plugins_url('/facebook-members/js/jquery.powertip.js') );
@@ -175,8 +183,15 @@ global $bulletproof_security, $plugin_var1, $plugin_var2, $plugin_var3, $return_
 	
 	if ( $return_var == 1) { // 1 equals active	
 	// Block SSW from loading its scripts in BPS Pro pages and breaking BPS Pro scripts/menus/etc
-	wp_dequeue_script( 'jQuery-UI-Effects', plugins_url('/smart-slideshow-widget/js/jquery-ui.min.js') );
-	wp_dequeue_script( 'SSW', plugins_url('/smart-slideshow-widget/js/smart-slideshow-widget.js') );
+	//wp_dequeue_script( 'jQuery-UI-Effects', plugins_url('/smart-slideshow-widget/js/jquery-ui.min.js') );
+	//wp_dequeue_script( 'SSW', plugins_url('/smart-slideshow-widget/js/smart-slideshow-widget.js') );
+
+	// Block All in One Webmaster plugin from loading its scripts in BPS Pro pages and breaking BPS Pro scripts/menus/etc
+	wp_dequeue_script( 'aiow-plugin-script3', plugins_url('/all-in-one-webmaster/js/myscript.js') );
+	wp_dequeue_script( 'aiow-plugin-script4', plugins_url('/all-in-one-webmaster/js/jquery.powertip.js') );  	
+	wp_dequeue_style( 'aiow-plugin-css', plugins_url('/all-in-one-webmaster/css/jquery-ui.css') );
+	wp_dequeue_style( 'aiow-tip-plugin-css', plugins_url('/all-in-one-webmaster/css/jquery.powertip.css') );		
+	wp_dequeue_style( 'aiow-member-plugin-css', plugins_url('/all-in-one-webmaster/css/all-in-one-webmaster.css') );
 
 	// Block Facebook Members plugin from loading its scripts in BPS Pro pages and breaking BPS Pro scripts/menus/etc
 	wp_dequeue_script( 'facebook-plugin-script4', plugins_url('/facebook-members/js/jquery.powertip.js') );
@@ -206,19 +221,59 @@ function bulletproof_security_deactivation() {
 // nothing needs to removed on deactivation for now
 }
 
-// Uninstall - BPS later version will have the option of complete removal in addition to a BPS Pro upgrade uninstall
+// Partial Uninstall - BPS later version will have the option of complete removal in addition to a BPS Pro upgrade uninstall
 // Currently options and files are not deleted on uninstall as a courtesy to BPS Pro customers
 function bulletproof_security_uninstall() {
 	require_once( ABSPATH . 'wp-admin/includes/plugin.php');
 	$options = get_option('bulletproof_security_options');
 	delete_option('bulletproof_security_options');
-	//delete_option('bulletproof_security_options_customcode'); // do not delete on uninstall for Pro Upgrade customers
-	//delete_option('bulletproof_security_options_customcode_WPA'); // do not delete on uninstall for Pro Upgrade customers
-	//delete_option('bulletproof_security_options_maint'); // do not delete on uninstall for Pro Upgrade customers
-	//delete_option('bulletproof_security_options_mynotes'); // do not delete on uninstall for Pro Upgrade customers
-	//delete_option('bulletproof_security_options_autolock'); // do not delete on uninstall for Pro Upgrade customers
-	//delete_option('bulletproof_security_options_login_security'); // do not delete on uninstall for Pro Upgrade customers
 }
+
+/* 
+// This uninstall function will completely remove BPS files, DB Options & Tables
+function bulletproof_security_uninstall() {
+global $wpdb, $current_user;
+require_once( ABSPATH . 'wp-admin/includes/plugin.php');
+
+$user_id = $current_user->ID;
+$Stable_name = $wpdb->prefix . "bpspro_seclog_ignore";
+$Ltable_name = $wpdb->prefix . "bpspro_login_security";
+$RootHtaccess = ABSPATH . '.htaccess';
+$RootHtaccessBackup = WP_CONTENT_DIR . '/bps-backup/master-backups/root.htaccess';
+$wpadminHtaccess = ABSPATH . 'wp-admin/.htaccess';
+$wpadminHtaccessBackup = WP_CONTENT_DIR . '/bps-backup/master-backups/wpadmin.htaccess';
+$options = get_option('bulletproof_security_options');
+
+	if ( file_exists($RootHtaccess) ) {
+		copy($RootHtaccess, $RootHtaccessBackup);
+	}
+	if ( file_exists($wpadminHtaccess) ) {
+		copy($wpadminHtaccess, $wpadminHtaccessBackup);
+	}
+
+	delete_option('bulletproof_security_options');
+	delete_option('bulletproof_security_options_customcode');
+	delete_option('bulletproof_security_options_customcode_WPA');
+	delete_option('bulletproof_security_options_maint');
+	delete_option('bulletproof_security_options_mynotes');
+	delete_option('bulletproof_security_options_email');
+	delete_option('bulletproof_security_options_autolock');
+	delete_option('bulletproof_security_options_login_security');
+	// will be adding this new upgrade notice option later
+	// delete_option('bulletproof_security_options_upgrade_notice');	
+	$wpdb->query("DROP TABLE IF EXISTS $Stable_name");
+	$wpdb->query("DROP TABLE IF EXISTS $Ltable_name");
+	delete_user_meta($user_id, 'bps_ignore_iis_notice');
+	delete_user_meta($user_id, 'bps_ignore_sucuri_notice');
+	delete_user_meta($user_id, 'bps_ignore_BLC_notice');
+	delete_user_meta($user_id, 'bps_ignore_PhpiniHandler_notice');
+	delete_user_meta($user_id, 'bps_ignore_Permalinks_notice');
+	delete_user_meta($user_id, 'bps_brute_force_login_protection_notice');
+	delete_user_meta($user_id, 'bps_speed_boost_cache_notice');
+	@unlink($RootHtaccess);
+	@unlink($wpadminHtaccess);
+}
+*/
 
 // Validate BPS options 
 function bulletproof_security_options_validate($input) {  
@@ -308,7 +363,8 @@ function bulletproof_security_options_validate_email($input) {
 	$options['bps_send_email_cc'] = trim(wp_filter_nohtml_kses($input['bps_send_email_cc']));
 	$options['bps_send_email_bcc'] = trim(wp_filter_nohtml_kses($input['bps_send_email_bcc']));
 	$options['bps_login_security_email'] = wp_filter_nohtml_kses($input['bps_login_security_email']);
-		
+	//$options['bps_upgrade_email'] = wp_filter_nohtml_kses($input['bps_upgrade_email']);		
+	
 	return $options;  
 }
 ?>

@@ -52,7 +52,14 @@ body {
 }
 
 #content {
-  margin-top: -20px;
+  position: absolute;
+  float: right;
+  left: 250px;
+  top: 120px;
+}
+
+.home.page #content {
+  left: 0;
 }
 
 /* Hiding the nav bar
@@ -67,6 +74,14 @@ body {
   margin-top: 40px;
 }
 
+.header-wrap {
+  position: fixed;
+  height: 100px;
+  width: 960px;
+  background: #ffffff;
+  z-index: 1000;
+}
+
 #header #site-title.graphic a {
   width: 200px !important;
   height: 44px !important;
@@ -76,7 +91,8 @@ body {
   max-width: 490px;
   clear: none;
   margin: 10px 0;
-  position: absolute;
+  position: relative;
+  float: right;
   top: 0;
   right: 0;
   z-index: 1;
@@ -225,15 +241,16 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 
 #footer {
   clear: both;
-  position: relative;
+  position: absolute;
   float: center !important;
   z-index: 10;
   height: 3em;
   margin-top: -3em;
   height: 100px;
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
+  bottom: -230px;
 }
 
 .fast-fact {

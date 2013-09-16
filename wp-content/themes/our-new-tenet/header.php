@@ -104,6 +104,7 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 <body <?php body_class(); ?>>
 	<div id="wrap" class="container">
 	<div class="resize"></div>
+	<div class="header-wrap">
 	<?php
 	st_above_header();
 	st_header();
@@ -133,6 +134,8 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	<div class="search-form">
     <?php get_search_form(); ?>
   </div>
+  </div>
+  <div class="clear"></div>
   <? } ?>
 	
 	<?php

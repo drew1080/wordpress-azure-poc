@@ -33,6 +33,12 @@ body {
   background-position: 0 150px;
   background-size: auto 353px;
   background-repeat: repeat-x;
+  height: 100%
+}
+
+.containter {
+  height: auto; 
+  min-height: 100%;
 }
 
 .entry-content ul {
@@ -183,6 +189,18 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   width: 24px !important;
   height: 24px;
   margin-top: -8px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+  height: 100px;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*.login a {

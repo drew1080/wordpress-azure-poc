@@ -164,4 +164,24 @@ function register_my_menus() {
 
 add_action( 'init', 'register_my_menus' );
 */
+
+if (!function_exists('st_before_footer'))  {
+    function st_before_footer() {
+			$footerwidgets = is_active_sidebar('first-footer-widget-area') + is_active_sidebar('second-footer-widget-area') + is_active_sidebar('third-footer-widget-area') + is_active_sidebar('fourth-footer-widget-area');
+			$class = ($footerwidgets == '0' ? 'noborder' : 'normal');
+			echo "</div><!--/#wrap.container-->"."\n";
+			echo '<div class="clear"></div><div id="footer" class="'.$class.' sixteen columns">';
+    }
+}
+
+if (!function_exists('st_after_footer'))  {
+	
+    function st_after_footer() {
+			echo "</div><!--/#footer-->"."\n";
+			// Google Analytics
+			if (of_get_option('footer_scripts') <> "" ) {
+				echo '<script type="text/javascript">'.stripslashes(of_get_option('footer_scripts')).'</script>';
+			}
+    }
+}
 ?>

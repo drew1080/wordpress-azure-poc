@@ -1,0 +1,264 @@
+0000.000 (0) Opened log file at time: Mon, 16 Sep 2013 15:40:23 +0000
+0000.002 (0) UpdraftPlus: 1.7.3 WP: 3.6.1 PHP: 5.4.10 (Darwin bsalato73hou.pariveda.local 12.4.1 Darwin Kernel Version 12.4.1: Tue May 21 17:04:50 PDT 2013; root:xnu-2050.40.51~1/RELEASE_X86_64 x86_64) MySQL: 5.5.29 Server: Apache/2.2.23 (Unix) mod_ssl/2.2.23 OpenSSL/0.9.8x DAV/2 PHP/5.4.10 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 16.1M) ZipArchive::addFile : Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 145776.7 Mb
+0000.005 (0) Tasks: Backup files:  (schedule: weekly) Backup DB: 1 (schedule: daily)
+0000.007 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.015 (0) Backup run: resumption=0, nonce=30021703ec6a, begun at=1379346023 (0s ago), job type=backup
+0000.016 (0) Scheduling a resumption (1) after 300 seconds (1379346323) in case this run gets aborted
+0000.019 (0) Creation of backups of directories: already finished
+0000.021 (0) Saving backup status to database (elements: 6)
+0000.024 (0) Beginning creation of database dump
+0000.037 (0) Table d3xm0vp31o_options: Total expected rows (approximate): 563
+0000.121 (0) Table d3xm0vp31o_options: Total rows added: 330 in 0.09 seconds
+0000.123 (0) Table d3xm0vp31o_options: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_options.table.gz)
+0000.129 (0) Table d3xm0vp31o_users: Total expected rows (approximate): 7
+0000.132 (0) Table d3xm0vp31o_users: Total rows added: 7 in 0.01 seconds
+0000.133 (0) Table d3xm0vp31o_users: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_users.table.gz)
+0000.139 (0) Table d3xm0vp31o_usermeta: Total expected rows (approximate): 137
+0000.148 (0) Table d3xm0vp31o_usermeta: Total rows added: 137 in 0.01 seconds
+0000.150 (0) Table d3xm0vp31o_usermeta: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_usermeta.table.gz)
+0000.157 (0) Table d3xm0vp31o_commentmeta: Total expected rows (approximate): 0
+0000.159 (0) Table d3xm0vp31o_commentmeta: Total rows added: 0 in 0.01 seconds
+0000.160 (0) Table d3xm0vp31o_commentmeta: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_commentmeta.table.gz)
+0000.166 (0) Table d3xm0vp31o_comments: Total expected rows (approximate): 0
+0000.168 (0) Table d3xm0vp31o_comments: Total rows added: 0 in 0.00 seconds
+0000.169 (0) Table d3xm0vp31o_comments: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_comments.table.gz)
+0000.177 (0) Table d3xm0vp31o_links: Total expected rows (approximate): 0
+0000.179 (0) Table d3xm0vp31o_links: Total rows added: 0 in 0.01 seconds
+0000.180 (0) Table d3xm0vp31o_links: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_links.table.gz)
+0000.187 (0) Table d3xm0vp31o_postmeta: Total expected rows (approximate): 483
+0000.215 (0) Table d3xm0vp31o_postmeta: Total rows added: 447 in 0.03 seconds
+0000.217 (0) Table d3xm0vp31o_postmeta: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_postmeta.table.gz)
+0000.225 (0) Table d3xm0vp31o_posts: Total expected rows (approximate): 197
+0000.301 (0) Table d3xm0vp31o_posts: Total rows added: 275 in 0.08 seconds
+0000.302 (0) Table d3xm0vp31o_posts: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_posts.table.gz)
+0000.308 (0) Table d3xm0vp31o_term_relationships: Total expected rows (approximate): 16
+0000.311 (0) Table d3xm0vp31o_term_relationships: Total rows added: 16 in 0.00 seconds
+0000.313 (0) Table d3xm0vp31o_term_relationships: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_term_relationships.table.gz)
+0000.319 (0) Table d3xm0vp31o_term_taxonomy: Total expected rows (approximate): 6
+0000.322 (0) Table d3xm0vp31o_term_taxonomy: Total rows added: 6 in 0.00 seconds
+0000.324 (0) Table d3xm0vp31o_term_taxonomy: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_term_taxonomy.table.gz)
+0000.330 (0) Table d3xm0vp31o_terms: Total expected rows (approximate): 6
+0000.334 (0) Table d3xm0vp31o_terms: Total rows added: 6 in 0.01 seconds
+0000.336 (0) Table d3xm0vp31o_terms: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_terms.table.gz)
+0000.345 (0) Table d3xm0vp31o_bpspro_login_security: Total expected rows (approximate): 0
+0000.347 (0) Table d3xm0vp31o_bpspro_login_security: Total rows added: 0 in 0.01 seconds
+0000.348 (0) Table d3xm0vp31o_bpspro_login_security: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_bpspro_login_security.table.gz)
+0000.354 (0) Table d3xm0vp31o_bpspro_seclog_ignore: Total expected rows (approximate): 0
+0000.356 (0) Table d3xm0vp31o_bpspro_seclog_ignore: Total rows added: 0 in 0.00 seconds
+0000.358 (0) Table d3xm0vp31o_bpspro_seclog_ignore: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_bpspro_seclog_ignore.table.gz)
+0000.365 (0) Table d3xm0vp31o_cf7dbplugin_submits: Total expected rows (approximate): 5
+0000.367 (0) Table d3xm0vp31o_cf7dbplugin_submits: Total rows added: 5 in 0.01 seconds
+0000.369 (0) Table d3xm0vp31o_cf7dbplugin_submits: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_cf7dbplugin_submits.table.gz)
+0000.379 (0) Table d3xm0vp31o_filemeta: Total expected rows (approximate): 0
+0000.381 (0) Table d3xm0vp31o_filemeta: Total rows added: 0 in 0.01 seconds
+0000.383 (0) Table d3xm0vp31o_filemeta: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_filemeta.table.gz)
+0000.389 (0) Table d3xm0vp31o_gde_profiles: Total expected rows (approximate): 3
+0000.391 (0) Table d3xm0vp31o_gde_profiles: Total rows added: 3 in 0.00 seconds
+0000.393 (0) Table d3xm0vp31o_gde_profiles: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_gde_profiles.table.gz)
+0000.400 (0) Table d3xm0vp31o_gde_secure: Total expected rows (approximate): 0
+0000.402 (0) Table d3xm0vp31o_gde_secure: Total rows added: 0 in 0.01 seconds
+0000.404 (0) Table d3xm0vp31o_gde_secure: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_gde_secure.table.gz)
+0000.413 (0) Table d3xm0vp31o_pageflipbook: Total expected rows (approximate): 18
+0000.417 (0) Table d3xm0vp31o_pageflipbook: Total rows added: 18 in 0.01 seconds
+0000.421 (0) Table d3xm0vp31o_pageflipbook: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_pageflipbook.table.gz)
+0000.430 (0) Table d3xm0vp31o_revslider_settings: Total expected rows (approximate): 1
+0000.432 (0) Table d3xm0vp31o_revslider_settings: Total rows added: 1 in 0.01 seconds
+0000.434 (0) Table d3xm0vp31o_revslider_settings: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_revslider_settings.table.gz)
+0000.439 (0) Table d3xm0vp31o_revslider_sliders: Total expected rows (approximate): 3
+0000.442 (0) Table d3xm0vp31o_revslider_sliders: Total rows added: 3 in 0.00 seconds
+0000.443 (0) Table d3xm0vp31o_revslider_sliders: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_revslider_sliders.table.gz)
+0000.451 (0) Table d3xm0vp31o_revslider_slides: Total expected rows (approximate): 13
+0000.457 (0) Table d3xm0vp31o_revslider_slides: Total rows added: 12 in 0.01 seconds
+0000.460 (0) Table d3xm0vp31o_revslider_slides: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_revslider_slides.table.gz)
+0000.468 (0) Table d3xm0vp31o_sliderpro_skins: Total expected rows (approximate): 95
+0000.488 (0) Table d3xm0vp31o_sliderpro_skins: Total rows added: 99 in 0.02 seconds
+0000.491 (0) Table d3xm0vp31o_sliderpro_skins: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_sliderpro_skins.table.gz)
+0000.497 (0) Table d3xm0vp31o_sliderpro_sliders: Total expected rows (approximate): 1
+0000.500 (0) Table d3xm0vp31o_sliderpro_sliders: Total rows added: 1 in 0.01 seconds
+0000.502 (0) Table d3xm0vp31o_sliderpro_sliders: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_sliderpro_sliders.table.gz)
+0000.510 (0) Table d3xm0vp31o_sliderpro_slides: Total expected rows (approximate): 4
+0000.513 (0) Table d3xm0vp31o_sliderpro_slides: Total rows added: 4 in 0.01 seconds
+0000.514 (0) Table d3xm0vp31o_sliderpro_slides: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_sliderpro_slides.table.gz)
+0000.522 (0) Table d3xm0vp31o_wfbadleechers: Total expected rows (approximate): 0
+0000.524 (0) Table d3xm0vp31o_wfbadleechers: Total rows added: 0 in 0.00 seconds
+0000.525 (0) Table d3xm0vp31o_wfbadleechers: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfbadleechers.table.gz)
+0000.534 (0) Table d3xm0vp31o_wfblocks: Total expected rows (approximate): 0
+0000.537 (0) Table d3xm0vp31o_wfblocks: Total rows added: 0 in 0.01 seconds
+0000.539 (0) Table d3xm0vp31o_wfblocks: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfblocks.table.gz)
+0000.546 (0) Table d3xm0vp31o_wfblocksadv: Total expected rows (approximate): 0
+0000.549 (0) Table d3xm0vp31o_wfblocksadv: Total rows added: 0 in 0.01 seconds
+0000.550 (0) Table d3xm0vp31o_wfblocksadv: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfblocksadv.table.gz)
+0000.559 (0) Table d3xm0vp31o_wfconfig: Total expected rows (approximate): 87
+0000.566 (0) Table d3xm0vp31o_wfconfig: Total rows added: 87 in 0.01 seconds
+0000.568 (0) Table d3xm0vp31o_wfconfig: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfconfig.table.gz)
+0000.575 (0) Table d3xm0vp31o_wfcrawlers: Total expected rows (approximate): 2
+0000.578 (0) Table d3xm0vp31o_wfcrawlers: Total rows added: 2 in 0.01 seconds
+0000.580 (0) Table d3xm0vp31o_wfcrawlers: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfcrawlers.table.gz)
+0000.589 (0) Table d3xm0vp31o_wffilemods: Total expected rows (approximate): 4946
+0000.977 (0) Table d3xm0vp31o_wffilemods: Total rows added: 4812 in 0.39 seconds
+0000.980 (0) Table d3xm0vp31o_wffilemods: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wffilemods.table.gz)
+0001.000 (0) Table d3xm0vp31o_wfhits: Total expected rows (approximate): 4361
+0001.500 (0) Table d3xm0vp31o_wfhits: Total rows added: 4323 in 0.52 seconds
+0001.503 (0) Table d3xm0vp31o_wfhits: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfhits.table.gz)
+0001.509 (0) Table d3xm0vp31o_wfhoover: Total expected rows (approximate): 0
+0001.511 (0) Table d3xm0vp31o_wfhoover: Total rows added: 0 in 0.00 seconds
+0001.513 (0) Table d3xm0vp31o_wfhoover: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfhoover.table.gz)
+0001.520 (0) Table d3xm0vp31o_wfissues: Total expected rows (approximate): 4
+0001.523 (0) Table d3xm0vp31o_wfissues: Total rows added: 4 in 0.01 seconds
+0001.525 (0) Table d3xm0vp31o_wfissues: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfissues.table.gz)
+0001.532 (0) Table d3xm0vp31o_wfleechers: Total expected rows (approximate): 28
+0001.535 (0) Table d3xm0vp31o_wfleechers: Total rows added: 28 in 0.01 seconds
+0001.537 (0) Table d3xm0vp31o_wfleechers: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfleechers.table.gz)
+0001.543 (0) Table d3xm0vp31o_wflockedout: Total expected rows (approximate): 0
+0001.545 (0) Table d3xm0vp31o_wflockedout: Total rows added: 0 in 0.00 seconds
+0001.547 (0) Table d3xm0vp31o_wflockedout: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wflockedout.table.gz)
+0001.554 (0) Table d3xm0vp31o_wflocs: Total expected rows (approximate): 0
+0001.556 (0) Table d3xm0vp31o_wflocs: Total rows added: 0 in 0.01 seconds
+0001.558 (0) Table d3xm0vp31o_wflocs: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wflocs.table.gz)
+0001.565 (0) Table d3xm0vp31o_wflogins: Total expected rows (approximate): 188
+0001.582 (0) Table d3xm0vp31o_wflogins: Total rows added: 195 in 0.02 seconds
+0001.584 (0) Table d3xm0vp31o_wflogins: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wflogins.table.gz)
+0001.591 (0) Table d3xm0vp31o_wfnet404s: Total expected rows (approximate): 0
+0001.593 (0) Table d3xm0vp31o_wfnet404s: Total rows added: 0 in 0.01 seconds
+0001.594 (0) Table d3xm0vp31o_wfnet404s: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfnet404s.table.gz)
+0001.602 (0) Table d3xm0vp31o_wfreversecache: Total expected rows (approximate): 0
+0001.604 (0) Table d3xm0vp31o_wfreversecache: Total rows added: 0 in 0.01 seconds
+0001.605 (0) Table d3xm0vp31o_wfreversecache: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfreversecache.table.gz)
+0001.611 (0) Table d3xm0vp31o_wfscanners: Total expected rows (approximate): 0
+0001.613 (0) Table d3xm0vp31o_wfscanners: Total rows added: 0 in 0.00 seconds
+0001.614 (0) Table d3xm0vp31o_wfscanners: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfscanners.table.gz)
+0001.624 (0) Table d3xm0vp31o_wfstatus: Total expected rows (approximate): 1109
+0001.685 (0) Table d3xm0vp31o_wfstatus: Total rows added: 1109 in 0.07 seconds
+0001.687 (0) Table d3xm0vp31o_wfstatus: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfstatus.table.gz)
+0001.695 (0) Table d3xm0vp31o_wfthrottlelog: Total expected rows (approximate): 1
+0001.697 (0) Table d3xm0vp31o_wfthrottlelog: Total rows added: 1 in 0.01 seconds
+0001.699 (0) Table d3xm0vp31o_wfthrottlelog: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfthrottlelog.table.gz)
+0001.705 (0) Table d3xm0vp31o_wfvulnscanners: Total expected rows (approximate): 0
+0001.707 (0) Table d3xm0vp31o_wfvulnscanners: Total rows added: 0 in 0.00 seconds
+0001.709 (0) Table d3xm0vp31o_wfvulnscanners: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfvulnscanners.table.gz)
+0001.714 (0) Table pageflipbook: finishing file (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-pageflipbook.table.gz)
+0001.718 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_options.table.gz: adding to final database dump
+0001.781 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_users.table.gz: adding to final database dump
+0001.783 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_usermeta.table.gz: adding to final database dump
+0001.787 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_commentmeta.table.gz: adding to final database dump
+0001.788 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_comments.table.gz: adding to final database dump
+0001.790 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_links.table.gz: adding to final database dump
+0001.792 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_postmeta.table.gz: adding to final database dump
+0001.799 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_posts.table.gz: adding to final database dump
+0001.810 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_term_relationships.table.gz: adding to final database dump
+0001.813 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_term_taxonomy.table.gz: adding to final database dump
+0001.815 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_terms.table.gz: adding to final database dump
+0001.816 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_bpspro_login_security.table.gz: adding to final database dump
+0001.818 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_bpspro_seclog_ignore.table.gz: adding to final database dump
+0001.820 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_cf7dbplugin_submits.table.gz: adding to final database dump
+0001.822 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_filemeta.table.gz: adding to final database dump
+0001.823 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_gde_profiles.table.gz: adding to final database dump
+0001.825 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_gde_secure.table.gz: adding to final database dump
+0001.827 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_pageflipbook.table.gz: adding to final database dump
+0001.829 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_revslider_settings.table.gz: adding to final database dump
+0001.830 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_revslider_sliders.table.gz: adding to final database dump
+0001.833 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_revslider_slides.table.gz: adding to final database dump
+0001.836 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_sliderpro_skins.table.gz: adding to final database dump
+0001.841 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_sliderpro_sliders.table.gz: adding to final database dump
+0001.844 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_sliderpro_slides.table.gz: adding to final database dump
+0001.846 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfbadleechers.table.gz: adding to final database dump
+0001.848 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfblocks.table.gz: adding to final database dump
+0001.850 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfblocksadv.table.gz: adding to final database dump
+0001.852 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfconfig.table.gz: adding to final database dump
+0001.855 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfcrawlers.table.gz: adding to final database dump
+0001.856 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wffilemods.table.gz: adding to final database dump
+0001.917 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfhits.table.gz: adding to final database dump
+0001.964 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfhoover.table.gz: adding to final database dump
+0001.966 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfissues.table.gz: adding to final database dump
+0001.968 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfleechers.table.gz: adding to final database dump
+0001.970 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wflockedout.table.gz: adding to final database dump
+0001.972 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wflocs.table.gz: adding to final database dump
+0001.974 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wflogins.table.gz: adding to final database dump
+0001.981 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfnet404s.table.gz: adding to final database dump
+0001.983 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfreversecache.table.gz: adding to final database dump
+0001.985 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfscanners.table.gz: adding to final database dump
+0001.988 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfstatus.table.gz: adding to final database dump
+0002.005 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfthrottlelog.table.gz: adding to final database dump
+0002.007 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-d3xm0vp31o_wfvulnscanners.table.gz: adding to final database dump
+0002.008 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db-table-pageflipbook.table.gz: adding to final database dump
+0002.010 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz: finished writing out complete database file (560 Kb)
+0002.014 (0) Total database tables backed up: 44
+0002.021 (0) Saving backup history
+0002.027 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip: plugins: This file has already been successfully uploaded
+0002.029 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip: themes: This file has already been successfully uploaded
+0002.031 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip: others: This file has already been successfully uploaded
+0002.034 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz: db: This file has not yet been successfully uploaded: will queue
+0002.036 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0002.037 (0) Cloud backup selection: googledrive
+0002.044 (0) Beginning dispatch of backup to remote
+0002.048 (0) Google Drive: requesting access token: client_id=1019953586783.apps.googleusercontent.com
+0002.259 (0) Google Drive: successfully obtained access token
+0002.798 (0) Google Drive quota usage: used=20780.2 Mb, total=36864 Mb, available=16083.8 Mb
+0002.800 (0) backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz: Attempting to upload to Google Drive
+0002.802 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz: Attempting to upload file to Google Drive.
+0003.841 (0) Uploading file with title backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz
+0003.844 (0) Googledrive chunked upload: 0 % uploaded (URL: https://docs.google.com/feeds/upload/create-session/default/private/full/folder%3A0BxqIa57POttUMkZxbVFDR3FfZFk/contents?convert=false&upload_id=AEnB2UpapnBiRkGROc1qJFXIDv9bsTlPZvAzSkVe0E3SCusZzYFIELZwoxI_H0Mxet0cc4ekNO2Eql3IjiJ2AHbL4gWFfAq9ow)
+0005.911 (0) Googledrive chunked upload: 88 % uploaded
+0007.005 (0) The file was successfully uploaded to Google Drive in 3.163 seconds at an upload speed of 325 kB/s.
+0007.009 (0) OK: Archive backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz uploaded to Google Drive in 4.21 seconds (id: 0BxqIa57POttUalNCRU14SXd0bWc)
+0007.010 (0) Recording as successfully uploaded: backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz (0b7856e858dd362cf2d6ac9c9c8b1f64)
+0007.013 (0) Stored file<->id correlation in database (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz <-> 0BxqIa57POttUalNCRU14SXd0bWc)
+0007.014 (0) Deleting local file: backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz
+0007.016 (0) Retain: beginning examination of existing backup sets
+0007.018 (0) Retain files: user setting: number to retain = 3
+0007.019 (0) Retain db: user setting: number to retain = 7
+0007.020 (0) Number of backup sets in history: 11
+0007.022 (0) Examining backup set with datestamp: 1379346023
+0007.022 (0) 1379346023: this set includes a database (backup_2013-09-16-1540_Our_New_Tenet_30021703ec6a-db.gz); db count is now 1
+0007.024 (0) 1379346023: this set includes files; fileset count is now 1
+0007.025 (0) 1379346023: this backup set remains non-empty; will retain in history
+0007.026 (0) Examining backup set with datestamp: 1379345954
+0007.028 (0) 1379345954: this set includes files; fileset count is now 2
+0007.029 (0) 1379345954: this backup set remains non-empty; will retain in history
+0007.030 (0) Examining backup set with datestamp: 1379262496
+0007.032 (0) 1379262496: this set includes a database (backup_2013-09-15-1628_Our_New_Tenet_d5ccd1e408d3-db.gz); db count is now 2
+0007.033 (0) 1379262496: this backup set remains non-empty; will retain in history
+0007.035 (0) Examining backup set with datestamp: 1379173212
+0007.036 (0) 1379173212: this set includes a database (backup_2013-09-14-1540_Our_New_Tenet_1633cf2b55a1-db.gz); db count is now 3
+0007.038 (0) 1379173212: this backup set remains non-empty; will retain in history
+0007.039 (0) Examining backup set with datestamp: 1379086776
+0007.041 (0) 1379086776: this set includes a database (backup_2013-09-13-1539_Our_New_Tenet_3d32efb1d829-db.gz); db count is now 4
+0007.042 (0) 1379086776: this backup set remains non-empty; will retain in history
+0007.043 (0) Examining backup set with datestamp: 1379000348
+0007.045 (0) 1379000348: this set includes a database (backup_2013-09-12-1539_Our_New_Tenet_0be6d41a0807-db.gz); db count is now 5
+0007.046 (0) 1379000348: this backup set remains non-empty; will retain in history
+0007.047 (0) Examining backup set with datestamp: 1378914117
+0007.048 (0) 1378914117: this set includes a database (backup_2013-09-11-1541_Our_New_Tenet_f9f83e70413b-db.gz); db count is now 6
+0007.050 (0) 1378914117: this backup set remains non-empty; will retain in history
+0007.051 (0) Examining backup set with datestamp: 1378827549
+0007.052 (0) 1378827549: this set includes a database (backup_2013-09-10-1539_Our_New_Tenet_4bb9b93cccf9-db.gz); db count is now 7
+0007.053 (0) 1378827549: this backup set remains non-empty; will retain in history
+0007.055 (0) Examining backup set with datestamp: 1378741341
+0007.056 (0) 1378741341: this set includes a database (backup_2013-09-09-1542_Our_New_Tenet_d16796b48480-db.gz); db count is now 8
+0007.058 (0) 1378741341: over retain limit (7); will delete this database
+0007.059 (0) Delete file: backup_2013-09-09-1542_Our_New_Tenet_d16796b48480-db.gz, service=googledrive
+0009.163 (0) backup_2013-09-09-1542_Our_New_Tenet_d16796b48480-db.gz: Deletion successful
+0009.166 (0) 1378741341: this backup set is now empty; will remove from history
+0009.167 (0) 1378741341: corresponding log file not found - must have already been deleted
+0009.168 (0) Examining backup set with datestamp: 1378741158
+0009.170 (0) 1378741158: this set includes files; fileset count is now 3
+0009.171 (0) 1378741158: this backup set remains non-empty; will retain in history
+0009.174 (0) Examining backup set with datestamp: 1378216514
+0009.176 (0) 1378216514: this set includes files; fileset count is now 4
+0009.178 (0) 1378216514: over retain limit (3); will delete this file set
+0009.179 (0) Delete file: backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-plugins.zip, service=googledrive
+0010.050 (0) backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-plugins.zip: Deletion successful
+0010.054 (0) Delete file: backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-themes.zip, service=googledrive
+0010.630 (0) backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-themes.zip: Deletion successful
+0010.632 (0) Delete file: backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-uploads.zip, service=googledrive
+0011.316 (0) backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-uploads.zip: Deletion successful
+0011.319 (0) Delete file: backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-others.zip, service=googledrive
+0012.134 (0) backup_2013-09-03-1355_Our_New_Tenet_bd7bcaeeec99-others.zip: Deletion successful
+0012.138 (0) 1378216514: this backup set is now empty; will remove from history
+0012.139 (0) 1378216514: corresponding log file not found - must have already been deleted
+0012.140 (0) Retain: saving new backup history (sets now: 9) and finishing retain operation
+0012.145 (0) Resume backup (30021703ec6a, 0): finish run
+0012.147 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0012.156 (0) Sending email ('Files and database') report to: cobb....
+0014.636 (0) The backup apparently succeeded (with warnings) and is now complete

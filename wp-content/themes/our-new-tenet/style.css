@@ -44,7 +44,7 @@ body {
 
 .home {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x.jpg) !important;
-  background-position: 0 134px;
+  background-position: 0 129px;
   background-size: auto 353px;
   background-repeat: repeat-x;
 }
@@ -80,7 +80,6 @@ body {
 
 .header-wrap {
   height: 100px;
-  margin-bottom: 40px;
 }
 
 #header #site-title.graphic a {

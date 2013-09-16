@@ -3,6 +3,10 @@ include("functions/integration_update_widget.php");
 
 add_shortcode('fast_facts', 'fast_facts_func');
 
+// Hide the admin bar
+add_filter('show_admin_bar', '__return_false');
+
+
 /* Some code taken from the following:
 
 Plugin Name: Peter's Redirect On First Login (user-meta based)

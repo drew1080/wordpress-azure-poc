@@ -242,21 +242,23 @@ function fast_facts_func($atts, $content = null) {
   query_posts('post_type="fast_fact"&posts_per_page=1&orderby=rand');
   if (have_posts()) : 
   	while (have_posts()) : the_post(); 
-  		$fast_fact_text = '<div class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div>';
+  		$fast_fact_text = '<div id="fast-facts-wrapper"><div id="fast-fact" class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div></div>';
   	endwhile;
   endif; 
   wp_reset_query();
-  
-  $html = '<div class="slider ' . $has_excerpt_class . ' ' . $class . '" style="background-image: url(' . $image_url . '); background-repeat: no-repeat;">
-	          <div class="slider-content" >
-    			    <div class="inner-content">
-    			      <h1 class="entry-title">' . $title . '</h1>
-        			  <p>' . $excerpt . '</p>
-      			  </div>
-            </div>
-            <div class="clear"></div>
-          </div>';
 
 	return $fast_fact_text; 
 }
+
+function register_ajaxLoop_script() {
+    wp_register_script(
+       'ajaxLoop',
+        get_stylesheet_directory_uri() . '/js/ajaxLoop.js',
+        array('jquery'),
+        NULL
+    );
+    wp_enqueue_script('ajaxLoop');
+}
+add_action('wp_enqueue_scripts', 'register_ajaxLoop_script');
+
 ?>

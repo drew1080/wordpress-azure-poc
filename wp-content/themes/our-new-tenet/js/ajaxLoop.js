@@ -10,7 +10,8 @@ jQuery(function($){
                 type       : "GET",
                 data       : {numPosts : 1},
                 dataType   : "html",
-                url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
+                //DEV NOTE...if localhost add /wordpress-azure-poc to URL
+                url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
                 success    : function(data){
                     $data = $(data);
                     if($data.length){

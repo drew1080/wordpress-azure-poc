@@ -284,6 +284,12 @@ li.menu-item {
   background: url(images/toggle-rt-sm-orange.png) no-repeat 182px 13px;
 }
 
+.menu-side-nav-container li.menu-item.current-menu-item a {
+  color: #3c3c39;
+  font-weight: normal;
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 182px 13px;
+}
+
 /* Slider styling */
 
 .advanced-slider .thumbnail {  

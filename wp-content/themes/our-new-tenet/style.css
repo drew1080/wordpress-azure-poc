@@ -9,6 +9,17 @@ Template:       skeleton
 
 @import url("../skeleton/style.css");
 
+html
+{
+   background: url(/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='scale')";
+}
+
 h1, h2, h3, h4 {
   color: #008080;
 }
@@ -33,7 +44,7 @@ body {
 }
 
 .home {
-  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x.jpg);
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x.jpg) !important;
   background-position: 0 122px;
   background-size: auto 353px;
   background-repeat: repeat-x;

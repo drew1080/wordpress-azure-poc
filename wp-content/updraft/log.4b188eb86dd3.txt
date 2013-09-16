@@ -1,0 +1,197 @@
+0000.000 () Opened log file at time: Mon, 16 Sep 2013 15:39:14 +0000
+0000.004 () UpdraftPlus: 1.7.3 WP: 3.6.1 PHP: 5.4.10 (Darwin bsalato73hou.pariveda.local 12.4.1 Darwin Kernel Version 12.4.1: Tue May 21 17:04:50 PDT 2013; root:xnu-2050.40.51~1/RELEASE_X86_64 x86_64) MySQL: 5.5.29 Server: Apache/2.2.23 (Unix) mod_ssl/2.2.23 OpenSSL/0.9.8x DAV/2 PHP/5.4.10 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 14.8M) ZipArchive::addFile : Y
+0000.007 () Free space on disk containing Updraft's temporary directory: 145769.3 Mb
+0000.012 () Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: daily)
+0000.014 () Processed schedules. Tasks now: Backup files: 1 Backup DB: 
+0000.023 (0) Backup run: resumption=0, nonce=4b188eb86dd3, begun at=1379345954 (0s ago), job type=backup
+0000.024 (0) Scheduling a resumption (1) after 300 seconds (1379346254) in case this run gets aborted
+0000.061 (0) Checking if we have a zip executable available
+0000.062 (0) Testing: /usr/bin/zip
+0000.082 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.085 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.087 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.089 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=127) (out=105) (deflated 17%)
+0000.090 (0) Output: total bytes=127, compressed=105 -> 17% savings
+0000.107 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=134) (out=109) (deflated 19%)
+0000.110 (0) Output: total bytes=261, compressed=214 -> 18% savings
+0000.146 (0) Working binary zip found: /usr/bin/zip
+0000.147 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.149 (0) Creation of backups of directories: beginning
+0000.153 (0) Beginning creation of dump of plugins (split every: 800 Mb)
+0000.282 (0) Remaining entities to add to zip file: 446 directories, 2392 files
+0000.289 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0000.296 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0000.301 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0000.309 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0000.314 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0000.316 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.6 Mb, 2392 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0001.201 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 2.60 Mb
+0001.212 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 600 files added (on-disk size: 2645.6 Kb)
+0001.219 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 700 files added (on-disk size: 2645.6 Kb)
+0001.225 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 800 files added (on-disk size: 2645.6 Kb)
+0001.232 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 900 files added (on-disk size: 2645.6 Kb)
+0001.241 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1000 files added (on-disk size: 2645.6 Kb)
+0001.252 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.7 Mb, 2392 files batched, 501 (1002) added so far); re-opening (prior size: 2645.6 Kb)
+0001.325 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 2.60 Mb
+0001.808 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 4.30 Mb
+0001.819 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1100 files added (on-disk size: 4426.4 Kb)
+0001.828 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1200 files added (on-disk size: 4426.4 Kb)
+0001.834 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1300 files added (on-disk size: 4426.4 Kb)
+0001.841 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1400 files added (on-disk size: 4426.4 Kb)
+0001.849 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1500 files added (on-disk size: 4426.4 Kb)
+0001.852 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.6 Mb, 2392 files batched, 501 (1503) added so far); re-opening (prior size: 4426.4 Kb)
+0001.907 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 4.30 Mb
+0002.567 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 6.60 Mb
+0002.581 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1600 files added (on-disk size: 6770.8 Kb)
+0002.587 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1700 files added (on-disk size: 6770.8 Kb)
+0002.595 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1800 files added (on-disk size: 6770.8 Kb)
+0002.607 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 1900 files added (on-disk size: 6770.8 Kb)
+0002.616 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 2000 files added (on-disk size: 6770.8 Kb)
+0002.619 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.9 Mb, 2392 files batched, 501 (2004) added so far); re-opening (prior size: 6770.8 Kb)
+0002.674 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 6.60 Mb
+0003.099 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 8.20 Mb
+0003.114 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 2100 files added (on-disk size: 8439.3 Kb)
+0003.127 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 2200 files added (on-disk size: 8439.3 Kb)
+0003.138 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: 2300 files added (on-disk size: 8439.3 Kb)
+0003.214 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 8.20 Mb
+0004.096 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip.tmp: size is now: 11.30 Mb
+0004.108 (0) Created plugins zip (0) - 11544.9 Kb in 4 s (2920.7 Kb/s)
+0004.112 (0) Beginning creation of dump of themes (split every: 800 Mb)
+0004.131 (0) Remaining entities to add to zip file: 33 directories, 302 files
+0004.140 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0004.149 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0004.157 (0) Zip: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0004.479 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip.tmp: size is now: 1.20 Mb
+0004.487 (0) Created themes zip (0) - 1224.3 Kb in 0.4 s (3285.6 Kb/s)
+0004.493 (0) Beginning creation of dump of uploads (split every: 800 Mb)
+0004.498 (0) Remaining entities to add to zip file: 3 directories, 0 files
+0004.504 (0) Looked-for uploads zip (0) was not found (backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-uploads.zip.tmp)
+0004.509 (0) Beginning backup of other directories found in the content directory (index: 0)
+0004.511 (0) Looking for candidates to back up in: /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content
+0004.512 (0) finding files: .DS_Store: adding to list
+0004.514 (0) finding files: index.php: adding to list
+0004.516 (0) finding files: plugins: skipping: this is the plugins directory
+0004.517 (0) finding files: ssp_skins: adding to list
+0004.520 (0) finding files: themes: skipping: this is the themes directory
+0004.524 (0) finding files: updraft: skipping: this is the updraft directory
+0004.526 (0) finding files: uploads: skipping: this is the uploads directory
+0004.532 (0) Remaining entities to add to zip file: 5 directories, 11 files
+0004.561 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip.tmp: size is now: 0.00 Mb
+0004.565 (0) Created others zip (0) - 17.7 Kb in 0 s (490.2 Kb/s)
+0004.578 (0) Saving backup status to database (elements: 6)
+0004.582 (0) No database backup - not part of this run
+0004.584 (0) Saving backup history
+0004.592 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0004.595 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0004.597 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip: others: This file has not yet been successfully uploaded: will queue
+0004.598 (0) Requesting upload of the files that have not yet been successfully uploaded (3)
+0004.599 (0) Cloud backup selection: googledrive
+0004.622 (0) Beginning dispatch of backup to remote
+0004.636 (0) Google Drive: requesting access token: client_id=1019953586783.apps.googleusercontent.com
+0004.876 (0) Google Drive: successfully obtained access token
+0005.679 (0) Google Drive quota usage: used=20778.9 Mb, total=36864 Mb, available=16085.1 Mb
+0005.681 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip: Attempting to upload to Google Drive
+0005.682 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip: Attempting to upload file to Google Drive.
+0006.325 (0) Uploading file with title backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip
+0006.328 (0) Googledrive chunked upload: 0 % uploaded (URL: https://docs.google.com/feeds/upload/create-session/default/private/full/folder%3A0BxqIa57POttUMkZxbVFDR3FfZFk/contents?convert=false&upload_id=AEnB2UrhXg4bUkBNZrKHrdqCZEJFsDbYlzkh4YjgCzbaYDqzUxIdi7EOKzob2tBz8-KlRg_mYLqHQM-mCr08Y-4lFSQubOVxfA)
+0008.957 (0) Googledrive chunked upload: 4 % uploaded
+0011.504 (0) Googledrive chunked upload: 8 % uploaded
+0013.549 (0) Googledrive chunked upload: 13 % uploaded
+0015.424 (0) Googledrive chunked upload: 17 % uploaded
+0017.833 (0) Googledrive chunked upload: 22 % uploaded
+0020.353 (0) Googledrive chunked upload: 26 % uploaded
+0022.154 (0) Googledrive chunked upload: 31 % uploaded
+0024.024 (0) Googledrive chunked upload: 35 % uploaded
+0025.834 (0) Googledrive chunked upload: 39 % uploaded
+0027.656 (0) Googledrive chunked upload: 44 % uploaded
+0029.558 (0) Googledrive chunked upload: 48 % uploaded
+0031.539 (0) Googledrive chunked upload: 53 % uploaded
+0033.442 (0) Googledrive chunked upload: 57 % uploaded
+0035.277 (0) Googledrive chunked upload: 62 % uploaded
+0037.911 (0) Googledrive chunked upload: 66 % uploaded
+0039.666 (0) Googledrive chunked upload: 70 % uploaded
+0041.541 (0) Googledrive chunked upload: 75 % uploaded
+0043.395 (0) Googledrive chunked upload: 79 % uploaded
+0045.246 (0) Googledrive chunked upload: 84 % uploaded
+0047.219 (0) Googledrive chunked upload: 88 % uploaded (URL: https://docs.google.com/feeds/upload/create-session/default/private/full/folder%3A0BxqIa57POttUMkZxbVFDR3FfZFk/contents?convert=false&upload_id=AEnB2UrhXg4bUkBNZrKHrdqCZEJFsDbYlzkh4YjgCzbaYDqzUxIdi7EOKzob2tBz8-KlRg_mYLqHQM-mCr08Y-4lFSQubOVxfA)
+0049.104 (0) Googledrive chunked upload: 93 % uploaded
+0050.985 (0) Googledrive chunked upload: 97 % uploaded
+0053.288 (0) The file was successfully uploaded to Google Drive in 46.962 seconds at an upload speed of 245 kB/s.
+0053.293 (0) OK: Archive backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip uploaded to Google Drive in 47.61 seconds (id: 0BxqIa57POttUVjhxckxYRlJsdWM)
+0053.294 (0) Recording as successfully uploaded: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip (0a798c8dda074951274c3a91560ba211)
+0053.300 (0) Stored file<->id correlation in database (backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip <-> 0BxqIa57POttUVjhxckxYRlJsdWM)
+0053.301 (0) Deleting local file: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-plugins.zip
+0053.304 (0) Google Drive quota usage: used=20778.9 Mb, total=36864 Mb, available=16085.1 Mb
+0053.305 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip: Attempting to upload to Google Drive
+0053.306 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip: Attempting to upload file to Google Drive.
+0053.534 (0) Uploading file with title backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip
+0053.537 (0) Googledrive chunked upload: 0 % uploaded (URL: https://docs.google.com/feeds/upload/create-session/default/private/full/folder%3A0BxqIa57POttUMkZxbVFDR3FfZFk/contents?convert=false&upload_id=AEnB2UqKSeIezg5F8iE2zjZRfSESDKy476mqFH3shifrrL6T52znq0NYBox_lAuLz2DqzTI_gknN14e9HEY4NwCjhePnXK_F1A)
+0055.561 (0) Googledrive chunked upload: 41 % uploaded
+0057.554 (0) Googledrive chunked upload: 83 % uploaded
+0059.116 (0) The file was successfully uploaded to Google Drive in 5.582 seconds at an upload speed of 286 kB/s.
+0059.121 (0) OK: Archive backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip uploaded to Google Drive in 5.81 seconds (id: 0BxqIa57POttUY3V1X2oyd2pHOU0)
+0059.123 (0) Recording as successfully uploaded: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip (3bcec3da423acfbd63ef1b7606eab40d)
+0059.128 (0) Stored file<->id correlation in database (backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip <-> 0BxqIa57POttUY3V1X2oyd2pHOU0)
+0059.129 (0) Deleting local file: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-themes.zip
+0059.131 (0) Google Drive quota usage: used=20778.9 Mb, total=36864 Mb, available=16085.1 Mb
+0059.132 (0) backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip: Attempting to upload to Google Drive
+0059.133 (0) /Applications/MAMP/htdocs/wordpress-azure-poc/wp-content/updraft/backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip: Attempting to upload file to Google Drive.
+0059.371 (0) Uploading file with title backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip
+0059.373 (0) Googledrive chunked upload: 0 % uploaded (URL: https://docs.google.com/feeds/upload/create-session/default/private/full/folder%3A0BxqIa57POttUMkZxbVFDR3FfZFk/contents?convert=false&upload_id=AEnB2Ur-K4pRZpP3cbVlCG8tae0_iTTfO7E4ZVxRssyatCjf2-nZxW98vxK3l98eJeOfvqxMfFztllGdV6zG8cEpdLRP7VT3Ew)
+0060.229 (0) The file was successfully uploaded to Google Drive in 0.858 seconds at an upload speed of 13 kB/s.
+0060.233 (0) OK: Archive backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip uploaded to Google Drive in 1.1 seconds (id: 0BxqIa57POttUVXRMRHBQTTZYcnc)
+0060.234 (0) Recording as successfully uploaded: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip (fabe38c10ecb93ea74a9ad50cffd7d2d)
+0060.238 (0) Stored file<->id correlation in database (backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip <-> 0BxqIa57POttUVXRMRHBQTTZYcnc)
+0060.240 (0) Deleting local file: backup_2013-09-16-1539_Our_New_Tenet_4b188eb86dd3-others.zip
+0060.242 (0) Retain: beginning examination of existing backup sets
+0060.243 (0) Retain files: user setting: number to retain = 3
+0060.244 (0) Retain db: user setting: number to retain = 7
+0060.245 (0) Number of backup sets in history: 11
+0060.247 (0) Examining backup set with datestamp: 1379345954
+0060.248 (0) 1379345954: this set includes files; fileset count is now 1
+0060.249 (0) 1379345954: this backup set remains non-empty; will retain in history
+0060.251 (0) Examining backup set with datestamp: 1379262496
+0060.253 (0) 1379262496: this set includes a database (backup_2013-09-15-1628_Our_New_Tenet_d5ccd1e408d3-db.gz); db count is now 1
+0060.255 (0) 1379262496: this backup set remains non-empty; will retain in history
+0060.257 (0) Examining backup set with datestamp: 1379173212
+0060.258 (0) 1379173212: this set includes a database (backup_2013-09-14-1540_Our_New_Tenet_1633cf2b55a1-db.gz); db count is now 2
+0060.260 (0) 1379173212: this backup set remains non-empty; will retain in history
+0060.261 (0) Examining backup set with datestamp: 1379086776
+0060.262 (0) 1379086776: this set includes a database (backup_2013-09-13-1539_Our_New_Tenet_3d32efb1d829-db.gz); db count is now 3
+0060.264 (0) 1379086776: this backup set remains non-empty; will retain in history
+0060.266 (0) Examining backup set with datestamp: 1379000348
+0060.268 (0) 1379000348: this set includes a database (backup_2013-09-12-1539_Our_New_Tenet_0be6d41a0807-db.gz); db count is now 4
+0060.270 (0) 1379000348: this backup set remains non-empty; will retain in history
+0060.271 (0) Examining backup set with datestamp: 1378914117
+0060.272 (0) 1378914117: this set includes a database (backup_2013-09-11-1541_Our_New_Tenet_f9f83e70413b-db.gz); db count is now 5
+0060.274 (0) 1378914117: this backup set remains non-empty; will retain in history
+0060.275 (0) Examining backup set with datestamp: 1378827549
+0060.276 (0) 1378827549: this set includes a database (backup_2013-09-10-1539_Our_New_Tenet_4bb9b93cccf9-db.gz); db count is now 6
+0060.277 (0) 1378827549: this backup set remains non-empty; will retain in history
+0060.279 (0) Examining backup set with datestamp: 1378741341
+0060.281 (0) 1378741341: this set includes a database (backup_2013-09-09-1542_Our_New_Tenet_d16796b48480-db.gz); db count is now 7
+0060.282 (0) 1378741341: this backup set remains non-empty; will retain in history
+0060.284 (0) Examining backup set with datestamp: 1378741158
+0060.284 (0) 1378741158: this set includes files; fileset count is now 2
+0060.286 (0) 1378741158: this backup set remains non-empty; will retain in history
+0060.287 (0) Examining backup set with datestamp: 1378216514
+0060.288 (0) 1378216514: this set includes files; fileset count is now 3
+0060.290 (0) 1378216514: this backup set remains non-empty; will retain in history
+0060.291 (0) Examining backup set with datestamp: 1377531558
+0060.293 (0) 1377531558: this set includes files; fileset count is now 4
+0060.294 (0) 1377531558: over retain limit (3); will delete this file set
+0060.295 (0) Delete file: backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-plugins.zip, service=googledrive
+0062.583 (0) backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-plugins.zip: Deletion successful
+0062.590 (0) Delete file: backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-themes.zip, service=googledrive
+0063.482 (0) backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-themes.zip: Deletion successful
+0063.485 (0) Delete file: backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-uploads.zip, service=googledrive
+0064.543 (0) backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-uploads.zip: Deletion successful
+0064.546 (0) Delete file: backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-others.zip, service=googledrive
+0065.386 (0) backup_2013-08-26-1539_Our_New_Tenet_c7600f74ac10-others.zip: Deletion successful
+0065.390 (0) 1377531558: this backup set is now empty; will remove from history
+0065.391 (0) 1377531558: corresponding log file not found - must have already been deleted
+0065.392 (0) Retain: saving new backup history (sets now: 10) and finishing retain operation
+0065.395 (0) Resume backup (4b188eb86dd3, 0): finish run
+0065.398 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0065.407 (0) Sending email ('Files only (database was not part of this particular schedule)') report to: cobb....
+0069.132 (0) The backup apparently succeeded (with warnings) and is now complete

@@ -60,12 +60,13 @@ body {
 #wrap #header {
   max-width: 400px;
   float: left;
+  margin-bottom: 64px;
 }
 
 #wrap #navigation {
   max-width: 520px;
   clear: none;
-  margin: 10px 0 10px 0;
+  margin: 0 0 10px 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -82,43 +83,47 @@ body {
   -webkit-border-radius: 0;
 }
 
-#navigation ul li {
+#navigation .menu-header ul li {
   background: none;
   border: none;
 }
 
-#navigation ul li a {
+#navigation .menu-header ul li a {
   border: none;
   padding: 10px;
-  margin: 0px 7px;
-  color: #353737;
-  font-weight: normal;
+  padding-right: 20px;
+  margin: 0px 4px;
+  color: #c8c7c6;
+  text-transform: uppercase;
+  font-weight: 300;
   text-shadow: none;
+  border-right: 1px solid;
 }
 
-ul li:hover a, #navigation ul li a:hover {
-  color: #353737;
-  background: #F0F0F0;
+#navigation .menu-header ul li a:hover {
+  color: #3c3c39;
+  font-weight: normal;
   border: none;
+  background: none;
+  text-shadow: none;
+  border-right: 1px solid;
 }
 
-#navigation ul li.active a {
-  background: #F0F0F0;
-  border: none;
-}
 
 #navigation ul li.menu-item-login-logout {
-  background-image: url(/wp-content/themes/our-new-tenet/images/img-login.png);
+  background-image: url(images/img-login.png);
   background-repeat: no-repeat;
   width: 90px;
   height: 87px;
   display:block;
+  margin-left: 48px;
 /*  text-indent:-9999px;*/
 }
 
 #navigation ul li.menu-item-login-logout a {
   color: #FFF;
-  margin: 47px 0px 0px 12px;
+  margin: 44px 0 0 0;
+  padding: 10px;
 }
 
 #navigation ul li.menu-item-login-logout:hover {

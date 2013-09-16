@@ -94,6 +94,33 @@ ul li:hover a, #navigation ul li a:hover {
   border: none;
 }
 
+#navigation ul li.menu-item-login-logout {
+  background-image: url(/wp-content/themes/our-new-tenet/images/img-login.png);
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 87px;
+  display:block;
+/*  text-indent:-9999px;*/
+}
+
+#navigation ul li.menu-item-login-logout a {
+  color: #FFF;
+  margin: 47px 0px 0px 12px;
+}
+
+#navigation ul li.menu-item-login-logout:hover {
+  cursor: pointer;
+}
+
+#navigation ul li.menu-item-login-logout a:hover {
+  background: none;
+}
+
+#navigation ul li.menu-item-login-logout:hover a {
+  background: none;
+  border: none;
+}
+
 /* Logout image
 #menu-item-51 {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/logout-circle.png) !important;
@@ -119,7 +146,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 }
 
 
-.login a {
+/*.login a {
   background-image: url(http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/08/log-out-employees.png);
   background-size: contain;
   width: 112px;
@@ -139,7 +166,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   text-indent:-9999px;
   position: absolute;
   right: 2%;
-}
+}*/
 
 .home #credits {
   display: none;

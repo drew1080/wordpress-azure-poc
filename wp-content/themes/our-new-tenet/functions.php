@@ -6,6 +6,17 @@ add_shortcode('fast_facts', 'fast_facts_func');
 // Hide the admin bar
 add_filter('show_admin_bar', '__return_false');
 
+/* Redirect all non-logged-in users to the login page (private site). Add to functions.php. */
+ 
+function admin_redirect() {
+  if ( !is_front_page() && !is_user_logged_in() ) {
+    wp_redirect( home_url('/wp-admin/') );
+    exit;
+  }
+}
+ 
+add_action('get_header', 'admin_redirect');
+
 
 /* Some code taken from the following:
 

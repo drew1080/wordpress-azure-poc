@@ -337,7 +337,7 @@ class wordfence {
 			error_log("Function $func did not return an array and did not generate an error.");
 			$returnArr = array();
 		}
-		if(isset($returnARr['nonce'])){
+		if(isset($returnArr['nonce'])){
 			error_log("Wordfence ajax function return an array with 'nonce' already set. This could be a bug.");
 		}
 		$returnArr['nonce'] = wp_create_nonce('wp-ajax');
@@ -376,7 +376,7 @@ class wordfence {
 	}
 	function isStrongPasswd($passwd, $username ) {
 		$strength = 0; 
-		if(strlen( $passwd ) < 5)
+		if(strlen( trim( $passwd ) ) < 5)
 			return false;
 		if(strtolower( $passwd ) == strtolower( $username ) )
 			return false;
@@ -1218,6 +1218,7 @@ class wordfence {
 	public static function ajax_whois_callback(){
 		require_once('whois/whois.main.php');
 		$val = trim($_POST['val']);
+		$val = preg_replace('/[^a-zA-Z0-9\.\-]+/', '', $val);
 		$whois = new Whois();
 		$result = $whois->Lookup($val);
 		return array('ok' => 1, 'result' => $result);

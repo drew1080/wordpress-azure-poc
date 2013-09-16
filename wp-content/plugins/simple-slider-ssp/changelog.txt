@@ -1,3 +1,7 @@
+== Version 0.8 ==
+* Inline CSS and JS code removed
+* mb_strtoupper function replaced with strtoupper - No fatal error for servers without Multibyte extension
+
 == Version 0.7 ==
 * Editor Access support Added
 * CSS bug fixes and making the default slider skin compatible with more themes

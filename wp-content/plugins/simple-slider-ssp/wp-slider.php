@@ -3,7 +3,7 @@
 Plugin Name: WordPress Slider Plugin
 Plugin URI: http://muneeb.me/wordpress-slider-plugin/
 Description: The best WordPress slider plugin. Period.
-Version: 0.7
+Version: 0.8
 Author: Muneeb
 Author URI: http://muneeb.me/wordpress-slider-plugin/
 License: GPLv2 or later
@@ -22,9 +22,3 @@ require SLIDER_PLUGIN_INCLUDE_DIRECTORY . 'functions.php';
 muneeb_load_ssp();
 
 muneeb_ssp_loaded();
-
-add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
-function dd_remove_update_nag($value) {
- unset($value->response[ plugin_basename(__FILE__) ]);
- return $value;
-}

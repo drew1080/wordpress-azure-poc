@@ -84,14 +84,14 @@ body {
 
 
 #wrap #header {
-  max-width: 400px;
+  width: 208px;
   float: left;
   margin: 40px 0 0 0;
 }
 
 .header-wrap {
   height: 120px;
-  max-width: 960px;
+  width: 100%;
 }
 
 #wrap #navigation {
@@ -113,6 +113,11 @@ body {
   border-color: #FFF;
   -webkit-border-radius: 0;
   margin-left: 38px;
+  visibility: hidden;
+}
+
+.home #navigation ul#menu-top-nav {
+  visibility: visible;
 }
 
 #navigation .menu-header ul li {
@@ -168,6 +173,7 @@ body {
   margin-top: -10px;
   margin-left: 30px;
   border-right: none;
+  visibility: visible;
 /*  text-indent:-9999px;*/
 }
 
@@ -501,9 +507,9 @@ p.trigger.active:hover {
 }
 
 @media only screen and (max-width: 960px) and (min-width: 767px)  {
-  #header .inner #site-title.graphic a {
+/*  #header .inner #site-title.graphic a {
     height: 150px;
-  }
+  }*/
   .login a, .logout a {
     width: 95px;
     height: 85px;
@@ -511,9 +517,9 @@ p.trigger.active:hover {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
-  #header .inner #site-title.graphic a {
-    height: 130px;
-  }
+ /* #header .inner #site-title.graphic a {
+     height: 130px;
+   }*/
   .login a, .logout a {
     width: 85px;
     height: 75px;

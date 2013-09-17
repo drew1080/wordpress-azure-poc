@@ -16,8 +16,6 @@ html
   -moz-background-size: repeat;
   -o-background-size: repeat;
   background-size: repeat;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='repeat');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='repeat')";
 }
 
 h1{

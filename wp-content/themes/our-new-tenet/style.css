@@ -66,7 +66,7 @@ body {
 
 .home #content.sixteen.columns {
   width: 960px;
-  margin: 5px 40px 28px 0;
+  margin: 5px 0 28px 0;
 }
 
 .containter {
@@ -90,10 +90,12 @@ body {
 
 .header-wrap {
   height: 100px;
+  max-width: 960px;
 }
 
 #wrap #navigation {
-  max-width: 540px;
+  max-width: 520px;
+  float: right;
   clear: none;
   margin: 10px 0;
   position: relative;
@@ -109,7 +111,7 @@ body {
   border-radius: 0;
   border-color: #FFF;
   -webkit-border-radius: 0;
-  margin-left: 102px;
+  margin-left: 38px;
 }
 
 #navigation .menu-header ul li {
@@ -165,10 +167,9 @@ body {
   width: 90px;
   height: 87px;
   display:block;
-  margin-left: 15px;
-  position: absolute;
-  right: 48px;
-  top: -10px;
+  position: relative;
+  margin-top: -10px;
+  margin-left: 30px;
   border-right: none;
 /*  text-indent:-9999px;*/
 }
@@ -188,7 +189,6 @@ body {
 
 #navigation ul li.menu-item-login-logout:hover {
   cursor: pointer;
-  position: absolute;
 }
 
 #navigation ul li.menu-item-login-logout a:hover {
@@ -264,6 +264,11 @@ left: 0;
   margin-top: -8px;
 }
 
+#content.eleven.columns {
+  width: 684px;
+  max-width: 100%;
+}
+
 #footer {
   clear: both;
   position: relative;
@@ -279,6 +284,7 @@ left: 0;
 
 .fast-fact {
   width: 684px;
+  max-width: 100%;
   height: 41px;
   margin-bottom: 15px;
 }
@@ -375,10 +381,14 @@ left: 0;
 /*Sidebar styling*/
 
 #sidebar.five.columns {
-  width: 220px;
+  width: 190px;
   margin: 0 10px;
+  float: right;
 }
 
+#wrap #sidebar .widget-container {
+  margin-right: 0;
+}
 
 li.menu-item {
   text-align: right;
@@ -480,6 +490,12 @@ p.trigger.active:hover {
   background: none;
   border-bottom: 1px solid #e5e5e5;
   padding: 0 10px 10px 0;
+}
+
+@media (max-width: 480px) {
+  #content.eleven.columns {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 960px) and (min-width: 767px)  {

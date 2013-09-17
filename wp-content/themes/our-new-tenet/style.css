@@ -538,9 +538,6 @@ p.trigger.active:hover {
 */
 .tp-thumbcontainer div {
 		margin: 6px !important;
-  		-moz-box-shadow: 0 0 10px #AAA;
-  		-webkit-box-shadow: 0 0 10px #AAA;
-		box-shadow: 0 0 10px #AAA;
 } 
 
 /* Make the currently selected thumbnail have a darker shadowbox border */
@@ -554,7 +551,7 @@ p.trigger.active:hover {
 /* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
 .tp-mask {
   width: 785px !important;
-  height: 110px !important;
+  height: 120px !important;
 }
 
 /* Move the whole container over the left slightly to account for the added space */

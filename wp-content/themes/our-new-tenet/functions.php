@@ -2,6 +2,7 @@
 include("functions/integration_update_widget.php");
 
 add_shortcode('fast_facts', 'fast_facts_func');
+add_shortcode('submit_a_question', 'submit_a_question_func');
 
 // Hide the admin bar
 add_filter('show_admin_bar', '__return_false');
@@ -260,5 +261,13 @@ function register_ajaxLoop_script() {
     wp_enqueue_script('ajaxLoop');
 }
 add_action('wp_enqueue_scripts', 'register_ajaxLoop_script');
+
+function submit_a_question_func() {
+  $html = '';
+  
+  $html = '<div class="submit-a-question"><a href="#">SUBMIT A QUESTION</a></div><div class="clear"></div>';
+  
+  return $html;
+}
 
 ?>

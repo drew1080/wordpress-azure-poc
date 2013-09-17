@@ -452,13 +452,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-down-lg-ltgray.png) no-repeat 660px 24px;
+  background: url(images/toggle-down-lg-ltgray.png) no-repeat right bottom 10px;
   border-bottom: 1px solid #e5e5e5;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-down-lg-orange.png) no-repeat 660px 24px;
+  background: url(images/toggle-down-lg-orange.png) no-repeat right bottom 10px;
 }
 
 p.trigger:hover a {
@@ -488,13 +488,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-up-lg-ltgray.png) no-repeat 660px 24px;
+  background: url(images/toggle-up-lg-ltgray.png) no-repeat right bottom 10px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-up-lg-orange.png) no-repeat 660px 24px;
+  background: url(images/toggle-up-lg-orange.png) no-repeat right bottom 10px;
   border: none;
   padding-left: 0;
 }

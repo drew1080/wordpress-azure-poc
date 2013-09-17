@@ -95,7 +95,7 @@ body {
 }
 
 #wrap #navigation {
-  max-width: 520px;
+  max-width: 540px;
   clear: none;
   margin: 10px 0;
   position: relative;
@@ -111,7 +111,7 @@ body {
   border-radius: 0;
   border-color: #FFF;
   -webkit-border-radius: 0;
-  margin-left: 90px;
+  margin-left: 102px;
 }
 
 #navigation .menu-header ul li {

@@ -132,6 +132,10 @@ body {
   text-align: left;
 }
 
+#navigation a {
+ left: 0;
+}
+
 #navigation .menu-header ul li a:hover {
   color: #3c3c39;
   font-weight: normal;
@@ -215,6 +219,11 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   background-size: contain;
   margin: 0 0 0 28px;
 }
+
+#header a {
+left: 0;
+}
+
 .entry-content .flexslider {
   margin: 0 0 10px;
 }
@@ -381,7 +390,7 @@ li.menu-item {
   font-family: Lato;
   border-bottom: none;
   background: none;
-  color: #c8c7c6;
+  color: #949591;
   text-transform: uppercase;
   line-height: 140%;
   padding: 8px 24px 8px 24px;

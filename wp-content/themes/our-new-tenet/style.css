@@ -90,7 +90,7 @@ body {
 }
 
 .header-wrap {
-  height: 100px;
+  height: 120px;
   max-width: 960px;
 }
 
@@ -413,6 +413,10 @@ li.menu-item {
   color: #3c3c39;
   font-weight: normal;
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
+}
+
+.integration-update h3 {
+  margin-top: 90px;
 }
 
 /* Slider styling */

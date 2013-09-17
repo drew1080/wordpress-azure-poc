@@ -11,6 +11,7 @@ jQuery(function($){
                 data       : {numPosts : 1},
                 dataType   : "html",
                 //DEV NOTE...if localhost add /wordpress-azure-poc to URL
+                //url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
                 url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
                 success    : function(data){
                     $data = $(data);
@@ -32,8 +33,10 @@ jQuery(function($){
                     //alert(jqXHR + " :: " + textStatus + " :: " + errorThrown);
                 }
         });
-    }
-    ;
+    };
     
-    setInterval(load_posts, 6000);
+    
+    if ( $content.length > 0 ) {
+      setInterval(load_posts, 6000);
+    }
 });

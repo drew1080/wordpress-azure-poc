@@ -60,7 +60,7 @@ body {
 .home {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x.jpg) !important;
   background-position: 0 129px;
-  background-size: auto 353px;
+  background-size: auto 359px;
   background-repeat: repeat-x;
 }
 
@@ -247,6 +247,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
     height: 24px;
     border: none !important;
     padding: 0px 0px 6px 6px !important;
+	font-family: Lato;
 }
 
 .search-input-box:focus{

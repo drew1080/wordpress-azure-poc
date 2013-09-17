@@ -270,4 +270,21 @@ function submit_a_question_func() {
   return $html;
 }
 
+// Toggle
+
+function toggle_content_func( $atts, $content = null ) {
+	extract(shortcode_atts(array(
+		 'title' => '',
+		 'style' => 'list'
+    ), $atts));
+	output;
+	$output .= '<div class="'.$style.'"><p class="trigger"><a href="#">' .$title. '</a></p>';
+	$output .= '<div class="toggle_container"><div class="block">';
+	$output .= do_shortcode($content);
+	$output .= '</div></div></div>';
+
+	return $output;
+}
+add_shortcode('toggle_content', 'toggle_content_func');
+
 ?>

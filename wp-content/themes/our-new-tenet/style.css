@@ -425,13 +425,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-updown-lg-ltgray.png) no-repeat 620px 10px;
+  background: url(images/toggle-down-lg-ltgray.png) no-repeat 620px 24px;
   border-bottom: 1px solid #e5e5e5;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-updown-lg-orange.png) no-repeat 620px 10px;
+  background: url(images/toggle-down-lg-orange.png) no-repeat 620px 24px;
 }
 
 p.trigger:hover a {
@@ -461,7 +461,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: none;
+  background: url(images/toggle-up-lg-ltgray.png) no-repeat 620px 24px;
+  border: none;
+  padding-left: 0;
+}
+
+p.trigger.active:hover {
+  background: url(images/toggle-up-lg-orange.png) no-repeat 620px 24px;
   border: none;
   padding-left: 0;
 }
@@ -546,7 +552,7 @@ p.trigger.active {
 	border-color: #c8c7c6;
     background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
 	background-repeat:no-repeat;
-	width: 160px;
+	width: 158px;
 	margin-left: 18px !important;
 }
   

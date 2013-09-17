@@ -126,7 +126,7 @@ body {
   background: none;
   padding: 3px 10px;
   margin: 0px 5px;
-  color: #c8c7c6;
+  color: #949591;
   text-transform: uppercase;
   font-weight: 300;
   text-shadow: none;
@@ -212,7 +212,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 #header #site-title.graphic a {
   max-width: 100%;
   background-size: contain;
-  margin: 0 0 0 28px;
+  margin: 0 0 0 16px;
 }
 
 .entry-content .flexslider {

@@ -541,8 +541,11 @@ p.trigger.active:hover {
 		margin: 6px !important;
 } 
 
-/* Make the currently selected thumbnail have a darker shadowbox border */
+.tp-bullets.tp-thumbs{
+	background-color: none;
+}
 
+/* Make the currently selected thumbnail have a darker shadowbox border */
 .bullet.thumb.selected {
   		-moz-box-shadow: 0 0 10px #363636;
   		-webkit-box-shadow: 0 0 10px #363636;

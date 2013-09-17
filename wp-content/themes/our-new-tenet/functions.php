@@ -165,22 +165,6 @@ function my_jquery_enqueue() {
    wp_enqueue_script('jquery');
 }
 
-/* failed experiment adding menus per template - might be useful later.
-
-* Register nav menus
-
-function register_my_menus() {
-
-    register_nav_menus( 
-		array(
-		'side_nav' => 'Side Navigation',
-		'top_nav' => 'Top Navigation'
-		) 
-	);
-}
-
-add_action( 'init', 'register_my_menus' );
-*/
 
 if (!function_exists('st_before_footer'))  {
     function st_before_footer() {

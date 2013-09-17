@@ -98,7 +98,7 @@ body {
   max-width: 520px;
   clear: none;
   margin: 10px 0;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   z-index: 1;
@@ -111,7 +111,7 @@ body {
   border-radius: 0;
   border-color: #FFF;
   -webkit-border-radius: 0;
-  margin-left: 50px;
+  margin-left: 90px;
 }
 
 #navigation .menu-header ul li {

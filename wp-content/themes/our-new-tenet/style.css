@@ -66,7 +66,7 @@ body {
 
 .home #content.sixteen.columns {
   width: 960px;
-  margin: 5px 0 28px 0;
+  margin: -12px 0 28px 0;
 }
 
 .containter {
@@ -422,7 +422,7 @@ li.menu-item {
 }
 
 .integration-update h3 {
-  margin-top: 90px;
+  margin-top: 90px !important;
 }
 
 /* Slider styling */
@@ -440,6 +440,11 @@ li.menu-item {
 .advanced-slider .thumbnail:hover {  
     opacity: 1;  
     cursor: pointer;  
+}
+
+
+.fast-fact {
+  border-radius: 8px;
 }
 
 /*FAQ Styling*/
@@ -514,6 +519,11 @@ p.trigger.active:hover {
     width: 95px;
     height: 85px;
   }
+  
+  #content.eleven.columns {
+    width: 70%;
+  }
+  
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {

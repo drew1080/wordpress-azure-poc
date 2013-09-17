@@ -72,6 +72,7 @@ body {
 .containter {
   height: auto; 
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 .entry-content ul {
@@ -405,13 +406,13 @@ li.menu-item {
 .menu-side-nav-container li.menu-item a:hover {
   color: #3c3c39;
   font-weight: normal;
-  background: url(images/toggle-rt-sm-orange.png) no-repeat 182px 13px;
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
 .menu-side-nav-container li.menu-item.current-menu-item a {
   color: #3c3c39;
   font-weight: normal;
-  background: url(images/toggle-rt-sm-orange.png) no-repeat 182px 13px;
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
 /* Slider styling */
@@ -436,13 +437,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-down-lg-ltgray.png) no-repeat 620px 24px;
+  background: url(images/toggle-down-lg-ltgray.png) no-repeat 660px 24px;
   border-bottom: 1px solid #e5e5e5;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-down-lg-orange.png) no-repeat 620px 24px;
+  background: url(images/toggle-down-lg-orange.png) no-repeat 660px 24px;
 }
 
 p.trigger:hover a {
@@ -472,13 +473,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-up-lg-ltgray.png) no-repeat 620px 24px;
+  background: url(images/toggle-up-lg-ltgray.png) no-repeat 660px 24px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-up-lg-orange.png) no-repeat 620px 24px;
+  background: url(images/toggle-up-lg-orange.png) no-repeat 660px 24px;
   border: none;
   padding-left: 0;
 }

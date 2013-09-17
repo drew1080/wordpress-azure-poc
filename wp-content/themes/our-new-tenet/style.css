@@ -11,13 +11,13 @@ Template:       skeleton
 
 html
 {
-   background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='scale')";
+   background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat; 
+  -webkit-background-size: repeat;
+  -moz-background-size: repeat;
+  -o-background-size: repeat;
+  background-size: repeat;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='repeat');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2013/09/bkgd-repeat-xy.jpg', sizingMethod='repeat')";
 }
 
 h1{
@@ -92,11 +92,6 @@ body {
 
 .header-wrap {
   height: 100px;
-}
-
-#header #site-title.graphic a {
-  width: 200px !important;
-  height: 44px !important;
 }
 
 #wrap #navigation {
@@ -218,6 +213,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 #header #site-title.graphic a {
   max-width: 100%;
   background-size: contain;
+  margin: 0 0 0 28px;
 }
 .entry-content .flexslider {
   margin: 0 0 10px;

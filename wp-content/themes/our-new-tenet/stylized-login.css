@@ -1,0 +1,101 @@
+/* Stylized login screen for Our New Tenet */
+
+html
+{
+   background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat; 
+  -webkit-background-size: repeat;
+  -moz-background-size: repeat;
+  -o-background-size: repeat;
+  background-size: repeat;
+}
+
+body.login {
+background: url('/wp-content/themes/our-new-tenet/images/trans-welcome.png') no-repeat;
+background-position: 50% 100%;
+height: auto;
+}
+
+#login {
+background: url('/wp-content/themes/our-new-tenet/images/badge.png') no-repeat;
+width: 509px;
+height: 555px;
+}
+
+/* Remove default wordpress image */
+.login h1 a{
+background-image: none;
+}
+
+.input
+{
+font-family: Lato;
+font-weight: 400;
+font-size: 12px;
+border-radius: 4px;
+}
+
+/* Remove the background from the login form */
+.login form
+{
+background: none;
+border: none;
+box-shadow: none;
+-webkit-box-shadow: none;
+}
+
+#login_error{
+visibility: hidden;
+}
+
+.login label[for=user_login]{
+margin-top: 70px;
+margin-left: 60px;
+display: inline-block;
+}
+
+.login label[for=user_pass]{
+margin-left: 60px;
+display: inline-block;
+}
+
+#user_login{
+width: 200px;
+display: inline-block;
+font-family: Lato;
+font-size: 12px;
+}
+
+#user_pass{
+width: 200px;
+display: inline-block;
+font-family: Lato;
+font-size: 12px;
+}
+
+#loginform br{
+display: none;
+}
+
+.forgetmenot{
+display: none;
+}
+
+#wp-submit{
+margin-right: 200px;
+background: #d3792e;
+}
+
+#nav {
+display: none;
+}
+
+#backtoblog{
+display: none;
+}
+
+p.submit:after{
+content: 'hello world';
+font-family: Lato;
+font-size: 12px;
+top:30px;
+}

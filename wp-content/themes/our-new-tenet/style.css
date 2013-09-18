@@ -611,3 +611,10 @@ p.trigger.active:hover {
     line-height: 160%;
     margin-left: 10px;
 }
+
+
+/* Login Page Styling */
+
+#loginform {
+background-image:url('/wp-content/themes/our-new-tenet/images/badge.png');
+}

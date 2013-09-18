@@ -271,4 +271,11 @@ function toggle_content_func( $atts, $content = null ) {
 }
 add_shortcode('toggle_content', 'toggle_content_func');
 
+
+// Login styling
+function stylized_login() { 
+echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/stylized-login.css" />';
+}
+add_action('login_head', 'stylized_login');
+
 ?>

@@ -93,9 +93,3 @@ display: none;
 display: none;
 }
 
-p.submit:after{
-content: 'hello world';
-font-family: Lato;
-font-size: 12px;
-top:30px;
-}

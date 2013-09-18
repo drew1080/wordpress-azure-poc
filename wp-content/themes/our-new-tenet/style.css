@@ -273,7 +273,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 #footer {
   clear: both;
   position: relative;
-  float: center !important;
+  float: none !important;
   z-index: 10;
   height: 3em;
   margin-top: -3em;

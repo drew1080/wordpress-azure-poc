@@ -10,8 +10,10 @@ add_filter('show_admin_bar', '__return_false');
 /* Redirect all non-logged-in users to the login page (private site). Add to functions.php. */
  
 function admin_redirect() {
-  if ( !is_front_page() && !is_page('contact-us') && !is_user_logged_in() ) {
-    wp_redirect( home_url('/wp-admin/') );
+  if ( !is_front_page() && !is_page('contact-us') && !is_user_logged_in() && !is_page('login-page')) {
+    //wp_redirect( home_url('/wp-admin/') );
+   // echo get_permalink( 3316 );
+    wp_redirect( get_permalink( 3316 ) );
     exit;
   }
 }
@@ -274,8 +276,43 @@ add_shortcode('toggle_content', 'toggle_content_func');
 
 // Login styling
 function stylized_login() { 
-echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/stylized-login.css" />';
+  //echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>';
+  echo '<script type="text/javascript" src="' . home_url() . '/wp-content/themes/our-new-tenet/js/custom.js"></script>';
+  echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/stylized-login.css" />';
 }
 add_action('login_head', 'stylized_login');
+
+//Use this for a custom login form...but it only appends to the current form
+// function login_form_func() { 
+//   $args = array(
+//       'echo' => false,
+//       'redirect' => admin_url(), 
+//       'form_id' => 'loginform-custom',
+//       'label_username' => __( 'Username custom text' ),
+//       'label_password' => __( 'Password custom text' ),
+//       'label_remember' => __( 'Remember Me custom text' ),
+//       'label_log_in' => __( 'Log In custom text' ),
+//       'remember' => true
+//   );
+//   //'<input type="text" name="log" id="user_login" class="input" value="" size="20">'
+//   $login_form =  wp_login_form( $args );
+//   $login_form =  str_replace('<input type="text" name="log" id="user_login" class="input" value="" size="20">', 
+//                             '<input type="text" name="log" id="user_login" class="input" value="" size="20" placeholder="TEST">',
+//                             $login_form);
+//                             
+//   $login_form =  str_replace('id="user_login"', 
+//                             'id="user_login" placeholder="Last 4 digits of your SSN"',
+//                             $login_form);
+//                             
+//                             
+//   $login_form =  str_replace('id="user_pass"', 
+//                             'id="user_pass" placeholder="Date of birth (mmddyyy)"',
+//                             $login_form);
+//   echo $login_form;
+// }
+// remove_action('login_form', 'wp_login_form');
+// 
+// add_action('login_form', 'login_form_func');
+
 
 ?>

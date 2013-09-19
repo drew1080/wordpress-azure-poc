@@ -251,7 +251,7 @@ add_action('wp_enqueue_scripts', 'register_ajaxLoop_script');
 function submit_a_question_func() {
   $html = '';
   
-  $html = '<div class="submit-a-question"><a href="#">SUBMIT A QUESTION</a></div><div class="clear"></div>';
+  $html = '<div class="submit-a-question"><a href="/submit-a-question "/submit-a-question">SUBMIT A QUESTION</a></div><div class="clear"></div>';
   
   return $html;
 }

@@ -454,13 +454,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-down.png) no-repeat right bottom 10px;
+  background: url(images/toggle-updown.png) no-repeat right bottom -121px;
   border-bottom: 1px solid #e5e5e5;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-down.png) no-repeat right bottom -39px;
+  background: url(images/toggle-updown.png) no-repeat right bottom -78px;
 }
 
 p.trigger:hover a {
@@ -490,13 +490,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-up.png) no-repeat right bottom 10px;
+  background: url(images/toggle-updown.png) no-repeat right bottom 12px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-up.png) no-repeat right bottom -39px;
+  background: url(images/toggle-updown.png) no-repeat right bottom -34px;
   border: none;
   padding-left: 0;
 }

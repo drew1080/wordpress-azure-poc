@@ -134,14 +134,14 @@ body {
   margin: 0px 5px;
   color: #949591;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   text-shadow: none;
   text-align: left;
 }
 
 #navigation .menu-header ul li a:hover {
   color: #3c3c39;
-  font-weight: 400;
+  font-weight: normal;
   border: none;
   background: none;
   text-shadow: none;
@@ -273,7 +273,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 #footer {
   clear: both;
   position: relative;
-  float: none !important;
+  float: center !important;
   z-index: 10;
   height: 3em;
   margin-top: -3em;
@@ -454,13 +454,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-down-lg-ltgray.png) no-repeat right bottom 10px;
+  background: url(images/toggle-down.png) no-repeat right bottom 10px;
   border-bottom: 1px solid #e5e5e5;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-down-lg-orange.png) no-repeat right bottom 10px;
+  background: url(images/toggle-down.png) no-repeat right bottom -39px;
 }
 
 p.trigger:hover a {
@@ -490,13 +490,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-up-lg-ltgray.png) no-repeat right bottom 10px;
+  background: url(images/toggle-up.png) no-repeat right bottom 10px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-up-lg-orange.png) no-repeat right bottom 10px;
+  background: url(images/toggle-up.png) no-repeat right bottom -39px;
   border: none;
   padding-left: 0;
 }
@@ -584,11 +584,10 @@ p.trigger.active:hover {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #c8c7c6;
-	border-radius: 4px;
     background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
 	background-repeat:no-repeat;
 	width: 158px;
-	margin-left: 8px !important;
+	margin-left: 18px !important;
 }
   
 .integration-update h3{
@@ -610,11 +609,4 @@ p.trigger.active:hover {
 	color: #3c3c39;
     line-height: 160%;
     margin-left: 10px;
-}
-
-
-/* Login Page Styling */
-
-#loginform {
-background-image:url('/wp-content/themes/our-new-tenet/images/badge.png');
 }

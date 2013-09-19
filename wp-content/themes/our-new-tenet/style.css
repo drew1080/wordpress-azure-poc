@@ -58,9 +58,8 @@ body {
 }
 
 .home {
-  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x.jpg) !important;
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x1.jpg) !important;
   background-position: 0 129px;
-  background-size: auto 360px;
   background-repeat: repeat-x;
 }
 

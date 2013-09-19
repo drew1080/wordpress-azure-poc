@@ -242,12 +242,11 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
     background-color: transparent !important;
     background:url(/wp-content/themes/our-new-tenet/images/img-searchbox.png);
     background-repeat: no-repeat;
-/*    cursor:pointer;*/
     width: 150px;
     height: 24px;
     border: none !important;
     padding: 0px 0px 6px 6px !important;
-	font-family: Lato;
+	font-family: Lato !important;
 }
 
 .search-input-box:focus{

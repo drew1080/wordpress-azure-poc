@@ -58,7 +58,7 @@ body {
 }
 
 .home {
-  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x1.jpg) !important;
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x360.jpg) !important;
   background-position: 0 129px;
   background-repeat: repeat-x;
 }
@@ -66,10 +66,6 @@ body {
 .home #content.sixteen.columns {
   width: 960px;
   margin: -11px 0 0 0;
-}
-
-.home #footer #credits {
-  padding: 150px 0 30px 0;
 }
 
 .containter {
@@ -457,12 +453,12 @@ p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
   background: url(images/toggle-updown.png) no-repeat 664px 28px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #cac8c7;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-updown.png) no-repeat 664px -39px;
+  background: #eeeeee url(images/toggle-updown.png) no-repeat 664px -39px;
 }
 
 p.trigger:hover a {
@@ -509,9 +505,9 @@ p.trigger.active:hover {
   padding: 0 10px 10px 0;
 }
 
-@media (max-width: 480px) {
-  #content.eleven.columns {
-    max-width: 100%;
+@media (max-width: 960px) {
+  #fast-facts-wrapper {
+    display: none;
   }
 }
 
@@ -524,14 +520,36 @@ p.trigger.active:hover {
     height: 85px;
   }
   
+  .home {
+    background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
+  }
+  
   #content.eleven.columns {
     width: 70%;
   }
   
   .home #content.sixteen.columns {
-    width: 748px;
+    width: 767px;
   }
   
+  p.trigger {
+    background: url(images/toggle-updown.png) no-repeat 520px 28px;
+  }
+  p.trigger:hover {
+    background: #eeeeee url(images/toggle-updown.png) no-repeat 520px -39px;
+  }
+  
+  p.trigger.active {
+    background: url(images/toggle-updown.png) no-repeat 520px -186px;
+    border: none;
+    padding-left: 0;
+  }
+
+  p.trigger.active:hover {
+    background: url(images/toggle-updown.png) no-repeat 520px -111px;
+    border: none;
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -553,6 +571,9 @@ p.trigger.active:hover {
 }
 
 @media (max-width: 480px) {
+  #content.eleven.columns {
+     max-width: 100%;
+   }
   #header .inner #site-title.graphic a {
     height: 100px;
   }
@@ -563,6 +584,10 @@ p.trigger.active:hover {
   .wpcf7 span.wpcf7-not-valid-tip {
     top: 20%;
     left: 5%;
+  }
+  
+  #sidebar {
+    display: none;
   }
 }
 

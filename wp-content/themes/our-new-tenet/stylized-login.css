@@ -48,13 +48,13 @@ visibility: hidden;
 }
 
 .login label[for=user_login]{
-margin-top: 70px;
-margin-left: 60px;
+margin-top: 78px;
+margin-left: 126px;
 display: inline-block;
 }
 
 .login label[for=user_pass]{
-margin-left: 60px;
+margin-left: 126px;
 display: inline-block;
 }
 
@@ -80,9 +80,14 @@ display: none;
 display: none;
 }
 
+.lc_form_text {
+  margin-left: 22px;
+  margin-top: 40px;
+}
+
 #wp-submit{
 margin-right: 200px;
-margin-top: 10px;
+margin-top: -62px;
 background: #d3792e;
 }
 
@@ -92,5 +97,9 @@ display: none;
 
 #backtoblog{
 display: none;
+}
+
+#login_error, .login .message {
+  margin: 0 0 16px -3px;
 }
 

@@ -272,7 +272,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 #footer {
   clear: both;
   position: relative;
-  float: center !important;
+  float: none !important;
   z-index: 10;
   height: 3em;
   margin-top: -3em;
@@ -583,6 +583,7 @@ p.trigger.active:hover {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #c8c7c6;
+	border-radius: 4px;
     background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
 	background-repeat:no-repeat;
 	width: 158px;

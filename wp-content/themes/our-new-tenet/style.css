@@ -65,7 +65,11 @@ body {
 
 .home #content.sixteen.columns {
   width: 960px;
-  margin: -12px 0 28px 0;
+  margin: -11px 0 0 0;
+}
+
+.home #footer #credits {
+  padding: 150px 0 30px 0;
 }
 
 .containter {
@@ -85,7 +89,7 @@ body {
 #wrap #header {
   width: 208px;
   float: left;
-  margin: 41px 0 0 0;
+  margin: 40px 0 0 0;
   height: 80px;
 }
 
@@ -452,13 +456,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-updown.png) no-repeat right bottom -198px;
+  background: url(images/toggle-updown.png) no-repeat 664px 28px;
   border-bottom: 1px solid #e5e5e5;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: url(images/toggle-updown.png) no-repeat right bottom -131px;
+  background: url(images/toggle-updown.png) no-repeat 664px -39px;
 }
 
 p.trigger:hover a {
@@ -488,13 +492,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-updown.png) no-repeat right bottom 16px;
+  background: url(images/toggle-updown.png) no-repeat 664px -186px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-updown.png) no-repeat right bottom -59px;
+  background: url(images/toggle-updown.png) no-repeat 664px -111px;
   border: none;
   padding-left: 0;
 }
@@ -524,6 +528,10 @@ p.trigger.active:hover {
     width: 70%;
   }
   
+  .home #content.sixteen.columns {
+    width: 748px;
+  }
+  
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -537,6 +545,10 @@ p.trigger.active:hover {
   .wpcf7 span.wpcf7-not-valid-tip {
     top: 20%;
     left: 20%;
+  }
+  
+  .home #content.sixteen.columns {
+    width: 480px;
   }
 }
 

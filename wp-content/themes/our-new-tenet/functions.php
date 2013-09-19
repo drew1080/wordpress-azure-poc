@@ -11,9 +11,7 @@ add_filter('show_admin_bar', '__return_false');
  
 function admin_redirect() {
   if ( !is_front_page() && !is_page('contact-us') && !is_user_logged_in() && !is_page('login-page')) {
-    //wp_redirect( home_url('/wp-admin/') );
-   // echo get_permalink( 3316 );
-    wp_redirect( get_permalink( 3316 ) );
+    wp_redirect( home_url('/wp-admin/') );
     exit;
   }
 }
@@ -223,10 +221,10 @@ function fast_facts_func($atts, $content = null) {
   $fast_fact_text = '';
   
   //colors: blue, gold, green, blue
-  $background_colors = array("blue", "gold", "green", "orange");
+  $background_colors = array("gold", "green", "orange", "blue");
   $rand_keys = array_rand($background_colors, 1);
   
-  query_posts('post_type="fast_fact"&posts_per_page=1&orderby=rand');
+  query_posts('post_type="fast_fact"&posts_per_page=1&orderby=date&order=DESC');
   if (have_posts()) : 
   	while (have_posts()) : the_post(); 
   		$fast_fact_text = '<div id="fast-facts-wrapper"><div id="fast-fact" class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div></div>';
@@ -276,7 +274,6 @@ add_shortcode('toggle_content', 'toggle_content_func');
 
 // Login styling
 function stylized_login() { 
-  //echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>';
   echo '<script type="text/javascript" src="' . home_url() . '/wp-content/themes/our-new-tenet/js/custom.js"></script>';
   echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/stylized-login.css" />';
 }

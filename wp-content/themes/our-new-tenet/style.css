@@ -671,12 +671,12 @@ margin-top: -285px;
 margin-left: 500px;
 }
 
-#ceo_name_ep{
+.ceo_name_ep{
 font-weight: 700;
 color: #2c3f6c;
 }
 
-#ceo_title_ep{
+.ceo_title_ep{
 font-weight: 700;
 color: #2c3f6c;
 margin: -13px 0 0px 0;

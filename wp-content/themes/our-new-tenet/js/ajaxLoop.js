@@ -61,18 +61,24 @@ jQuery(function($){
       
       //$('#fast-fact-' + $fast_fact_counter).hide();
       
+      $fast_fact_counter = parseInt($('#fast-facts-wrapper').find('.selected')[0].id.substring(10));
+      
       if ($fast_fact_counter >= $fast_fact_total_count) {
         console.log('HIDE: $fast_fact_counter: ' + $fast_fact_counter);
+        $('#fast-fact-' + $fast_fact_counter).removeClass('selected');
         $('#fast-fact-' + $fast_fact_counter).hide();
         $fast_fact_counter = 0;
         console.log('SHOW: $fast_fact_counter: ' + $fast_fact_counter);
         $('#fast-fact-' + $fast_fact_counter).show();
+        $('#fast-fact-' + $fast_fact_counter).addClass('selected');
       } else {
         console.log('HIDE: $fast_fact_counter: ' + $fast_fact_counter);
+        $('#fast-fact-' + $fast_fact_counter).removeClass('selected');
         $('#fast-fact-' + $fast_fact_counter).hide();
         $fast_fact_counter = $fast_fact_counter + 1;
         console.log('SHOW: $fast_fact_counter: ' + $fast_fact_counter);
         $('#fast-fact-' + $fast_fact_counter).show();
+        $('#fast-fact-' + $fast_fact_counter).addClass('selected');
       }
     }
     

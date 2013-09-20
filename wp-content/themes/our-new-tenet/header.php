@@ -112,7 +112,23 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 <body <?php body_class(); ?>>
 	<div id="wrap" class="container">
 	<div class="resize"></div>
-	<div class="navbar navbar-inverse">
+	<div class="header-wrap">
+	  <?php
+  	st_above_header();
+  	st_header();
+  	st_below_header();
+  	?>
+  	<?php 
+  	st_navbar();
+  	?>
+  	<?php if ( is_user_logged_in () ) { ?>
+  	<div class="search-form">
+  		<?php get_search_form(); ?>
+  	</div>
+	</div>
+	<?php } ?>
+	</div>
+  <div class="navbar navbar-inverse">
     <div class="navbar-inner">
       <div class="container-fluid">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -131,23 +147,6 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
       </div><!-- /.container -->
     </div><!-- /.navbar-inner -->
   </div><!-- /.navbar -->
-	<div class="header-wrap">
-	  <?php
-  	st_above_header();
-  	st_header();
-  	st_below_header();
-  	?>
-  	<?php 
-  	st_navbar();
-  	?>
-  	<?php if ( is_user_logged_in () ) { ?>
-  	<div class="search-form">
-  		<?php get_search_form(); ?>
-  	</div>
-	</div>
-	<?php } ?>
-	
-
 	
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH

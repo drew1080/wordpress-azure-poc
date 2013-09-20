@@ -222,7 +222,7 @@ function fast_facts_func($atts, $content = null) {
   
   //colors: blue, gold, green, blue
   $background_colors = array("gold", "green", "orange", "blue");
-  $rand_keys = array_rand($background_colors, 1);
+  //$rand_keys = array_rand($background_colors, 1);
   
   $selected_class = "selected";
   $display_none = "";

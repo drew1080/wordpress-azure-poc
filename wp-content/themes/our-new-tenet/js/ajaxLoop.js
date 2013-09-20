@@ -33,9 +33,11 @@ jQuery(function($){
         });
     };
     
-    load_posts();
+    //load_posts();
     
     //console.log('BF: $fast_fact_total_count: ' + $fast_fact_total_count);
+    
+    $fast_fact_total_count = $("#fast-facts-wrapper div").length - 1;
     
     var load_fast_facts = function(){
       //$data = $('#fast-fact-values').html();

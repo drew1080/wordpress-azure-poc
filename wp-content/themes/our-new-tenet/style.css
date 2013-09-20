@@ -651,6 +651,11 @@ p.trigger.active:hover {
 display: none;
 }
 
+#post_2861 hr
+{
+margin: 0 0 0 0;
+}
+
 #post-2861 p
 {
 margin: 0 0 10px 0;
@@ -689,4 +694,67 @@ font-style: italic;
 font-size: 11px;
 line-height: 160%;
 font-weight: 600;
+}
+
+
+/*Removal of titles from certain posts*/
+
+/*Contact Us 2*/
+#post-3911 .entry-title
+{
+display: none;
+}
+
+/*Resources page*/
+#post-3471 .entry-title
+{
+display: none;
+}
+
+
+
+/* Resources page styling */
+
+
+#post-3471 .page-restrict-output p
+{
+margin-top: -115px;
+margin-left: 40px;
+font-family: Lato;
+color: white;
+font-size: 15px;
+}
+
+#circle1
+{
+float: left;
+margin-right:50px;
+}
+
+#circle2
+{
+margin-left:50px;
+margin-right:50px;
+float: left;
+}
+
+#circle3
+{
+margin-left:50px;
+float: left;
+}
+
+#circle4
+{
+float: left;
+margin-left: 125px;
+margin-right:50px;
+margin-top: 40px;
+}
+
+#circle5
+{
+margin-left: 50px;
+margin-top: 40px;
+float: left;
 }

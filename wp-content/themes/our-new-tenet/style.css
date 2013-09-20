@@ -651,6 +651,11 @@ p.trigger.active:hover {
 display: none;
 }
 
+#post_2861 hr
+{
+margin: 0 0 0 0;
+}
+
 #post-2861 p
 {
 margin: 0 0 10px 0;
@@ -689,4 +694,11 @@ font-style: italic;
 font-size: 11px;
 line-height: 160%;
 font-weight: 600;
+}
+
+
+/*Removal of titles from certain posts*/
+#post-3911 .entry-title
+{
+display: none;
 }

@@ -36,7 +36,8 @@ jQuery(function($){
         $('#fast-fact').fadeOut('slow');
         $data.hide();
         $content.html('');
-        $content.append($data[$fast_fact_counter]);//data at +2
+        var fast_fact = $data[$fast_fact_counter];
+        $content.append(fast_fact);//data at +2
         $data.fadeIn(1500, function(){
             //$("#temp_load").remove();
             loading = false;

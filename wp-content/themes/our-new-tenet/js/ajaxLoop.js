@@ -15,8 +15,8 @@ jQuery(function($){
                 data       : {numPosts : 1},
                 dataType   : "html",
                 //DEV NOTE...if localhost add /wordpress-azure-poc to URL
-                url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
-                //url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
+                //url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
+                url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
                 success    : function(data){
                     $data = $(data);
                     console.log('Data Length line 20 (AJAX): ' + $data.length);
@@ -36,7 +36,7 @@ jQuery(function($){
         $('#fast-fact').fadeOut('slow');
         $data.hide();
         $content.html('');
-        $content.append($data[$fast_fact_counter]);//data at +2
+        //$content.append($data[$fast_fact_counter]);//data at +2
         $data.fadeIn(1500, function(){
             //$("#temp_load").remove();
             loading = false;

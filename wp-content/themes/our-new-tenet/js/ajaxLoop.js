@@ -71,7 +71,7 @@ jQuery(function($){
       } else {
         console.log('HIDE: $fast_fact_counter: ' + $fast_fact_counter);
         $('#fast-fact-' + $fast_fact_counter).hide();
-        $fast_fact_counter += 1;
+        $fast_fact_counter = $fast_fact_counter + 1;
         console.log('SHOW: $fast_fact_counter: ' + $fast_fact_counter);
         $('#fast-fact-' + $fast_fact_counter).show();
       }

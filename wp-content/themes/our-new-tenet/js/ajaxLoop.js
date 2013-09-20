@@ -1,5 +1,6 @@
 // ajaxLoop.js
 var $data;
+console.log('Data intialized ' + $data);
 
 jQuery(function($){
     var $host = window.location.host;
@@ -18,6 +19,7 @@ jQuery(function($){
                 url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
                 success    : function(data){
                     $data = $(data);
+                    console.log('Data Length line 20 (AJAX): ' + $data.length);
                     $fast_fact_total_count = $data.length - 1;
                 }
         });
@@ -28,6 +30,7 @@ jQuery(function($){
     var $fast_fact_counter = 0;
     
     var load_fast_facts = function(){
+      console.log('Data Length line 31 (load_fast_facts function): ' + $data.length);
       if($data.length){
         $('#fast-fact').fadeOut('slow');
         $data.hide();
@@ -48,6 +51,6 @@ jQuery(function($){
     
     if ( $content.length > 0 ) {
       //setInterval(load_fast_facts, 2000);
-      setInterval(load_fast_facts, 8000);
+      setInterval(load_fast_facts, 2000);
     }
 });

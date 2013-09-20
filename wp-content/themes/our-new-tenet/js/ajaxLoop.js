@@ -1,7 +1,8 @@
 // ajaxLoop.js
+var $data;
+
 jQuery(function($){
     var $host = window.location.host;
-    $data = '';
     var page = 1;
     var loading = true;
     var $window = $(window);
@@ -18,28 +19,11 @@ jQuery(function($){
                 success    : function(data){
                     $data = $(data);
                     $fast_fact_total_count = $data.length - 1;
-                    // if($data.length){
-                    //     $('#fast-fact').fadeOut('slow');
-                    //     $data.hide();
-                    //     $content.html('');
-                    //     $content.append($data);
-                    //     $data.fadeIn(1500, function(){
-                    //         //$("#temp_load").remove();
-                    //         loading = false;
-                    //     });
-                    // } else {
-                    //     //$("#temp_load").remove();
-                    // }
-                },
-                error     : function(jqXHR, textStatus, errorThrown) {
-                    //$("#temp_load").remove();
-                    //alert(jqXHR + " :: " + textStatus + " :: " + errorThrown);
                 }
         });
     };
     
     load_posts();
-    
     
     var $fast_fact_counter = 0;
     
@@ -63,6 +47,7 @@ jQuery(function($){
     }
     
     if ( $content.length > 0 ) {
+      //setInterval(load_fast_facts, 2000);
       setInterval(load_fast_facts, 8000);
     }
 });

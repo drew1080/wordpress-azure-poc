@@ -37,6 +37,8 @@ jQuery(function($){
     
     //console.log('BF: $fast_fact_total_count: ' + $fast_fact_total_count);
     
+    $fast_fact_total_count = $("#fast-facts-wrapper div").length - 1;
+    
     var load_fast_facts = function(){
       //$data = $('#fast-fact-values').html();
       //console.log('Data Length line 31 (load_fast_facts function): ' + $data.length);
@@ -85,6 +87,6 @@ jQuery(function($){
     
     if ( $content.length > 0 ) {
       //setInterval(load_fast_facts, 2000);
-      setInterval(load_fast_facts, 4000);
+      setInterval(load_fast_facts, 8000);
     }
 });

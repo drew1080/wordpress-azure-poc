@@ -1,7 +1,7 @@
 // ajaxLoop.js
 jQuery(function($){
     var $host = window.location.host;
-    var $data = '';
+    $data = '';
     var page = 1;
     var loading = true;
     var $window = $(window);

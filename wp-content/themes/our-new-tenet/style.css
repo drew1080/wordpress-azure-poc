@@ -645,3 +645,27 @@ p.trigger.active:hover {
     line-height: 160%;
     margin-left: 10px;
 }
+
+/* Employee Portal styling */
+#post-2861 .entry-title{
+display: none;
+}
+
+#welcome_image_ep{
+float: left;
+}
+
+#welcome_text_ep{
+float: left;
+}
+
+#heading_text_ep{
+
+}
+
+#body_text_ep{
+font-style: italic;
+font-size: 11px;
+line-height: 160%;
+font-weight: 600;
+}

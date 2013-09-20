@@ -662,13 +662,14 @@ float: left;
 
 #welcome_text_ep{
 float: left;
-margin-top: 45px;
+margin-top: 50px;
+margin-right: 50px;
 }
 
-#heading_text_ep{
-
+#trevor{
+margin-top: -285px;
+margin-left: 500px;
 }
-
 .body_text_ep{
 font-style: italic;
 font-size: 11px;

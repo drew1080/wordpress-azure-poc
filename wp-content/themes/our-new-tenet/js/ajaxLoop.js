@@ -1,5 +1,5 @@
 // ajaxLoop.js
-var $data;
+var $data = new Array();
 console.log('Data intialized ' + $data);
 
 jQuery(function($){
@@ -15,8 +15,8 @@ jQuery(function($){
                 data       : {numPosts : 1},
                 dataType   : "html",
                 //DEV NOTE...if localhost add /wordpress-azure-poc to URL
-                //url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
-                url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
+                url        : "http://" + $host + "/wordpress-azure-poc/wp-content/themes/our-new-tenet/loopHandler.php",
+                //url        : "http://" + $host + "/wp-content/themes/our-new-tenet/loopHandler.php",
                 success    : function(data){
                     $data = $(data);
                     console.log('Data Length line 20 (AJAX): ' + $data.length);
@@ -31,6 +31,7 @@ jQuery(function($){
     
     var load_fast_facts = function(){
       console.log('Data Length line 31 (load_fast_facts function): ' + $data.length);
+      console.log('Data value 0 innerHTML line 31 (load_fast_facts function): ' + $data[0].innerHTML);
       if($data.length){
         $('#fast-fact').fadeOut('slow');
         $data.hide();

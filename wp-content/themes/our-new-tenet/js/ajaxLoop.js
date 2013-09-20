@@ -1,5 +1,6 @@
 // ajaxLoop.js
 var $data = new Array();
+var $fast_fact_counter = 0;
 console.log('Data intialized ' + $data);
 
 jQuery(function($){
@@ -32,8 +33,6 @@ jQuery(function($){
     };
     
     load_posts();
-    
-    var $fast_fact_counter = 0;
     
     //console.log('BF: $fast_fact_total_count: ' + $fast_fact_total_count);
     

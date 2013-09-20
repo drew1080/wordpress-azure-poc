@@ -38,7 +38,7 @@ jQuery(function($){
         });
     };
     
-    load_posts();
+    //load_posts();
     
     
     var $fast_fact_counter = 0;

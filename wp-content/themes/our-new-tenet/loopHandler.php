@@ -23,7 +23,7 @@ $background_colors = array("blue", "gold", "green", "orange");
 $background_color_count = 0;
 $fast_fact_counter = 0;
 
-query_posts('post_type="fast_fact"&posts_per_page=100&orderby=date&order=ASC');
+query_posts('post_type="fast_fact"&posts_per_page=100&orderby=date&order=DESC');
 if (have_posts()) : 
 	while (have_posts()) : the_post(); 
 		$fast_fact_text[$fast_fact_counter] = '<div id="fast-fact-' . $fast_fact_counter . '" class="fast-fact" style="display:none;background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$background_color_count] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div>';

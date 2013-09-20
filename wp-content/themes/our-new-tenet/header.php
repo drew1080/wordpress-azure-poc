@@ -88,6 +88,11 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri();?>/images/apple-touch-icon-114x114.png" />
 
 <link rel="pingback" href="<?php echo get_option('siteurl') .'/xmlrpc.php';?>" />
+
+<link rel="stylesheet" id="bootstrap" href="<?php echo home_url() .'/wp-content/themes/our-new-tenet/util/bootstrap/css/bootstrap.min.css';?>" type="text/css" media="all" />
+
+<link rel="stylesheet" id="bootstrap-responsive" href="<?php echo home_url() .'/wp-content/themes/our-new-tenet/util/bootstrap/css/bootstrap-responsive.min.css';?>" type="text/css" media="all" />
+
 <link rel="stylesheet" id="custom" href="<?php echo home_url() .'/?get_styles=css';?>" type="text/css" media="all" />
 
 <?php
@@ -100,6 +105,7 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	wp_head();
 ?>
 <script type="text/javascript" src="<?php echo home_url(); ?>/wp-content/themes/our-new-tenet/js/custom.js"></script>
+<script type="text/javascript" src="<?php echo home_url(); ?>/wp-content/themes/our-new-tenet/util/bootstrap/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -107,20 +113,40 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	<div id="wrap" class="container">
 	<div class="resize"></div>
 	<div class="header-wrap">
-	<?php
-	st_above_header();
-	st_header();
-	st_below_header();
-	?>
-	<?php 
-	st_navbar();
-	?>
-	<?php if ( is_user_logged_in () ) { ?>
-	<div class="search-form">
-		<?php get_search_form(); ?>
+	  <?php
+    st_above_header();
+    st_header();
+    st_below_header();
+  	?>
+  	<?php 
+  	st_navbar();
+  	?>
+  	
+  	<?php if ( is_user_logged_in () ) { ?>
+  	<div class="search-form">
+  		<?php //get_search_form(); ?>
+  	</div>
+	  <?php } ?>  
 	</div>
-	</div>
-	<?php } ?>
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
+            <li><a href="#">Employee Portal</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Log In</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar-inner -->
+  </div><!-- /.navbar -->
 	
 	<?php
 	// Check if this is a post or page, if it has a thumbnail, and if it exceeds defined HEADER_IMAGE_WIDTH

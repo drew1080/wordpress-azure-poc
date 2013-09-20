@@ -60,6 +60,7 @@ body {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x360.jpg) !important;
   background-position: 0 129px;
   background-repeat: repeat-x;
+  background-color: transparent;
 }
 
 .home #content.sixteen.columns {
@@ -78,6 +79,10 @@ body {
 }
 .entry-content li {
   margin-left: 20px;
+}
+
+.navbar {
+  display: none;
 }
 
 
@@ -457,7 +462,7 @@ p.trigger {
 }
 
 p.trigger:hover {
-  background: #eeeeee url(images/toggle-updown.png) no-repeat 664px -39px;
+  background: #eeeeee url(images/toggle-updown.png) no-repeat 664px -114px;
 }
 
 p.trigger:hover a {
@@ -487,13 +492,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-updown.png) no-repeat 664px -186px;
+  background: url(images/toggle-updown.png) no-repeat 664px -424px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-updown.png) no-repeat 664px -111px;
+  background: url(images/toggle-updown.png) no-repeat 664px -257px;
   border: none;
   padding-left: 0;
 }
@@ -502,6 +507,38 @@ p.trigger.active:hover {
   background: none;
   border-bottom: 1px solid #e5e5e5;
   padding: 0 10px 10px 0;
+}
+
+/*Responsive menu styling*/
+
+.navbar-inverse .navbar-inner {
+  background-image: none !important;
+  border-color: #A5B3CF;
+  background-color: #7ea9c1;
+}
+
+.navbar-inverse .btn-navbar {
+  background-image: none;
+  background-color: #5787a2;
+  margin-bottom: 5px;
+  margin-right: 0px;
+}
+
+.navbar-inverse .btn-navbar:hover {
+  background-color: #5787a2;
+}
+
+.navbar-inverse .nav .active>a {
+  background-color: #5787a2;
+  color: #ffffff;
+} 
+
+.navbar-inverse .nav-collapse .nav>li>a {
+  color: #ffffff;
+}
+.navbar-inverse .nav-collapse .nav>li>a:hover {
+  background-color: #5787a2;
+  color: #ffffff;
 }
 
 @media (max-width: 960px) {
@@ -523,9 +560,9 @@ p.trigger.active:hover {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
   }
   
-  #content.eleven.columns {
+/*  #content.eleven.columns {
     width: 70%;
-  }
+  }*/
   
   .home #content.sixteen.columns {
     width: 767px;
@@ -555,6 +592,14 @@ p.trigger.active:hover {
  /* #header .inner #site-title.graphic a {
      height: 130px;
    }*/
+   
+  .home {
+    background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x180.jpg) !important;
+  }
+   
+  .container {
+    width: 480px
+  }
   .login a, .logout a {
     width: 85px;
     height: 75px;
@@ -563,19 +608,59 @@ p.trigger.active:hover {
     top: 20%;
     left: 20%;
   }
+  .header-wrap {
+    height: 74px;
+  }
+  .header-wrap #header{
+    margin: 24px 0 0 104px !important;
+  }
   
   .home #content.sixteen.columns {
     width: 480px;
   }
+  
+  .navbar {
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .search-form {
+    display: none;
+  }
+  
+  #navigation {
+    display: none;
+  }
+  
+  .tp-bullets.tp-thumbs.round {
+    display: none;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
+  
+  .home .container {
+    width: 320px;
+  }
+  .home #content.sixteen.columns {
+    max-width: 100%;
+  }
+  
   #content.eleven.columns {
      max-width: 100%;
    }
-  #header .inner #site-title.graphic a {
+   
+   .header-wrap {
+      height: 80px;
+    }
+    
+    #wrap #header {
+      margin: 26px 0 0 26px;
+    }
+    
+/*  #header .inner #site-title.graphic a {
     height: 100px;
-  }
+  }*/
   .login a, .logout a {
     width: 50px;
     height: 45px;
@@ -588,6 +673,22 @@ p.trigger.active:hover {
   #sidebar {
     display: none;
   }
+  
+  .search-form {
+     display: none;
+   }
+
+   #navigation {
+     display: none;
+   }
+   
+   .navbar {
+     display: block;
+   }
+
+   .tp-bullets.tp-thumbs.round {
+     display: none;
+   }
 }
 
 /* Revolution Slider styling 

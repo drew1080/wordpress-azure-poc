@@ -515,6 +515,7 @@ p.trigger.active:hover {
   background-image: none !important;
   border-color: #A5B3CF;
   background-color: #7ea9c1;
+/*  height: 40px;*/
 }
 
 .navbar-inverse .btn-navbar {

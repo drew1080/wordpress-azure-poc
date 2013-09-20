@@ -706,7 +706,7 @@ display: none;
 }
 
 /*Resources page*/
-#post-3741 .entry-title
+#post-3471 .entry-title
 {
 display: none;
 }
@@ -714,6 +714,16 @@ display: none;
 
 
 /* Resources page styling */
+
+
+#post-3471 .page-restrict-output p
+{
+margin-top: -115px;
+margin-left: 50px;
+font-family: Lato;
+color: white;
+font-size: 15px;
+}
 
 #circle1
 {

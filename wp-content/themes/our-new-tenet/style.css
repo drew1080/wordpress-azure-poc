@@ -705,7 +705,11 @@ font-weight: 600;
 display: none;
 }
 
-
+/*Resources page*/
+#post-3741 .entry-title
+{
+display: none;
+}
 
 
 

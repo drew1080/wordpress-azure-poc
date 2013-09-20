@@ -9,9 +9,8 @@ Template:       skeleton
 
 @import url("../skeleton/style.css");
 
-html
-{
-   background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat; 
+html {
+  background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat; 
   -webkit-background-size: repeat;
   -moz-background-size: repeat;
   -o-background-size: repeat;

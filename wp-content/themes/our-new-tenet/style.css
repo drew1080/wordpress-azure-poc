@@ -723,7 +723,7 @@ p.trigger.active:hover {
     background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
 	background-repeat:no-repeat;
 	width: 158px;
-	margin-left: 18px !important;
+	margin-left: 8px !important;
 }
   
 .integration-update h3{
@@ -745,4 +745,117 @@ p.trigger.active:hover {
 	color: #3c3c39;
     line-height: 160%;
     margin-left: 10px;
+}
+
+/* Employee Portal styling */
+#post-2861 .entry-title{
+display: none;
+}
+
+#post_2861 hr
+{
+margin: 0 0 0 0;
+}
+
+#post-2861 p
+{
+margin: 0 0 10px 0;
+}
+
+#welcome_image_ep{
+float: left;
+}
+
+#welcome_text_ep{
+float: left;
+margin-top: 50px;
+margin-right: 50px;
+}
+
+#trevor{
+margin-top: -305px;
+margin-left: 500px;
+}
+
+.ceo_name_ep{
+font-weight: 700;
+color: #2c3f6c;
+}
+
+.ceo_title_ep{
+font-weight: 700;
+color: #2c3f6c;
+margin: -13px 0 0 0 !important; 
+font-size: 11px;
+}
+
+
+.body_text_ep{
+font-style: italic;
+font-size: 11px;
+line-height: 160%;
+font-weight: 600;
+}
+
+
+/*Removal of titles from certain posts*/
+
+/*Contact Us 2*/
+#post-3911 .entry-title
+{
+display: none;
+}
+
+/*Resources page*/
+#post-3471 .entry-title
+{
+display: none;
+}
+
+
+
+/* Resources page styling */
+
+
+#post-3471 .page-restrict-output p
+{
+margin-top: -115px;
+margin-left: 40px;
+font-family: Lato;
+color: white;
+font-size: 15px;
+}
+
+#circle1
+{
+float: left;
+margin-right:50px;
+}
+
+#circle2
+{
+margin-left:50px;
+margin-right:50px;
+float: left;
+}
+
+#circle3
+{
+margin-left:50px;
+float: left;
+}
+
+#circle4
+{
+float: left;
+margin-left: 125px;
+margin-right:50px;
+margin-top: 40px;
+}
+
+#circle5
+{
+margin-left: 50px;
+margin-top: 40px;
+float: left;
 }

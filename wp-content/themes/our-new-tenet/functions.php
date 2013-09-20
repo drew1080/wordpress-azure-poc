@@ -227,7 +227,7 @@ function fast_facts_func($atts, $content = null) {
   query_posts('post_type="fast_fact"&posts_per_page=1&orderby=date&order=DESC');
   if (have_posts()) : 
   	while (have_posts()) : the_post(); 
-  		$fast_fact_text = '<div id="fast-facts-wrapper"><div id="fast-fact" class="fast-fact" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div></div>';
+  		$fast_fact_text = '<div id="fast-facts-wrapper"><div id="fast-fact-0" class="fast-fact selected" style="background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-fastfact-' .  $background_colors[$rand_keys] . '.png)"><span class="fast-fact-content">' . get_the_content() . '</span></div></div>';
   	endwhile;
   endif; 
   wp_reset_query();

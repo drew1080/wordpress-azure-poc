@@ -22,6 +22,7 @@ jQuery(function($){
                     $data = $(data);
                     jQuery.each( $data, function( i, val ) {
                       $('#fast-facts-wrapper').append( val.nextElementSibling );
+                      console.log('Data intialized ' + val.nextElementSibling );
                     });
                     
                     $fast_fact_total_count = $("#fast-facts-wrapper div").length - 1;

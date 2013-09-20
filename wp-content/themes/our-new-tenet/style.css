@@ -698,7 +698,41 @@ font-weight: 600;
 
 
 /*Removal of titles from certain posts*/
+
+/*Contact Us 2*/
 #post-3911 .entry-title
 {
 display: none;
+}
+
+
+
+
+
+/* Resources page styling */
+
+#circle1
+{
+float: left;
+}
+
+#circle2
+{
+float: left;
+}
+
+#circle3
+{
+float: left;
+}
+
+#circle4
+{
+float: left;
+margin-left: 100px;
+}
+
+#circle5
+{
+float: left;
 }

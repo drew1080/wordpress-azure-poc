@@ -48,7 +48,7 @@ visibility: hidden;
 }
 
 .login label[for=user_login]{
-margin-top: 78px;
+margin-top: 137px;
 margin-left: 126px;
 display: inline-block;
 }
@@ -101,4 +101,5 @@ display: none;
 
 #login_error, .login .message {
   margin: 0 0 16px -3px;
+  display: none;
 }

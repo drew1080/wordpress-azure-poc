@@ -169,8 +169,7 @@ body {
 }*/
 
 #navigation ul li.menu-item-login-logout {
-  background-image: url(images/img-login.png);
-  background-repeat: no-repeat;
+  background: url(images/button-login-logout.png) no-repeat;
   width: 90px;
   height: 87px;
   display:block;
@@ -179,7 +178,42 @@ body {
   margin-left: 30px;
   border-right: none;
   visibility: visible;
-/*  text-indent:-9999px;*/
+}
+
+#navigation ul li.menu-item-login-logout:hover {
+  background: url(images/button-login-logout.png) no-repeat -108px;
+  width: 90px;
+  height: 87px;
+  display:block;
+  position: relative;
+  margin-top: -10px;
+  margin-left: 30px;
+  border-right: none;
+  visibility: visible;
+}
+
+.logged-in #navigation ul li.menu-item-login-logout {
+  background: url(images/button-login-logout.png) no-repeat -216px;
+  width: 90px;
+  height: 87px;
+  display:block;
+  position: relative;
+  margin-top: -10px;
+  margin-left: 30px;
+  border-right: none;
+  visibility: visible;
+}
+
+.logged-in #navigation ul li.menu-item-login-logout:hover {
+  background: url(images/button-login-logout.png) no-repeat -325px;
+  width: 90px;
+  height: 87px;
+  display:block;
+  position: relative;
+  margin-top: -10px;
+  margin-left: 30px;
+  border-right: none;
+  visibility: visible;
 }
 
 #navigation ul li.menu-item-login-logout a {
@@ -510,6 +544,14 @@ p.trigger.active:hover {
   padding: 0 10px 10px 0;
 }
 
+/*Contact Us styling*/
+
+input.wpcf7-form-control.wpcf7-submit {
+  background-image: url(images/bkgd-button-question-orange.png);
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 /*Responsive menu styling*/
 
 .navbar-inverse .navbar-inner {

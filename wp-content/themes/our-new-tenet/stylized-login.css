@@ -125,6 +125,7 @@ display: none;
   margin-left: 136px;
   }
   
-  .login label[for=user_pass] {
-    margin-left: 136px;
+.login label[for=user_pass] {
+  margin-left: 136px;
+  }
 }

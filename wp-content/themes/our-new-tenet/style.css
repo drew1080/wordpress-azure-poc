@@ -465,7 +465,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   margin-left: 110px;
   display: block;
   padding: 12px 10px 10px 6px;
-  font-family: "latobold_italic", arial, sans-serif;;
+  font-family: "latobold_italic", arial, sans-serif;
 }
 
 .page-id-2721 h1 {
@@ -1074,11 +1074,12 @@ font-size: 11px;
 }
 
 
-.body_text_ep{
-font-style: italic;
-font-size: 11px;
-line-height: 160%;
-font-weight: 600;
+.body_text_ep {
+  font-style: italic;
+  font-family: "latoitalic", arial, sans-serif;
+  font-size: 10px;
+  line-height: 160%;
+  font-style: italic;
 }
 
 

@@ -117,3 +117,14 @@ display: none;
   margin: 0 0 16px -3px;
   display: none;
 }
+
+@media (max-width: 479px) {
+  
+.login label[for=user_login]{
+  margin-top: 246px;
+  margin-left: 136px;
+  }
+  
+  .login label[for=user_pass] {
+    margin-left: 136px;
+}

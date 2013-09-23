@@ -206,6 +206,7 @@ html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.
 body {
   height: 100%;
   background-color: transparent;
+  font-family: "Lato", arial, sans-serif;
 }
 
 .home {

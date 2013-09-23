@@ -1087,10 +1087,10 @@ margin: 0 0 10px 0;
 float: left;
 }
 
-#welcome_text_ep{
+#welcome_text_ep {
 float: left;
 margin-top: 50px;
-margin-right: 50px;
+/*margin-right: 50px;*/
 }
 
 #trevor{

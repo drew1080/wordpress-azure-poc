@@ -799,6 +799,14 @@ input.wpcf7-form-control.wpcf7-submit {
     padding-left: 0;
   }
   
+  .page-id-2721 h1 {
+    width: 100%;
+  }
+
+  .submit-a-question {
+    float: left;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -878,6 +886,15 @@ input.wpcf7-form-control.wpcf7-submit {
     background: url(images/toggle-updown.png) no-repeat 462px -584px;
     border: none;
     padding-left: 0;
+  }
+  
+  .page-id-2721 h1 {
+    width: 100%;
+  }
+
+  .submit-a-question {
+    float: left;
+    margin-bottom: 10px;
   }
 }
 
@@ -960,6 +977,15 @@ input.wpcf7-form-control.wpcf7-submit {
      background: url(images/toggle-updown.png) no-repeat 282px -582px;
      border: none;
      padding-left: 0;
+   }
+   
+   .page-id-2721 h1 {
+     width: 100%;
+   }
+
+   .submit-a-question {
+     float: left;
+     margin-bottom: 10px;
    }
 }
 

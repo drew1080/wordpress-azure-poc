@@ -464,13 +464,13 @@ li.menu-item {
 p.trigger {
   color: #3c3c39;
   padding: 10px 25px 6px 0;
-  background: url(images/toggle-updown.png) no-repeat 664px 28px;
+  background: url(images/toggle-updown.png) no-repeat 664px 24px;
   border-bottom: 1px solid #cac8c7;
   border-top: none;
 }
 
 p.trigger:hover {
-  background: #eeeeee url(images/toggle-updown.png) no-repeat 664px -114px;
+  background: #eeeeee url(images/toggle-updown.png) no-repeat 664px -279px;
 }
 
 p.trigger:hover a {
@@ -500,13 +500,13 @@ p.trigger.active a:hover {
 }
 
 p.trigger.active {
-  background: url(images/toggle-updown.png) no-repeat 664px -424px;
+  background: url(images/toggle-updown.png) no-repeat 664px -926px;
   border: none;
   padding-left: 0;
 }
 
 p.trigger.active:hover {
-  background: url(images/toggle-updown.png) no-repeat 664px -257px;
+  background: url(images/toggle-updown.png) no-repeat 664px -584px;
   border: none;
   padding-left: 0;
 }
@@ -600,20 +600,20 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   p.trigger {
-    background: url(images/toggle-updown.png) no-repeat 490px 28px;
+    background: url(images/toggle-updown.png) no-repeat 490px 24px;
   }
   p.trigger:hover {
-    background: #eeeeee url(images/toggle-updown.png) no-repeat 490px -114px;
+    background: #eeeeee url(images/toggle-updown.png) no-repeat 490px -279px;
   }
   
   p.trigger.active {
-    background: url(images/toggle-updown.png) no-repeat 490px -424px;
+    background: url(images/toggle-updown.png) no-repeat 490px -926px;
     border: none;
     padding-left: 0;
   }
 
   p.trigger.active:hover {
-    background: url(images/toggle-updown.png) no-repeat 490px -257px;
+    background: url(images/toggle-updown.png) no-repeat 490px -584px;
     border: none;
     padding-left: 0;
   }
@@ -681,20 +681,20 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   p.trigger {
-    background: url(images/toggle-updown.png) no-repeat 462px 28px;
+    background: url(images/toggle-updown.png) no-repeat 462px 24px;
   }
   p.trigger:hover {
-    background: #eeeeee url(images/toggle-updown.png) no-repeat 462px -114px;
+    background: #eeeeee url(images/toggle-updown.png) no-repeat 462px -279px;
   }
   
   p.trigger.active {
-    background: url(images/toggle-updown.png) no-repeat 462px -424px;
+    background: url(images/toggle-updown.png) no-repeat 462px -926px;
     border: none;
     padding-left: 0;
   }
 
   p.trigger.active:hover {
-    background: url(images/toggle-updown.png) no-repeat 462px -257px;
+    background: url(images/toggle-updown.png) no-repeat 462px -584px;
     border: none;
     padding-left: 0;
   }
@@ -763,20 +763,20 @@ input.wpcf7-form-control.wpcf7-submit {
    }
    
    p.trigger {
-     background: url(images/toggle-updown.png) no-repeat 282px 28px;
+     background: url(images/toggle-updown.png) no-repeat 282px 24px;
    }
    p.trigger:hover {
-     background: #eeeeee url(images/toggle-updown.png) no-repeat 282px -114px;
+     background: #eeeeee url(images/toggle-updown.png) no-repeat 282px -279px;
    }
 
    p.trigger.active {
-     background: url(images/toggle-updown.png) no-repeat 282px -424px;
+     background: url(images/toggle-updown.png) no-repeat 282px -924px;
      border: none;
      padding-left: 0;
    }
 
    p.trigger.active:hover {
-     background: url(images/toggle-updown.png) no-repeat 282px -257px;
+     background: url(images/toggle-updown.png) no-repeat 282px -582px;
      border: none;
      padding-left: 0;
    }

@@ -104,6 +104,7 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	// Load head elements
 	wp_head();
 ?>
+
 <script type="text/javascript" src="<?php echo home_url(); ?>/wp-content/themes/our-new-tenet/js/custom.js"></script>
 <script type="text/javascript" src="<?php echo home_url(); ?>/wp-content/themes/our-new-tenet/util/bootstrap/js/bootstrap.min.js"></script>
 

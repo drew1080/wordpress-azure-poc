@@ -10,7 +10,7 @@ Template:       skeleton
 @import url("../skeleton/style.css");
 
 html {
-  background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat; 
+  background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat;
   -webkit-background-size: repeat;
   -moz-background-size: repeat;
   -o-background-size: repeat;
@@ -53,7 +53,8 @@ html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.
 }
 
 body {
-  height: 100%
+  height: 100%;
+  background-color: transparent;
 }
 
 .home {
@@ -65,7 +66,7 @@ body {
 
 .home #content.sixteen.columns {
   width: 960px;
-  margin: -11px 0 0 0;
+  margin: -12px 0 0 0;
 }
 
 .containter {
@@ -168,8 +169,7 @@ body {
 }*/
 
 #navigation ul li.menu-item-login-logout {
-  background-image: url(images/img-login.png);
-  background-repeat: no-repeat;
+  background: url(images/button-login-logout.png) no-repeat;
   width: 90px;
   height: 87px;
   display:block;
@@ -178,7 +178,18 @@ body {
   margin-left: 30px;
   border-right: none;
   visibility: visible;
-/*  text-indent:-9999px;*/
+}
+
+#navigation ul li.menu-item-login-logout:hover {
+  background: url(images/button-login-logout.png) no-repeat -109px;
+}
+
+.logged-in #navigation ul li.menu-item-login-logout {
+  background: url(images/button-login-logout.png) no-repeat -216px;
+}
+
+.logged-in #navigation ul li.menu-item-login-logout:hover {
+  background: url(images/button-login-logout.png) no-repeat -325px;
 }
 
 #navigation ul li.menu-item-login-logout a {
@@ -509,6 +520,19 @@ p.trigger.active:hover {
   padding: 0 10px 10px 0;
 }
 
+/*Contact Us styling*/
+
+input.wpcf7-form-control.wpcf7-submit {
+  background-image: url(images/bkgd-button-question-orange.png);
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
+}
 /*Responsive menu styling*/
 
 .navbar-inverse .navbar-inner {
@@ -848,7 +872,7 @@ float: left;
 #circle4
 {
 float: left;
-margin-left: 125px;
+margin-left: 130px;
 margin-right:50px;
 margin-top: 40px;
 }

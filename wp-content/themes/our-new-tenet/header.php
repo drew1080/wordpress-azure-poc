@@ -89,9 +89,9 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 
 <link rel="pingback" href="<?php echo get_option('siteurl') .'/xmlrpc.php';?>" />
 
-<link rel="stylesheet" id="custom" href="<?php echo home_url() .'/wp-content/themes/our-new-tenet/util/bootstrap/css/bootstrap.min.css';?>" type="text/css" media="all" />
+<link rel="stylesheet" id="bootstrap" href="<?php echo home_url() .'/wp-content/themes/our-new-tenet/util/bootstrap/css/bootstrap.min.css';?>" type="text/css" media="all" />
 
-<link rel="stylesheet" id="custom" href="<?php echo home_url() .'/wp-content/themes/our-new-tenet/util/bootstrap/css/bootstrap-responsive.min.css';?>" type="text/css" media="all" />
+<link rel="stylesheet" id="bootstrap-responsive" href="<?php echo home_url() .'/wp-content/themes/our-new-tenet/util/bootstrap/css/bootstrap-responsive.min.css';?>" type="text/css" media="all" />
 
 <link rel="stylesheet" id="custom" href="<?php echo home_url() .'/?get_styles=css';?>" type="text/css" media="all" />
 
@@ -113,21 +113,21 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 	<div id="wrap" class="container">
 	<div class="resize"></div>
 	<div class="header-wrap">
-	<?php
-	st_above_header();
-	st_header();
-	st_below_header();
-	?>
-	<?php 
-	st_navbar();
-	?>
-	<?php if ( is_user_logged_in () ) { ?>
-	<div class="search-form">
-		<?php get_search_form(); ?>
+	  <?php
+    st_above_header();
+    st_header();
+    st_below_header();
+  	?>
+  	<?php 
+  	st_navbar();
+  	?>
+  	
+  	<?php if ( is_user_logged_in () ) { ?>
+  	<div class="search-form">
+  		<?php //get_search_form(); ?>
+  	</div>
+	  <?php } ?>  
 	</div>
-	</div>
-	<?php } ?>
-	
   <div class="navbar navbar-inverse">
     <div class="navbar-inner">
       <div class="container-fluid">

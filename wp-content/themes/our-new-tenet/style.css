@@ -866,6 +866,7 @@ input.wpcf7-form-control.wpcf7-submit {
   
   .home #content.sixteen.columns {
     width: 480px;
+    padding: 0;
   }
   
   .navbar {
@@ -936,6 +937,15 @@ input.wpcf7-form-control.wpcf7-submit {
   .circle {
     height: 160px;
     margin: 10px 36px !important;
+  }
+  
+  .page-template-onecolumn-page-php .container .sixteen.columns{
+    width: 460px;
+    padding: 0 10px;
+  }
+  
+  .page-template-onecolumn-page-php .container .sixteen.columns .entry-content h1{
+    margin-top: 10px;
   }
 }
 
@@ -1059,6 +1069,10 @@ input.wpcf7-form-control.wpcf7-submit {
      height: 160px;
      margin: 10px 71px !important;
    }
+   
+   .page-template-onecolumn-page-php .container .sixteen.columns .entry-content h1{
+     margin-top: 10px;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1075,8 +1089,6 @@ input.wpcf7-form-control.wpcf7-submit {
     margin-top: 74px !important;
   }
   
-<<<<<<< HEAD
-=======
   .circle {
     height: 160px;
     margin: 10px 71px !important;
@@ -1085,7 +1097,6 @@ input.wpcf7-form-control.wpcf7-submit {
   .navbar-inverse .navbar-inner {
     width: 93%;
   }
->>>>>>> b85cb584324b53045be8e749525f7b9ae9137a07
 }
 
 /* Revolution Slider styling 

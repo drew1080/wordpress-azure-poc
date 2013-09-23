@@ -65,7 +65,21 @@ font-family: Lato;
 font-size: 12px;
 }
 
+#user_login-faux{
+width: 200px;
+display: inline-block;
+font-family: Lato;
+font-size: 12px;
+}
+
 #user_pass{
+width: 200px;
+display: inline-block;
+font-family: Lato;
+font-size: 12px;
+}
+
+#user_pass-faux{
 width: 200px;
 display: inline-block;
 font-family: Lato;

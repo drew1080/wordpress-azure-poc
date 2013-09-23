@@ -289,7 +289,7 @@ add_shortcode('toggle_content', 'toggle_content_func');
 
 // Login styling
 function custom_login_head() { 
-  //echo '<script type="text/javascript" src="' . home_url() . '/wp-content/themes/our-new-tenet/js/lib/jquery.html5-placeholder-shim.js"></script>';
+  echo '<script type="text/javascript" src="' . home_url() . '/wp-content/themes/our-new-tenet/js/lib/jquery.html5-placeholder-shim.js"></script>';
   echo '<script type="text/javascript" src="' . home_url() . '/wp-content/themes/our-new-tenet/js/custom.js"></script>';
   echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . '/stylized-login.css" />';
   remove_action('login_head', 'wp_shake_js', 12);

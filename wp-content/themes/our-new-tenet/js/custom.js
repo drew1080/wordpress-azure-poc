@@ -17,10 +17,10 @@ jQuery(function() {
   FauxPlaceholder();
   function FauxPlaceholder() {
     if(!ElementSupportAttribute('input','placeholder')) {
-        $("input[placeholder]").each(function() {
-            var $input = $(this);
+        jQuery("input[placeholder]").each(function() {
+            var $input = jQuery(this);
             $input.after('<input id="'+$input.attr('id')+'-faux" style="display:none;" type="text" value="' + $input.attr('placeholder') + '" />');
-            var $faux = $('#'+$input.attr('id')+'-faux');
+            var $faux = jQuery('#'+$input.attr('id')+'-faux');
 
             $faux.show().attr('class', $input.attr('class')).attr('style', $input.attr('style'));
             $input.hide();

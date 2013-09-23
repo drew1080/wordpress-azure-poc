@@ -816,6 +816,11 @@ input.wpcf7-form-control.wpcf7-submit {
     float: left;
     margin-bottom: 10px;
   }
+
+  .circle {
+    height: 160px;
+    margin: 10px 40px !important;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -920,6 +925,11 @@ input.wpcf7-form-control.wpcf7-submit {
   .submit-a-question {
     float: left;
     margin-bottom: 10px;
+  }
+  
+  .circle {
+    height: 160px;
+    margin: 10px 40px !important;
   }
 }
 
@@ -1034,6 +1044,11 @@ input.wpcf7-form-control.wpcf7-submit {
      float: left;
      margin-bottom: 10px;
    }
+   
+   .circle {
+     height: 160px;
+     margin: 10px 71px !important;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1044,6 +1059,11 @@ input.wpcf7-form-control.wpcf7-submit {
   
   .tp-rightarrow.default {
     margin-top: 74px !important;
+  }
+  
+  .circle {
+    height: 160px;
+    margin: 10px 71px !important;
   }
 }
 

@@ -551,6 +551,9 @@ input.wpcf7-form-control.wpcf7-submit {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
 }
 /*Responsive menu styling*/
 

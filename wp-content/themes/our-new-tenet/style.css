@@ -956,7 +956,7 @@ input.wpcf7-form-control.wpcf7-submit {
   
   #content.eleven.columns {
     max-width: 100%;
-    margin-top: 15px !important;
+    margin-top: 20px !important;
   }
 
   .navbar-inverse .navbar-inner {
@@ -1058,6 +1058,10 @@ input.wpcf7-form-control.wpcf7-submit {
   
   .tp-rightarrow.default {
     margin-top: 74px !important;
+  }
+  
+  .navbar-inverse .navbar-inner {
+    width: 93%;
   }
 }
 

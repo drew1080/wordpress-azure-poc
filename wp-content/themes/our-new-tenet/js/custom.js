@@ -14,7 +14,7 @@ jQuery(function() {
     jQuery("label[for='user_pass']").html('<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" placeholder="Date of birth (mmddyyy)">');
   }
   
-  FauxPlaceholder();
+  //FauxPlaceholder();
   function FauxPlaceholder() {
     if(!ElementSupportAttribute('input','placeholder')) {
         jQuery("input[placeholder]").each(function() {

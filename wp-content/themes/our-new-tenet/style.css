@@ -982,7 +982,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
   .navbar-inverse .navbar-inner {
-    width: 95%;
+    width: 93%;
   }
 
   .header-wrap {
@@ -1091,6 +1091,8 @@ input.wpcf7-form-control.wpcf7-submit {
     margin-top: 74px !important;
   }
   
+<<<<<<< HEAD
+=======
   .circle {
     height: 160px;
     margin: 10px 71px !important;
@@ -1099,6 +1101,7 @@ input.wpcf7-form-control.wpcf7-submit {
   .navbar-inverse .navbar-inner {
     width: 93%;
   }
+>>>>>>> b85cb584324b53045be8e749525f7b9ae9137a07
 }
 
 /* Revolution Slider styling 

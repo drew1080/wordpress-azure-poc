@@ -702,7 +702,7 @@ input.wpcf7-form-control.wpcf7-submit {
   background-color: #5787a2;
 }*/
 
-.navbar-inverse .menu-side-nav-container li.menu-item.current-menu-item a {
+.navbar-inverse li.menu-item.current-menu-item a {
   background: none;
   background-color: #5787a2;
 }

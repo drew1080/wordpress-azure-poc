@@ -42,7 +42,7 @@ class Integration_Update_Widget extends WP_Widget {
     if (have_posts()) : 
     	while (have_posts()) : the_post(); 
     		the_title('<h3>', '</h3>');	
-    		echo '<h4>' . get_the_date('d-m-Y') . '</h4>';
+    		echo '<h4>' . get_the_date('m-d-Y') . '</h4>';
     		the_content();
     	endwhile;
     endif; 

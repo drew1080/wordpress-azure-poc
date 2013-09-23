@@ -431,6 +431,10 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   margin-top: -8px;
 }
 
+.rev_slider_wrapper {
+  background-color: #FFFFFF;
+}
+
 #content.eleven.columns {
   width: 684px;
   max-width: 100%;

@@ -75,6 +75,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .entry-content ul {
   list-style-type: disc;
 }
@@ -86,6 +87,9 @@ body {
   display: none;
 }
 
+#wrap #content { 
+  margin-top: 10px;
+}
 
 #wrap #header {
   width: 208px;
@@ -535,6 +539,9 @@ input.wpcf7-form-control.wpcf7-submit {
   background-image: none !important;
   border-color: #A5B3CF;
   background-color: #7ea9c1;
+  z-index: 1000;
+  position: absolute;
+  width: 439px;
 }
 
 .navbar-inverse .btn-navbar {

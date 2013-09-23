@@ -66,7 +66,7 @@ body {
 
 .home #content.sixteen.columns {
   width: 960px;
-  margin: -11px 0 0 0;
+  margin: -12px 0 0 0;
 }
 
 .containter {
@@ -181,39 +181,15 @@ body {
 }
 
 #navigation ul li.menu-item-login-logout:hover {
-  background: url(images/button-login-logout.png) no-repeat -108px;
-  width: 90px;
-  height: 87px;
-  display:block;
-  position: relative;
-  margin-top: -10px;
-  margin-left: 30px;
-  border-right: none;
-  visibility: visible;
+  background: url(images/button-login-logout.png) no-repeat -109px;
 }
 
 .logged-in #navigation ul li.menu-item-login-logout {
   background: url(images/button-login-logout.png) no-repeat -216px;
-  width: 90px;
-  height: 87px;
-  display:block;
-  position: relative;
-  margin-top: -10px;
-  margin-left: 30px;
-  border-right: none;
-  visibility: visible;
 }
 
 .logged-in #navigation ul li.menu-item-login-logout:hover {
   background: url(images/button-login-logout.png) no-repeat -325px;
-  width: 90px;
-  height: 87px;
-  display:block;
-  position: relative;
-  margin-top: -10px;
-  margin-left: 30px;
-  border-right: none;
-  visibility: visible;
 }
 
 #navigation ul li.menu-item-login-logout a {
@@ -554,6 +530,8 @@ input.wpcf7-form-control.wpcf7-submit {
   font-family: lato;
   font-weight: normal;
   text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
 }
 /*Responsive menu styling*/
 

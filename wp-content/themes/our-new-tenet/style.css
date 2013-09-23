@@ -843,10 +843,16 @@ input.wpcf7-form-control.wpcf7-submit {
     left: 20%;
   }
   .header-wrap {
-    height: 74px;
+    height: 68px;
+    width: 208px;
+    margin: 10px auto 0;
   }
-  .header-wrap #header{
-    margin: 24px 0 0 104px !important;
+  #wrap #header {
+    margin: 18px 0 0 0;
+    height: 76px;
+  }
+  #header #site-title.graphic a {
+    margin: 0;
   }
   
   .home #content.sixteen.columns {
@@ -944,11 +950,16 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
   .header-wrap {
-    height: 80px;
+    height: 68px;
+    width: 208px;
+    margin: 10px auto 0;
   }
-
   #wrap #header {
-    margin: 26px 0 0 26px;
+    margin: 18px 0 0 0;
+    height: 76px;
+  }
+  #header #site-title.graphic a {
+    margin: 0;
   }
     
 /*  #header .inner #site-title.graphic a {

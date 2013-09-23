@@ -752,7 +752,7 @@ input.wpcf7-form-control.wpcf7-submit {
 	font-weight: bold;
 	text-transform: uppercase;
 	color:#3c3c39;
-	margin: 90px 10px 10px 10px;
+	margin: 90px 12px 10px 12px;
 	letter-spacing: 0px;
 }
 	  
@@ -760,22 +760,22 @@ input.wpcf7-form-control.wpcf7-submit {
 	font-size:80%;
 	font-weight: normal;
 	color: #3c3c39;
-  margin: 0 0 10px 10px;
+  margin: 0 12px 10px 12px;
   letter-spacing: 0px;
 }
   
 .integration-update p{
  	font-size:80%;
 	color: #3c3c39;
-  line-height: 160%;
-  margin: 0 10px 10px 10px;
+  line-height: 170%;
+  margin: 0 12px 10px 12px;
 }
 
 .integration-update ul li{
  	font-size:80%;
 	color: #3c3c39;
-  line-height: 160%;
-  margin: 0 10px 2px 25px;
+  line-height: 170%;
+  margin: 0 12px 6px 27px;
   list-style-type: disc;
 }
 

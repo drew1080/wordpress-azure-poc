@@ -823,6 +823,10 @@ input.wpcf7-form-control.wpcf7-submit {
      height: 130px;
    }*/
    
+   .page-id-2861 #wrap.container {
+     overflow-x: hidden;
+   }
+   
    #wrap #content { 
      margin-top: 5px;
    }
@@ -888,6 +892,8 @@ input.wpcf7-form-control.wpcf7-submit {
   
   #content.eleven.columns {
     margin-top: 20px !important;
+    width: 460px;
+    padding: 0 10px;
   }
   
   #sidebar.five.columns {
@@ -924,6 +930,10 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 @media (max-width: 479px) {
+  
+   .page-id-2861 #wrap.container {
+     overflow-x: hidden;
+   }
   
   .home {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x360.jpg) !important;
@@ -1033,6 +1043,10 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 @media (max-width: 320px) {
+  
+   .page-id-2861 #wrap.container {
+     overflow-x: hidden;
+   }
   
   .tp-leftarrow.default {
     margin-top: 74px !important;

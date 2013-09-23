@@ -10,7 +10,7 @@ add_filter('show_admin_bar', '__return_false');
 /* Redirect all non-logged-in users to the login page (private site). Add to functions.php. */
  
 function admin_redirect() {
-  if ( !is_front_page() && !is_page('contact-us') && !is_user_logged_in() && !is_page('login-page')) {
+  if ( !is_front_page() && !is_page('contact-us-2') && !is_user_logged_in() && !is_page('login-page')) {
     wp_redirect( home_url('/wp-admin/') );
     exit;
   }

@@ -698,7 +698,12 @@ input.wpcf7-form-control.wpcf7-submit {
   background: none;
 }
 
-.navbar-inverse .nav .current-menu-item>a {
+/*.navbar-inverse .nav .current-menu-item>a {
+  background-color: #5787a2;
+}*/
+
+.navbar-inverse .menu-side-nav-container li.menu-item.current-menu-item a {
+  background: none;
   background-color: #5787a2;
 }
 
@@ -717,7 +722,7 @@ input.wpcf7-form-control.wpcf7-submit {
   background-image: none !important;
   border-color: #A5B3CF;
   background-color: #7ea9c1;
-  z-index: 10000;
+  z-index: 1000000;
   position: absolute;
   width: 458px;
   padding-left: 10px;

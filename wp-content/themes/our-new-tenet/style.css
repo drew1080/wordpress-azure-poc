@@ -87,10 +87,6 @@ body {
   display: none;
 }
 
-#wrap #content { 
-  margin-top: 10px;
-}
-
 #wrap #header {
   width: 208px;
   float: left;
@@ -620,6 +616,10 @@ input.wpcf7-form-control.wpcf7-submit {
      height: 130px;
    }*/
    
+   #wrap #content { 
+     margin-top: 10px;
+   }
+   
   .home {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x180.jpg) !important;
   }
@@ -665,6 +665,10 @@ input.wpcf7-form-control.wpcf7-submit {
 }
 
 @media (max-width: 479px) {
+  
+  #wrap #content { 
+    margin-top: 10px;
+  }
   
   .home .container {
     width: 320px;

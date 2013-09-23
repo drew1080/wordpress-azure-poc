@@ -26,6 +26,7 @@ height: 555px;
 background-image: none;
 }
 
+
 .input
 {
 font-family: Lato;
@@ -116,4 +117,16 @@ display: none;
 #login_error, .login .message {
   margin: 0 0 16px -3px;
   display: none;
+}
+
+@media (max-width: 568px) {
+  
+.login label[for=user_login]{
+  margin-top: 230px;
+  margin-left: 136px;
+  }
+  
+.login label[for=user_pass] {
+  margin-left: 136px;
+  }
 }

@@ -436,10 +436,6 @@ li.menu-item {
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
-.integration-update h3 {
-  margin-top: 90px !important;
-}
-
 /* Slider styling */
 
 .advanced-slider .thumbnail {  
@@ -744,31 +740,43 @@ input.wpcf7-form-control.wpcf7-submit {
 	border-width: 1px;
 	border-color: #c8c7c6;
 	border-radius: 4px;
-    background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
+  background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
 	background-repeat:no-repeat;
 	width: 158px;
 	margin-left: 8px !important;
+	padding-bottom: 15px;
 }
   
 .integration-update h3{
-	font-size: 100%;
+	font-size: 85%;
 	font-weight: bold;
+	text-transform: uppercase;
 	color:#3c3c39;
-	margin-top: 75px;
-	margin-left: 10px;
+	margin: 90px 10px 10px 10px;
+	letter-spacing: 0px;
 }
 	  
 .integration-update h4{
 	font-size:80%;
+	font-weight: normal;
 	color: #3c3c39;
-    margin-left: 10px;
+  margin: 0 0 10px 10px;
+  letter-spacing: 0px;
 }
   
 .integration-update p{
  	font-size:80%;
 	color: #3c3c39;
-    line-height: 160%;
-    margin-left: 10px;
+  line-height: 160%;
+  margin: 0 10px 10px 10px;
+}
+
+.integration-update ul li{
+ 	font-size:80%;
+	color: #3c3c39;
+  line-height: 160%;
+  margin: 0 0 2px 25px;
+  list-style-type: disc;
 }
 
 /* Employee Portal styling */

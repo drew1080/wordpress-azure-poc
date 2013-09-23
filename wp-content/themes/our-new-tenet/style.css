@@ -1049,10 +1049,12 @@ font-size: 11px;
 
 
 .body_text_ep{
+  font-style: italic;
   font-family: "latobold_italic", arial, sans-serif;
   font-size: 11px;
   line-height: 160%;
   font-weight: 600;
+  font-style: italic;
 }
 
 

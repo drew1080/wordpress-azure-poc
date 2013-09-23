@@ -181,7 +181,7 @@ body {
 }
 
 #navigation ul li.menu-item-login-logout:hover {
-  background: url(images/button-login-logout.png) no-repeat -109px;
+  background: url(images/button-login-logout.png) no-repeat -108px;
 }
 
 .logged-in #navigation ul li.menu-item-login-logout {
@@ -281,6 +281,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 #content.eleven.columns {
   width: 684px;
   max-width: 100%;
+  float: left !important;
 }
 
 #footer {
@@ -400,8 +401,7 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
 
 #sidebar.five.columns {
   width: 190px;
-  margin: 0 10px;
-  float: right;
+  margin: 0 56px 0 10px;
 }
 
 
@@ -537,7 +537,9 @@ input.wpcf7-form-control.wpcf7-submit {
   background-color: #7ea9c1;
   z-index: 1000;
   position: absolute;
-  width: 439px;
+  width: 458px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar-inverse .btn-navbar {
@@ -568,9 +570,14 @@ input.wpcf7-form-control.wpcf7-submit {
   #fast-facts-wrapper {
     display: none;
   }
+  
+  #sidebar.five.columns {
+    width: 190px;
+    margin: 0 10px 0 10px;
+  }
 }
 
-@media only screen and (max-width: 960px) and (min-width: 767px)  {
+@media only screen and (max-width: 959px) and (min-width: 767px)  {
 /*  #header .inner #site-title.graphic a {
     height: 150px;
   }*/
@@ -583,32 +590,33 @@ input.wpcf7-form-control.wpcf7-submit {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
   }
   
-/*  #content.eleven.columns {
-    width: 70%;
-  }*/
-  
   .home #content.sixteen.columns {
     width: 767px;
   }
   
+  #content.eleven.columns {
+    width: 508px;
+  }
+  
   p.trigger {
-    background: url(images/toggle-updown.png) no-repeat 520px 28px;
+    background: url(images/toggle-updown.png) no-repeat 490px 28px;
   }
   p.trigger:hover {
-    background: #eeeeee url(images/toggle-updown.png) no-repeat 520px -39px;
+    background: #eeeeee url(images/toggle-updown.png) no-repeat 490px -114px;
   }
   
   p.trigger.active {
-    background: url(images/toggle-updown.png) no-repeat 520px -186px;
+    background: url(images/toggle-updown.png) no-repeat 490px -424px;
     border: none;
     padding-left: 0;
   }
 
   p.trigger.active:hover {
-    background: url(images/toggle-updown.png) no-repeat 520px -111px;
+    background: url(images/toggle-updown.png) no-repeat 490px -257px;
     border: none;
     padding-left: 0;
   }
+  
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -662,6 +670,33 @@ input.wpcf7-form-control.wpcf7-submit {
   .tp-bullets.tp-thumbs.round {
     display: none;
   }
+  
+  #content.eleven.columns {
+    margin-top: 15px !important;
+  }
+  
+  #sidebar.five.columns {
+    display: none;
+  }
+  
+  p.trigger {
+    background: url(images/toggle-updown.png) no-repeat 462px 28px;
+  }
+  p.trigger:hover {
+    background: #eeeeee url(images/toggle-updown.png) no-repeat 462px -114px;
+  }
+  
+  p.trigger.active {
+    background: url(images/toggle-updown.png) no-repeat 462px -424px;
+    border: none;
+    padding-left: 0;
+  }
+
+  p.trigger.active:hover {
+    background: url(images/toggle-updown.png) no-repeat 462px -257px;
+    border: none;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 479px) {
@@ -679,10 +714,11 @@ input.wpcf7-form-control.wpcf7-submit {
   
   #content.eleven.columns {
     max-width: 100%;
+    margin-top: 15px !important;
   }
 
   .navbar-inverse .navbar-inner {
-    width: 279px;
+    width: 278px;
   }
 
   .header-wrap {
@@ -724,7 +760,28 @@ input.wpcf7-form-control.wpcf7-submit {
    .tp-bullets.tp-thumbs.round {
      display: none;
    }
+   
+   p.trigger {
+     background: url(images/toggle-updown.png) no-repeat 282px 28px;
+   }
+   p.trigger:hover {
+     background: #eeeeee url(images/toggle-updown.png) no-repeat 282px -114px;
+   }
+
+   p.trigger.active {
+     background: url(images/toggle-updown.png) no-repeat 282px -424px;
+     border: none;
+     padding-left: 0;
+   }
+
+   p.trigger.active:hover {
+     background: url(images/toggle-updown.png) no-repeat 282px -257px;
+     border: none;
+     padding-left: 0;
+   }
 }
+
+
 
 /* Revolution Slider styling 
    All divs under the thumbcontainer get padded - creates space between the thumbnails

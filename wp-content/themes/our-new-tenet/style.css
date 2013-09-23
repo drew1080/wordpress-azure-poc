@@ -617,7 +617,7 @@ input.wpcf7-form-control.wpcf7-submit {
    }*/
    
    #wrap #content { 
-     margin-top: 10px;
+     margin-top: 5px;
    }
    
   .home {
@@ -667,7 +667,7 @@ input.wpcf7-form-control.wpcf7-submit {
 @media (max-width: 479px) {
   
   #wrap #content { 
-    margin-top: 10px;
+    margin-top: 3px;
   }
   
   .home .container {

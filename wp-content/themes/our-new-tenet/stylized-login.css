@@ -22,8 +22,12 @@ height: 555px;
 }
 
 /* Remove default wordpress image */
-.login h1 a{
+/*.login h1 a{
 background-image: none;
+}*/
+
+.login h1{
+display: none;
 }
 
 .input
@@ -48,7 +52,7 @@ visibility: hidden;
 }
 
 .login label[for=user_login]{
-margin-top: 137px;
+margin-top: 220px;
 margin-left: 126px;
 display: inline-block;
 }
@@ -118,7 +122,7 @@ display: none;
   display: none;
 }
 
-@media (max-width: 568px) {
+/*@media (max-width: 568px) {
   
 .login label[for=user_login]{
   margin-top: 230px;
@@ -128,4 +132,4 @@ display: none;
 .login label[for=user_pass] {
   margin-left: 136px;
   }
-}
+}*/

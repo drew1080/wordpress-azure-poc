@@ -829,8 +829,18 @@ input.wpcf7-form-control.wpcf7-submit {
     display: none;
   }
   
-  .tp-bullets.tp-thumbs.round {
+  .tp-bullets.tp-thumbs.round .tp-mask {
     display: none;
+  }
+  
+  .tp-leftarrow.default {
+    margin-top: -10px !important;
+    left: -40px !important;
+  }
+  
+  .tp-rightarrow.default {
+    margin-top: -10px !important;
+    right: -40px !important;
   }
   
   #content.eleven.columns {
@@ -872,12 +882,16 @@ input.wpcf7-form-control.wpcf7-submit {
 
 @media (max-width: 479px) {
   
+  .home {
+    background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x360.jpg) !important;
+  }
+  
   #wrap #content { 
     margin-top: 3px;
   }
   
   .home .container {
-    width: 320px;
+    width: 100%;
   }
   .home #content.sixteen.columns {
     max-width: 100%;
@@ -889,7 +903,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
   .navbar-inverse .navbar-inner {
-    width: 278px;
+    width: 95%;
   }
 
   .header-wrap {
@@ -903,6 +917,15 @@ input.wpcf7-form-control.wpcf7-submit {
 /*  #header .inner #site-title.graphic a {
     height: 100px;
   }*/
+  
+  .tp-leftarrow.default {
+    margin-top: 108px !important;
+  }
+  
+  .tp-rightarrow.default {
+    margin-top: 108px !important;
+  }
+  
   .login a, .logout a {
     width: 50px;
     height: 45px;
@@ -961,7 +984,16 @@ input.wpcf7-form-control.wpcf7-submit {
    }
 }
 
-
+@media (max-width: 479px) {
+  
+  .tp-leftarrow.default {
+    margin-top: 74px !important;
+  }
+  
+  .tp-rightarrow.default {
+    margin-top: 74px !important;
+  }
+}
 
 /* Revolution Slider styling 
    All divs under the thumbcontainer get padded - creates space between the thumbnails

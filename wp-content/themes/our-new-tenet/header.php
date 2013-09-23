@@ -121,6 +121,15 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
   	?>
   	<?php 
   	st_navbar();
+  	
+  	$defaults = array(
+    	'menu'            => 'top-nav-responsive',
+    	'menu_class'      => 'nav',
+    	'echo'            => true,
+    	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+    	'depth'           => 0
+    );
+
   	?>
   	
   	<?php if ( is_user_logged_in () ) { ?>
@@ -129,7 +138,8 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
   	</div>
 	  <?php } ?>  
 	</div>
-  <div class="navbar navbar-inverse">
+	
+	<div class="navbar navbar-inverse">
     <div class="navbar-inner">
       <div class="container-fluid">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -138,12 +148,7 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
          <span class="icon-bar"></span>
         </a>
         <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
-            <li><a href="#">Employee Portal</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Log In</a></li>
-          </ul>
+          <?php wp_nav_menu( $defaults ); ?>  
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar-inner -->

@@ -940,6 +940,10 @@ input.wpcf7-form-control.wpcf7-submit {
     max-width: 100%;
   }
   
+  .home {
+    background-size: 100% 118px;
+  }
+  
   #content.eleven.columns {
     max-width: 100%;
     margin-top: 15px !important;

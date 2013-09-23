@@ -118,10 +118,10 @@ display: none;
   display: none;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 568px) {
   
 .login label[for=user_login]{
-  margin-top: 232px;
+  margin-top: 230px;
   margin-left: 136px;
   }
   

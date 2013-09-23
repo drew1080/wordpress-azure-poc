@@ -674,16 +674,20 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   #content.eleven.columns {
-     max-width: 100%;
-   }
-   
-   .header-wrap {
-      height: 80px;
-    }
-    
-    #wrap #header {
-      margin: 26px 0 0 26px;
-    }
+    max-width: 100%;
+  }
+
+  .navbar-inverse .navbar-inner {
+    width: 279px;
+  }
+
+  .header-wrap {
+    height: 80px;
+  }
+
+  #wrap #header {
+    margin: 26px 0 0 26px;
+  }
     
 /*  #header .inner #site-title.graphic a {
     height: 100px;

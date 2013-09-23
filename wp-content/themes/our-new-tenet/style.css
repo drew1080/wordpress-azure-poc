@@ -195,8 +195,7 @@ body {
 #navigation ul li.menu-item-login-logout a {
   color: #FFF;
   font-weight: normal;
-  margin: 38px 0 0 0;
-  padding: 10px 0;
+  padding-top: 48px;
   text-align: center;
   font-size: 16px;
   height: 39px;

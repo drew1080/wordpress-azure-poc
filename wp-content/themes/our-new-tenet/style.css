@@ -1148,7 +1148,7 @@ input.wpcf7-form-control.wpcf7-submit {
 	border-width: 1px;
 	border-color: #c8c7c6;
 	border-radius: 4px;
-  background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
+  background-image:url('/wp-content/themes/our-new-tenet/images/integration-update-header.png');
 	background-repeat:no-repeat;
 	width: 158px;
 	margin-left: 8px !important;
@@ -1301,4 +1301,10 @@ margin-top: 40px;
 margin-left: 50px;
 margin-top: 40px;
 float: left;
+}
+
+#whats_new_img{
+margin-left: 10px;
+margin-top: -15px;
+margin-bottom: -20px;
 }

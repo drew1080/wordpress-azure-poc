@@ -1303,8 +1303,31 @@ margin-top: 40px;
 float: left;
 }
 
+/*Whats new page styling*/
+
+#post-4291 .entry-title {
+display: none;
+}
+
+#post-4291 h3{
+font-size: 18pt;
+margin-bottom: 0;
+}
+
 #whats_new_image{
 margin-left: 10px;
 margin-top: -15px;
 margin-bottom: -20px;
 }
+
+.whats-new-date {
+margin: 0 0 0 0;
+color: #d3792e;
+font-weight: 600;
+}
+
+.whats-new-summary {
+font-size: 9pt;
+font-weight: bold;
+}
+

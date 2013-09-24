@@ -11,7 +11,7 @@ add_filter('show_admin_bar', '__return_false');
  
 function admin_redirect() {
   if ( !is_front_page() && !is_page('contact-us-2') && !is_user_logged_in() && !is_page('login-page')) {
-    wp_redirect( home_url('/wp-admin/') );
+    wp_redirect( home_url('/employee-portal/') );
     exit;
   }
 }

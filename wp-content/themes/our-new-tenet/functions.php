@@ -77,7 +77,7 @@ function logged_in_logo_redirect( $prev_logo) {
 	} else {
 		$class="text"; 		
 	}
-	$home_url = esc_url( home_url( '/employee-portal/' );
+	$home_url = esc_url( home_url( '/employee-portal/' ) );
 	// if ( is_user_logged_in() ) { 
 	//     $home_url = esc_url( home_url( '/employees/' ) );
 	//   }

@@ -328,7 +328,7 @@ add_action('login_head', 'custom_login_head');
 // 
 // add_action('login_form', 'login_form_func');
 
-
+/*
 function remove_subscribers() {
 	global $wpdb;
 	$args = array( 'role' => 'Subscriber' );
@@ -348,6 +348,6 @@ function remove_subscribers() {
 }
 
 remove_subscribers();
-
+*/
 
 ?>

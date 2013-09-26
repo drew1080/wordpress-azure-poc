@@ -1,7 +1,6 @@
 /* Stylized login screen for Our New Tenet */
 
-html
-{
+html {
    background: url(/wp-content/themes/our-new-tenet/images/bkgd-repeat-xy.jpg) repeat; 
   -webkit-background-size: repeat;
   -moz-background-size: repeat;
@@ -23,41 +22,58 @@ padding: 114px 0 0;
 }
 
 /* Remove default wordpress image */
-.login h1 a{
+.login h1 a {
 background-image: none;
 }
 
 
-.input
-{
-font-family: Lato;
-font-weight: 400;
-font-size: 12px;
-border-radius: 4px;
+.input {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 /* Remove the background from the login form */
-.login form
-{
-background: none;
-border: none;
-box-shadow: none;
--webkit-box-shadow: none;
+.login form {
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  position: relative;
 }
 
 #login_error{
 visibility: hidden;
 }
 
-.login label[for=user_login]{
-margin-top: 137px;
-margin-left: 126px;
-display: inline-block;
+.login label[for=user_login] {
+  margin-top: 137px;
+  margin-left: 126px;
+  display: inline-block;
+  position: absolute;
+  top: 26px;
 }
 
-.login label[for=user_pass]{
-margin-left: 126px;
-display: inline-block;
+.login label[for=user_pass] {
+  margin-left: 126px;
+  display: inline-block;
+  position: absolute;
+  top: 203px;
+}
+
+.login form p.lc_form_text {
+  position: absolute;
+  top: 237px;
+  text-align: center;
+  margin-left: 0px;
+  width: 447px;
+}
+
+#login form p.submit {
+  position: absolute;
+  top: 299px;
+  left: 217px;
 }
 
 #user_login{
@@ -108,17 +124,19 @@ background: #d3792e;
 }
 
 #nav {
-display: none;
+  display: none;
 }
 
-#backtoblog{
-display: none;
+#backtoblog {
+  display: none;
 }
 
 #login_error, .login .message {
   margin: 0 0 16px -3px;
   display: none;
 }
+
+
 
 @media (max-width: 568px) {
   

@@ -128,7 +128,11 @@ display: none;
 #wp-submit{
 margin-right: 200px;
 margin-top: -62px;
-background: #d3792e;
+background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);
+border: none;
+background-color:transparent;
+text-transform: uppercase;
+padding: 0 12px 0;
 }
 
 #nav {

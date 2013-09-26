@@ -150,9 +150,18 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
               	'depth'           => 0
               );
               wp_nav_menu( $defaults );
-            } else {
+            } else if ( is_user_logged_in() ) {
               $defaults = array(
               	'menu'            => 'side-nav-responsive',
+              	'menu_class'      => 'nav',
+              	'echo'            => true,
+              	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+              	'depth'           => 0
+              );
+              wp_nav_menu( $defaults );
+            } else {
+              $defaults = array(
+              	'menu'            => 'top-nav-responsive',
               	'menu_class'      => 'nav',
               	'echo'            => true,
               	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',

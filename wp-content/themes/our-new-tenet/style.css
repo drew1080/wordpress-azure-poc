@@ -432,6 +432,10 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   width: 180px;
 }
 
+#content .search-form {
+  display: none;
+}
+
 .search-form:focus {
   outline: none;
 }
@@ -876,6 +880,13 @@ input.wpcf7-form-control.wpcf7-submit {
   .tp-rightarrow {
     top: 180px !important;
   }
+  
+  .page-id-4851 {
+    background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
+  }
+  .page-id-4851 .entry-content {
+    padding-top: 98px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -1006,7 +1017,16 @@ input.wpcf7-form-control.wpcf7-submit {
   .page-template-onecolumn-page-php .container .sixteen.columns .entry-content h1{
     margin-top: 10px;
   }
+  
+  .page-id-4851 {
+    background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x180.jpg) !important;
+  }
+  
+  .page-id-4851 .entry-content {
+     padding-top: 80px;
+   }
 }
+
 
 @media (max-width: 479px) {
   
@@ -1136,6 +1156,14 @@ input.wpcf7-form-control.wpcf7-submit {
    .page-template-onecolumn-page-php .container .sixteen.columns .entry-content h1{
      margin-top: 10px;
    }
+   
+   .page-id-4851 {
+     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x180.jpg) !important;
+   }
+   
+   .page-id-4851 .entry-content {
+      padding-top: 86px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1164,6 +1192,10 @@ input.wpcf7-form-control.wpcf7-submit {
   #welcome_text_ep h1 {
     font-size: 26px;
   }
+  
+  .page-id-4851 .entry-content {
+     padding-top: 92px;
+   }
 }
 
 /* Revolution Slider styling 
@@ -1378,5 +1410,16 @@ letter-spacing: 1px;
 .whats_new_summary {
 font-size: 9pt;
 font-weight: bold;
+}
+
+.page-id-4851 {
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x360.jpg);
+  background-position: 0 129px;
+  background-repeat: repeat-x;
+  background-color: transparent;
+}
+
+.page-id-4851 .entry-content {
+  padding-top: 112px;
 }
 

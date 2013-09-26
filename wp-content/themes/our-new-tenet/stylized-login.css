@@ -18,7 +18,7 @@ height: auto;
 background: url('/wp-content/themes/our-new-tenet/images/badge.png') no-repeat;
 width: 509px;
 height: 555px;
-padding: 114px 0 0;
+padding:0px;
 }
 
 /* Remove default wordpress image */
@@ -41,6 +41,7 @@ background-image: none;
   box-shadow: none;
   -webkit-box-shadow: none;
   position: relative;
+  top: 114px;
 }
 
 #login_error{

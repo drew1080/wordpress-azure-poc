@@ -491,15 +491,16 @@ color: #2c3f6c;
 .fast-fact {
   width: 684px;
   max-width: 100%;
-  height: 41px;
+  height: 55px;
   margin-bottom: 15px;
+  display: table;
 }
 
 .fast-fact-content {
-  margin-left: 110px;
-  display: block;
-  padding: 12px 10px 10px 6px;
   font-family: "latobold_italic", arial, sans-serif;
+  display: table-cell; 
+  vertical-align: middle; 
+  padding: 0 10px 0 130px;
 }
 
 .page-id-2721 h1 {

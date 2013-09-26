@@ -298,7 +298,8 @@ body {
   visibility: hidden;
 }
 
-.home #navigation ul#menu-top-nav {
+.home #navigation ul#menu-top-nav,
+.page-id-4851 #navigation ul#menu-top-nav {
   visibility: visible;
 }
 
@@ -368,6 +369,9 @@ body {
 
 .logged-in #navigation ul li.menu-item-login-logout:hover {
   background: url(images/button-login-logout.png) no-repeat -325px;
+}
+
+.page-id-4851 #navigation ul li.menu-item-login-logout {
 }
 
 #navigation ul li.menu-item-login-logout a {
@@ -519,6 +523,8 @@ color: #2c3f6c;
   float: left;
   width: 65%;
 }
+
+
 
 .submit-a-question {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);

@@ -10,7 +10,7 @@ add_filter('show_admin_bar', '__return_false');
 /* Redirect all non-logged-in users to the login page (private site). Add to functions.php. */
  
 function admin_redirect() {
-  if ( !is_front_page() && !is_page('contact-us-2') && !is_user_logged_in() && !is_page('login-page') && !is_page('coming-soon')) {
+  if ( !is_front_page() && !is_page('contact-us') && !is_user_logged_in() && !is_page('login-page') && !is_page('coming-soon')) {
     wp_redirect( home_url('/wp-admin/') );
     exit;
   }
@@ -77,7 +77,7 @@ function logged_in_logo_redirect( $prev_logo) {
 	} else {
 		$class="text"; 		
 	}
-	$home_url = esc_url( home_url( '/employee-portal/' ) );
+	$home_url = esc_url( home_url() );
 	// if ( is_user_logged_in() ) { 
 	//     $home_url = esc_url( home_url( '/employees/' ) );
 	//   }

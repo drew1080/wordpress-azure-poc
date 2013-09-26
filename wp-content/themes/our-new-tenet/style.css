@@ -171,6 +171,7 @@ html {
 h1{
   color: #2c3f6c;
   font-size: 30px;
+  font-family: "Lato", arial, sans-serif;
 }
 
 h2{
@@ -187,6 +188,7 @@ h1 {
 
 h3 {
   color: #267496;
+  font-family: "Lato", arial, sans-serif;
 }
 
 a {
@@ -311,7 +313,7 @@ body {
   background: none;
   padding: 3px 10px;
   margin: 0px 5px;
-  color: #949591;
+  color: #949591 !important;
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: none;
@@ -319,7 +321,8 @@ body {
 }
 
 #navigation .menu-header ul li a:hover {
-  color: #3c3c39;
+  color: #3c3c39 !important;
+  text-decoration: none !important;
   font-weight: normal;
   border: none;
   background: none;
@@ -522,6 +525,10 @@ color: #2c3f6c;
   height: 100%;
 }
 
+.submit-a-question a:hover {
+  text-decoration: none !important;
+}
+
 .resize {
   display:none;
 }
@@ -603,14 +610,15 @@ li.menu-item {
   font-family: Lato;
   border-bottom: none;
   background: none;
-  color: #949591;
+  color: #949591 !important;
   text-transform: uppercase;
   line-height: 140%;
   padding: 8px 24px 8px 24px;
 }
 
 .menu-side-nav-container li.menu-item a:hover {
-  color: #3c3c39;
+  color: #3c3c39 !important;
+  text-decoration: none !important;
   font-weight: normal;
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
@@ -646,7 +654,7 @@ li.menu-item {
 /*FAQ Styling*/
 
 p.trigger {
-  color: #3c3c39;
+  color: #3c3c39 !important;
   padding: 10px 25px 6px 0;
   background: url(images/toggle-updown.png) no-repeat 664px 24px;
   border-bottom: 1px solid #cac8c7;
@@ -658,27 +666,29 @@ p.trigger:hover {
 }
 
 p.trigger:hover a {
-  color: #d3792e;
+  color: #d3792e !important;
+  text-decoration: none !important;
 }
 
 p.trigger a {
-  color: #3c3c39;
+  color: #3c3c39 !important;
   font-weight: normal;
   text-shadow: none;
 }
 
 p.trigger a:hover {
-  color: #d3792e;
+  color: #d3792e !important;
+  text-decoration: none !important;
   font-weight: normal;
   text-shadow: none;
 }
 
 p.trigger.active a {
-  color: #d3792e;
+  color: #d3792e !important;
   text-shadow: none;
 }
 p.trigger.active a:hover {
-  color: #d3792e;
+  color: #d3792e !important;
   font-weight: normal;
   text-shadow: none;
 }
@@ -1197,6 +1207,7 @@ input.wpcf7-form-control.wpcf7-submit {
 	color: #3c3c39;
   margin: 0 12px 10px 12px;
   letter-spacing: 0px;
+  display: none;
 }
   
 .integration-update p{
@@ -1351,6 +1362,7 @@ margin-bottom: -20px;
 margin: 0 0 0 0;
 color: #d3792e;
 font-weight: 600;
+letter-spacing: 1px;
 }
 
 .whats_new_summary {

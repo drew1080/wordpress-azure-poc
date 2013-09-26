@@ -26,6 +26,10 @@ padding:0px;
 background-image: none;
 }
 
+.login h1 {
+  display: none;
+}
+
 
 .input {
   font-family: Lato;
@@ -41,7 +45,9 @@ background-image: none;
   box-shadow: none;
   -webkit-box-shadow: none;
   position: relative;
-  top: 114px;
+  top: 195px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #login_error{
@@ -50,14 +56,14 @@ visibility: hidden;
 
 .login label[for=user_login] {
   margin-top: 137px;
-  margin-left: 126px;
+  margin-left: 158px;
   display: inline-block;
   position: absolute;
-  top: 26px;
+  top: 27px;
 }
 
 .login label[for=user_pass] {
-  margin-left: 126px;
+  margin-left: 158px;
   display: inline-block;
   position: absolute;
   top: 203px;
@@ -67,7 +73,7 @@ visibility: hidden;
   position: absolute;
   top: 237px;
   text-align: center;
-  margin-left: 0px;
+  margin-left: 29px;
   width: 447px;
 }
 

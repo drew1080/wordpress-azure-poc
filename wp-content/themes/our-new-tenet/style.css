@@ -1443,3 +1443,22 @@ font-weight: bold;
   padding-top: 10px;
 }
 
+/*Employee guide button style*/
+p.gde-text {
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);
+  width: 168px;
+  height: 26px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+a.gde-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+a.gde-link:hover {
+  text-decoration: none !important;
+}

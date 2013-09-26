@@ -1177,9 +1177,9 @@ input.wpcf7-form-control.wpcf7-submit {
       padding-top: 88px !important;
     }
     
-/*    .page-id-4851 .entry-content p {
-        padding-top: 34px !important;
-      }*/
+    .page-id-4851 .entry-content p {
+        padding-top: 24px !important;
+      }
 }
 
 @media (max-width: 320px) {

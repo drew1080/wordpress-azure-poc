@@ -299,7 +299,8 @@ body {
 }
 
 .home #navigation ul#menu-top-nav,
-.page-id-4851 #navigation ul#menu-top-nav {
+.page-id-4851 #navigation ul#menu-top-nav,
+.page-id-501 #navigation ul#menu-top-nav {
   visibility: visible;
 }
 
@@ -1092,7 +1093,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }*/
   
   .rev_slider_wrapper {
-    margin: 75px 0px !important;
+    margin: 22px 0px !important;
   }
   
   .tp-leftarrow.default {

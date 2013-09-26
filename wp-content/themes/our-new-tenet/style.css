@@ -189,6 +189,29 @@ h3 {
   color: #267496;
 }
 
+a {
+  color: #267496 !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #267496;
+  text-decoration: underline !important;
+}
+
+a:link {
+  color: #267496 !important;
+  text-decoration: none !important;
+}
+
+a:link:hover {
+  color: #267496;
+  text-decoration: underline !important;
+}
+
+#footer a:link {
+  color: #2c3f6c !important;
+}
 /* TODO investigate what is needed from this...removing as it shows a background on the nav html.ie #navigation, */
 
 html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
@@ -493,8 +516,8 @@ color: #2c3f6c;
 }
 
 .submit-a-question a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #fff !important;
   width: 100%;
   height: 100%;
 }

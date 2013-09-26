@@ -19,6 +19,7 @@ background: url('/wp-content/themes/our-new-tenet/images/badge.png') no-repeat;
 width: 509px;
 height: 555px;
 padding:0px;
+position: relative;
 }
 
 /* Remove default wordpress image */
@@ -44,7 +45,7 @@ background-image: none;
   border: none;
   box-shadow: none;
   -webkit-box-shadow: none;
-  position: relative;
+  position: absolute;
   top: 195px;
   margin: 0px;
   padding: 0px;
@@ -55,11 +56,11 @@ visibility: hidden;
 }
 
 .login label[for=user_login] {
-  margin-top: 137px;
+/*  margin-top: 137px;*/
   margin-left: 158px;
   display: inline-block;
   position: absolute;
-  top: 27px;
+  top: 164px;
 }
 
 .login label[for=user_pass] {
@@ -139,7 +140,8 @@ background: #d3792e;
 }
 
 #login_error, .login .message {
-  margin: 0 0 16px -3px;
+/*  margin: 0 0 16px -3px;*/
+  margin: 0px;
   display: none;
 }
 
@@ -147,12 +149,12 @@ background: #d3792e;
 
 @media (max-width: 568px) {
   
-.login label[for=user_login]{
+/*.login label[for=user_login]{
   margin-top: 230px;
   margin-left: 136px;
   }
   
 .login label[for=user_pass] {
   margin-left: 136px;
-  }
+  }*/
 }

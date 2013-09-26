@@ -516,8 +516,8 @@ color: #2c3f6c;
 }
 
 .submit-a-question a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #fff !important;
   width: 100%;
   height: 100%;
 }

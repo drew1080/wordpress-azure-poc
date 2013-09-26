@@ -11,7 +11,7 @@ add_filter('show_admin_bar', '__return_false');
  
 function admin_redirect() {
   if ( !is_front_page() && !is_page('contact-us-2') && !is_user_logged_in() && !is_page('login-page')) {
-    wp_redirect( home_url('/wp-admin/') );
+    wp_redirect( home_url('/employee-portal/') );
     exit;
   }
 }
@@ -77,7 +77,7 @@ function logged_in_logo_redirect( $prev_logo) {
 	} else {
 		$class="text"; 		
 	}
-	$home_url = esc_url( home_url() );
+	$home_url = esc_url( home_url( '/employee-portal/' ) );
 	// if ( is_user_logged_in() ) { 
 	//     $home_url = esc_url( home_url( '/employees/' ) );
 	//   }
@@ -328,5 +328,26 @@ add_action('login_head', 'custom_login_head');
 // 
 // add_action('login_form', 'login_form_func');
 
+/*
+function remove_subscribers() {
+	global $wpdb;
+	$args = array( 'role' => 'Subscriber' );
+	$subscribers = get_users( $args );
+	if( !empty($subscribers) ) {
+		require_once( ABSPATH.'wp-admin/includes/user.php' );
+		$i = 0;
+		foreach( $subscribers as $subscriber ) {
+			if( wp_delete_user( $subscriber->ID ) ) {
+				$i++;
+			}
+		}
+		echo $i.' Subscribers deleted';
+	} else {
+		echo 'No Subscribers deleted';
+	}
+}
+
+remove_subscribers();
+*/
 
 ?>

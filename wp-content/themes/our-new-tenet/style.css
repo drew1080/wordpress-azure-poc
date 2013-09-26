@@ -313,7 +313,7 @@ body {
   margin: 0px 5px;
   color: #949591;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: none;
   text-align: left;
 }
@@ -475,6 +475,10 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   width: 960px;
   margin: 0 auto;
   padding: 0;
+}
+
+#footer p{
+color: #2c3f6c;
 }
 
 #fast-facts-wrapper em{
@@ -1136,6 +1140,10 @@ input.wpcf7-form-control.wpcf7-submit {
   .navbar-inverse .navbar-inner {
     width: 93%;
   }
+  
+  #welcome_text_ep h1 {
+    font-size: 26px;
+  }
 }
 
 /* Revolution Slider styling 
@@ -1167,7 +1175,7 @@ input.wpcf7-form-control.wpcf7-submit {
 	border-width: 1px;
 	border-color: #c8c7c6;
 	border-radius: 4px;
-  background-image:url('/wp-content/themes/our-new-tenet/images/img-sidebar-header.png');
+  background-image:url('/wp-content/themes/our-new-tenet/images/integration-update-header.png');
 	background-repeat:no-repeat;
 	width: 158px;
 	margin-left: 8px !important;
@@ -1278,7 +1286,7 @@ display: none;
 
 /* Resources page styling */
 
-
+/* COMMENTED OUT UNTIL WE UPDATE THIS PAGE AGAIN
 #post-3471 .page-restrict-output p
 {
 margin-top: -115px;
@@ -1321,3 +1329,32 @@ margin-left: 50px;
 margin-top: 40px;
 float: left;
 }
+*/
+/*Whats new page styling*/
+
+#post-4291 .entry-title {
+display: none;
+}
+
+#post-4291 h3{
+font-size: 18pt;
+margin-bottom: 0;
+}
+
+#whats_new_image{
+margin-left: 10px;
+margin-top: -15px;
+margin-bottom: -20px;
+}
+
+.whats_new_date {
+margin: 0 0 0 0;
+color: #d3792e;
+font-weight: 600;
+}
+
+.whats_new_summary {
+font-size: 9pt;
+font-weight: bold;
+}
+

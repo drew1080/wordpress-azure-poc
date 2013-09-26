@@ -141,7 +141,7 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
         <div class="nav-collapse collapse">
           <?php
           
-            if ( is_front_page() ) {
+            if ( is_front_page() ){
               $defaults = array(
               	'menu'            => 'top-nav-responsive',
               	'menu_class'      => 'nav',

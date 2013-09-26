@@ -12,6 +12,22 @@ jQuery(function() {
   if ( jQuery('body').hasClass('login') ) {
     jQuery("label[for='user_login']").html('<input type="text" name="log" id="user_login" class="input" value="" size="20" placeholder="Last 4 digits of your SSN">');  
     jQuery("label[for='user_pass']").html('<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" placeholder="Date of birth (mmddyyy)">');
+    
+    // $html = '<p>
+    //  <label for="user_login"><input type="text" name="log" id="user_login" class="input" value="" size="20" placeholder="Last 4 digits of your SSN"></label>
+    //  </p>
+    //  <p>
+    //    <label for="user_pass"><input type="password" name="pwd" id="user_pass" class="input" value="" size="20" placeholder="Date of birth (mmddyyy)"></label>
+    //  </p>
+    //  <p class="lc_form_text">Need help logging in? Call 1-855-900-5947 or email <a href="mailto:OurNewTenet@TenetHealth.com">OurNewTenet@TenetHealth.com</a>.</p>  <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
+    //  <p class="submit">
+    //    <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
+    //    <input type="hidden" name="redirect_to" value="http://wordpresspoc.azurewebsites.net/employee-portal">
+    //    <input type="hidden" name="testcookie" value="1">
+    //  </p>';
+    // 
+    // 
+    // jQuery("#loginform").html($html);
   }
   
   fauxPlaceholder();

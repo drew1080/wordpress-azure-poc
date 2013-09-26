@@ -299,8 +299,7 @@ body {
 }
 
 .home #navigation ul#menu-top-nav,
-.page-id-4851 #navigation ul#menu-top-nav,
-.page-id-501 #navigation ul#menu-top-nav {
+.page-id-4851 #navigation ul#menu-top-nav {
   visibility: visible;
 }
 
@@ -644,7 +643,7 @@ li.menu-item {
 }
 
 .menu-side-nav-container li.menu-item.current-menu-item a {
-  color: #3c3c39;
+  color: #3c3c39 !important;
   font-weight: normal;
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
@@ -1093,7 +1092,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }*/
   
   .rev_slider_wrapper {
-    margin: 22px 0px !important;
+    margin: 75px 0px !important;
   }
   
   .tp-leftarrow.default {

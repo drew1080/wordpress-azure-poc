@@ -172,6 +172,7 @@ h1{
   color: #2c3f6c;
   font-size: 30px;
   font-family: "Lato", arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 h2{
@@ -189,6 +190,7 @@ h1 {
 h3 {
   color: #267496;
   font-family: "Lato", arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 a {

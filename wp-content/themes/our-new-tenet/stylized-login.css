@@ -56,11 +56,11 @@ visibility: hidden;
 }
 
 .login label[for=user_login] {
-  margin-top: 137px;
+/*  margin-top: 137px;*/
   margin-left: 158px;
   display: inline-block;
   position: absolute;
-  top: 27px;
+  top: 164px;
 }
 
 .login label[for=user_pass] {
@@ -149,12 +149,12 @@ background: #d3792e;
 
 @media (max-width: 568px) {
   
-.login label[for=user_login]{
+/*.login label[for=user_login]{
   margin-top: 230px;
   margin-left: 136px;
   }
   
 .login label[for=user_pass] {
   margin-left: 136px;
-  }
+  }*/
 }

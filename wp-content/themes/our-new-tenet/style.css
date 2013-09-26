@@ -1026,6 +1026,10 @@ input.wpcf7-form-control.wpcf7-submit {
   .page-id-4851 .entry-content p:first-child {
      padding-top: 80px !important;
    }
+   
+   .page-id-4851 .entry-content p {
+     padding-top: 1px !important;
+   }
 }
 
 
@@ -1166,9 +1170,9 @@ input.wpcf7-form-control.wpcf7-submit {
       padding-top: 88px !important;
     }
     
-    .page-id-4851 .entry-content p {
+/*    .page-id-4851 .entry-content p {
         padding-top: 34px !important;
-      }
+      }*/
 }
 
 @media (max-width: 320px) {
@@ -1429,6 +1433,6 @@ font-weight: bold;
 }
 
 .page-id-4851 .entry-content p {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 

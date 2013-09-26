@@ -742,6 +742,7 @@ input.wpcf7-form-control.wpcf7-submit {
   text-shadow: none;
   font-size: 14px;
   line-height: 150%;
+  height: 29px;
   border: none;
 }
 /*Responsive menu styling*/
@@ -925,12 +926,12 @@ input.wpcf7-form-control.wpcf7-submit {
     left: 20%;
   }
   .header-wrap {
-    height: 68px;
+    height: 54px;
     width: 208px;
     margin: 10px auto;
   }
   #wrap #header {
-    margin: 16px 0 0 -12px;
+    margin: 0 0 0 -13px;
     height: 76px;
   }
   #header #site-title.graphic a {
@@ -1070,7 +1071,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
   .navbar-inverse .navbar-inner {
-    width: 93%;
+    width: 95%;
   }
 
   .header-wrap {
@@ -1201,7 +1202,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .navbar-inverse .navbar-inner {
-    width: 93%;
+    width: 95%;
   }
   
   #welcome_text_ep h1 {

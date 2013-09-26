@@ -171,6 +171,7 @@ html {
 h1{
   color: #2c3f6c;
   font-size: 30px;
+  font-family: "Lato", arial, sans-serif;
 }
 
 h2{
@@ -187,6 +188,7 @@ h1 {
 
 h3 {
   color: #267496;
+  font-family: "Lato", arial, sans-serif;
 }
 
 a {
@@ -652,7 +654,7 @@ li.menu-item {
 /*FAQ Styling*/
 
 p.trigger {
-  color: #3c3c39;
+  color: #3c3c39 !important;
   padding: 10px 25px 6px 0;
   background: url(images/toggle-updown.png) no-repeat 664px 24px;
   border-bottom: 1px solid #cac8c7;
@@ -664,27 +666,29 @@ p.trigger:hover {
 }
 
 p.trigger:hover a {
-  color: #d3792e;
+  color: #d3792e !important;
+  text-decoration: none !important;
 }
 
 p.trigger a {
-  color: #3c3c39;
+  color: #3c3c39 !important;
   font-weight: normal;
   text-shadow: none;
 }
 
 p.trigger a:hover {
-  color: #d3792e;
+  color: #d3792e !important;
+  text-decoration: none !important;
   font-weight: normal;
   text-shadow: none;
 }
 
 p.trigger.active a {
-  color: #d3792e;
+  color: #d3792e !important;
   text-shadow: none;
 }
 p.trigger.active a:hover {
-  color: #d3792e;
+  color: #d3792e !important;
   font-weight: normal;
   text-shadow: none;
 }

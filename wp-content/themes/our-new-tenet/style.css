@@ -966,20 +966,20 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   p.trigger {
-    background: url(images/toggle-updown.png) no-repeat 462px 24px;
+    background: url(images/toggle-updown.png) no-repeat 442px 24px;
   }
   p.trigger:hover {
-    background: #eeeeee url(images/toggle-updown.png) no-repeat 462px -279px;
+    background: #eeeeee url(images/toggle-updown.png) no-repeat 442px -279px;
   }
   
   p.trigger.active {
-    background: url(images/toggle-updown.png) no-repeat 462px -926px;
+    background: url(images/toggle-updown.png) no-repeat 442px -926px;
     border: none;
     padding-left: 0;
   }
 
   p.trigger.active:hover {
-    background: url(images/toggle-updown.png) no-repeat 462px -584px;
+    background: url(images/toggle-updown.png) no-repeat 442px -584px;
     border: none;
     padding-left: 0;
   }

@@ -884,8 +884,8 @@ input.wpcf7-form-control.wpcf7-submit {
   .page-id-4851 {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
   }
-  .page-id-4851 .entry-content {
-    padding-top: 98px;
+  .page-id-4851 .entry-content p:first-child {
+    padding-top: 98px !important;
   }
 }
 
@@ -1022,8 +1022,8 @@ input.wpcf7-form-control.wpcf7-submit {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x180.jpg) !important;
   }
   
-  .page-id-4851 .entry-content {
-     padding-top: 80px;
+  .page-id-4851 .entry-content p:first-child {
+     padding-top: 80px !important;
    }
 }
 
@@ -1161,9 +1161,13 @@ input.wpcf7-form-control.wpcf7-submit {
      background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x180.jpg) !important;
    }
    
-   .page-id-4851 .entry-content {
-      padding-top: 86px;
+   .page-id-4851 .entry-content p:first-child {
+      padding-top: 88px !important;
     }
+    
+    .page-id-4851 .entry-content p {
+        padding-top: 34px !important;
+      }
 }
 
 @media (max-width: 320px) {
@@ -1193,8 +1197,8 @@ input.wpcf7-form-control.wpcf7-submit {
     font-size: 26px;
   }
   
-  .page-id-4851 .entry-content {
-     padding-top: 92px;
+  .page-id-4851 .entry-content p:first-child {
+     padding-top: 92px !important;
    }
 }
 
@@ -1419,7 +1423,11 @@ font-weight: bold;
   background-color: transparent;
 }
 
-.page-id-4851 .entry-content {
-  padding-top: 112px;
+.page-id-4851 .entry-content p:first-child {
+  padding-top: 120px;
+}
+
+.page-id-4851 .entry-content p {
+  padding-top: 20px;
 }
 

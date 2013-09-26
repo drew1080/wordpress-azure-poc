@@ -290,7 +290,7 @@ body {
   margin: 0px 5px;
   color: #949591;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: none;
   text-align: left;
 }
@@ -452,6 +452,10 @@ http://wordpresspoc.azurewebsites.net/wp-content/uploads/2013/09/login-badge.png
   width: 960px;
   margin: 0 auto;
   padding: 0;
+}
+
+#footer p{
+color: #2c3f6c;
 }
 
 #fast-facts-wrapper em{

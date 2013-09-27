@@ -1515,7 +1515,7 @@ a.gde-link:hover {
 /*Employee guide page style*/
 .employee_guide_table td
 {
-background-color: none;
+background-color: transparent;
 border: none;
 vertical-align: top;
 }

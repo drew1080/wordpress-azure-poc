@@ -1519,3 +1519,8 @@ background-color: transparent;
 border: none;
 vertical-align: top;
 }
+
+#post-3131 .entry-title
+{
+display: none;
+}

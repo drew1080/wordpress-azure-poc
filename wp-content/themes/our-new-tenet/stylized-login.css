@@ -76,6 +76,7 @@ visibility: hidden;
   text-align: center;
   margin-left: 29px;
   width: 447px;
+  font-family: "lato", sans-serif;
 }
 
 #login form p.submit {

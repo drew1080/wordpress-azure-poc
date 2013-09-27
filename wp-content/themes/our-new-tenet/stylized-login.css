@@ -167,10 +167,11 @@ width: 360px;
 height: 455px;
 padding:0px;
 position: relative;
+background-position: 0 -51px;
 }
 
 .login label[for=user_login] {
-  top: 55px;
+  top: 5px;
   margin-left: 110px;
 }
 
@@ -179,7 +180,7 @@ position: relative;
 }
 
 .login label[for=user_pass] {
-  top: 83px;
+  top: 33px;
   margin-left: 110px;
 }
 
@@ -191,19 +192,19 @@ position: relative;
   
 }
 #login form p.submit {
-  top: 184px;
+  top: 134px;
   left: 148px;
 }
 .login form p.lc_form_text {
   margin-left: 14px;
   width: 315px;
-  top: 144px;
+  top: 94px;
 }
 
 body.login {
 background: url('/wp-content/themes/our-new-tenet/images/trans-welcome-320px.png') no-repeat;
 background-position: 50% 100%;
-height: 502px;
+height: 452px;
 }
 
 }
@@ -216,10 +217,11 @@ width: 310px;
 height: 455px;
 padding:0px;
 position: relative;
+background-position: 0 -51px;
 }
 
 .login label[for=user_login] {
-  top: 20px;
+  top: -30px;
   margin-left: 94px;
 }
 
@@ -229,7 +231,7 @@ position: relative;
 }
 
 .login label[for=user_pass] {
-  top: 45px;
+  top: -5px;
   margin-left: 94px;
 }
 
@@ -242,19 +244,19 @@ position: relative;
   
 }
 #login form p.submit {
-  top: 138px;
+  top: 88px;
   left: 122px;
 }
 .login form p.lc_form_text {
   margin-left: -2px;
   width: 315px;
-  top: 100px;
+  top: 50px;
 }
 
 body.login {
 background: url('/wp-content/themes/our-new-tenet/images/trans-welcome-320px.png') no-repeat;
 background-position: 50% 100%;
-height: 455px;
+height: 408px;
 }
 
 }

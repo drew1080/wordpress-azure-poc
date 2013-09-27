@@ -200,6 +200,14 @@ position: relative;
   top: 144px;
 }
 
+body.login {
+background: url('/wp-content/themes/our-new-tenet/images/trans-welcome-320px.png') no-repeat;
+background-position: 50% 100%;
+height: 502px;
+}
+
+}
+
 @media (max-width: 359px) {
   
 #login {
@@ -243,12 +251,10 @@ position: relative;
   top: 100px;
 }
 
-/*.login label[for=user_login]{
-  margin-top: 230px;
-  margin-left: 136px;
-  }
-  
-.login label[for=user_pass] {
-  margin-left: 136px;
-  }*/
+body.login {
+background: url('/wp-content/themes/our-new-tenet/images/trans-welcome-320px.png') no-repeat;
+background-position: 50% 100%;
+height: 455px;
+}
+
 }

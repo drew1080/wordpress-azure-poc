@@ -183,10 +183,6 @@ h3, h4 {
   color: #3c3c39;
 }
 
-h1 {
-  color: #2c3f6c;
-}
-
 h3 {
   color: #267496;
   font-family: "Lato", arial, sans-serif;
@@ -519,13 +515,10 @@ color: #2c3f6c;
 }
 
 .fast-fact-content {
-  font-family: "latoitalic", arial, sans-serif;
+  font-family: "latobold_italic", arial, sans-serif;
   display: table-cell; 
   vertical-align: middle; 
   padding: 0 10px 0 130px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 17px;
 }
 
 .page-id-2721 h1 {
@@ -1302,10 +1295,10 @@ display: none;
 margin: 0 0 0 0;
 }
 
-/*#post-2861 p
+#post-2861 p
 {
 margin: 0 0 10px 0;
-}*/
+}
 
 #welcome_image_ep {
   float: left;

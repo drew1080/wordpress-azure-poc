@@ -554,6 +554,28 @@ color: #2c3f6c;
   text-decoration: none !important;
 }
 
+.download-pdf {
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  width: 168px;
+  height: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 5px;
+}
+
+.download-pdf a {
+  text-decoration: none !important;
+  color: #fff !important;
+  width: 100%;
+  height: 100%;
+}
+
+.download-pdf a:hover {
+  text-decoration: none !important;
+}
+
 .resize {
   display:none;
 }

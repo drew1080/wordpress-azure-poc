@@ -1490,6 +1490,8 @@ p.gde-text {
   padding-top: 4px;
 }
 
+
+
 a.gde-link {
   color: #ffffff !important;
   text-decoration: none !important;
@@ -1510,3 +1512,10 @@ a.gde-link:hover {
   margin: 12px 15px 0 0;
 }
 
+/*Employee guide page style*/
+.employee_guide_table td
+{
+background-color: none;
+border: none;
+vertical-align: top;
+}

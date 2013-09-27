@@ -564,16 +564,11 @@ color: #2c3f6c;
   text-align: center;
   float: left;
   margin-top: 5px;
-}
-
-.download-pdf a {
   text-decoration: none !important;
   color: #fff !important;
-  width: 100%;
-  height: 100%;
 }
 
-.download-pdf a:hover {
+a.download-pdf:hover {
   text-decoration: none !important;
 }
 

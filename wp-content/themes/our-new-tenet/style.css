@@ -564,6 +564,10 @@ color: #2c3f6c;
   text-align: center;
   float: left;
   margin-top: 5px;
+
+}
+
+a.download-pdf {
   text-decoration: none !important;
   color: #fff !important;
 }

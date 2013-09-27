@@ -11,7 +11,7 @@ html {
 body.login {
 background: url('/wp-content/themes/our-new-tenet/images/trans-welcome.png') no-repeat;
 background-position: 50% 100%;
-height: auto;
+height: 760px;
 }
 
 #login {

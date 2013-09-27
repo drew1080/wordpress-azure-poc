@@ -33,7 +33,7 @@ Author URI: http://www.theblog.ca/wordpress-redirect-first-login
 //Login redirecting
 function redirectOnFirstLogin( $redirect_to, $requested_redirect_to, $user ) {
     // URL to redirect to
-    $redirect_url = '/employee-portal/';
+    $redirect_url = '/employee-portal/'; 
     // How many times to redirect the user
     $num_redirects = 1;
 

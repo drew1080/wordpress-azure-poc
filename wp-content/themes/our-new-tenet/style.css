@@ -1464,3 +1464,9 @@ a.gde-link {
 a.gde-link:hover {
   text-decoration: none !important;
 }
+
+/*Resources page*/
+
+.resource-icon {
+  margin: 10px 15px 0 0;
+}

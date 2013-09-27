@@ -151,8 +151,47 @@ padding: 0 12px 0;
 
 
 
-@media (max-width: 568px) {
+@media (max-width: 479px) {
   
+#login {
+background: url('/wp-content/themes/our-new-tenet/images/badge-360px.png') no-repeat;
+width: 360px;
+height: 455px;
+padding:0px;
+position: relative;
+}
+
+.login label[for=user_login] {
+  top: 55px;
+  margin-left: 110px;
+}
+
+#user_login {
+  width: 150px;
+}
+
+.login label[for=user_pass] {
+  top: 83px;
+  margin-left: 110px;
+}
+
+#user_pass {
+  width: 150px;
+}
+
+#wp-submit {
+  
+}
+#login form p.submit {
+  top: 184px;
+  left: 148px;
+}
+.login form p.lc_form_text {
+  margin-left: 14px;
+  width: 315px;
+  top: 144px;
+}
+
 /*.login label[for=user_login]{
   margin-top: 230px;
   margin-left: 136px;

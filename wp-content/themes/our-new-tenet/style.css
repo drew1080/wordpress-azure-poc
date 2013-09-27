@@ -216,6 +216,10 @@ a:link:hover {
 #footer a:link {
   color: #2c3f6c !important;
 }
+
+#footer a:link:active {
+  color: #2c3f6c !important;
+}
 /* TODO investigate what is needed from this...removing as it shows a background on the nav html.ie #navigation, */
 
 html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
@@ -929,7 +933,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   .header-wrap {
     height: 54px;
-    width: 208px;
+    width: 247px;
     margin: 10px auto;
   }
   #wrap #header {
@@ -1077,13 +1081,13 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
   .header-wrap {
-    height: 68px;
-    width: 208px;
-    margin: 10px auto 0;
+    height: 72px;
+    width: 247px;
+    margin: 4px auto 0;
   }
   #wrap #header {
-    margin: 18px 0 0 -20px;
-    height: 76px;
+    margin: 16px 0 0 -20px;
+    height: 82px;
   }
   #header #site-title.graphic a {
     margin: 0;

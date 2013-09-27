@@ -86,7 +86,6 @@ jQuery(function($){
     }
     
     if ( $content.length > 0 ) {
-      //setInterval(load_fast_facts, 2000);
-      setInterval(load_fast_facts, 8000);
+      setInterval(load_fast_facts, 10000);
     }
 });

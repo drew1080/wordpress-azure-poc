@@ -213,6 +213,7 @@ a:link:hover {
   text-decoration: underline !important;
 }
 
+#footer a,
 #footer a:link {
   color: #2c3f6c !important;
 }

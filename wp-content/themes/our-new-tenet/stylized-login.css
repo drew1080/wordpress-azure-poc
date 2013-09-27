@@ -192,6 +192,49 @@ position: relative;
   top: 144px;
 }
 
+@media (max-width: 359px) {
+  
+#login {
+background: url('/wp-content/themes/our-new-tenet/images/badge-310px.png') no-repeat;
+width: 310px;
+height: 455px;
+padding:0px;
+position: relative;
+}
+
+.login label[for=user_login] {
+  top: 20px;
+  margin-left: 94px;
+}
+
+#user_login {
+  width: 130px;
+  padding: 1px;
+}
+
+.login label[for=user_pass] {
+  top: 45px;
+  margin-left: 94px;
+}
+
+#user_pass {
+  width: 130px;
+  padding: 1px;
+}
+
+#wp-submit {
+  
+}
+#login form p.submit {
+  top: 138px;
+  left: 122px;
+}
+.login form p.lc_form_text {
+  margin-left: -2px;
+  width: 315px;
+  top: 100px;
+}
+
 /*.login label[for=user_login]{
   margin-top: 230px;
   margin-left: 136px;

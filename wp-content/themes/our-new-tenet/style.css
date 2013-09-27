@@ -926,6 +926,14 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 }
 
+
+@media only screen and (max-width: 769px) {
+  
+  .page-id-3131 .entry-content iframe {
+    display: none; 
+  }
+
+}
 @media only screen and (max-width: 767px) and (min-width: 480px) {
  /* #header .inner #site-title.graphic a {
      height: 130px;
@@ -1492,7 +1500,7 @@ a.gde-link:hover {
   text-decoration: none !important;
 }
 
-/*Resources page*/
+/*Styling dropdown icons*/
 
 .resource-icon {
   margin: 10px 15px 0 0;
@@ -1501,3 +1509,4 @@ a.gde-link:hover {
 .company-icon {
   margin: 12px 15px 0 0;
 }
+

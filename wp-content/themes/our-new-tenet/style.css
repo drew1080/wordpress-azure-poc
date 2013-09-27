@@ -172,6 +172,7 @@ h1{
   color: #2c3f6c;
   font-size: 30px;
   font-family: "Lato", arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 h2{
@@ -189,6 +190,7 @@ h1 {
 h3 {
   color: #267496;
   font-family: "Lato", arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
@@ -1092,7 +1094,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }*/
   
   .rev_slider_wrapper {
-    margin: 75px 0px !important;
+    margin: 22px 0px !important;
   }
   
   .tp-leftarrow.default {
@@ -1177,9 +1179,9 @@ input.wpcf7-form-control.wpcf7-submit {
       padding-top: 88px !important;
     }
     
-/*    .page-id-4851 .entry-content p {
-        padding-top: 34px !important;
-      }*/
+    .page-id-4851 .entry-content p {
+        padding-top: 24px !important;
+      }
 }
 
 @media (max-width: 320px) {
@@ -1443,3 +1445,28 @@ font-weight: bold;
   padding-top: 10px;
 }
 
+/*Employee guide button style*/
+p.gde-text {
+  background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);
+  width: 168px;
+  height: 26px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+a.gde-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+a.gde-link:hover {
+  text-decoration: none !important;
+}
+
+/*Resources page*/
+
+.resource-icon {
+  margin: 10px 15px 0 0;
+}

@@ -516,12 +516,13 @@ color: #2c3f6c;
 }
 
 .fast-fact-content {
-  font-family: "latoregular", arial, sans-serif;
+  font-family: "latoregular", sans-serif;
   display: table-cell; 
   vertical-align: middle; 
   padding: 0 10px 0 130px;
-/*  font-style: italic;
-  font-weight: 700;*/
+  color:#3c3c39;
+/*  font-style: italic;*/
+  font-weight: 700;
   line-height: 17px;
 }
 

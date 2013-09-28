@@ -575,6 +575,10 @@ color: #2c3f6c;
     display: none; 
   }
 
+  #pageflip_newtab
+  {
+  display: none;
+ }
 }
 
 /* iPads (landscape) ----------- */
@@ -586,15 +590,24 @@ and (orientation : landscape) {
   .pageflip_popup_link {
     display: none; 
   }
+ #pageflip_newtab
+  {
+  display: none;
+ }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-.pageflip_popup_link {
+ .pageflip_popup_link {
     display: none; 
   }
+  
+ #pageflip_newtab
+  {
+  display: none;
+ }
 }
 
 

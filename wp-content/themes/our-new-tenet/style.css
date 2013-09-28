@@ -584,7 +584,7 @@ color: #2c3f6c;
 {
 color: #FFF !important;
 }
-.pageflip_popup_link a{
+.pageflip_popup_link a:hover{
 text-decoration: none !important;
 }
 

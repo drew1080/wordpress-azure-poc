@@ -580,11 +580,11 @@ color: #2c3f6c;
   margin-top: 5px;
 }
 
-a.pageflip_popup_link
+.pageflip_popup_link a
 {
 color: FFF !important;
 }
-a.pageflip_popup_link{
+.pageflip_popup_link a{
 text-decoration: none !important;
 }
 

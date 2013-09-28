@@ -1316,7 +1316,7 @@ and (max-device-width : 568px) {
 
 /*iPhone style*/
 #welcome_text_ep h1 {
-font-size:24px;
+font-size:24px !important;
 }
 
 }

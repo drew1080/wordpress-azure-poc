@@ -1310,6 +1310,17 @@ input.wpcf7-form-control.wpcf7-submit {
     font-size: 26px;
   }
   
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+
+/*iPhone style*/
+#welcome_text_ep h1 {
+font-size:24px;
+}
+
+}
+  
   .page-id-4851 .entry-content p:first-child {
      padding-top: 92px !important;
    }
@@ -1407,7 +1418,7 @@ margin: 0 0 10px 0;
 #welcome_text_ep {
   float: left;
   display: block;
-  margin-top: 50px;
+  margin-top: 30px;
 /*margin-right: 50px;*/
 }
 

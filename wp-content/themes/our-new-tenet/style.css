@@ -568,6 +568,15 @@ color: #2c3f6c;
   margin-top: 5px;
 }
 
+/*Only show the view guide link on desktop*/
+@media only screen and (max-width: 769px) {
+  
+  .pageflip_popup_link {
+    display: none; 
+  }
+
+}
+
 .pageflip_popup_link
 {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);

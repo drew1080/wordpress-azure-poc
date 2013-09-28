@@ -1306,14 +1306,9 @@ input.wpcf7-form-control.wpcf7-submit {
     width: 93%;
   }
   
-  #welcome_text_ep h1 {
-    font-size: 26px;
-  }
-  
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) { 
-
 /*iPhone style*/
 #welcome_text_ep h1 {
 font-size:24px !important;

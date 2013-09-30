@@ -11,7 +11,7 @@ jQuery(function() {
   
   if ( jQuery('body').hasClass('login') ) {
     jQuery("label[for='user_login']").html('<input type="text" name="log" id="user_login" class="input" value="" size="20" placeholder="Last 4 digits of your SSN">');  
-    jQuery("label[for='user_pass']").html('<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" placeholder="Date of birth (mmddyyy)">');
+    jQuery("label[for='user_pass']").html('<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" placeholder="Date of birth (mmddyyyy)">');
     
     // $html = '<p>
     //  <label for="user_login"><input type="text" name="log" id="user_login" class="input" value="" size="20" placeholder="Last 4 digits of your SSN"></label>

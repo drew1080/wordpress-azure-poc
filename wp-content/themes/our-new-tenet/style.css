@@ -1545,6 +1545,14 @@ font-size: 9pt;
 font-weight: bold;
 }
 
+.whats_new_summary p {
+margin: 0;
+}
+
+.whats_new_summary p:first-child {
+margin-bottom: 20px;
+}
+
 .page-id-4851 {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x360.jpg);
   background-position: 0 129px;

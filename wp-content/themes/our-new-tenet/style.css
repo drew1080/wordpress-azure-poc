@@ -1546,7 +1546,7 @@ font-weight: bold;
 }
 
 p.whats_new_summary {
-margin: 0;
+margin-bottom: 5px;
 }
 
 p.whats_new_summary:first-child {

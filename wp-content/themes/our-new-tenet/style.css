@@ -290,6 +290,12 @@ body {
   z-index: 1;
 }
 
+#header #site-title.graphic a {
+  background-image: url(/wp-content/themes/our-new-tenet/images/logo.png) !important;
+  width: 247px;
+  height: 50px;
+}
+
 #navigation ul#menu-top-nav {
   background: none;
   border: none;
@@ -932,6 +938,12 @@ input.wpcf7-form-control.wpcf7-submit {
   .page-id-3131 .entry-content iframe {
     display: none; 
   }
+  
+  #header #site-title.graphic a {
+    background-image: url(/wp-content/themes/our-new-tenet/images/OurNewTenet-logo-500px.png) !important;
+    width: 247px;
+    height: 50px;
+  }
 
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -1509,4 +1521,5 @@ a.gde-link:hover {
 .company-icon {
   margin: 12px 15px 0 0;
 }
+
 

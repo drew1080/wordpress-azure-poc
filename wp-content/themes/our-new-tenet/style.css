@@ -922,6 +922,33 @@ input.wpcf7-form-control.wpcf7-submit {
   text-decoration: none !important;
 }
 
+/* Revolution Slider styling 
+   All divs under the thumbcontainer get padded - creates space between the thumbnails
+*/
+.tp-thumbcontainer div {
+		margin: 6px !important;
+} 
+
+.tp-bullets.tp-thumbs{
+  background-color: transparent !important;
+}
+
+/* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
+.tp-mask {
+  width: 785px !important;
+  height: 120px !important;
+}
+
+/* Move the whole container over the left slightly to account for the added space */
+.tp-bullets.tp-thumbs.round {
+  margin-left: -390px !important;
+ }
+ 
+ .bullet.thumb {
+   width: 250px !important;
+   height: 110px !important;
+ }
+ 
 @media (max-width: 960px) {
   #fast-facts-wrapper {
     display: none;
@@ -988,11 +1015,11 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .tp-leftarrow {
-    top: 180px !important;
+    top: 105px !important;
   }
 
   .tp-rightarrow {
-    top: 180px !important;
+    top: 105px !important;
   }
   
   .page-id-4851 {
@@ -1015,6 +1042,23 @@ input.wpcf7-form-control.wpcf7-submit {
     width: 247px;
     height: 50px;
   }
+  
+  .tp-mask {
+    width: 480px !important;
+    height: 100% !important;
+  }
+  
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -242px !important;
+   }
+   .bullet.thumb {
+     width: 152px !important;
+     height: 70px !important;
+   }
+   
+   .tp-thumbcontainer {
+     left: -2px !important;
+   }
 
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -1080,9 +1124,9 @@ input.wpcf7-form-control.wpcf7-submit {
     margin: 0px !important;
   }
   
-  .tp-bullets.tp-thumbs.round .tp-mask {
+/*  .tp-bullets.tp-thumbs.round .tp-mask {
     display: none;
-  }
+  }*/
   
   .tp-leftarrow.default {
     margin-top: -10px !important;
@@ -1216,11 +1260,11 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .tp-leftarrow.default {
-    margin-top: 108px !important;
+    margin-top: 186px !important;
   }
   
   .tp-rightarrow.default {
-    margin-top: 108px !important;
+    margin-top: 186px !important;
   }
   
   .login a, .logout a {
@@ -1248,9 +1292,9 @@ input.wpcf7-form-control.wpcf7-submit {
      display: block;
    }
 
-   .tp-bullets.tp-thumbs.round {
+/*   .tp-bullets.tp-thumbs.round {
      display: none;
-   }
+   }*/
    
    p.trigger {
      background: url(images/toggle-updown.png) no-repeat 282px 24px;
@@ -1309,11 +1353,11 @@ input.wpcf7-form-control.wpcf7-submit {
    }
   
   .tp-leftarrow.default {
-    margin-top: 74px !important;
+    margin-top: 124px !important;
   }
   
   .tp-rightarrow.default {
-    margin-top: 74px !important;
+    margin-top: 124px !important;
   }
   
   .circle {
@@ -1324,6 +1368,23 @@ input.wpcf7-form-control.wpcf7-submit {
   .navbar-inverse .navbar-inner {
     width: 93%;
   }
+  
+  .tp-mask {
+     width: 310px !important;
+     height: 60px !important;
+   }
+
+   .tp-bullets.tp-thumbs.round {
+     margin-left: -162px !important;
+     height: 65px !important;
+     bottom: -75px !important;
+    }
+    .bullet.thumb {
+      width: 100px !important;
+      height: 50px !important;
+    }
+    
+  
   
 @media only screen 
 and (max-width : 320px){ 
@@ -1338,28 +1399,6 @@ font-size:24px !important;
      padding-top: 92px !important;
    }
 }
-
-/* Revolution Slider styling 
-   All divs under the thumbcontainer get padded - creates space between the thumbnails
-*/
-.tp-thumbcontainer div {
-		margin: 6px !important;
-} 
-
-.tp-bullets.tp-thumbs{
-  background-color: transparent !important;
-}
-
-/* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
-.tp-mask {
-  width: 785px !important;
-  height: 120px !important;
-}
-
-/* Move the whole container over the left slightly to account for the added space */
-.tp-bullets.tp-thumbs.round {
-  margin-left: -390px !important;
- }
  
  
  /*Integration update area styling*/ 

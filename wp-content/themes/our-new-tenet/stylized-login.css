@@ -74,7 +74,7 @@ visibility: hidden;
   position: absolute;
   top: 186px;
   text-align: center;
-  margin-left: 29px;
+  margin-left: 33px;
   width: 447px;
   font-family: "lato", sans-serif;
 }
@@ -82,7 +82,7 @@ visibility: hidden;
 #login form p.submit {
   position: absolute;
   top: 250px;
-  left: 217px;
+  left: 224px;
 }
 
 #user_login{

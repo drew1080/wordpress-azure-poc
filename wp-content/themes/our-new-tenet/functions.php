@@ -1,4 +1,6 @@
 <?php
+// Custom Functions for Our New Tenet
+
 include("functions/integration_update_widget.php");
 
 add_shortcode('fast_facts', 'fast_facts_func');

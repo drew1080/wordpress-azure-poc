@@ -59,4 +59,15 @@ jQuery(function() {
       var test = document.createElement(elm);
       return attr in test;
   }
+  
+  
+  if( $("html").hasClass("ie8") ) {
+    console.log("IE now...");
+    
+    if ( jQuery('body').hasClass('home') ) {    
+      jQuery(jQuery(".tp-leftarrow.default")[0]).css("background-image", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
+
+      jQuery(jQuery(".tp-rightarrow.default")[0]).css("background-image", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
+    }
+  };
 });

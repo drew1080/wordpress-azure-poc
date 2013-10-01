@@ -74,17 +74,14 @@ jQuery(function() {
 
 jQuery(window).load(function() {
   if( jQuery("html").hasClass("ie8") || jQuery("html").hasClass("ie9")) {
-    //console.log("IE now...");
     if ( jQuery('body').hasClass('home') ) {    
       
       jQuery("#credits").append("<p>TEMP IE TEST with window load</p>");
       jQuery(jQuery(".tp-leftarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
       //jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
 
-      jQuery(jQuery(".tp-rightarrow")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
-      //jQuery(jQuery(".tp-rightarrow.default")[0]).addClass("ie8arrow");
+      jQuery(jQuery(".tp-rightarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
       
-      //jQuery(jQuery(".tp-rightarrow.default")[0]).parent('div').addClass('z').removeClass('z');
     }
   };
 });

@@ -65,9 +65,9 @@ jQuery(function() {
     //console.log("IE now...");
     
     if ( jQuery('body').hasClass('home') ) {    
-      jQuery(jQuery(".tp-leftarrow.default")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png) no-repeat 0 0;");  
+      jQuery(jQuery(".tp-leftarrow.default")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
 
-      jQuery(jQuery(".tp-rightarrow.default")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png) no-repeat 0 0;");
+      jQuery(jQuery(".tp-rightarrow.default")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
     }
   };
 });

@@ -219,9 +219,9 @@ a:link:hover {
 }
 /* TODO investigate what is needed from this...removing as it shows a background on the nav html.ie #navigation, */
 
-html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
+/*html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
   behavior: url("/wp-content/themes/skeleton/PIE.php");
-}
+}*/
 
 #navigation ul {
   behavior: none;
@@ -690,7 +690,7 @@ a.download-pdf:hover {
 
 .ie .lightblue {
   background-color:#2380c7;
-  behavior: url("/wp-content/themes/skeleton/PIE.php");
+/*  behavior: url("/wp-content/themes/skeleton/PIE.php");*/
 }
 
 .page-restrict-output label {
@@ -1016,11 +1016,33 @@ input.wpcf7-form-control.wpcf7-submit {
   
   .tp-leftarrow {
     top: 105px !important;
+    left: -2px !important;
   }
 
   .tp-rightarrow {
     top: 105px !important;
+    right: -2px !important;
   }
+  
+  .tp-thumbcontainer {
+    left: 0 !important;
+  }
+  
+  .tp-mask {
+    width: 698px !important;
+    height: 120px !important;
+  }
+
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -374px !important;
+    width: 684px !important;
+    left: 54% !important;
+   }
+
+   .bullet.thumb {
+     width: 216px !important;
+     height: 110px !important;
+   }
   
   .page-id-4851 {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
@@ -1043,22 +1065,6 @@ input.wpcf7-form-control.wpcf7-submit {
     height: 50px;
   }
   
-  .tp-mask {
-    width: 480px !important;
-    height: 100% !important;
-  }
-  
-  .tp-bullets.tp-thumbs.round {
-    margin-left: -242px !important;
-   }
-   .bullet.thumb {
-     width: 152px !important;
-     height: 70px !important;
-   }
-   
-   .tp-thumbcontainer {
-     left: -2px !important;
-   }
 
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -1121,12 +1127,8 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .rev_slider_wrapper {
-    margin: 0px !important;
+    margin: 0 0 160px !important;
   }
-  
-/*  .tp-bullets.tp-thumbs.round .tp-mask {
-    display: none;
-  }*/
   
   .tp-leftarrow.default {
     margin-top: -10px !important;
@@ -1201,6 +1203,21 @@ input.wpcf7-form-control.wpcf7-submit {
    .page-id-4851 .entry-content p {
      padding-top: 1px !important;
    }
+   
+   .tp-mask {
+     width: 720px !important;
+     height: 120px !important;
+   }
+
+   .tp-bullets.tp-thumbs.round {
+     margin-left: -476px !important;
+     height: 135px !important;
+    }
+
+    .bullet.thumb {
+      width: 152px !important;
+      height: 110px !important;
+    }
 }
 
 
@@ -1256,7 +1273,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }*/
   
   .rev_slider_wrapper {
-    margin: 22px 0px !important;
+    margin: 22px 0px 112px !important;
   }
   
   .tp-leftarrow.default {
@@ -1291,10 +1308,6 @@ input.wpcf7-form-control.wpcf7-submit {
    .navbar {
      display: block;
    }
-
-/*   .tp-bullets.tp-thumbs.round {
-     display: none;
-   }*/
    
    p.trigger {
      background: url(images/toggle-updown.png) no-repeat 282px 24px;
@@ -1341,9 +1354,24 @@ input.wpcf7-form-control.wpcf7-submit {
       padding-top: 88px !important;
     }
     
-    .page-id-4851 .entry-content p {
-        padding-top: 24px !important;
-      }
+   .page-id-4851 .entry-content p {
+  padding-top: 24px !important;
+  }
+  
+  .tp-mask {
+    width: 720px !important;
+    height: 120px !important;
+  }
+
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -476px !important;
+    height: 135px !important;
+   }
+
+   .bullet.thumb {
+     width: 152px !important;
+     height: 110px !important;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1369,18 +1397,22 @@ input.wpcf7-form-control.wpcf7-submit {
     width: 93%;
   }
   
+  .tp-thumbcontainer {
+    left: -8px !important;
+  }
+  
   .tp-mask {
      width: 310px !important;
      height: 60px !important;
    }
 
    .tp-bullets.tp-thumbs.round {
-     margin-left: -162px !important;
+     margin-left: -150px !important;
      height: 65px !important;
      bottom: -75px !important;
     }
     .bullet.thumb {
-      width: 100px !important;
+      width: 90px !important;
       height: 50px !important;
     }
     

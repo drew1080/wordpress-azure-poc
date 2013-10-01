@@ -61,7 +61,7 @@ jQuery(function() {
   }
   
   
-  if( $("html").hasClass("ie8") ) {
+  if( jQuery("html").hasClass("ie8") ) {
     console.log("IE now...");
     
     if ( jQuery('body').hasClass('home') ) {    

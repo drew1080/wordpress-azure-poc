@@ -60,12 +60,20 @@ jQuery(function() {
       return attr in test;
   }
   
+  var replaceSliderImages = function (){
+    jQuery(jQuery(".tp-leftarrow")[0]).hide();
+    jQuery(jQuery(".tp-leftarrow")[0]).css("background", "url(/wordpress-azure-poc/wp-content/themes/our-new-tenet/images/large-left-IE.png)");
+    jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
+    jQuery(jQuery(".tp-leftarrow")[0]).show();
+  }
+  
+  setInterval(replaceSliderImages, 1000);
   
   if( jQuery("html").hasClass("ie8") || jQuery("html").hasClass("ie9")) {
     //console.log("IE now...");
     if ( jQuery('body').hasClass('home') ) {    
       
-      jQuery("#credits").append("<p>TEMP IE TEST with backgroundImage</p>");
+      jQuery("#credits").append("<p>TEMP IE TEST with interval</p>");
       jQuery(jQuery(".tp-leftarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
       jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
 

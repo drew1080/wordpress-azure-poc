@@ -255,6 +255,13 @@ body {
   overflow-x: hidden;
 }
 
+.tp-leftarrow.ie8arrow {
+  background: url(/wp-content/themes/our-new-tenet/images/large-left-IE.png) !important;
+}
+
+.tp-rightarrow.ie8arrow {
+  background: url(/wp-content/themes/our-new-tenet/images/large-right-IE.png) !important;
+}
 
 .entry-content ul {
   list-style-type: disc;

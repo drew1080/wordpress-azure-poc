@@ -63,7 +63,7 @@ jQuery(function() {
   
   if( jQuery("html").hasClass("ie8") ) {
     //console.log("IE now...");
-    
+    jQuery("#credits").append("<p>TEMP IE TEST</p>");
     if ( jQuery('body').hasClass('home') ) {    
       jQuery(jQuery(".tp-leftarrow.default")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
 

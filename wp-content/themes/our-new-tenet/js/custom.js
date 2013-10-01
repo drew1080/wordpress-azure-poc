@@ -60,27 +60,31 @@ jQuery(function() {
       return attr in test;
   }
   
-  var replaceSliderImages = function (){
-    jQuery(jQuery(".tp-leftarrow")[0]).hide();
-    jQuery(jQuery(".tp-leftarrow")[0]).css("background", "url(/wordpress-azure-poc/wp-content/themes/our-new-tenet/images/large-left-IE.png)");
-    jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
-    jQuery(jQuery(".tp-leftarrow")[0]).show();
-  }
-  
-  setInterval(replaceSliderImages, 1000);
-  
+  // var replaceSliderImages = function (){
+  //   jQuery(jQuery(".tp-leftarrow")[0]).hide();
+  //   jQuery(jQuery(".tp-leftarrow")[0]).css("background", "url(/wordpress-azure-poc/wp-content/themes/our-new-tenet/images/large-left-IE.png)");
+  //   jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
+  //   jQuery(jQuery(".tp-leftarrow")[0]).show();
+  // }
+  // 
+  // setInterval(replaceSliderImages, 1000);
+  // 
+
+});
+
+jQuery(window).load(function() {
   if( jQuery("html").hasClass("ie8") || jQuery("html").hasClass("ie9")) {
     //console.log("IE now...");
     if ( jQuery('body').hasClass('home') ) {    
       
-      jQuery("#credits").append("<p>TEMP IE TEST with interval</p>");
+      jQuery("#credits").append("<p>TEMP IE TEST with window load</p>");
       jQuery(jQuery(".tp-leftarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
-      jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
+      //jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
 
       jQuery(jQuery(".tp-rightarrow")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
-      jQuery(jQuery(".tp-rightarrow.default")[0]).addClass("ie8arrow");
+      //jQuery(jQuery(".tp-rightarrow.default")[0]).addClass("ie8arrow");
       
-      jQuery(jQuery(".tp-rightarrow.default")[0]).parent('div').addClass('z').removeClass('z');
+      //jQuery(jQuery(".tp-rightarrow.default")[0]).parent('div').addClass('z').removeClass('z');
     }
   };
 });

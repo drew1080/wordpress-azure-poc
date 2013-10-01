@@ -690,7 +690,7 @@ a.download-pdf:hover {
 
 .ie .lightblue {
   background-color:#2380c7;
-  behavior: url("/wp-content/themes/skeleton/PIE.php");
+ /* behavior: url("/wp-content/themes/skeleton/PIE.php"); */
 }
 
 .page-restrict-output label {

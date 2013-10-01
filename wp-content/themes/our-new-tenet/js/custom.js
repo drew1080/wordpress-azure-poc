@@ -65,8 +65,8 @@ jQuery(function() {
     //console.log("IE now...");
     if ( jQuery('body').hasClass('home') ) {    
       
-      jQuery("#credits").append("<p>TEMP IE TEST with repaint</p>");
-      jQuery(jQuery(".tp-leftarrow")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
+      jQuery("#credits").append("<p>TEMP IE TEST with backgroundImage</p>");
+      jQuery(jQuery(".tp-leftarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
       jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
 
       jQuery(jQuery(".tp-rightarrow")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");

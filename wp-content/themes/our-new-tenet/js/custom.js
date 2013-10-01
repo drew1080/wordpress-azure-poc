@@ -61,14 +61,14 @@ jQuery(function() {
   }
 });
 
-jQuery(window).load(function() {
-  if( jQuery("html").hasClass("ie8")) {
-    if ( jQuery('body').hasClass('home') ) {    
-      
-      jQuery(jQuery(".tp-leftarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
-
-      jQuery(jQuery(".tp-rightarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
-      
-    }
-  };
-});
+// jQuery(window).load(function() {
+//   if( jQuery("html").hasClass("ie8")) {
+//     if ( jQuery('body').hasClass('home') ) {    
+//       
+//       jQuery(jQuery(".tp-leftarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
+// 
+//       jQuery(jQuery(".tp-rightarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
+//       
+//     }
+//   };
+// });

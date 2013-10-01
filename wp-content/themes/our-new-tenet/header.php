@@ -80,7 +80,7 @@ html.ie .widget-container
 <!-- Favicons
 ================================================== -->
 
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/images/favicon.ico">
+<!-- <link rel="shortcut icon" href="<?php //echo get_stylesheet_directory_uri();?>/images/favicon.ico"> -->
 
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri();?>/images/apple-touch-icon.png">
 

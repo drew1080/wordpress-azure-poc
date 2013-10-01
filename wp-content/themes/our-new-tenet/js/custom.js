@@ -61,11 +61,11 @@ jQuery(function() {
   }
   
   
-  if( jQuery("html").hasClass("ie8") ) {
+  if( jQuery("html").hasClass("ie8") || jQuery("html").hasClass("ie9")) {
     //console.log("IE now...");
     if ( jQuery('body').hasClass('home') ) {    
       
-      jQuery("#credits").append("<p>TEMP IE TEST with CSS</p>");
+      jQuery("#credits").append("<p>TEMP IE TEST with ie9</p>");
       jQuery(jQuery(".tp-leftarrow")[0]).css("background", "url(/wp-content/themes/our-new-tenet/images/large-left-IE.png)");  
       jQuery(jQuery(".tp-leftarrow")[0]).addClass("ie8arrow");
 

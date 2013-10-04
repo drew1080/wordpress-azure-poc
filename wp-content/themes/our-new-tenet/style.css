@@ -941,7 +941,7 @@ input.wpcf7-form-control.wpcf7-submit {
 
 /* Move the whole container over the left slightly to account for the added space */
 .tp-bullets.tp-thumbs.round {
-  margin-left: -390px !important;
+  margin-left: -392px !important;
  }
  
  .bullet.thumb {
@@ -1024,9 +1024,6 @@ input.wpcf7-form-control.wpcf7-submit {
     right: -2px !important;
   }
   
-  .tp-thumbcontainer {
-    left: 0 !important;
-  }
   
   .tp-mask {
     width: 698px !important;
@@ -1052,6 +1049,11 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 }
 
+@media only screen and (max-width: 959px) and (min-width: 768px)  {
+  .tp-thumbcontainer {
+    left: 0 !important;
+  } 
+}
 
 @media only screen and (max-width: 769px) {
   
@@ -1072,6 +1074,7 @@ input.wpcf7-form-control.wpcf7-submit {
      height: 130px;
    }*/
    
+  
    .page-id-2861 #wrap.container {
      overflow-x: hidden;
    }
@@ -1217,6 +1220,11 @@ input.wpcf7-form-control.wpcf7-submit {
     .bullet.thumb {
       width: 152px !important;
       height: 110px !important;
+    }
+    
+    .tp-thumbcontainer {
+      left: 227px !important;
+      margin-top: 10px;
     }
 }
 
@@ -1372,6 +1380,9 @@ input.wpcf7-form-control.wpcf7-submit {
      width: 152px !important;
      height: 110px !important;
    }
+   .tp-thumbcontainer {
+     margin-top: 10px;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1399,6 +1410,7 @@ input.wpcf7-form-control.wpcf7-submit {
   
   .tp-thumbcontainer {
     left: -8px !important;
+    margin-top: 0;
   }
   
   .tp-mask {

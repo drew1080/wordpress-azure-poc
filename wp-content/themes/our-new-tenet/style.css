@@ -1228,6 +1228,18 @@ input.wpcf7-form-control.wpcf7-submit {
     }
 }
 
+@media (max-width: 560px) {
+  .tp-leftarrow.default {
+    margin-top: 186px !important;
+    left: 0px !important;
+  }
+  
+  .tp-rightarrow.default {
+    margin-top: 186px !important;
+    right: 0px !important;
+  }
+}
+
 
 @media (max-width: 479px) {
   

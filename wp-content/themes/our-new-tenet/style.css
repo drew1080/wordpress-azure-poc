@@ -570,6 +570,40 @@ color: #2c3f6c;
   text-decoration: none !important;
 }
 
+p.trigger.new-faq {
+  display: table;
+}
+
+p.trigger.new-faq a {
+  display: table-cell;
+  width: 611px;
+  float: left;
+  margin-left: 10px;
+}
+
+.new-faq-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.new-toggle {  
+  background-image: url(/wp-content/themes/our-new-tenet/images/new.png);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 11px;
+  line-height: 150%;
+  display: block;
+  float: left;
+  width: 38px;
+  height: 20px;
+  border: none;
+}
+
 .download-pdf {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);
   background-repeat: no-repeat;

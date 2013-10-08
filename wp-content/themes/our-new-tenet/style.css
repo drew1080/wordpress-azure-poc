@@ -1034,6 +1034,10 @@ input.wpcf7-form-control.wpcf7-submit {
     padding-left: 0;
   }
   
+  p.trigger.new-faq a {
+    width: auto;
+  }
+  
   .page-id-2721 h1 {
     width: 100%;
   }
@@ -1204,6 +1208,10 @@ input.wpcf7-form-control.wpcf7-submit {
     background: url(images/toggle-updown.png) no-repeat 442px -584px;
     border: none;
     padding-left: 0;
+  }
+  
+  p.trigger.new-faq a {
+    width: auto;
   }
   
   .page-id-2721 h1 {
@@ -1382,6 +1390,10 @@ input.wpcf7-form-control.wpcf7-submit {
      padding-left: 0;
    }
    
+   p.trigger.new-faq a {
+     width: auto;
+   }
+   
    .page-id-2721 h1 {
      width: 100%;
    }
@@ -1460,34 +1472,34 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .tp-mask {
-     width: 310px !important;
-     height: 60px !important;
-   }
+    width: 310px !important;
+    height: 60px !important;
+  }
 
-   .tp-bullets.tp-thumbs.round {
-     margin-left: -150px !important;
-     height: 65px !important;
-     bottom: -75px !important;
-    }
-    .bullet.thumb {
-      width: 90px !important;
-      height: 50px !important;
-    }
-    
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -150px !important;
+    height: 65px !important;
+    bottom: -75px !important;
+  }
   
+  .bullet.thumb {
+    width: 90px !important;
+    height: 50px !important;
+  }
+  
+  #welcome_text_ep h1 {
+    font-size:24px !important;
+  }
+
+  .page-id-4851 .entry-content p:first-child {
+    padding-top: 92px !important;
+  }
+}
   
 @media only screen 
 and (max-width : 320px){ 
-/*iPhone style*/
-#welcome_text_ep h1 {
-font-size:24px !important;
-}
-
-}
+  /*iPhone style*/
   
-  .page-id-4851 .entry-content p:first-child {
-     padding-top: 92px !important;
-   }
 }
  
  

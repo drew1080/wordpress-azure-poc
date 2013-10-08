@@ -638,10 +638,9 @@ and (orientation : landscape) {
   .pageflip_popup_link {
     display: none; 
   }
- #pageflip_newtab
-  {
-  display: none;
- }
+  #pageflip_newtab {
+    display: none;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */

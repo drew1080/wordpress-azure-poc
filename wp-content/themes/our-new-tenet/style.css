@@ -1807,5 +1807,14 @@ display: none;
 }
 
 .wp-caption p.wp-caption-text {
-font-size: 13px;
+  font-size: 13px;
+}
+
+.gallery-caption {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.gallery .gallery-item {
+  margin-bottom: 15px;
 }

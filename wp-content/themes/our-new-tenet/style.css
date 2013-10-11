@@ -976,8 +976,15 @@ input.wpcf7-form-control.wpcf7-submit {
   color: #ffffff !important;
 }
 
-.navbar-inverse .nav-collapse .nav>ul.sub-menu>li>a {
+.navbar-inverse .nav-collapse .sub-menu>li>a {
   color: #ffffff !important;
+  background-color: #7ea9c1;
+}
+
+.navbar-inverse .nav-collapse .sub-menu>li>a:hover {
+  background-color: #5787a2;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 .navbar-inverse .nav-collapse .nav>li>a:hover {

@@ -79,7 +79,6 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 <!-- Favicons
 ================================================== -->
 
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/images/favicon.ico">
 
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri();?>/images/apple-touch-icon.png">
 

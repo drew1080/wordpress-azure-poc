@@ -67,8 +67,8 @@ html.ie #breadcrumbs,
 html.ie a.more-link,
 html.ie .gallery .gallery-item img,
 html.ie .gallery .gallery-item img.thumbnail,
-html.ie .widget-container,
-html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?>/PIE.php");position: relative;}</style>
+html.ie .widget-container
+</style>
 <![endif]-->
 
 
@@ -79,8 +79,6 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 
 <!-- Favicons
 ================================================== -->
-
-<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/images/favicon.ico">
 
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri();?>/images/apple-touch-icon.png">
 

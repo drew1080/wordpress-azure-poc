@@ -277,10 +277,17 @@ function submit_a_question_func() {
 function toggle_content_func( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		 'title' => '',
-		 'style' => 'list'
+		 'style' => 'list',
+		 'new_image' => ''
     ), $atts));
 	output;
-	$output .= '<div class="'.$style.'"><p class="trigger"><a href="#">' .$title. '</a></p>';
+	
+	if ( $new_image != '' ) {
+	  $output .= '<div class="'.$style.'"><p class="trigger new-faq"><span class="new-faq-wrap"><span class="new-toggle"></span></span><a href="#">' .$title. '</a></p>';
+	} else {
+	  $output .= '<div class="'.$style.'"><p class="trigger"><a href="#">' .$title. '</a></p>';
+	}
+	
 	$output .= '<div class="toggle_container"><div class="block">';
 	$output .= do_shortcode($content);
 	$output .= '</div></div></div>';

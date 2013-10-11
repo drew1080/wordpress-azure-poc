@@ -1806,3 +1806,6 @@ vertical-align: top;
 display: none;
 }
 
+.wp-caption p.wp-caption-text {
+font-size: 13px;
+}

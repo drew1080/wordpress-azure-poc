@@ -981,6 +981,14 @@ input.wpcf7-form-control.wpcf7-submit {
   background-color: #7ea9c1;
 }
 
+.navbar-inverse .nav-collapse ul.sub-menu {
+  display: none;
+}
+
+.navbar-inverse .nav-collapse .album.current-menu-parent ul.sub-menu, .navbar-inverse .nav-collapse .album.current-menu-item ul.sub-menu {
+  display: block;
+}
+
 .navbar-inverse .nav-collapse .sub-menu>li>a:hover {
   background-color: #5787a2;
   color: #ffffff !important;

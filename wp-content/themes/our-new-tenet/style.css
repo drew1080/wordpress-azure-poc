@@ -754,6 +754,31 @@ li.menu-item {
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
+.menu-side-nav-container ul.sub-menu li a {
+  font-size: 11px;
+  padding: 8px 22px 8px 0;
+  width: 142px;
+  display: block;
+  line-height: 35%;
+}
+
+.menu-side-nav-container ul.sub-menu li:hover a {
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 149px 6px;
+}
+
+.menu-side-nav-container ul.sub-menu li.menu-item.current-menu-item a {
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 149px 6px;
+}
+
+.widget-container ul.sub-menu {
+  margin-left: 1.7em;
+  display: none;
+}
+
+.parent-pageid-3407 ul.sub-menu, .page-id-3407 ul.sub-menu {
+  display: block;
+}
+
 /* Slider styling */
 
 .advanced-slider .thumbnail {  

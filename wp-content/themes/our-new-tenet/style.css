@@ -1809,3 +1809,7 @@ display: none;
 .wp-caption p.wp-caption-text {
 font-size: 13px;
 }
+
+.visiblebox .wpcf7 {
+  font-size: 14px;
+}

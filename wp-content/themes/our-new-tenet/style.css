@@ -1843,5 +1843,12 @@ display: none;
 p.feeling {
   margin-bottom: 5px;
   font-size: 14px;
-  color: #444444;
+  color: #444444 !important;
+}
+
+.wpcf7-select.feeling-dropdown {
+  width: 200px;
+  line-height: 20px;
+  height: 2em;
+  font-size: 12px;
 }

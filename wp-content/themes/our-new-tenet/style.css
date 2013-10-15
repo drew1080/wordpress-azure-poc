@@ -1836,7 +1836,12 @@ display: none;
   margin-left: 10px;
 }
 
+#wpcf7-f7731-t1-o1 p {
+  margin-bottom: 5px;
+}
+
 p.feeling {
   margin-bottom: 5px;
   font-size: 14px;
+  color: #444444;
 }

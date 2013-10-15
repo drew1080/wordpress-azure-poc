@@ -1824,3 +1824,16 @@ display: none;
   font-size: 16px;
   color: #444444 !important;
 }
+
+#a9bf31c7ff062936a96d3c8bd1f8f2ff3-po.visiblebox {
+  background: #78b6c9;
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+
+p.feeling {
+  margin: 0 10px 5px;
+  text-align: left;
+  font-size: 14px;
+}

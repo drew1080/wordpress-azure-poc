@@ -1831,9 +1831,12 @@ display: none;
   right: 0;
   left: auto;
 }
+#wpcf7-f7731-t1-o1 {
+  text-align: left;
+  margin-left: 10px;
+}
 
 p.feeling {
-  margin: 0 10px 5px;
-  text-align: left;
+  margin-bottom: 5px;
   font-size: 14px;
 }

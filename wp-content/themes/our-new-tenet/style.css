@@ -1841,8 +1841,9 @@ display: none;
 }
 
 p.feeling {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 14px;
+  font-family: lato;
   color: #444444 !important;
 }
 

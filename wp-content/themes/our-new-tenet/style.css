@@ -1863,7 +1863,37 @@ p.submit-popup {
   height: 26px;
 }
 
-a.orange-button {
+.orange-button a {
+  background-image: url(images/bkgd-button-question-orange.png);
+  text-decoration: none !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
+  height: 29px;
+  border: none;
+  display: block;
+  width: 168px;
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+}
+
+.orange-button a:link:hover {
+  text-decoration: none !important;
+}
+
+.orange-button-right a:link{
+  float: right;
+  margin-right: 0px;
+}
+
+a:visited.orange-button {
   color: #ffffff !important;
 }
 

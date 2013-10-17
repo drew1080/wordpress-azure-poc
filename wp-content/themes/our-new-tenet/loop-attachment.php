@@ -49,8 +49,8 @@
 						?></a></p>
 
 						<div id="nav-below" class="navigation">
-							<div class="nav-previous"><?php previous_image_link( false, 'Previous Image'  ); ?></div>
-							<div class="nav-next"><?php next_image_link( false, 'Next Image'  ); ?></div>
+							<div class="nav-previous orange-button"><?php previous_image_link( false, 'Previous Image'  ); ?></div>
+							<div class="nav-next orange-button orange-button-right"><?php next_image_link( false, 'Next Image'  ); ?></div>
 						</div><!-- #nav-below -->
 <?php else : ?>
 						<a href="<?php echo wp_get_attachment_url(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>" rel="attachment"><?php echo basename( get_permalink() ); ?></a>

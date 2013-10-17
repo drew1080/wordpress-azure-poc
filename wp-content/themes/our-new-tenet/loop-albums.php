@@ -34,6 +34,7 @@
 				<?php } ?>
 				
 					<div class="entry-content">
+						<?php the_content(); ?>
             
             <?php $pages = get_pages(array('child_of' => $post->ID, 'sort_order' => 'ASC', 'sort_column' => 'menu_order')); ?> 
             <?php foreach ($pages as $page): ?>
@@ -42,6 +43,7 @@
                 <p class="wp-caption-text"><?php echo $page->post_title; ?></p></a>
               </div>
             <?php endforeach; ?>
+            
             
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'skeleton' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'skeleton' ), '<span class="edit-link">', '</span>' ); ?>

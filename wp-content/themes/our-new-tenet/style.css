@@ -1853,3 +1853,12 @@ p.feeling {
   height: 2em;
   font-size: 12px;
 }
+
+p.submit-popup {
+  text-align: center;
+}
+
+#wpcf7-f7731-t1-o1 .wpcf7-submit {
+  font-size: 12px;
+  height: 26px;
+}

@@ -1922,17 +1922,22 @@ a:link:hover.orange-button {
   text-decoration: none !important;
 }
 
-a:link.orange-button-previous {
+a:link.orange-button-left {
   margin: 0px 0px 0px 15px;
 }
 
-a:link.orange-button-next {
+a:link.orange-button-right {
   float: right;
   margin: 0px 0px 0px 15px;
 }
 
 a:visited.orange-button {
   color: #ffffff !important;
+}
+
+.page-template-page_album-php .navigation {
+  float: right;
+  width: 366px;
 }
 
 .attachment-back-button .orange-button {

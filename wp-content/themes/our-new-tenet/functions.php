@@ -360,4 +360,53 @@ function remove_subscribers() {
 remove_subscribers();
 */
 
+function is_already_submitted($formName, $fieldName, $fieldValue){
+    require_once(ABSPATH . 'wp-content/plugins/contact-form-7-to-database-extension/CFDBFormIterator.php');
+    $exp = new CFDBFormIterator();
+    $atts = array();
+    $atts['show'] = $fieldName;
+    $atts['filter'] = "$fieldName=$fieldValue";
+    $exp->export($formName, $atts);
+    $found = false;
+    while ($row = $exp->nextRow()) {
+        $found = true;
+    }
+    return $found;
+}
+ 
+function is_survey_taken_by_user($result) {
+    // $formName = 'email_form'; // Name of the form containing this field
+    // $fieldName = 'email_123'; // Set to your form's unique field name
+    // $name = $tag['name'];
+    // if($name == $fieldName){
+    //     $valueToValidate = $_POST[$name];
+    //     if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+    //         $result['valid'] = false;
+    //         $result['reason'][$name] = 'Email has already been submitted'; // error message
+    //     }
+    // }
+    
+    $formName = 'Survey'; // Name of the form containing this field
+    $fieldName = 'Submitted Login'; // Set to your form's unique field name
+    $valueToValidate = 'connorposke';
+    
+    if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+        $result['valid'] = false;
+        $result['reason'][$name] = 'Thanks for your response!'; // error message
+    }
+    
+    return $result;
+}
+ 
+//add_filter('wpcf7_validate_email*', 'my_validate_email', 10, 2);
+//add_filter('wpcf7_validate_select*', 'is_survey_taken_by_user', 10, 2);
+// add_action( 'wpcf7_contact_form', 'is_survey_taken_by_user' );
+
+
+// global $wpcf7_contact_form;
+// if ( ! ( $wpcf7_contact_form = wpcf7_contact_form( 1 ) ) )
+// return 'Contact form not found!';
+// $form = $wpcf7_contact_form->form_html();
+// echo $form;
+
 ?>

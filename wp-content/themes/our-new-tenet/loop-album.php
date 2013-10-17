@@ -33,9 +33,7 @@
 					} ?>
 				<?php } ?>
 				
-					<div class="entry-content">
-					  <div class="back-button"><a class="orange-button" href="/albums">Back to Albums</a></div>
-					  
+					<div class="entry-content">					  
 					  <?php
             $pagelist = get_pages("child_of=".$post->post_parent."&parent=".$post->post_parent."&sort_column=menu_order&sort_order=asc");
             $pages = array();
@@ -47,20 +45,20 @@
             $prevID = $pages[$current-1];
             $nextID = $pages[$current+1];
             ?>
-
-            <div class="navigation">
-              <?php if (!empty($prevID)) { ?>
-              <div class="previous">
-              <a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a>
-
-              </div>
-              <?php }
-              if (!empty($nextID)) { ?>
-              <div class="Next">
-              <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>" class="orange-button orange-button-right">Next Album</a>
-              </div>
-              <?php } ?>
-            </div>
+            
+            <ul class="album-nav">
+              <li><a class="orange-button" href="/albums">Back to Albums</a></li>
+              <li>
+                <?php if (!empty($prevID)) { ?>
+                <a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a>
+                <?php } ?>
+              </li>
+              <li>
+                <?php if (!empty($nextID)) { ?>
+                <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>" class="orange-button orange-button-right">Next Album</a>
+                <?php } ?>
+              </li>
+            </ul>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'skeleton' ), 'after' => '</div>' ) ); ?>
 						<?php edit_post_link( __( 'Edit', 'skeleton' ), '<span class="edit-link">', '</span>' ); ?>

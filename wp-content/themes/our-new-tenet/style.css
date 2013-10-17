@@ -1125,10 +1125,18 @@ input.wpcf7-form-control.wpcf7-submit {
   margin-left: -392px !important;
  }
  
- .bullet.thumb {
-   width: 250px !important;
-   height: 110px !important;
- }
+.bullet.thumb {
+ width: 250px !important;
+ height: 110px !important;
+}
+
+.entry-content ul.album-nav {
+ list-style-type: none;
+}
+
+ul.album-nav li {
+  margin: 0px;
+}
  
 @media (max-width: 960px) {
   #fast-facts-wrapper {
@@ -1243,12 +1251,21 @@ input.wpcf7-form-control.wpcf7-submit {
   }
 
   a:link.orange-button {
-    margin: 0px;
+    margin: 0 10px 0 0;
   }
   
   .back-button a:link.orange-button {
     margin-right: 10px;
   }
+  
+  ul.album-nav li {
+    margin: 0px;
+  }
+  
+  a:link.orange-button-right {
+    float: left;
+  }
+
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px)  {
@@ -1431,6 +1448,19 @@ input.wpcf7-form-control.wpcf7-submit {
     .tp-thumbcontainer {
       left: 227px !important;
       margin-top: 10px;
+    }
+    
+    ul.album-nav {
+      display: block;
+      text-align: center;
+    }
+    
+    ul.album-nav li {
+      display: inline-block;
+    }
+    
+    a:link.orange-button {
+      margin: 0px;
     }
 }
 
@@ -1627,6 +1657,20 @@ input.wpcf7-form-control.wpcf7-submit {
    
    a:link.orange-button {
       margin-right: 0px;
+   }
+   
+   ul.album-nav {
+     display: block;
+     text-align: center;
+   }
+
+   ul.album-nav li {
+     display: inline-block;
+     margin: 0px;
+   }
+
+   a:link.orange-button {
+     margin: 0px;
    }
 }
 

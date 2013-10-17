@@ -20,7 +20,7 @@
         <?php if ( ! empty( $post->post_parent ) ) : ?>
       		<p class="page-title attachment-back-button"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php esc_attr( printf( __( 'Return to %s', 'skeleton' ), get_the_title( $post->post_parent ) ) ); ?>" rel="gallery" class="orange-button"><?php
       			/* translators: %s - title of parent post */
-      			printf( __( '<span class="meta-nav">&larr;</span> %s', 'skeleton' ), get_the_title( $post->post_parent ) );
+      			printf( __( 'Back to Album', 'skeleton' ), get_the_title( $post->post_parent ) );
       		?></a></p>
       	<?php endif; ?>
 

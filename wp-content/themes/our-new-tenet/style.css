@@ -1924,11 +1924,15 @@ a:link:hover.orange-button {
 
 a:link.orange-button-right {
   float: right;
-  margin-right: 0px;
+  margin: 0px 0px 0px 15px;
 }
 
 a:visited.orange-button {
   color: #ffffff !important;
+}
+
+.attachment-back-button .orange-button {
+  
 }
 
 .gallery .gallery-item img, .gallery .gallery-item img.thumbnail {

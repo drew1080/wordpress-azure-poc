@@ -1912,7 +1912,7 @@ a:link.orange-button {
   display: block;
   width: 168px;
   float: left;
-  margin-right: 15px;
+  margin-right: 150px;
   text-align: center;
   background-repeat: no-repeat;
   padding-top: 4px;
@@ -1923,7 +1923,7 @@ a:link:hover.orange-button {
 }
 
 a:link.orange-button-right {
-  float: right;
+/*  float: right;*/
   margin: 0px 0px 0px 15px;
 }
 

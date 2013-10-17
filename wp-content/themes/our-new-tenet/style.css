@@ -616,6 +616,108 @@ p.trigger.new-faq a {
   margin-top: 5px;
 }
 
+
+
+.orange-button a {
+  background-image: url(images/bkgd-button-question-orange.png);
+  text-decoration: none !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
+  height: 29px;
+  border: none;
+  display: block;
+  width: 168px;
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+}
+
+.orange-button a:link:hover {
+  text-decoration: none !important;
+}
+
+.orange-button-right a:link{
+  float: right;
+  margin-right: 0px;
+}
+
+a:visited.orange-button {
+  color: #ffffff !important;
+}
+
+a:link.orange-button {
+  background-image: url(images/bkgd-button-question-orange.png);
+  text-decoration: none !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
+  height: 29px;
+  border: none;
+  display: block;
+  width: 168px;
+  float: left;
+  margin-right: 150px;
+  text-align: center;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+}
+
+a:link:hover.orange-button {
+  text-decoration: none !important;
+}
+
+a:link.orange-button-left {
+  margin: 0px 0px 0px 15px;
+}
+
+a:link.orange-button-right {
+  float: right;
+  margin: 0px 0px 0px 15px;
+}
+
+a:visited.orange-button {
+  color: #ffffff !important;
+}
+
+.page-template-page_album-php .navigation {
+  float: right;
+  width: 366px;
+}
+
+.gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+  max-width: 100%;
+  margin-right: 30px; 
+}
+
+.wp-caption.custom-thumbnails {
+  margin: 0px 21px 21px 0px;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 13px;
+}
+
+.gallery-caption {
+  font-size: 13px;
+  line-height: 15px;
+  width: 195px;
+}
+
+.gallery .gallery-item {
+  margin-bottom: 15px;
+}
+
 /*Only show the view guide link on desktop*/
 @media only screen and (max-width: 769px) {
   
@@ -1130,6 +1232,23 @@ input.wpcf7-form-control.wpcf7-submit {
   .page-id-4851 .entry-content p:first-child {
     padding-top: 98px !important;
   }
+  
+  .page-template-page_album-php #content.eleven.columns {
+    width: 538px;
+  }
+  
+  .page-template-page_album-php .navigation {
+    width: 346px;
+    float: left;
+  }
+
+  a:link.orange-button {
+    margin: 0px;
+  }
+  
+  .back-button a:link.orange-button {
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 959px) and (min-width: 768px)  {
@@ -1486,6 +1605,29 @@ input.wpcf7-form-control.wpcf7-submit {
    .tp-thumbcontainer {
      margin-top: 10px;
    }
+   
+   .page-template-page_album-php h1 {
+     font-size: 21px;
+     text-align: center;
+   }
+   
+   
+   
+   .gallery .gallery-item { 
+     width: 100%;
+   }
+   
+   .gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+     margin-right: 0px;
+   }
+   
+   .gallery-caption {
+      width: auto;
+   }
+   
+   a:link.orange-button {
+      margin-right: 0px;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1806,20 +1948,6 @@ vertical-align: top;
 display: none;
 }
 
-.wp-caption p.wp-caption-text {
-  font-size: 13px;
-}
-
-.gallery-caption {
-  font-size: 13px;
-  line-height: 15px;
-  width: 195px;
-}
-
-.gallery .gallery-item {
-  margin-bottom: 15px;
-}
-
 .visiblebox .wpcf7 {
   font-size: 16px;
   color: #444444 !important;
@@ -1861,94 +1989,4 @@ p.submit-popup {
 #wpcf7-f7731-t1-o1 .wpcf7-submit {
   font-size: 12px;
   height: 26px;
-}
-
-.orange-button a {
-  background-image: url(images/bkgd-button-question-orange.png);
-  text-decoration: none !important;
-  color: #ffffff !important;
-  text-transform: uppercase;
-  font-family: lato;
-  font-weight: normal;
-  text-shadow: none;
-  font-size: 14px;
-  line-height: 150%;
-  height: 29px;
-  border: none;
-  display: block;
-  width: 168px;
-  float: left;
-  margin-right: 15px;
-  text-align: center;
-  background-repeat: no-repeat;
-  padding-top: 4px;
-}
-
-.orange-button a:link:hover {
-  text-decoration: none !important;
-}
-
-.orange-button-right a:link{
-  float: right;
-  margin-right: 0px;
-}
-
-a:visited.orange-button {
-  color: #ffffff !important;
-}
-
-a:link.orange-button {
-  background-image: url(images/bkgd-button-question-orange.png);
-  text-decoration: none !important;
-  color: #ffffff !important;
-  text-transform: uppercase;
-  font-family: lato;
-  font-weight: normal;
-  text-shadow: none;
-  font-size: 14px;
-  line-height: 150%;
-  height: 29px;
-  border: none;
-  display: block;
-  width: 168px;
-  float: left;
-  margin-right: 150px;
-  text-align: center;
-  background-repeat: no-repeat;
-  padding-top: 4px;
-}
-
-a:link:hover.orange-button {
-  text-decoration: none !important;
-}
-
-a:link.orange-button-left {
-  margin: 0px 0px 0px 15px;
-}
-
-a:link.orange-button-right {
-  float: right;
-  margin: 0px 0px 0px 15px;
-}
-
-a:visited.orange-button {
-  color: #ffffff !important;
-}
-
-.page-template-page_album-php .navigation {
-  float: right;
-  width: 366px;
-}
-
-/*.attachment-back-button .orange-button {
-  
-}*/
-
-.gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
-  max-width: 100%;
-  margin-right: 30px; 
-}
-
-.wp-caption.custom-thumbnails {
-  margin: 0px 21px 21px 0px;
 }

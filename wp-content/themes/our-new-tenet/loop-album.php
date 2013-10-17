@@ -34,7 +34,7 @@
 				<?php } ?>
 				
 					<div class="entry-content">
-					  <a class="orange-button" href="/albums">Back to Albums</a>
+					  <div class="back-button"><a class="orange-button" href="/albums">Back to Albums</a></div>
 					  
 					  <?php
             $pagelist = get_pages("child_of=".$post->post_parent."&parent=".$post->post_parent."&sort_column=menu_order&sort_order=asc");

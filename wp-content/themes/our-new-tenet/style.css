@@ -1813,7 +1813,7 @@ display: none;
 .gallery-caption {
   font-size: 13px;
   line-height: 15px;
-  width: 157px;
+  width: 195px;
 }
 
 .gallery .gallery-item {
@@ -1899,4 +1899,9 @@ a:link.orange-button-right {
 
 a:visited.orange-button {
   color: #ffffff !important;
+}
+
+.gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+  max-width: 100%;
+  margin-right: 30px; 
 }

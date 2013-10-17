@@ -1863,9 +1863,13 @@ p.submit-popup {
   height: 26px;
 }
 
+a.orange-button {
+  color: #ffffff !important;
+}
+
 a:link.orange-button {
   background-image: url(images/bkgd-button-question-orange.png);
-  text-decoration: none;
+  text-decoration: none !important;
   color: #ffffff !important;
   text-transform: uppercase;
   font-family: lato;
@@ -1891,4 +1895,8 @@ a:link:hover.orange-button {
 a:link.orange-button-right {
   float: right;
   margin-right: 0px;
+}
+
+a:visited.orange-button {
+  color: #ffffff !important;
 }

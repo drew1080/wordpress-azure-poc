@@ -50,7 +50,7 @@
               <li><div class="orange-button"><a href="/albums">Back to Albums</a></div></li>
               <li>
                 <?php if (!empty($prevID)) { ?>
-                <div class="orange-button"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="<?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a></div>
+                <div class="orange-button"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Previous Album</a></div>
                 <?php } ?>
               </li>
               <li>

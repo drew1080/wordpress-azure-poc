@@ -46,25 +46,16 @@
             $nextID = $pages[$current+1];
             ?>
             
-            <div class="orange-button"><a href="/albums">Back to Albums</a></div>
-            <?php if (!empty($prevID)) { ?>
-            <a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a>
-            <?php } ?>
-            <?php if (!empty($nextID)) { ?>
-            <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>" class="orange-button orange-button-right">Next Album</a>
-            <?php } ?>
-            <img src="/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png"/>
-            
             <ul class="album-nav">
-              <li><a class="orange-button" href="/albums">Back to Albums</a></li>
+              <li><div class="orange-button"><a href="/albums">Back to Albums</a></div></li>
               <li>
                 <?php if (!empty($prevID)) { ?>
-                <a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a>
+                <div class="orange-button"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a></div>
                 <?php } ?>
               </li>
               <li>
                 <?php if (!empty($nextID)) { ?>
-                <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>" class="orange-button orange-button-right">Next Album</a>
+                <div class="orange-button"><a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>" class="orange-button-right">Next Album</a></div>
                 <?php } ?>
               </li>
             </ul>

@@ -1134,7 +1134,7 @@ input.wpcf7-form-control.wpcf7-submit {
 
 .entry-content ul.album-nav {
  list-style-type: none;
- height: 30px;
+ min-height: 30px;
  position: relative;
  z-index: 1000;
 }
@@ -1677,6 +1677,10 @@ ul.album-nav li {
    a:link.orange-button {
      margin: 0px;
    }
+   
+   .orange-button a {
+     margin: 0px;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1730,6 +1734,7 @@ ul.album-nav li {
   .page-id-4851 .entry-content p:first-child {
     padding-top: 92px !important;
   }
+
 }
   
 @media only screen 

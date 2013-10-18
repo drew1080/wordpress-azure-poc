@@ -666,7 +666,7 @@ a:link.orange-button {
   border: none;
   display: block;
   width: 168px;
-  float: none;
+  float: left;
   margin-right: 150px;
   text-align: center;
   background-repeat: no-repeat;

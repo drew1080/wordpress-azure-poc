@@ -46,7 +46,7 @@
             $nextID = $pages[$current+1];
             ?>
             
-            <a class="orange-button" href="/albums">Back to Albums</a>
+            <div class="orange-button"><a href="/albums">Back to Albums</a></div>
             <?php if (!empty($prevID)) { ?>
             <a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a>
             <?php } ?>

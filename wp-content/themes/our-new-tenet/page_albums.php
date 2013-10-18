@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Albums
+ * Template Name: All Albums
  * Description: Template for pages with side navigation
  * Copied from page.php from the skeleton theme
  *

@@ -46,6 +46,20 @@
             $nextID = $pages[$current+1];
             ?>
             
+            <div>
+              <div><a class="orange-button" href="/albums">Back to Albums</a></div>
+              <div>
+                <?php if (!empty($prevID)) { ?>
+                <a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>" class="orange-button orange-button-left <?php if (empty($nextID)) { echo "orange-button-right"; }?>">Previous Album</a>
+                <?php } ?>
+              </div>
+              <div>
+                <?php if (!empty($nextID)) { ?>
+                <a href="<?php echo get_permalink($nextID); ?>" title="<?php echo get_the_title($nextID); ?>" class="orange-button orange-button-right">Next Album</a>
+                <?php } ?>
+              </div>
+            </div>
+            
             <ul class="album-nav">
               <li><a class="orange-button" href="/albums">Back to Albums</a></li>
               <li>

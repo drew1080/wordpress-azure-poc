@@ -653,7 +653,8 @@ a:visited.orange-button {
 }
 
 a:link.orange-button {
-  background-image: url(images/bkgd-button-question-orange.png);
+  display: block;
+  background: url(images/bkgd-button-question-orange.png) no-repeat 0px 0px;
   text-decoration: none !important;
   color: #ffffff !important;
   text-transform: uppercase;
@@ -662,14 +663,12 @@ a:link.orange-button {
   text-shadow: none;
   font-size: 14px;
   line-height: 150%;
-  height: 40px;
   border: none;
-  display: block;
+  height: 40px;
   width: 168px;
   float: left;
   margin-right: 150px;
   text-align: center;
-  background-repeat: no-repeat;
   padding-top: 4px;
 }
 

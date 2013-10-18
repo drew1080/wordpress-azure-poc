@@ -1134,6 +1134,7 @@ input.wpcf7-form-control.wpcf7-submit {
  list-style-type: none;
  height: 30px;
  position: relative;
+ z-index: 1000;
 }
 
 ul.album-nav li {

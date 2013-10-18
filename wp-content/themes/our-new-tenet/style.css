@@ -616,7 +616,9 @@ p.trigger.new-faq a {
   margin-top: 5px;
 }
 
-
+.album-orange-button-spacer {
+  height: 20px;
+}
 
 .orange-button a {
   background-image: url(images/bkgd-button-question-orange.png);

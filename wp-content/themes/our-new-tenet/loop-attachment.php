@@ -18,7 +18,7 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?> 
   
         <?php if ( ! empty( $post->post_parent ) ) : ?>
-      		<p class="page-title attachment-back-button"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php esc_attr( printf( __( 'Return to %s', 'skeleton' ), get_the_title( $post->post_parent ) ) ); ?>" rel="gallery" class="orange-button">Back to Album</a></p>
+      		<div class="orange-button"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php esc_attr( printf( __( 'Return to %s', 'skeleton' ), get_the_title( $post->post_parent ) ) ); ?>" rel="gallery">Back to Album</a></div><div class="clear album-orange-button-spacer">&nbsp;</div>
       	<?php endif; ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

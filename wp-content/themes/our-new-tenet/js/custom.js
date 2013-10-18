@@ -71,4 +71,6 @@ jQuery(window).load(function() {
       
     }
   };
+  
+  jQuery( "" ).replaceAll( '.gallery br' );
 });

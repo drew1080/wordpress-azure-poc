@@ -670,6 +670,7 @@ a:link.orange-button {
   margin-right: 150px;
   text-align: center;
   padding-top: 4px;
+  display: inline-block;
 }
 
 a:link:hover.orange-button {

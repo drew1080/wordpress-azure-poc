@@ -186,7 +186,7 @@ class WPCF7_ContactForm {
         $form = "";
       }
     } else {
-      echo "Thanks for filling out our form!"
+      echo "Thanks for filling out our form!";
     }
 
 		return $form;

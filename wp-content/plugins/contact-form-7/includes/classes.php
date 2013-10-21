@@ -174,7 +174,7 @@ class WPCF7_ContactForm {
 
 		$form .= '</div>';
 		
-		if ( !is_page(7581) && is_user_logged_in() ) {
+		if ( is_page(2861) && is_user_logged_in() ) {
     	global $user_login;
       get_currentuserinfo();
 
@@ -186,7 +186,7 @@ class WPCF7_ContactForm {
         $form = "";
       }
     } else {
-      echo "Thanks for filling out our form!";
+      $form =  "<p>Thanks for filling out our form!</p>";
     }
 
 		return $form;

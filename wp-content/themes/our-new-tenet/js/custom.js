@@ -73,4 +73,8 @@ jQuery(window).load(function() {
   };
   
   jQuery( "" ).replaceAll( '.gallery br' );
+  
+  if( jQuery('#credits .wpcf7').length == 0 ) {
+    jQuery('.visiblebox').hide();
+  }
 });

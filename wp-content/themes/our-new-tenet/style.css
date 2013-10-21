@@ -2008,12 +2008,13 @@ display: none;
   color: #444444 !important;
 }
 
-#a9bf31c7ff062936a96d3c8bd1f8f2ff3-po.visiblebox {
+#credits div.visiblebox {
   background: #78b6c9;
-  position: absolute;
-  right: 0;
-  left: auto;
 }
+#credits div.visiblebox div.wpcf7 {
+  margin: 20px;
+}
+
 #wpcf7-f7731-t1-o1 {
   text-align: left;
   margin-left: 10px;

@@ -397,6 +397,12 @@ function is_survey_taken_by_user($result) {
     
     return $result;
 }
+
+function my_tweaked_admin_bar() {
+	//echo "<script>alert('test');</script>";
+	//Do stuff
+}
+add_action( 'wp_before_admin_bar_render', 'my_tweaked_admin_bar' );
  
 //add_filter('wpcf7_validate_email*', 'my_validate_email', 10, 2);
 //add_filter('wpcf7_validate_select*', 'is_survey_taken_by_user', 10, 2);
@@ -408,5 +414,6 @@ function is_survey_taken_by_user($result) {
 // return 'Contact form not found!';
 // $form = $wpcf7_contact_form->form_html();
 // echo $form;
+
 
 ?>

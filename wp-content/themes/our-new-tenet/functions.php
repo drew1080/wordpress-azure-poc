@@ -398,31 +398,6 @@ function is_survey_taken_by_user($result) {
     return $result;
 }
 
-function my_tweaked_admin_bar() {
-	
-  // if ( is_user_logged_in() ) {
-  //    global $user_login;
-  //     get_currentuserinfo();
-  // 
-  //    $formName = 'Survey_copy'; // Name of the form containing this field
-  //     $fieldName = 'Submitted Login'; // Set to your form's unique field name
-  //     $valueToValidate = $user_login;
-  // 
-  //     if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
-  // 
-  //    }
-  // }
-	
-	echo "<script type='text/javascript'>
-    window.onload=function(){
-      if( jQuery('#credits .wpcf7').length == 0 ) {
-        jQuery('.visiblebox').hide();
-      }
-    };
-    </script>";
-}
-
-//add_action( 'wp_loaded', 'my_tweaked_admin_bar' );
 
 function user_last_login($login) {
     global $user_ID;

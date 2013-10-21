@@ -185,9 +185,7 @@ class WPCF7_ContactForm {
       if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
         $form = "";
       }
-    } else {
-      $form =  "<p>Thanks for filling out our form!</p>";
-    }
+    } 
 
 		return $form;
 	}

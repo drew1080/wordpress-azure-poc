@@ -413,7 +413,7 @@ function my_tweaked_admin_bar() {
   //    }
   // }
 	
-	echo "<script>
+	echo "<script type='text/javascript'>
     window.onload=function(){
       if( jQuery('#credits .wpcf7').length == 0 ) {
         jQuery('.visiblebox').hide();
@@ -422,7 +422,7 @@ function my_tweaked_admin_bar() {
     </script>";
 }
 
-//add_action( 'wp_loaded', 'my_tweaked_admin_bar' );
+add_action( 'wp_loaded', 'my_tweaked_admin_bar' );
 
 function user_last_login($login) {
     global $user_ID;

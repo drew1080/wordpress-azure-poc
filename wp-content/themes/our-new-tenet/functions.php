@@ -399,10 +399,29 @@ function is_survey_taken_by_user($result) {
 }
 
 function my_tweaked_admin_bar() {
-	//echo "<script>alert('test');</script>";
-	//Do stuff
+	
+  // if ( is_user_logged_in() ) {
+  //    global $user_login;
+  //     get_currentuserinfo();
+  // 
+  //    $formName = 'Survey_copy'; // Name of the form containing this field
+  //     $fieldName = 'Submitted Login'; // Set to your form's unique field name
+  //     $valueToValidate = $user_login;
+  // 
+  //     if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+  // 
+  //    }
+  // }
+	
+	echo "<script>
+    window.onload=function(){
+      if( jQuery('#credits .wpcf7').length == 0 ) {
+        jQuery('.visiblebox').hide();
+      }
+    };
+    </script>";
 }
-add_action( 'wp_before_admin_bar_render', 'my_tweaked_admin_bar' );
+add_action( 'wp_loaded', 'my_tweaked_admin_bar' );
 
 function user_last_login($login) {
     global $user_ID;
@@ -423,5 +442,22 @@ add_action('wp_login','user_last_login');
 // $form = $wpcf7_contact_form->form_html();
 // echo $form;
 
+// add_action( 'plugins_loaded', 'wpcf7_add_shortcodes_custom', 1 );
+// 
+// function wpcf7_add_shortcodes_custom() {
+//  remove_shortcode( 'contact-form-7', 'wpcf7_contact_form_tag_func' );
+//  remove_shortcode( 'contact-form', 'wpcf7_contact_form_tag_func' );
+//  
+//   add_shortcode( 'contact-form-7', 'wpcf7_contact_form_tag_func_custom' );
+//  add_shortcode( 'contact-form', 'wpcf7_contact_form_tag_func_custom' );
+// }
+
+add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
+
+function dd_remove_update_nag($value) {
+  unset($value->response['contact-form-7/wp-contact-form-7.php']);
+
+  return $value;
+}
 
 ?>

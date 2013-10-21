@@ -173,6 +173,19 @@ class WPCF7_ContactForm {
 		$form .= '</form>';
 
 		$form .= '</div>';
+		
+		if ( is_user_logged_in() ) {
+    	global $user_login;
+      get_currentuserinfo();
+
+    	$formName = $this->title; // Name of the form containing this field
+      $fieldName = 'Submitted Login'; // Set to your form's unique field name
+      $valueToValidate = $user_login;
+
+      if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+        $form = "";
+      }
+    }
 
 		return $form;
 	}

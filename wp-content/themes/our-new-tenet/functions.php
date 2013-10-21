@@ -421,7 +421,8 @@ function my_tweaked_admin_bar() {
     };
     </script>";
 }
-add_action( 'wp_loaded', 'my_tweaked_admin_bar' );
+
+//add_action( 'wp_loaded', 'my_tweaked_admin_bar' );
 
 function user_last_login($login) {
     global $user_ID;

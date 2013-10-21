@@ -403,6 +403,14 @@ function my_tweaked_admin_bar() {
 	//Do stuff
 }
 add_action( 'wp_before_admin_bar_render', 'my_tweaked_admin_bar' );
+
+function user_last_login($login) {
+    global $user_ID;
+    $user = get_userdatabylogin($login);
+    update_usermeta($user->ID, 'last_login', time());
+}
+
+add_action('wp_login','user_last_login');
  
 //add_filter('wpcf7_validate_email*', 'my_validate_email', 10, 2);
 //add_filter('wpcf7_validate_select*', 'is_survey_taken_by_user', 10, 2);

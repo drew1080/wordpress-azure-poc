@@ -2023,29 +2023,25 @@ display: none;
   margin-left: 10px;
 }
 
-#wpcf7-f7731-t1-o1 p {
-  margin-bottom: 5px;
-}
-
-p.feeling {
+#credits .wpcf7 p {
   margin-bottom: 10px;
   font-size: 14px;
   font-family: lato;
   color: #444444 !important;
 }
 
-.wpcf7-select.feeling-dropdown {
+#credits .wpcf7 .wpcf7-select.feeling-dropdown {
   width: 200px;
   line-height: 20px;
   height: 2em;
   font-size: 12px;
 }
 
-p.submit-popup {
+#credits .wpcf7 p.submit-popup {
   text-align: center;
 }
 
-#wpcf7-f7731-t1-o1 .wpcf7-submit {
+#credits .wpcf7 .wpcf7-submit {
   font-size: 12px;
   height: 26px;
 }

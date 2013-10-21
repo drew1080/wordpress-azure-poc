@@ -2045,3 +2045,8 @@ display: none;
   font-size: 12px;
   height: 26px;
 }
+
+#credits .wpcf7 span.wpcf7-form-control-wrap {
+  margin-top: 5px;
+  display: block;
+}

@@ -2010,9 +2010,12 @@ display: none;
 
 #credits div.visiblebox {
   background: #78b6c9;
+  padding: 15px;
 }
 #credits div.visiblebox div.wpcf7 {
-  margin: 20px;
+  margin: 30px;
+  min-width: 350px;
+  min-height: 200px;
 }
 
 #wpcf7-f7731-t1-o1 {

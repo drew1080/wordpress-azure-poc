@@ -1242,7 +1242,7 @@ ul.album-nav li {
 	text-align: left;
 /*  margin-left: 80px;*/
 	margin-bottom: 20px;
-	max-width: 490px;
+	max-width: 450px;
 }
 
 #credits .wpcf7 span.wpcf7-form-control-wrap {
@@ -1623,7 +1623,6 @@ ul.album-nav li {
 @media (max-width: 568px) {
   #footer #credits div.visiblebox {
     top: 10px !important;
-    overflow: auto;
   }
 }
 

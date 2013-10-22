@@ -1838,7 +1838,8 @@ ul.album-nav li {
      width: 90% !important;
      left: 0px !important;
      top: 60px !important;
-     height: 420px !important;
+     overflow: auto;
+    
    }
 
    #credits div.visiblebox div.wpcf7 {

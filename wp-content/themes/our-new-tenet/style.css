@@ -1620,6 +1620,11 @@ ul.album-nav li {
       background-image: none !important;
     }
 }
+@media (max-width: 568px) {
+  #footer #credits div.visiblebox {
+    top: 10px !important;
+  }
+}
 
 @media (max-width: 560px) {
   .tp-leftarrow.default {
@@ -1631,6 +1636,7 @@ ul.album-nav li {
     margin-top: 186px !important;
     right: 0px !important;
   }
+  
 }
 
 

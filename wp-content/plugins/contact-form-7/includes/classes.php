@@ -129,7 +129,6 @@ class WPCF7_ContactForm {
 		global $wpcf7;
 		$hide_form_class = '';
 		
-		//is_page(2861) &&
 		if ( is_user_logged_in() ) {
     	global $user_login;
       get_currentuserinfo();
@@ -184,9 +183,6 @@ class WPCF7_ContactForm {
 
 		if ( ! $this->responses_count )
 			$form .= $this->form_response_output();
-			
-		//TESTING
-		//$form .= 'IS PAGE: ' . is_page(2861);
 
 		$form .= '</form>';
 

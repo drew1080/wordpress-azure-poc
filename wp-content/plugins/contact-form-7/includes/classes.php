@@ -187,8 +187,6 @@ class WPCF7_ContactForm {
 		$form .= '</form>';
 
 		$form .= '</div>';
-		
-
 
 		return $form;
 	}

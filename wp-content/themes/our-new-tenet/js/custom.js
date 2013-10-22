@@ -74,7 +74,9 @@ jQuery(window).load(function() {
   
   jQuery( "" ).replaceAll( '.gallery br' );
   
-  if( jQuery('#credits .wpcf7').length == 0 ) {
-    jQuery('.visiblebox').remove();
+  if( jQuery('.visiblebox').length > 0 ) {
+    if ( jQuery('.wpcf7').hasClass('hide-form') ) {
+      jQuery('.visiblebox').remove();
+    }
   }
 });

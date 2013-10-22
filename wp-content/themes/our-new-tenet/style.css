@@ -1144,6 +1144,112 @@ ul.album-nav li {
   margin: 0px;
 }
  
+
+.visiblebox .wpcf7 {
+  font-size: 16px;
+  color: #444444 !important;
+}
+
+#credits div.visiblebox {
+  background: #78b6c9;
+  padding: 15px;
+}
+#credits div.visiblebox div.wpcf7 {
+  margin: 30px;
+  min-width: 350px;
+  min-height: 200px;
+}
+
+#wpcf7-f7731-t1-o1 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+#credits .wpcf7 p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: lato;
+  color: #444444 !important;
+}
+
+#credits .wpcf7 .wpcf7-select.feeling-dropdown {
+  width: 200px;
+  line-height: 20px;
+  height: 2em;
+  font-size: 12px;
+}
+
+#credits .wpcf7 p.submit-popup {
+  text-align: center;
+}
+
+#credits .wpcf7 .wpcf7-submit {
+  font-size: 12px;
+  height: 26px;
+}
+
+#credits .wpcf7 span.wpcf7-form-control-wrap {
+  margin-top: 5px;
+  display: block;
+  margin-bottom: -25px;
+}
+
+
+
+.wpcf7-form-control.wpcf7-submit {
+	background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/icon_whiteCheck.png) 6px no-repeat #df5b29 !important;
+	width: 140px;
+	text-align: left;
+	padding-left: 30px;
+}
+
+#closebox {
+	top: -5px !important;
+	right: -5px !important;
+}
+
+#credits #message {
+	background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/email-icon.png) no-repeat 10px 130px #e2f3f2 !important;
+}
+
+#message h3 {
+	text-align:left;
+	margin-left:50px;
+	font-size: 16px !important;
+}
+
+#message p {
+	margin: 10px 0 ;
+}
+
+#meessage img {
+	margin-left: 50px;
+}
+
+#credits .wpcf7 p {
+	text-align: left;
+	margin-left: 80px;
+	margin-bottom: 20px
+}
+
+#credits .wpcf7 span.wpcf7-form-control-wrap {
+	margin-bottom: -25px;
+}
+
+#credits div.visiblebox {
+	background: rgba(120, 182, 201, .7);
+}	
+
+#credits input[type="radio"] {
+	position: relative;
+	vertical-align: top;
+	top: -2px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+	margin-top: 25px;
+}
+
 @media (max-width: 960px) {
   #fast-facts-wrapper {
     display: none;
@@ -1468,6 +1574,28 @@ ul.album-nav li {
     a:link.orange-button {
       margin: 0px;
     }
+    
+    #footer #credits div.visiblebox {
+      width: 70% !important;
+/*      left: auto !important;*/
+    }
+
+    #credits div.visiblebox div.wpcf7 {
+      margin: 10px;
+      min-width: 0px;
+    }
+
+    #message h3 {
+      margin-left: 0px;
+    }
+
+    #credits .wpcf7 p {
+      margin-left: 0px;
+    }
+
+    #credits #message {
+      background-image: none !important;
+    }
 }
 
 @media (max-width: 560px) {
@@ -1681,6 +1809,28 @@ ul.album-nav li {
    
    .orange-button a {
      margin: 0px;
+   }
+   
+   #footer #credits div.visiblebox {
+     width: 90% !important;
+     left: 0px !important;
+   }
+
+   #credits div.visiblebox div.wpcf7 {
+     margin: 10px;
+     min-width: 0px;
+   }
+
+   #message h3 {
+     margin-left: 0px;
+   }
+
+   #credits .wpcf7 p {
+     margin-left: 0px;
+   }
+
+   #credits #message {
+     background-image: none !important;
    }
 }
 
@@ -2003,107 +2153,4 @@ vertical-align: top;
 display: none;
 }
 
-.visiblebox .wpcf7 {
-  font-size: 16px;
-  color: #444444 !important;
-}
 
-#credits div.visiblebox {
-  background: #78b6c9;
-  padding: 15px;
-}
-#credits div.visiblebox div.wpcf7 {
-  margin: 30px;
-  min-width: 350px;
-  min-height: 200px;
-}
-
-#wpcf7-f7731-t1-o1 {
-  text-align: left;
-  margin-left: 10px;
-}
-
-#credits .wpcf7 p {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-family: lato;
-  color: #444444 !important;
-}
-
-#credits .wpcf7 .wpcf7-select.feeling-dropdown {
-  width: 200px;
-  line-height: 20px;
-  height: 2em;
-  font-size: 12px;
-}
-
-#credits .wpcf7 p.submit-popup {
-  text-align: center;
-}
-
-#credits .wpcf7 .wpcf7-submit {
-  font-size: 12px;
-  height: 26px;
-}
-
-#credits .wpcf7 span.wpcf7-form-control-wrap {
-  margin-top: 5px;
-  display: block;
-  margin-bottom: -25px;
-}
-
-
-
-.wpcf7-form-control.wpcf7-submit {
-	background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/icon_whiteCheck.png) 6px no-repeat #df5b29 !important;
-	width: 140px;
-	text-align: left;
-	padding-left: 30px;
-}
-
-#closebox {
-	top: -5px !important;
-	right: -5px !important;
-}
-
-#credits #message {
-	background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/email-icon.png) no-repeat 10px 130px #e2f3f2 !important;
-}
-
-#message h3 {
-	text-align:left;
-	margin-left:50px;
-	font-size: 16px !important;
-}
-
-#message p {
-	margin: 10px 0 ;
-}
-
-#meessage img {
-	margin-left: 50px;
-}
-
-#credits .wpcf7 p {
-	text-align: left;
-	margin-left: 80px;
-	margin-bottom: 20px
-}
-
-#credits .wpcf7 span.wpcf7-form-control-wrap {
-	margin-bottom: -25px;
-}
-
-#credits div.visiblebox {
-	background: rgba(120, 182, 201, .7);
-}	
-
-#credits input[type="radio"] {
-	position: relative;
-	vertical-align: top;
-	top: -2px;
-}
-
-.wpcf7-form-control.wpcf7-submit {
-	margin-top: 25px;
-}

@@ -1054,7 +1054,7 @@ input.wpcf7-form-control.wpcf7-submit {
   background-image: none !important;
   border-color: #A5B3CF;
   background-color: #7ea9c1;
-  z-index: 1000000;
+  z-index: 100000;
   position: absolute;
   width: 458px;
   padding-left: 10px;
@@ -1831,6 +1831,14 @@ ul.album-nav li {
 
    #credits #message {
      background-image: none !important;
+   }
+   
+   #credits img.message {
+     display: none;
+   }
+   
+   #credits p.popup-copy-2 {
+     display: none;
    }
 }
 

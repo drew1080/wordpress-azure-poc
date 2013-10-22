@@ -1212,19 +1212,19 @@ ul.album-nav li {
 	right: -5px !important;
 }
 
-#credits #message {
-	background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/email-icon.png) no-repeat 10px 130px #e2f3f2 !important;
-}
+/*#credits #message {
+  background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/email-icon.png) no-repeat 10px 130px #e2f3f2 !important;
+}*/
 
 #message h3 {
 	text-align:left;
-  margin-left: 80px;
+/*  margin-left: 80px;*/
   font-size: 18px !important;
 }
 
 #message h5 {
   font-size:16px;
-  margin-left:80px;
+/*  margin-left:80px;*/
   text-align: left;
 }
 
@@ -1233,13 +1233,14 @@ ul.album-nav li {
 }
 
 #meessage img {
-	margin-left: 50px;
+/*  margin-left: 50px;*/
 }
 
 #credits .wpcf7 p {
 	text-align: left;
-	margin-left: 80px;
-	margin-bottom: 20px
+/*  margin-left: 80px;*/
+	margin-bottom: 20px;
+	max-width: 500px;
 }
 
 #credits .wpcf7 span.wpcf7-form-control-wrap {

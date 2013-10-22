@@ -1214,8 +1214,14 @@ ul.album-nav li {
 
 #message h3 {
 	text-align:left;
-	margin-left:50px;
-	font-size: 16px !important;
+  margin-left: 80px;
+  font-size: 18px !important;
+}
+
+#message h5 {
+  font-size:16px;
+  margin-left:80px;
+  text-align: left;
 }
 
 #message p {
@@ -1839,6 +1845,15 @@ ul.album-nav li {
    
    #credits p.popup-copy-2 {
      display: none;
+   }
+   
+   #message h3, #message h5  {
+     margin-left: 0 !important;
+     font-size:14px !important;
+   }
+   
+   #message img {
+     width: 100% !important;
    }
 }
 

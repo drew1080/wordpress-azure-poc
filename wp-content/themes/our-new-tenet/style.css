@@ -1600,7 +1600,6 @@ ul.album-nav li {
     
     #footer #credits div.visiblebox {
       width: 70% !important;
-/*      left: auto !important;*/
       overflow: auto;
       top: 10px !important;
     }

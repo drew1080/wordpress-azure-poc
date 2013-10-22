@@ -1249,6 +1249,7 @@ ul.album-nav li {
 
 #credits div.visiblebox {
 	background: rgba(120, 182, 201, .7);
+	overflow: auto;
 }	
 
 #credits input[type="radio"] {
@@ -1834,6 +1835,8 @@ ul.album-nav li {
    #footer #credits div.visiblebox {
      width: 90% !important;
      left: 0px !important;
+     top: 20px !important;
+     height: 420px !important;
    }
 
    #credits div.visiblebox div.wpcf7 {

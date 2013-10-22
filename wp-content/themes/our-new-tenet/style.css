@@ -1600,6 +1600,10 @@ ul.album-nav li {
     
     #footer #credits div.visiblebox {
       width: 70% !important;
+<<<<<<< HEAD
+=======
+/*      left: auto !important;*/
+>>>>>>> cdc51a7aeb180bdff311b04c10b5847ee90fcdde
       overflow: auto;
     }
 
@@ -1622,6 +1626,7 @@ ul.album-nav li {
 }
 @media (max-width: 568px) {
   #footer #credits div.visiblebox {
+    width: 90%;
     top: 10px !important;
   }
 }

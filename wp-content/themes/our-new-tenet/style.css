@@ -1602,6 +1602,7 @@ ul.album-nav li {
       width: 70% !important;
 /*      left: auto !important;*/
       overflow: auto;
+      top: 10px !important;
     }
 
     #credits div.visiblebox div.wpcf7 {
@@ -1621,12 +1622,7 @@ ul.album-nav li {
       background-image: none !important;
     }
 }
-@media (max-width: 568px) {
-  #footer #credits div.visiblebox {
-    width: 90%;
-    top: 10px !important;
-  }
-}
+
 
 @media (max-width: 560px) {
   .tp-leftarrow.default {

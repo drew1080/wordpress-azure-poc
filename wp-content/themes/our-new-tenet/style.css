@@ -1623,6 +1623,7 @@ ul.album-nav li {
 @media (max-width: 568px) {
   #footer #credits div.visiblebox {
     top: 10px !important;
+    overflow: auto;
   }
 }
 
@@ -1863,10 +1864,6 @@ ul.album-nav li {
 
    #credits #message {
      background-image: none !important;
-   }
-   
-   #credits img.message {
-     display: none;
    }
    
    #credits p.popup-copy-2 {

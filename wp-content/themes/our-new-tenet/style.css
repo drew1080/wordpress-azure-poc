@@ -1260,6 +1260,15 @@ ul.album-nav li {
 	margin-top: 25px;
 }
 
+.map-wrap {width:680px;margin:0;padding:0;}
+.facilities-wrap {width:680px;font-family:"lato", sans-serif;}
+.facilities-wrap h1{;font-weight:400;font-size:20px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px;margin:5px 0;padding:0;}
+.facilities-container {width:210px; float:left}
+.push-right {padding-right:25px;}
+.facilities-wrap .facilities-container h2{font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
+.facilities-wrap .facilities-container ul{margin:0;padding:0;}
+.facilities-wrap .facilities-container li{font-weight:300; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
+
 @media (max-width: 960px) {
   #fast-facts-wrapper {
     display: none;

@@ -1214,9 +1214,9 @@ ul.album-nav li {
   left: auto;
 }
 
-/*#credits #message {
-  background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/email-icon.png) no-repeat 10px 130px #e2f3f2 !important;
-}*/
+#credits #message {
+  background: #e2f3f2 !important;
+}
 
 #message h3 {
 	text-align:left;

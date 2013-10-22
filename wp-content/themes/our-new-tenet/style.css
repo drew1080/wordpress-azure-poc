@@ -1207,9 +1207,11 @@ ul.album-nav li {
 	padding-left: 30px;
 }
 
-#closebox {
-	top: -5px !important;
-	right: -5px !important;
+#footer #credits #closebox {
+  top: -5px !important;
+  right: -11px !important;
+  background: transparent url(/wp-content/themes/our-new-tenet/images/close-button.png) no-repeat;
+  left: auto;
 }
 
 /*#credits #message {
@@ -1249,7 +1251,7 @@ ul.album-nav li {
 
 #credits div.visiblebox {
 	background: rgba(120, 182, 201, .7);
-	overflow: auto;
+/*  overflow: auto;*/
 }	
 
 #credits input[type="radio"] {

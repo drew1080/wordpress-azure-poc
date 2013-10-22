@@ -641,6 +641,10 @@ p.trigger.new-faq a {
   padding-top: 4px;
 }
 
+.orange-button-back a {
+  background-image: url(images/bkgd-button-question-gold.png);
+}
+
 .orange-button a:link:hover {
   text-decoration: none !important;
 }

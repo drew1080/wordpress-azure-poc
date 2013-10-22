@@ -47,7 +47,7 @@
             ?>
             
             <ul class="album-nav">
-              <li><div class="orange-button"><a href="/albums">Back to All Albums</a></div></li>
+              <li><div class="orange-button orange-button-back"><a href="/albums">Back to All Albums</a></div></li>
               <li>
                 <?php if (!empty($prevID)) { ?>
                 <div class="orange-button"><a href="<?php echo get_permalink($prevID); ?>" title="<?php echo get_the_title($prevID); ?>">Previous Album</a></div>

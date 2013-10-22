@@ -1248,6 +1248,7 @@ ul.album-nav li {
 
 #credits div.visiblebox {
 	background: rgba(120, 182, 201, .7);
+	overflow: auto;
 }	
 
 #credits input[type="radio"] {

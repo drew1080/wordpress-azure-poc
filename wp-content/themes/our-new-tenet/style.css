@@ -1837,7 +1837,7 @@ ul.album-nav li {
    #footer #credits div.visiblebox {
      width: 90% !important;
      left: 0px !important;
-     top: 60px !important;
+     top: 10px !important;
      overflow: auto;
     
    }

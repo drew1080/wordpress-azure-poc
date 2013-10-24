@@ -126,8 +126,8 @@ function wp_authenticate_username_password_custom($user, $username, $password) {
 
 		if ( empty($password) )
 			$error->add('empty_password', __('<strong>ERROR</strong>: The password field is empty.'));
-
 		return $error;
+
 	}
 
 	$user = get_user_by('login', $username);

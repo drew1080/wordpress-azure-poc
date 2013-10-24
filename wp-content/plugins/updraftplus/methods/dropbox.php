@@ -32,7 +32,7 @@ class UpdraftPlus_BackupModule_dropbox {
 
 		if (!function_exists('mcrypt_encrypt')) {
 			$updraftplus->log('The mcrypt PHP module is not installed');
-			$updraftplus->log(sprintf(__('The %s PHP module is not installed', 'updraftplus'), 'mcrypt'), 'error');
+			$updraftplus->log(sprintf(__('The %s PHP module is not installed - ask your web hosting company to enable it', 'updraftplus'), 'mcrypt'), 'error');
 			return false;
 		}
 
@@ -55,7 +55,7 @@ class UpdraftPlus_BackupModule_dropbox {
 		$updraft_dir = $updraftplus->backups_dir_location();
 		$dropbox_folder = trailingslashit(UpdraftPlus_Options::get_updraft_option('updraft_dropbox_folder'));
 
-		foreach($backup_array as $file) {
+		foreach ($backup_array as $file) {
 
 			$available_quota = -1;
 
@@ -89,7 +89,7 @@ class UpdraftPlus_BackupModule_dropbox {
 			$file_success = 1;
 
 			$hash = md5($file);
-			$this->current_file_hash=$hash;
+			$this->current_file_hash = $hash;
 
 			$filesize = filesize($updraft_dir.'/'.$file);
 			$this->current_file_size = $filesize;
@@ -129,12 +129,12 @@ class UpdraftPlus_BackupModule_dropbox {
 					// Try the indicated offset
 					$we_tried = $matches[1];
 					$dropbox_wanted = $matches[2];
-					$updraftplus->log("Dropbox alignment error: tried=$we_tried, wanted=$dropbox_wanted; will attempt recovery");
+					$updraftplus->log("Dropbox not yet aligned: tried=$we_tried, wanted=$dropbox_wanted; will attempt recovery");
 					try {
 						$dropbox->chunkedUpload($updraft_dir.'/'.$file, '', $ufile, true, $dropbox_wanted, $upload_id, array($ourself, 'chunked_callback'));
 					} catch (Exception $e) {
 						$updraftplus->log('Dropbox error: '.$e->getMessage().' (line: '.$e->getLine().', file: '.$e->getFile().')');
-						$updraftplus->log('Dropbox ',sprintf(__('error: failed to upload file to %s (see log file for more)','updraftplus'), $ufile), 'error');
+						$updraftplus->log('Dropbox '.sprintf(__('error: failed to upload file to %s (see log file for more)','updraftplus'), $ufile), 'error');
 						$file_success = 0;
 					}
 				} else {
@@ -155,7 +155,7 @@ class UpdraftPlus_BackupModule_dropbox {
 
 		}
 
-		$updraftplus_backup->prune_retained_backups('dropbox', $this, null);
+		return null;
 
 	}
 
@@ -288,7 +288,7 @@ class UpdraftPlus_BackupModule_dropbox {
 
 			<tr class="updraftplusmethod dropbox">
 				<th><?php _e('Authenticate with Dropbox','updraftplus');?>:</th>
-				<td><p><?php if (UpdraftPlus_Options::get_updraft_option('updraft_dropboxtk_request_token','xyz') != 'xyz') echo "<strong>(You appear to be already authenticated).</strong>"; ?> <a href="?page=updraftplus&action=updraftmethod-dropbox-auth&updraftplus_dropboxauth=doit"><?php echo __('<strong>After</strong> you have saved your settings (by clicking \'Save Changes\' below), then come back here once and click this link to complete authentication with Dropbox.','updraftplus');?></a>
+				<td><p><?php if (UpdraftPlus_Options::get_updraft_option('updraft_dropboxtk_request_token','xyz') != 'xyz') echo "<strong>".__('(You appear to be already authenticated)','updraftplus').".</strong>"; ?> <a href="?page=updraftplus&action=updraftmethod-dropbox-auth&updraftplus_dropboxauth=doit"><?php echo __('<strong>After</strong> you have saved your settings (by clicking \'Save Changes\' below), then come back here once and click this link to complete authentication with Dropbox.','updraftplus');?></a>
 				</p>
 				</td>
 			</tr>
@@ -360,7 +360,7 @@ class UpdraftPlus_BackupModule_dropbox {
 		self::bootstrap();
 		$new_token = UpdraftPlus_Options::get_updraft_option("updraft_dropboxtk_request_token","xyz");
 		if ($new_token && $new_token != "xyz") {
-			add_action('admin_notices', array('UpdraftPlus_BackupModule_dropbox', 'show_authed_admin_warning') );
+			add_action('all_admin_notices', array('UpdraftPlus_BackupModule_dropbox', 'show_authed_admin_warning') );
 		}
 	}
 
@@ -386,7 +386,7 @@ class UpdraftPlus_BackupModule_dropbox {
 		$sec = UpdraftPlus_Options::get_updraft_option('updraft_dropbox_appkey');
 
 		// Set the callback URL
-		$callback = admin_url('options-general.php?page=updraftplus&action=updraftmethod-dropbox-auth');
+		$callback = UpdraftPlus_Options::admin_page_url().'?page=updraftplus&action=updraftmethod-dropbox-auth';
 
 		// Instantiate the Encrypter and storage objects
 		$encrypter = new Dropbox_Encrypter('ThisOneDoesNotMatterBeyondLength');

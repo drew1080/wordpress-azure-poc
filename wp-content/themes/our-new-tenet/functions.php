@@ -1,4 +1,6 @@
 <?php
+// Custom Functions for Our New Tenet
+
 include("functions/integration_update_widget.php");
 
 add_shortcode('fast_facts', 'fast_facts_func');
@@ -275,10 +277,17 @@ function submit_a_question_func() {
 function toggle_content_func( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 		 'title' => '',
-		 'style' => 'list'
+		 'style' => 'list',
+		 'new_image' => ''
     ), $atts));
 	output;
-	$output .= '<div class="'.$style.'"><p class="trigger"><a href="#">' .$title. '</a></p>';
+	
+	if ( $new_image != '' ) {
+	  $output .= '<div class="'.$style.'"><p class="trigger new-faq"><span class="new-faq-wrap"><span class="new-toggle"></span></span><a href="#">' .$title. '</a></p>';
+	} else {
+	  $output .= '<div class="'.$style.'"><p class="trigger"><a href="#">' .$title. '</a></p>';
+	}
+	
 	$output .= '<div class="toggle_container"><div class="block">';
 	$output .= do_shortcode($content);
 	$output .= '</div></div></div>';
@@ -350,5 +359,81 @@ function remove_subscribers() {
 
 remove_subscribers();
 */
+
+function is_already_submitted($formName, $fieldName, $fieldValue){
+    require_once(ABSPATH . 'wp-content/plugins/contact-form-7-to-database-extension/CFDBFormIterator.php');
+    $exp = new CFDBFormIterator();
+    $atts = array();
+    $atts['show'] = $fieldName;
+    $atts['filter'] = "$fieldName=$fieldValue";
+    $exp->export($formName, $atts);
+    $found = false;
+    while ($row = $exp->nextRow()) {
+        $found = true;
+    }
+    return $found;
+}
+ 
+function is_survey_taken_by_user($result) {
+    // $formName = 'email_form'; // Name of the form containing this field
+    // $fieldName = 'email_123'; // Set to your form's unique field name
+    // $name = $tag['name'];
+    // if($name == $fieldName){
+    //     $valueToValidate = $_POST[$name];
+    //     if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+    //         $result['valid'] = false;
+    //         $result['reason'][$name] = 'Email has already been submitted'; // error message
+    //     }
+    // }
+    
+    $formName = 'Survey'; // Name of the form containing this field
+    $fieldName = 'Submitted Login'; // Set to your form's unique field name
+    $valueToValidate = 'connorposke';
+    
+    if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+        $result['valid'] = false;
+        $result['reason'][$name] = 'Thanks for your response!'; // error message
+    }
+    
+    return $result;
+}
+
+
+function user_last_login($login) {
+    global $user_ID;
+    $user = get_userdatabylogin($login);
+    update_usermeta($user->ID, 'last_login', time());
+}
+
+add_action('wp_login','user_last_login');
+ 
+//add_filter('wpcf7_validate_email*', 'my_validate_email', 10, 2);
+//add_filter('wpcf7_validate_select*', 'is_survey_taken_by_user', 10, 2);
+// add_action( 'wpcf7_contact_form', 'is_survey_taken_by_user' );
+
+
+// global $wpcf7_contact_form;
+// if ( ! ( $wpcf7_contact_form = wpcf7_contact_form( 1 ) ) )
+// return 'Contact form not found!';
+// $form = $wpcf7_contact_form->form_html();
+// echo $form;
+
+// add_action( 'plugins_loaded', 'wpcf7_add_shortcodes_custom', 1 );
+// 
+// function wpcf7_add_shortcodes_custom() {
+//  remove_shortcode( 'contact-form-7', 'wpcf7_contact_form_tag_func' );
+//  remove_shortcode( 'contact-form', 'wpcf7_contact_form_tag_func' );
+//  
+//   add_shortcode( 'contact-form-7', 'wpcf7_contact_form_tag_func_custom' );
+//  add_shortcode( 'contact-form', 'wpcf7_contact_form_tag_func_custom' );
+// }
+
+add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
+
+function dd_remove_update_nag($value) {
+  unset($value->response['contact-form-7/wp-contact-form-7.php']);
+
+  return $value;
+}
 
 ?>

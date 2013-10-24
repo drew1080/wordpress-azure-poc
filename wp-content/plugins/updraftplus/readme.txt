@@ -1,26 +1,28 @@
 === UpdraftPlus - WordPress Backup and Restoration ===
-Contributors: DavidAnderson
-Tags: backup, backups, restore, database, rackspace, amazon, s3, amazon s3, s3 compatible, dropbox, google drive, rackspace cloud files, rackspace, cloud files, dreamhost, dreamobjects, ftp, webdav, google cloud storage, cloudian, cloudn, connectria, constant cloud, eucalyptus, nifty, nimbula, back up, multisite, restoration, sftp, ftps, migrate, duplicate, copy, updraft, schedule, database backup
-Requires at least: 3.1
-Tested up to: 3.6
-Stable tag: 1.7.3
+Contributors: Backup with UpdraftPlus, DavidAnderson
+Tags: backup, backups, restore, database, rackspace, amazon, s3, amazon s3, s3 compatible, dropbox, google drive, rackspace cloud files, rackspace, cloud files, dreamhost, dreamobjects, ftp, webdav, google cloud storage, cloudian, cloudn, connectria, constant cloud, eucalyptus, nifty, nimbula, back up, multisite, restoration, sftp, ftps, scp, migrate, duplicate, copy, updraft, schedule, database backup, wordpress backup, full backup
+Requires at least: 3.2
+Tested up to: 3.7
+Stable tag: 1.7.34
 Author URI: http://updraftplus.com
 Donate link: http://david.dw-perspective.org.uk/donate
 License: GPLv3 or later
 
-Easy and complete backups + restoration. Manual or automated backups (Amazon S3, Dropbox, Google Drive, Rackspace, FTP, SFTP, WebDAV, email + others).
+Easy and complete backups + restoration. Manual or automated backups (backup to S3, Dropbox, Google Drive, Rackspace, FTP, SFTP, email + others).
 
 == Description ==
 
-<a href="http://updraftplus.com">UpdraftPlus</a> simplifies backups (and restoration). Backup into the cloud (Amazon S3 (or compatible), Dropbox, Google Drive, Rackspace Cloud, DreamObjects, FTP, SFTP, WebDAV and email) and restore with a single click. Backups of files and database can have separate schedules.
+<a href="http://updraftplus.com">UpdraftPlus</a> simplifies backups (and restoration). Backup into the cloud (Amazon S3 (or compatible), Dropbox, Google Drive, Rackspace Cloud, DreamObjects, FTP, SFTP, SCP, WebDAV and email) and restore with a single click. Backups of files and database can have separate schedules.
 
-* Thousands of users: widely tested and reliable (over 215,000 downloads). Ranks in the top 0.5% on rankwp.com (70th out of 25,000 plugins).
-* Top-quality: ranks 52nd out of 25,000 WordPress plugins for quality on rankwp.com (top 0.25% - last checked 20th August 2013).
-* Supports WordPress backups to Amazon S3 (or compatible), Dropbox, Rackspace Cloud Files, Google Drive, Google Cloud Storage, DreamHost DreamObjects, FTP and email. Also (via an add-on) FTP over SSL, SFTP and WebDAV. (Note: Microsoft forbid SkyDrive to be used by backup software). Some examples of S3-compatible providers: Cloudian, Connectria, Constant, Eucalyptus, Nifty, Nimbula, Cloudn.
+<strong>Top-quality:</strong> UpdraftPlus is the <a href="http://rankwp.com/plugins/updraftplus">highest-ranking backup plugin on rankwp.com</a> (ranks 16th out of 28,000 WordPress plugins for quality on rankwp.com - last checked 28th September 2013).
+
+<strong>Tens of thousands of users:</strong> widely tested and reliable (over 325,000 downloads). Ranks in the top 100 most used of all WordPress plugins on rankwp.com. Millions of backups completed!
+
+* Supports WordPress backups to Amazon S3 (or compatible), Dropbox, Rackspace Cloud Files, Google Drive, Google Cloud Storage, DreamHost DreamObjects, FTP and email. Also (via an add-on) FTP over SSL, SFTP, SCP and WebDAV. (Note: Microsoft forbid SkyDrive to be used by backup software). Some examples of S3-compatible providers: Cloudian, Connectria, Constant, Eucalyptus, Nifty, Nimbula, Cloudn.
 * Quick restore (both file and database backups)
 * Backup automatically on a repeating schedule
 * Site duplicator/migrator: can copy sites, and (with add-on) move them to new locations
-* Files and databases can have separate schedules
+* Files and database backups can have separate schedules
 * Failed uploads are automatically resumed/retried
 * Large sites can be split into multiple archives
 * Select which files to backup (plugins, themes, content, other)
@@ -29,7 +31,7 @@ Easy and complete backups + restoration. Manual or automated backups (Amazon S3,
 * Database backups can be encrypted for security
 * Debug mode that gives full logging of the backup
 * Internationalised (translations very welcome - see below)
-* Premium version and support available - <a href="http://updraftplus.com">http://updraftplus.com</a>
+* <a href="http://updraftplus.com">Premium version and support available - http://updraftplus.com</a>
 * Tested and supported on all current PHP versions (5.2, 5.3, 5.4)
 
 = Don't Risk Anything Less =
@@ -48,18 +50,19 @@ UpdraftPlus is written by professional WordPress developers. If your site needs 
 
 = Are you multi-lingual? Can you translate? =
 
-Are you able to translate UpdraftPlus into another language? Are you ready to help speakers of your language? UpdraftPlus itself is ready and waiting - the only work needed is the translating. The translation process is easy, and web-based - go here for instructions: <a href="http://updraftplus.com/translate/">http://updraftplus.com/translate/</a>. (Or if you're an expert WordPress translator already, then just pick out the .pot file from the wp-content/plugins/updraftplus/languages/ directory).
+Are you able to translate UpdraftPlus into another language? Are you ready to help speakers of your language? UpdraftPlus itself is ready and waiting - the only work needed is the translating. The translation process is easy, and web-based - go here for instructions: <a href="http://updraftplus.com/translate/">http://updraftplus.com/translate/</a>. (Or if you're an expert WordPress translator already, then just pick out the .pot file from the wp-content/plugins/updraftplus/languages/ directory - if you scan for translatable strings manually, then you need to get these functions: _x(), __(), _e(), _ex(), log_e()).
 
 Many thanks to the existing translators:
 
-* Français / French translation (fr_FR): ufo3D - http://ufo-3d.fr/ and Thomas Jacobsen - http://123informatique.ch/ - with help from Françoise Lhermitte - http://www.ajwan.net
+* Ελληνική  / Greek translation (el): Κώστας Θερμογιάννης (Kostas Thermoyiannis) - http://tovivlio.net
+* Français / French translation (fr_FR): ufo3D - http://ufo-3d.fr and Thomas Jacobsen - http://123informatique.ch - with help from Françoise Lhermitte - http://www.ajwan.net
 * Swedish / Svensk (sv_SE): Steve Sandström - http://www.brandicon.se
-* Español / Spanish (es_ES): Fernando Villasmil - villasmil.fernando at gmail.com
 * Polski / Polish (pl_PL): Bartosz Kaczmarek - barth.kaczmarek at gmail.com
 * Chinese (zh_CN): K L Wang - http://klwang.info
 * Italiano / Italian (it_IT): Francesco Carpana - f.carpana at gmail.com
 
 And to these (need updating or new translators; now less than 50% translated):
+* Español / Spanish (es_ES): Fernando Villasmil - villasmil.fernando at gmail.com
 * Deutsch / German (de_DE): Marcel Herrguth - mherrguth at mrgeneration.de
 * Magyar / Hungarian (hu_HU): Szépe Viktor - http://www.szepe.net
 * Nederlands / Dutch (nl_NL): Hans van der Vlist - hansvandervlist at gmail.com
@@ -125,6 +128,67 @@ Yes; especially before you submit any support requests.
 Thanks for asking - yes, I have. Check out my profile page - http://profiles.wordpress.org/DavidAnderson/ .
 
 == Changelog ==
+
+The <a href="http://updraftplus.com/news/">UpdraftPlus backup blog</a> is the best place to learn in more detail about any important changes.
+
+= 1.7.34 - 2013/10/21 =
+
+* FEATURE: Options in the "Backup Now" dialog to exclude files or database from the backup (http://updraftplus.com/more-flexibility-in-backup-now/)
+* FEATURE: Use binary mysqldump, if available, for much faster dumps of large tables
+* FEATURE: New Ελληνική / Greek translation (el): Κώστας Θερμογιάννης (Kostas Thermoyiannis) - http://tovivlio.net
+* FIX: Fix a JavaScript error in Internet Explorer 8
+* FIX: Under very unusual circumstances, it was still possible for multiple backup jobs to occur
+* FIX: For non-English installs, the email indicating backup success sometimes failed to send
+* FIX: Fix obscure table name error if WP was using bespoke database setup without delete access
+* FIX: On multi-site installs, settings changes could be lost if they were made during an ongoing backup
+* TWEAK: Now marked as WordPress 3.7 compatible
+* TWEAK: Detect available disk quota in CPanel account (if relevant), log, and warn if low
+* TWEAK: Amazon S3 backend now can use WP proxy settings (if any)
+* TWEAK: All multisite settings pages have now been moved to the network admin section
+* TWEAK: Restorer now handles hand-moved non-default WP site directories (where they differ from the website base directory)
+* TWEAK: Migrator can now migrate sub-domain-based WPMU installs with no manual steps required
+* TWEAK: Internationalised the add-ons management page (Premium)
+* TWEAK: Switch zip engines from ZipArchive earlier if it appears to be broken
+* TWEAK: Now cleans up some previously un-caught temporary files if the backup aborted unexpectedly
+* TWEAK: Remove bogus warning about W3TC object cache
+* TWEAK: Backup log file now includes SHA1 checksums
+* TWEAK: Add warning for user if their max_execution_time is very low
+* TWEAK: Make fewer HTTP requests when tracking download status
+* TWEAK: Under certain conditions, the report email could wrongly state that files were included in a db-only backup
+* TWEAK: Improve detection of recent activity on resumptions when zips split
+* TWEAK: Prevent some warning messages from being shown twice
+* TWEAK: Remove the "that's a lot of rows" warning once the table successfully finishes being dumped
+* TWEAK: Cache the results of looking for a zip executable for the duration of the job
+* TWEAK: Some badly-written plugins place their own code on UD's settings page, and break the layout; overcome this
+* TWEAK: Add a warning for people using encryption without mcrypt installed (slow)
+* TWEAK: Suppress useless warning when using BinZip and only empty directories exist in 'others' backup
+
+= 1.7.20 - 2013/09/20 =
+* TWEAK: Add semaphore locking to prevent WP's cron system kicking off multiple jobs on overloaded systems
+* TWEAK: Catch and display some previously uncaught AJAX notices when restoring, and display information on the restore process earlier
+
+= 1.7.18 - 2013/09/17 =
+* FEATURE: <a href="http://updraftplus.com/shop/morestorage/">New "more storage" add-on</a>, enabling backing up to multiple storage destinations
+* FEATURE: New progress meter on dashboard page when a backup is running
+* FEATURE: SCP support (in the <a href="http://updraftplus.com/shop/sftp/">SFTP/FTPS/SCP add-on</a>)
+* FEATURE: If (and only if) your settings page is open, then UpdraftPlus will automatically perform tricks to help backups run even if your WordPress install has its scheduler disabled (of course, enabling your scheduler would better).
+* FIX: Fix bug whereby clicking on 'rescan' lost track of backups sent to remote storage
+* FIX: Fix obscure bug that could cause WPMU installs to not back up all tables
+* FIX: Fix unwanted warning message if the uploads folder was empty
+* FIX: Show timestamps of available backup sets in local time zone
+* FIX: Email subjects and contents use local time zone
+* FIX: Fix mangled pathnames for PclZip one-shot attempts
+* FIX: Fix bug that caused files to be dropped if one was in a sub-directory of the entity and named (entire name) "0"
+* FIX: Show correct title on page when upgrading
+* FIX: Fix one-character typo that could cause Dropbox uploads to not continue if Dropbox threw a transient error from their end
+* FIX: Permanent solution to conflict with W3TC's object cache (and removal of advisory notice)
+* FIX: Correctly show estimated size of 'others' backup within the expert section
+* FIX: Fix small typo in inline decrypter that led to viewer reading an incomplete message
+* TWEAK: Warn the user if they seem to be a on a dev website that is not visited + so can't backup (http://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/)
+* TWEAK: More detection of possible overlaps (use temporary files as evidence)
+* TWEAK: Extra check that the directory is writable before unpacking zip in restore (so user gets friendly error message instead of trickier one)
+* TWEAK: Provide option to remember the "automatic backup" setting
+* TWEAK: <a href="http://updraftplus.com/shop/webdav/">The WebDAV add-on</a> now has support for WebDAV servers that don't support Content-Range (e.g. ownCloud)
 
 = 1.7.3 - 2013/08/26 =
 * FIX: Some Dropbox connect errors were being lost
@@ -563,6 +627,7 @@ We recognise and thank the following for code and/or libraries used and/or modif
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 Furthermore, reliance upon any non-English translation is at your own risk. UpdraftPlus can give no guarantees that translations from the original English are accurate.
+
 
 == Upgrade Notice ==
 * 1.7.3: Fix 3 bugs - recommended upgrade for all

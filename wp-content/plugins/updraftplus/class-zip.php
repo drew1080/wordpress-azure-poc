@@ -5,7 +5,7 @@ if (!defined ('ABSPATH')) die('No direct access allowed');
 if (class_exists('ZipArchive')):
 # We just add a last_error variable for comaptibility with our UpdraftPlus_PclZip object
 class UpdraftPlus_ZipArchive extends ZipArchive {
-	public $last_error = '(Unknown: ZipArchive does not return error messages)';
+	public $last_error = 'Unknown: ZipArchive does not return error messages';
 }
 endif;
 
@@ -20,13 +20,13 @@ class UpdraftPlus_BinZip extends UpdraftPlus_PclZip {
 			$this->last_error = "No binary zip was found";
 			return false;
 		}
-		$this->debug = UpdraftPlus_Options::get_updraft_option('updraft_debug_mode');
 		return parent::__construct();
 	}
 
 	public function addFile($file, $add_as) {
 
 		global $updraftplus;
+		# Get the directory that $add_as is relative to
 		$base = $updraftplus->str_lreplace($add_as, '', $file);
 
 		if ($file == $base) {
@@ -48,7 +48,7 @@ class UpdraftPlus_BinZip extends UpdraftPlus_PclZip {
 			return false;
 		}
 
-		global $updraftplus;
+		global $updraftplus, $updraftplus_backup;
 		$updraft_dir = $updraftplus->backups_dir_location();
 
 		$activity = false;
@@ -70,6 +70,12 @@ class UpdraftPlus_BinZip extends UpdraftPlus_PclZip {
 
 		$added_dirs_yet = false;
 
+		# If there are no files to add, but there are empty directories, then we need to make sure the directories actually get added
+		if (0 == count($this->addfiles) && 0 < count($this->adddirs)) {
+			$dir = realpath($updraftplus_backup->make_zipfile_source);
+			$this->addfiles[$dir] = '././.';
+		}
+
 		// Loop over each destination directory name
 		foreach ($this->addfiles as $rdirname => $files) {
 
@@ -89,16 +95,18 @@ class UpdraftPlus_BinZip extends UpdraftPlus_PclZip {
 				$added_dirs_yet=true;
 			}
 
-			foreach ($files as $file) {
-				// Send the list of files on stdin
-				fwrite($pipes[0], $file."\n");
+			if (is_array($files)) {
+				foreach ($files as $file) {
+					// Send the list of files on stdin
+					fwrite($pipes[0], $file."\n");
+				}
 			}
 			fclose($pipes[0]);
 
 			while (!feof($pipes[1])) {
 				$w = fgets($pipes[1], 1024);
 				// Logging all this really slows things down; use debug to mitigate
-				if ($w && $this->debug) $updraftplus->log("Output from zip: ".trim($w), 'debug');
+				if ($w && $updraftplus_backup->debug) $updraftplus->log("Output from zip: ".trim($w), 'debug');
 				if (time() > $last_recorded_alive + 5) {
 					$updraftplus->record_still_alive();
 					$last_recorded_alive = time();
@@ -112,7 +120,7 @@ class UpdraftPlus_BinZip extends UpdraftPlus_PclZip {
 					clearstatcache();
 					# Log when 20% bigger or at least every 50Mb
 					if ($new_size > $last_size*1.2 || $new_size > $last_size + 52428800) {
-						$updraftplus->log($this->path.sprintf(": size is now: %.2f Mb", round($new_size/1048576,1)));
+						$updraftplus->log(basename($this->path).sprintf(": size is now: %.2f Mb", round($new_size/1048576,1)));
 						$last_size = $new_size;
 					}
 				}
@@ -122,15 +130,15 @@ class UpdraftPlus_BinZip extends UpdraftPlus_PclZip {
 
 			while (!feof($pipes[2])) {
 				$last_error = fgets($pipes[2]);
-				if (!empty($last_error)) $this->last_error = $last_error;
+				if (!empty($last_error)) $this->last_error = rtrim($last_error);
 			}
 			fclose($pipes[2]);
 
 			$ret = proc_close($process);
 
 			if ($ret != 0 && $ret != 12) {
-				$updraftplus->log("Binary zip: error (code: $ret)");
-				if (!empty($w) && !$this->debug) $updraftplus->log("Last output from zip: ".trim($w), 'debug');
+				$updraftplus->log("Binary zip: error (code: $ret - look it up in the Diagnostics section at http://www.info-zip.org/mans/zip.html for interpretation... and also check that your hosting account quota is not full)");
+				if (!empty($w) && !$updraftplus_backup->debug) $updraftplus->log("Last output from zip: ".trim($w), 'debug');
 				return false;
 			}
 

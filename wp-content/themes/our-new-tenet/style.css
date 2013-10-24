@@ -218,6 +218,7 @@ a:link:hover {
   color: #2c3f6c !important;
 }
 /* TODO investigate what is needed from this...removing as it shows a background on the nav html.ie #navigation, */
+
 /*
 html.ie a.button, html.ie .cta, html.ie .wp-caption, html.ie #breadcrumbs, html.ie a.more-link, html.ie .gallery .gallery-item img, html.ie .gallery gallery-item img.thumbnail, html.ie widget-container, html.ie #author-info {
   behavior: url("/wp-content/themes/skeleton/PIE.php");
@@ -570,6 +571,40 @@ color: #2c3f6c;
   text-decoration: none !important;
 }
 
+p.trigger.new-faq {
+  display: table;
+}
+
+p.trigger.new-faq a {
+  display: table-cell;
+  width: 611px;
+  float: left;
+  margin-left: 10px;
+}
+
+.new-faq-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.new-toggle {  
+  background-image: url(/wp-content/themes/our-new-tenet/images/new.png);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 11px;
+  line-height: 150%;
+  display: block;
+  float: left;
+  width: 38px;
+  height: 20px;
+  border: none;
+}
+
 .download-pdf {
   background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-button-question-orange.png);
   background-repeat: no-repeat;
@@ -579,6 +614,115 @@ color: #2c3f6c;
   text-align: center;
   float: left;
   margin-top: 5px;
+}
+
+.album-orange-button-spacer {
+  height: 20px;
+}
+
+.orange-button a {
+  background-image: url(images/bkgd-button-question-orange.png);
+  text-decoration: none !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
+  height: 29px;
+  border: none;
+  display: block;
+  width: 168px;
+  float: left;
+  margin-right: 11px;
+  text-align: center;
+  background-repeat: no-repeat;
+  padding-top: 4px;
+}
+
+.orange-button-back a {
+  background-image: url(images/bkgd-button-question-gold.png);
+}
+
+.orange-button a:link:hover {
+  text-decoration: none !important;
+}
+
+.orange-button-right a:link{
+  float: right;
+  margin-right: 0px;
+}
+
+a:visited.orange-button {
+  color: #ffffff !important;
+}
+
+a:link.orange-button {
+  display: block;
+  background: url(images/bkgd-button-question-orange.png) no-repeat 0px 0px;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  height: 40px;
+  width: 168px;
+  float: left;
+  margin-right: 150px;
+  text-align: center;
+  padding-top: 4px;
+  display: inline-block;
+}
+
+a:link:hover.orange-button {
+  text-decoration: none !important;
+}
+
+a:link.orange-button-left {
+  margin: 0px 0px 0px 15px;
+}
+
+a:link.orange-button-right {
+  float: right;
+  margin: 0px 0px 0px 15px;
+}
+
+a:visited.orange-button {
+  color: #ffffff !important;
+}
+
+.page-template-page_album-php .navigation {
+  float: right;
+  width: 366px;
+}
+
+.gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+  max-width: 100%;
+  margin-right: 30px; 
+}
+
+.wp-caption.custom-thumbnails {
+  margin: 0px 21px 21px 0px;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 13px;
+}
+
+.gallery-caption {
+  font-size: 13px;
+  line-height: 15px;
+  width: 195px;
+}
+
+.gallery .gallery-item {
+  margin-bottom: 15px;
+  min-height: 245px;
 }
 
 /*Only show the view guide link on desktop*/
@@ -603,10 +747,9 @@ and (orientation : landscape) {
   .pageflip_popup_link {
     display: none; 
   }
- #pageflip_newtab
-  {
-  display: none;
- }
+  #pageflip_newtab {
+    display: none;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -754,6 +897,31 @@ li.menu-item {
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
+.menu-side-nav-container ul.sub-menu li a {
+  font-size: 11px;
+  padding: 8px 22px 8px 0;
+  width: 142px;
+  display: block;
+  line-height: 35%;
+}
+
+.menu-side-nav-container ul.sub-menu li:hover a {
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 149px 6px;
+}
+
+.menu-side-nav-container ul.sub-menu li.menu-item.current-menu-item a {
+  background: url(images/toggle-rt-sm-orange.png) no-repeat 149px 6px;
+}
+
+.widget-container ul.sub-menu {
+  margin-left: 1.7em;
+  display: none;
+}
+
+.album.current-menu-parent ul.sub-menu, .album.current-menu-item ul.sub-menu {
+  display: block;
+}
+
 /* Slider styling */
 
 .advanced-slider .thumbnail {  
@@ -890,7 +1058,7 @@ input.wpcf7-form-control.wpcf7-submit {
   background-image: none !important;
   border-color: #A5B3CF;
   background-color: #7ea9c1;
-  z-index: 1000000;
+  z-index: 100000;
   position: absolute;
   width: 458px;
   padding-left: 10px;
@@ -916,11 +1084,194 @@ input.wpcf7-form-control.wpcf7-submit {
 .navbar-inverse .nav-collapse .nav>li>a {
   color: #ffffff !important;
 }
+
+.navbar-inverse .nav-collapse .sub-menu>li>a {
+  color: #ffffff !important;
+  background-color: #7ea9c1;
+}
+
+.navbar-inverse .nav-collapse ul.sub-menu {
+  display: none;
+}
+
+.navbar-inverse .nav-collapse .album.current-menu-parent ul.sub-menu, .navbar-inverse .nav-collapse .album.current-menu-item ul.sub-menu {
+  display: block;
+}
+
+.navbar-inverse .nav-collapse .sub-menu>li>a:hover {
+  background-color: #5787a2;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
 .navbar-inverse .nav-collapse .nav>li>a:hover {
   background-color: #5787a2;
   color: #ffffff !important;
   text-decoration: none !important;
 }
+
+/* Revolution Slider styling 
+   All divs under the thumbcontainer get padded - creates space between the thumbnails
+*/
+.tp-thumbcontainer div {
+		margin: 6px !important;
+} 
+
+.tp-bullets.tp-thumbs{
+  background-color: transparent !important;
+}
+
+/* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
+.tp-mask {
+  width: 785px !important;
+  height: 120px !important;
+}
+
+/* Move the whole container over the left slightly to account for the added space */
+.tp-bullets.tp-thumbs.round {
+  margin-left: -392px !important;
+ }
+ 
+.bullet.thumb {
+ width: 250px !important;
+ height: 110px !important;
+}
+
+.entry-content ul.album-nav {
+ list-style-type: none;
+ min-height: 30px;
+ position: relative;
+ z-index: 1000;
+}
+
+ul.album-nav li {
+  margin: 0px;
+}
+ 
+
+.visiblebox .wpcf7 {
+  font-size: 16px;
+  color: #444444 !important;
+}
+
+#credits div.visiblebox {
+  background: #78b6c9;
+  padding: 15px;
+}
+#credits div.visiblebox div.wpcf7 {
+  margin: 30px;
+  min-width: 350px;
+  min-height: 200px;
+}
+
+#wpcf7-f7731-t1-o1 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+#credits .wpcf7 p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: lato;
+  color: #444444 !important;
+}
+
+#credits .wpcf7 .wpcf7-select.feeling-dropdown {
+  width: 200px;
+  line-height: 20px;
+  height: 2em;
+  font-size: 12px;
+}
+
+#credits .wpcf7 p.submit-popup {
+  text-align: center;
+}
+
+#credits .wpcf7 .wpcf7-submit {
+  font-size: 12px;
+  height: 26px;
+}
+
+#credits .wpcf7 span.wpcf7-form-control-wrap {
+  margin-top: 5px;
+  display: block;
+  margin-bottom: -25px;
+}
+
+
+
+.wpcf7-form-control.wpcf7-submit {
+	background: url(http://ournewtenet.azurewebsites.net/wp-content/uploads/2013/10/icon_whiteCheck.png) 6px no-repeat #df5b29 !important;
+	width: 140px;
+	text-align: left;
+	padding-left: 30px;
+}
+
+#footer #credits #closebox {
+  top: -5px !important;
+  right: -11px !important;
+  background: transparent url(/wp-content/themes/our-new-tenet/images/close-button.png) no-repeat;
+  left: auto;
+}
+
+#credits #message {
+  background: #e2f3f2 !important;
+}
+
+#message h3 {
+	text-align:left;
+/*  margin-left: 80px;*/
+  font-size: 18px !important;
+}
+
+#message h5 {
+  font-size:16px;
+/*  margin-left:80px;*/
+  text-align: left;
+}
+
+#message p {
+	margin: 10px 0 ;
+}
+
+#meessage img {
+/*  margin-left: 50px;*/
+}
+
+#credits .wpcf7 p {
+	text-align: left;
+/*  margin-left: 80px;*/
+	margin-bottom: 20px;
+	max-width: 450px;
+}
+
+#credits .wpcf7 span.wpcf7-form-control-wrap {
+	margin-bottom: -25px;
+}
+
+#credits div.visiblebox {
+	background: rgba(120, 182, 201, .7);
+/*  overflow: auto;*/
+}	
+
+#credits input[type="radio"] {
+	position: relative;
+	vertical-align: top;
+	top: -2px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+	margin-top: 25px;
+}
+
+.map-wrap {width:680px;margin:0;padding:0;}
+.facilities-wrap {width:680px;font-family:"lato", sans-serif;}
+.facilities-wrap h1{;font-weight:400;font-size:20px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px;margin:5px 0;padding:0;}
+.facilities-container {width:210px; float:left}
+.push-right {padding-right:25px;}
+.facilities-wrap .facilities-container h2{font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
+.facilities-wrap .facilities-container ul{margin:0;padding:0;}
+.facilities-wrap .facilities-container li{font-weight:300; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
 
 @media (max-width: 960px) {
   #fast-facts-wrapper {
@@ -973,6 +1324,10 @@ input.wpcf7-form-control.wpcf7-submit {
     padding-left: 0;
   }
   
+  p.trigger.new-faq a {
+    width: auto;
+  }
+  
   .page-id-2721 h1 {
     width: 100%;
   }
@@ -988,12 +1343,31 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .tp-leftarrow {
-    top: 180px !important;
+    top: 105px !important;
+    left: -2px !important;
   }
 
   .tp-rightarrow {
-    top: 180px !important;
+    top: 105px !important;
+    right: -2px !important;
   }
+  
+  
+  .tp-mask {
+    width: 698px !important;
+    height: 120px !important;
+  }
+
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -374px !important;
+    width: 684px !important;
+    left: 54% !important;
+   }
+
+   .bullet.thumb {
+     width: 216px !important;
+     height: 110px !important;
+   }
   
   .page-id-4851 {
     background-image: url(/wp-content/themes/our-new-tenet/images/bkgd-billboard-repeat-x288.jpg) !important;
@@ -1001,8 +1375,39 @@ input.wpcf7-form-control.wpcf7-submit {
   .page-id-4851 .entry-content p:first-child {
     padding-top: 98px !important;
   }
+  
+  .page-template-page_album-php #content.eleven.columns {
+    width: 538px;
+  }
+  
+  .page-template-page_album-php .navigation {
+    width: 346px;
+    float: left;
+  }
+
+  a:link.orange-button {
+    margin: 0 10px 0 0;
+  }
+  
+  .back-button a:link.orange-button {
+    margin-right: 10px;
+  }
+  
+  ul.album-nav li {
+    margin: 0px;
+  }
+  
+  a:link.orange-button-right {
+    float: left;
+  }
+
 }
 
+@media only screen and (max-width: 959px) and (min-width: 768px)  {
+  .tp-thumbcontainer {
+    left: 0 !important;
+  } 
+}
 
 @media only screen and (max-width: 769px) {
   
@@ -1015,6 +1420,7 @@ input.wpcf7-form-control.wpcf7-submit {
     width: 247px;
     height: 50px;
   }
+  
 
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -1022,6 +1428,7 @@ input.wpcf7-form-control.wpcf7-submit {
      height: 130px;
    }*/
    
+  
    .page-id-2861 #wrap.container {
      overflow-x: hidden;
    }
@@ -1077,11 +1484,7 @@ input.wpcf7-form-control.wpcf7-submit {
   }
   
   .rev_slider_wrapper {
-    margin: 0px !important;
-  }
-  
-  .tp-bullets.tp-thumbs.round .tp-mask {
-    display: none;
+    margin: 0 0 160px !important;
   }
   
   .tp-leftarrow.default {
@@ -1123,6 +1526,10 @@ input.wpcf7-form-control.wpcf7-submit {
     padding-left: 0;
   }
   
+  p.trigger.new-faq a {
+    width: auto;
+  }
+  
   .page-id-2721 h1 {
     width: 100%;
   }
@@ -1157,6 +1564,80 @@ input.wpcf7-form-control.wpcf7-submit {
    .page-id-4851 .entry-content p {
      padding-top: 1px !important;
    }
+   
+   .tp-mask {
+     width: 720px !important;
+     height: 120px !important;
+   }
+
+   .tp-bullets.tp-thumbs.round {
+     margin-left: -476px !important;
+     height: 135px !important;
+    }
+
+    .bullet.thumb {
+      width: 152px !important;
+      height: 110px !important;
+    }
+    
+    .tp-thumbcontainer {
+      left: 227px !important;
+      margin-top: 10px;
+    }
+    
+    ul.album-nav {
+      display: block;
+      text-align: center;
+    }
+    
+    ul.album-nav li {
+      display: inline-block;
+    }
+    
+    a:link.orange-button {
+      margin: 0px;
+    }
+    
+    #footer #credits div.visiblebox {
+      width: 70% !important;
+      overflow: auto;
+    }
+
+    #credits div.visiblebox div.wpcf7 {
+      margin: 10px;
+      min-width: 0px;
+    }
+
+    #message h3 {
+      margin-left: 0px;
+    }
+
+    #credits .wpcf7 p {
+      margin-left: 0px;
+    }
+
+    #credits #message {
+      background-image: none !important;
+    }
+}
+@media (max-width: 568px) {
+  #footer #credits div.visiblebox {
+    width: 90%;
+    top: 10px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .tp-leftarrow.default {
+    margin-top: 186px !important;
+    left: 0px !important;
+  }
+  
+  .tp-rightarrow.default {
+    margin-top: 186px !important;
+    right: 0px !important;
+  }
+  
 }
 
 
@@ -1212,15 +1693,15 @@ input.wpcf7-form-control.wpcf7-submit {
   }*/
   
   .rev_slider_wrapper {
-    margin: 22px 0px !important;
+    margin: 22px 0px 112px !important;
   }
   
   .tp-leftarrow.default {
-    margin-top: 108px !important;
+    margin-top: 186px !important;
   }
   
   .tp-rightarrow.default {
-    margin-top: 108px !important;
+    margin-top: 186px !important;
   }
   
   .login a, .logout a {
@@ -1247,10 +1728,6 @@ input.wpcf7-form-control.wpcf7-submit {
    .navbar {
      display: block;
    }
-
-   .tp-bullets.tp-thumbs.round {
-     display: none;
-   }
    
    p.trigger {
      background: url(images/toggle-updown.png) no-repeat 282px 24px;
@@ -1269,6 +1746,10 @@ input.wpcf7-form-control.wpcf7-submit {
      background: url(images/toggle-updown.png) no-repeat 282px -582px;
      border: none;
      padding-left: 0;
+   }
+   
+   p.trigger.new-faq a {
+     width: auto;
    }
    
    .page-id-2721 h1 {
@@ -1297,9 +1778,106 @@ input.wpcf7-form-control.wpcf7-submit {
       padding-top: 88px !important;
     }
     
-    .page-id-4851 .entry-content p {
-        padding-top: 24px !important;
-      }
+   .page-id-4851 .entry-content p {
+  padding-top: 24px !important;
+  }
+  
+  .tp-mask {
+    width: 720px !important;
+    height: 120px !important;
+  }
+
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -476px !important;
+    height: 135px !important;
+   }
+
+   .bullet.thumb {
+     width: 152px !important;
+     height: 110px !important;
+   }
+   .tp-thumbcontainer {
+     margin-top: 10px;
+   }
+   
+   .page-template-page_album-php h1 {
+     font-size: 21px;
+     text-align: center;
+   }
+   
+   
+   
+   .gallery .gallery-item { 
+     width: 100%;
+   }
+   
+   .gallery .gallery-item img, .gallery .gallery-item img.thumbnail {
+     margin-right: 0px;
+   }
+   
+   .gallery-caption {
+      width: auto;
+   }
+   
+   a:link.orange-button {
+      margin-right: 0px;
+   }
+   
+   ul.album-nav {
+     display: block;
+     text-align: center;
+   }
+
+   ul.album-nav li {
+     display: inline-block;
+     margin: 0px;
+   }
+
+   a:link.orange-button {
+     margin: 0px;
+   }
+   
+   .orange-button a {
+     margin: 0px;
+   }
+   
+   #footer #credits div.visiblebox {
+     width: 90% !important;
+     left: 0px !important;
+     top: 10px !important;
+     overflow: auto;
+    
+   }
+
+   #credits div.visiblebox div.wpcf7 {
+     margin: 10px;
+     min-width: 0px;
+   }
+
+   #message h3 {
+     margin-left: 0px;
+   }
+
+   #credits .wpcf7 p {
+     margin-left: 0px;
+   }
+
+   #credits #message {
+     background-image: none !important;
+   }
+   
+   #credits p.popup-copy-2 {
+     display: none;
+   }
+   
+   #message h3, #message h5  {
+     margin-left: 0 !important;
+     font-size:14px !important;
+   }
+   
+   #message img {
+     width: 100% !important;
+   }
 }
 
 @media (max-width: 320px) {
@@ -1309,11 +1887,11 @@ input.wpcf7-form-control.wpcf7-submit {
    }
   
   .tp-leftarrow.default {
-    margin-top: 74px !important;
+    margin-top: 124px !important;
   }
   
   .tp-rightarrow.default {
-    margin-top: 74px !important;
+    margin-top: 124px !important;
   }
   
   .circle {
@@ -1325,41 +1903,42 @@ input.wpcf7-form-control.wpcf7-submit {
     width: 93%;
   }
   
-@media only screen 
-and (max-width : 320px){ 
-/*iPhone style*/
-#welcome_text_ep h1 {
-font-size:24px !important;
-}
+  .tp-thumbcontainer {
+    left: -8px !important;
+    margin-top: 0;
+  }
+  
+  .tp-mask {
+    width: 310px !important;
+    height: 60px !important;
+  }
+
+  .tp-bullets.tp-thumbs.round {
+    margin-left: -150px !important;
+    height: 65px !important;
+    bottom: -75px !important;
+  }
+  
+  .bullet.thumb {
+    width: 90px !important;
+    height: 50px !important;
+  }
+  
+  #welcome_text_ep h1 {
+    font-size:24px !important;
+  }
+
+  .page-id-4851 .entry-content p:first-child {
+    padding-top: 92px !important;
+  }
 
 }
   
-  .page-id-4851 .entry-content p:first-child {
-     padding-top: 92px !important;
-   }
+@media only screen 
+and (max-width : 320px){ 
+  /*iPhone style*/
+  
 }
-
-/* Revolution Slider styling 
-   All divs under the thumbcontainer get padded - creates space between the thumbnails
-*/
-.tp-thumbcontainer div {
-		margin: 6px !important;
-} 
-
-.tp-bullets.tp-thumbs{
-  background-color: transparent !important;
-}
-
-/* Make the size of the thumbnail container slightly bigger to allow for the padding and shadow boxes */
-.tp-mask {
-  width: 785px !important;
-  height: 120px !important;
-}
-
-/* Move the whole container over the left slightly to account for the added space */
-.tp-bullets.tp-thumbs.round {
-  margin-left: -390px !important;
- }
  
  
  /*Integration update area styling*/ 
@@ -1619,4 +2198,5 @@ vertical-align: top;
 {
 display: none;
 }
+
 

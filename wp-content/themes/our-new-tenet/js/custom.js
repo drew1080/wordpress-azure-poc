@@ -71,4 +71,12 @@ jQuery(window).load(function() {
       
     }
   };
+  
+  jQuery( "" ).replaceAll( '.gallery br' );
+  
+  if( jQuery('.visiblebox').length > 0 ) {
+    if ( jQuery('.wpcf7').hasClass('hide-form') ) {
+      jQuery('.visiblebox').remove();
+    }
+  }
 });

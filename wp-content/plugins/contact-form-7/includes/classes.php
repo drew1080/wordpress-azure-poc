@@ -127,8 +127,22 @@ class WPCF7_ContactForm {
 
 	function form_html() {
 		global $wpcf7;
+		$hide_form_class = '';
+		
+		if ( is_user_logged_in() ) {
+    	global $user_login;
+      get_currentuserinfo();
 
-		$form = '<div class="wpcf7" id="' . $this->unit_tag . '">';
+    	$formName = $this->title; // Name of the form containing this field
+      $fieldName = 'Submitted Login'; // Set to your form's unique field name
+      $valueToValidate = $user_login;
+
+      if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+         $hide_form_class = "hide-form";
+      }
+    }
+
+		$form = '<div class="wpcf7 ' . $hide_form_class . '" id="' . $this->unit_tag . '">';
 
 		$url = wpcf7_get_request_uri();
 

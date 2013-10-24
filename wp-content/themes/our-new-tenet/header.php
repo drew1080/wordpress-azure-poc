@@ -17,7 +17,7 @@
 <!--[if (gte IE 10)|!(IE)]><!--><html <?php language_attributes();?>> <!--<![endif]-->
 
 <head>
-
+<!--TEST BRANCH-->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -189,7 +189,7 @@ html.ie .widget-container
 				'alt'	=> trim(strip_tags( $attachment->post_excerpt )),
 				'title'	=> trim(strip_tags( $attachment->post_title ))
 				);
-	echo '<div id="header_image" class="row sixteen columns">'.get_the_post_thumbnail( $post->ID, array("HEADER_IMAGE_WIDTH","HEADER_IMAGE_HEIGHT"), $image_attr ).'</div>';
+	//echo '<div id="header_image" class="row sixteen columns">'.get_the_post_thumbnail( $post->ID, array("HEADER_IMAGE_WIDTH","HEADER_IMAGE_HEIGHT"), $image_attr ).'</div>';
 	elseif ( get_header_image() ) : ?>
 		<div id="header_image" class="row sixteen columns"><img class="scale-with-grid round" src="<?php header_image(); ?>" alt="" /></div>
 	<?php endif; ?>

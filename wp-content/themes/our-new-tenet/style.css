@@ -967,6 +967,7 @@ p.trigger a {
   color: #3c3c39 !important;
   font-weight: normal;
   text-shadow: none;
+  padding-left: 40px;
 }
 
 p.trigger a:hover {
@@ -1159,7 +1160,7 @@ ul.album-nav li {
   padding: 15px;
 }
 #credits div.visiblebox div.wpcf7 {
-  margin: 30px;
+  margin: 15px;
   min-width: 350px;
   min-height: 200px;
 }
@@ -1190,6 +1191,7 @@ ul.album-nav li {
 #credits .wpcf7 .wpcf7-submit {
   font-size: 12px;
   height: 26px;
+  width: auto !important;
 }
 
 #credits .wpcf7 span.wpcf7-form-control-wrap {
@@ -1205,6 +1207,7 @@ ul.album-nav li {
 	width: 140px;
 	text-align: left;
 	padding-left: 30px;
+  width: auto;
 }
 
 #footer #credits #closebox {
@@ -1240,9 +1243,9 @@ ul.album-nav li {
 
 #credits .wpcf7 p {
 	text-align: left;
-/*  margin-left: 80px;*/
-	margin-bottom: 20px;
-	max-width: 450px;
+/*  margin-left: 80px;
+	margin-bottom: 20px;*/
+	max-width: 600px;
 }
 
 #credits .wpcf7 span.wpcf7-form-control-wrap {
@@ -1271,7 +1274,7 @@ ul.album-nav li {
 .push-right {padding-right:25px;}
 .facilities-wrap .facilities-container h2{font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
 .facilities-wrap .facilities-container ul{margin:0;padding:0;}
-.facilities-wrap .facilities-container li{font-weight:300; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
+.facilities-wrap .facilities-container li{font-weight:normal; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
 
 .facilities-wrap .facilities-container h2 {
 border-top: 1px solid #ccc;
@@ -2241,4 +2244,36 @@ vertical-align: top;
 display: none;
 }
 
+/*Edits for the Company Map section */
+.list {
+  display: inline-block;
+  width: 100%;
+}
 
+.orb {
+  display: inline-block;
+  position: absolute;
+  margin-right: 30px;
+}
+
+/* Pop-up tweaks  */
+div#message img {
+	height: 75px;
+}
+.ajax-loader {
+	height: 16px !important;
+}
+#message p {
+	margin: 5px 0;
+}
+.form {
+  width: 45%;
+  display: inline-block;
+}
+.wpcf7-form-control.wpcf7-submit {
+	margin: 0;
+}
+
+#footer {
+  z-index:999999;
+}

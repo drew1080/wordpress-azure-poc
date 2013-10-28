@@ -1,1 +1,0 @@
-<input type="text" style="width: 98%" id="shortcode_text_input" value="<?php echo $shortcode ?>" readonly="true" />

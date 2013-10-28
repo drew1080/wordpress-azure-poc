@@ -1661,6 +1661,10 @@ border-bottom: none;
     .facilities-wrap {
       width: 100%;
     }
+    
+    .facilities-container {
+      width: 100%;
+    }
 }
 
 
@@ -1921,6 +1925,10 @@ border-bottom: none;
    }
    
    .facilities-wrap {
+     width: 100%;
+   }
+   
+   .facilities-container {
      width: 100%;
    }
 }

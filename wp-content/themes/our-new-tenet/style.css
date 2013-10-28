@@ -1400,6 +1400,10 @@ ul.album-nav li {
   a:link.orange-button-right {
     float: left;
   }
+  
+  .map-wrap {
+    width: 100%;
+  }
 
 }
 
@@ -1619,6 +1623,10 @@ ul.album-nav li {
 
     #credits #message {
       background-image: none !important;
+    }
+    
+    .map-wrap {
+      width: 100%;
     }
 }
 
@@ -1873,6 +1881,10 @@ ul.album-nav li {
    
    #message img {
      width: 100% !important;
+   }
+   
+   .map-wrap {
+     width: 100%;
    }
 }
 

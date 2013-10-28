@@ -1273,6 +1273,28 @@ ul.album-nav li {
 .facilities-wrap .facilities-container ul{margin:0;padding:0;}
 .facilities-wrap .facilities-container li{font-weight:300; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
 
+.facilities-wrap .facilities-container h2 {
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+ 
+.facilities-wrap .facilities-container li  {
+
+list-style-position: inside;
+list-style-type: none;
+list-style-position: inside;
+margin-left: 0;
+}
+ 
+.facilities-wrap .facilities-container li li {
+       list-style-type: circle;
+margin-left: 10px;
+}
+ 
+.toggle_container {
+border-bottom: none;
+}
+
 @media (max-width: 960px) {
   #fast-facts-wrapper {
     display: none;

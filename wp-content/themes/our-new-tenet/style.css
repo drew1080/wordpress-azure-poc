@@ -1404,6 +1404,10 @@ ul.album-nav li {
   .map-wrap {
     width: 100%;
   }
+  
+  .facilities-wrap {
+    width: 100%;
+  }
 
 }
 
@@ -1626,6 +1630,10 @@ ul.album-nav li {
     }
     
     .map-wrap {
+      width: 100%;
+    }
+    
+    .facilities-wrap {
       width: 100%;
     }
 }
@@ -1884,6 +1892,10 @@ ul.album-nav li {
    }
    
    .map-wrap {
+     width: 100%;
+   }
+   
+   .facilities-wrap {
      width: 100%;
    }
 }

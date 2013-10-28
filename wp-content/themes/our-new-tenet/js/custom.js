@@ -1,3 +1,4 @@
+// Loads first on the page
 jQuery(function() {
   if ( jQuery('body').hasClass('page-id-3131') ) {
     if ( jQuery(jQuery('.gde-link')[0]).length > 0) {
@@ -61,7 +62,9 @@ jQuery(function() {
   }
 });
 
+// Loads last on the page
 jQuery(window).load(function() {
+  // If on IE8, load custom homepage slider images
   if( jQuery("html").hasClass("ie8")) {
     if ( jQuery('body').hasClass('home') ) {    
       
@@ -72,8 +75,11 @@ jQuery(window).load(function() {
     }
   };
   
+  // Remove extra breaks from the gallery
   jQuery( "" ).replaceAll( '.gallery br' );
   
+  
+  // Hide the WP Pop Up Plugin if the user has already submitted the form
   if( jQuery('.visiblebox').length > 0 ) {
     if ( jQuery('.wpcf7').hasClass('hide-form') ) {
       jQuery('.visiblebox').remove();

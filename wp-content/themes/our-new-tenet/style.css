@@ -1293,15 +1293,6 @@ ul.album-nav li {
   margin-left: 5px;
 }
 
-/*.facilities-wrap .facilities-container b,
-.facilities-wrap .facilities-container strong {
-  font-weight:normal; 
-}
-
-.facilities-wrap .facilities-container em {
-  font-weight:normal; 
-}*/
-
 .facilities-wrap .facilities-container li {
   text-transform:capitalize;
   font-weight:normal; 

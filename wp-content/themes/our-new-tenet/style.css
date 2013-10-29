@@ -1279,13 +1279,13 @@ ul.album-nav li {
 }
 
 .facilities-wrap .facilities-container > ul {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .facilities-wrap .facilities-container li {
   text-transform:capitalize;
   font-weight:normal; 
-  font-size:9px; 
+  font-size: 12px; 
   color:#3c3c39; 
   list-style-position:outside;
   list-style-position: inside;
@@ -1302,6 +1302,7 @@ ul.album-nav li {
 .facilities-wrap .facilities-container li li {
   list-style-type: circle;
   margin-left: 20px;
+  font-size: 11px; 
 }
 
 .facilities-wrap .facilities-container li li li {

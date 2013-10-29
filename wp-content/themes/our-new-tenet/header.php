@@ -14,7 +14,6 @@
 <!--[if IE 7 ]><html class="ie ie7" <?php language_attributes();?>> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" <?php language_attributes();?>> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9" <?php language_attributes();?>> <![endif]-->
-<!--[if gte IE 10]><html class="ie10" <?php language_attributes();?>> <![endif]-->
 <!--[if (gte IE 10)|!(IE)]><!--><html <?php language_attributes();?>> <!--<![endif]-->
 
 

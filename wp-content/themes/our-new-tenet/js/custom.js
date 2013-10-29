@@ -73,7 +73,10 @@ jQuery(window).load(function() {
       jQuery(jQuery(".tp-rightarrow")[0]).css("backgroundImage", "url(/wp-content/themes/our-new-tenet/images/large-right-IE.png)");
       
     }
-  };
+  } else {
+    // Fix the padding on the Our Company facilities li
+    jQuery(".facilities-wrap .facilities-container li li li").css("padding-left", "1em");
+  }
   
   // Remove extra breaks from the gallery
   jQuery( "" ).replaceAll( '.gallery br' );

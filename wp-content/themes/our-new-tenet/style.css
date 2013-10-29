@@ -199,7 +199,7 @@ strong, b {
   font-weight:normal;
 }
 
-em {
+em, i {
   font-family: 'latoitalic', sans-serif;
   font-weight:normal;
 }

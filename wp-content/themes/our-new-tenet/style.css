@@ -196,10 +196,12 @@ a {
 
 strong, b {
   font-family: "latobold", sans-serif;
+  font-weight:normal;
 }
 
 em {
   font-family: 'latoitalic', sans-serif;
+  font-weight:normal;
 }
 
 a:hover {
@@ -1289,6 +1291,15 @@ ul.album-nav li {
 .facilities-wrap .facilities-container > ul {
   margin-left: 5px;
 }
+
+/*.facilities-wrap .facilities-container b,
+.facilities-wrap .facilities-container strong {
+  font-weight:normal; 
+}
+
+.facilities-wrap .facilities-container em {
+  font-weight:normal; 
+}*/
 
 .facilities-wrap .facilities-container li {
   text-transform:capitalize;

@@ -64,6 +64,10 @@ jQuery(function() {
 
 // Loads last on the page
 jQuery(window).load(function() {
+  if ($.browser.msie && $.browser.version == 10) {
+    $("html").addClass("ie10");
+  }
+  
   // If on IE8, load custom homepage slider images
   if( jQuery("html").hasClass("ie8")) {
     if ( jQuery('body').hasClass('home') ) {    
@@ -75,7 +79,7 @@ jQuery(window).load(function() {
     }
   }
   
-  if ( !jQuery("html").hasClass("ie8") && !jQuery("html").hasClass("ie9") && !jQuery("html").hasClass("ie10")) {
+  if ( !jQuery("html").hasClass("ie") && !jQuery("html").hasClass("ie10")) {
     // Fix the padding on the Our Company facilities li
     jQuery(".facilities-wrap .facilities-container li li li").css("padding-left", "1em");
   }

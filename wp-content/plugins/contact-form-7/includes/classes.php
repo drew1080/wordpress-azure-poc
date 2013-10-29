@@ -127,6 +127,9 @@ class WPCF7_ContactForm {
 
 	function form_html() {
 		global $wpcf7;
+    
+    // BEGIN PARIVEDA CUSTOM CODE
+    // If the user has previously submitted the form, add a custom class to indicate this
 		$hide_form_class = '';
 		
 		if ( is_user_logged_in() ) {
@@ -144,6 +147,8 @@ class WPCF7_ContactForm {
 
 		$form = '<div class="wpcf7 ' . $hide_form_class . '" id="' . $this->unit_tag . '">';
 
+    // END PARIVEDA CUSTOM CODE
+    
 		$url = wpcf7_get_request_uri();
 
 		if ( $frag = strstr( $url, '#' ) )

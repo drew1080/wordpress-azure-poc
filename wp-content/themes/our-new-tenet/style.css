@@ -194,6 +194,16 @@ a {
   text-decoration: none !important;
 }
 
+strong, b {
+  font-family: "latobold", sans-serif;
+  font-weight:normal;
+}
+
+em, i {
+  font-family: 'latoitalic', sans-serif;
+  font-style:normal;
+}
+
 a:hover {
   color: #267496;
   text-decoration: underline !important;
@@ -967,6 +977,7 @@ p.trigger a {
   color: #3c3c39 !important;
   font-weight: normal;
   text-shadow: none;
+  padding-left: 40px;
 }
 
 p.trigger a:hover {
@@ -1159,7 +1170,7 @@ ul.album-nav li {
   padding: 15px;
 }
 #credits div.visiblebox div.wpcf7 {
-  margin: 30px;
+  margin: 15px;
   min-width: 350px;
   min-height: 200px;
 }
@@ -1190,6 +1201,7 @@ ul.album-nav li {
 #credits .wpcf7 .wpcf7-submit {
   font-size: 12px;
   height: 26px;
+  width: auto !important;
 }
 
 #credits .wpcf7 span.wpcf7-form-control-wrap {
@@ -1205,6 +1217,7 @@ ul.album-nav li {
 	width: 140px;
 	text-align: left;
 	padding-left: 30px;
+  width: auto;
 }
 
 #footer #credits #closebox {
@@ -1240,9 +1253,9 @@ ul.album-nav li {
 
 #credits .wpcf7 p {
 	text-align: left;
-/*  margin-left: 80px;*/
-	margin-bottom: 20px;
-	max-width: 450px;
+/*  margin-left: 80px;
+	margin-bottom: 20px;*/
+	max-width: 600px;
 }
 
 #credits .wpcf7 span.wpcf7-form-control-wrap {
@@ -1269,9 +1282,49 @@ ul.album-nav li {
 .facilities-wrap h1{;font-weight:400;font-size:20px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px;margin:5px 0;padding:0;}
 .facilities-container {width:210px; float:left}
 .push-right {padding-right:25px;}
-.facilities-wrap .facilities-container h2{font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
-.facilities-wrap .facilities-container ul{margin:0;padding:0;}
-.facilities-wrap .facilities-container li{font-weight:300; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
+.facilities-wrap .facilities-container h2 {font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
+.facilities-wrap .facilities-container ul {
+  margin:0;
+  padding:0;
+  list-style: disc outside none;
+}
+
+.facilities-wrap .facilities-container > ul {
+  margin-left: 5px;
+}
+
+.facilities-wrap .facilities-container li {
+  text-transform:capitalize;
+  font-weight:normal; 
+  font-size: 12px; 
+  color:#3c3c39; 
+  list-style-position:outside;
+  list-style-position: inside;
+  margin:1px 0 1px 12px;
+  padding:0;
+  line-height: 14px;
+}
+
+.facilities-wrap .facilities-container h2 {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.facilities-wrap .facilities-container li li {
+  list-style-type: circle;
+  margin-left: 20px;
+  font-size: 11px; 
+}
+
+.facilities-wrap .facilities-container li li li {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 1.4em;
+}
+ 
+.toggle_container {
+  border-bottom: none;
+}
 
 @media (max-width: 960px) {
   #fast-facts-wrapper {
@@ -1399,6 +1452,14 @@ ul.album-nav li {
   
   a:link.orange-button-right {
     float: left;
+  }
+  
+  .map-wrap {
+    width: 100%;
+  }
+  
+  .facilities-wrap {
+    width: 100%;
   }
 
 }
@@ -1601,6 +1662,7 @@ ul.album-nav li {
     #footer #credits div.visiblebox {
       width: 70% !important;
       overflow: auto;
+      top: 10px !important;
     }
 
     #credits div.visiblebox div.wpcf7 {
@@ -1619,13 +1681,20 @@ ul.album-nav li {
     #credits #message {
       background-image: none !important;
     }
+    
+    .map-wrap {
+      width: 100%;
+    }
+    
+    .facilities-wrap {
+      width: 100%;
+    }
+    
+    .facilities-container {
+      width: 100%;
+    }
 }
-@media (max-width: 568px) {
-  #footer #credits div.visiblebox {
-    width: 90%;
-    top: 10px !important;
-  }
-}
+
 
 @media (max-width: 560px) {
   .tp-leftarrow.default {
@@ -1877,6 +1946,18 @@ ul.album-nav li {
    
    #message img {
      width: 100% !important;
+   }
+   
+   .map-wrap {
+     width: 100%;
+   }
+   
+   .facilities-wrap {
+     width: 100%;
+   }
+   
+   .facilities-container {
+     width: 100%;
    }
 }
 
@@ -2199,4 +2280,36 @@ vertical-align: top;
 display: none;
 }
 
+/*Edits for the Company Map section */
+.list {
+  display: inline-block;
+  width: 100%;
+}
 
+.orb {
+  display: inline-block;
+  position: absolute;
+  margin-right: 30px;
+}
+
+/* Pop-up tweaks  */
+div#message img {
+	height: 75px;
+}
+.ajax-loader {
+	height: 16px !important;
+}
+#message p {
+	margin: 5px 0;
+}
+.form {
+  width: 45%;
+  display: inline-block;
+}
+.wpcf7-form-control.wpcf7-submit {
+	margin: 0;
+}
+
+#footer {
+  z-index:999999;
+}

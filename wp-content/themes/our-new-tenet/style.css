@@ -194,6 +194,14 @@ a {
   text-decoration: none !important;
 }
 
+strong, b {
+  font-family: "latobold", sans-serif;
+}
+
+em {
+  font-family: 'latoitalic', sans-serif;
+}
+
 a:hover {
   color: #267496;
   text-decoration: underline !important;

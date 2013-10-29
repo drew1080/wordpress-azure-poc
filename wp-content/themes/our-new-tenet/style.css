@@ -1286,6 +1286,7 @@ ul.album-nav li {
 .facilities-wrap .facilities-container ul {
   margin:0;
   padding:0;
+  list-style: disc outside none;
 }
 
 .facilities-wrap .facilities-container > ul {
@@ -1326,7 +1327,7 @@ ul.album-nav li {
 
 .facilities-wrap .facilities-container li li li {
   list-style-type: none;
-  margin-left: 10px;
+  padding-left: 1em;
 }
  
 .toggle_container {

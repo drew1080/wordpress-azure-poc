@@ -1272,30 +1272,45 @@ ul.album-nav li {
 .facilities-wrap h1{;font-weight:400;font-size:20px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px;margin:5px 0;padding:0;}
 .facilities-container {width:210px; float:left}
 .push-right {padding-right:25px;}
-.facilities-wrap .facilities-container h2{font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
-.facilities-wrap .facilities-container ul{margin:0;padding:0;}
-.facilities-wrap .facilities-container li{font-weight:normal; font-size:9px; text-transform:capitalize;color:#3c3c39; list-style-position:outside;margin:1px 0 1px 12px;padding:0;}
+.facilities-wrap .facilities-container h2 {font-weight:400;font-size:13px;color:#3c3c39;text-transform:uppercase; letter-spacing:1px; margin:10px 0 5px 0;padding:0;}
+.facilities-wrap .facilities-container ul {
+  margin:0;
+  padding:0;
+}
+
+.facilities-wrap .facilities-container > ul {
+  margin-left: 10px;
+}
+
+.facilities-wrap .facilities-container li {
+  text-transform:capitalize;
+  font-weight:normal; 
+  font-size:9px; 
+  color:#3c3c39; 
+  list-style-position:outside;
+  list-style-position: inside;
+  margin:1px 0 1px 12px;
+  padding:0;
+  line-height: 14px;
+}
 
 .facilities-wrap .facilities-container h2 {
-border-top: 1px solid #ccc;
-border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
- 
-.facilities-wrap .facilities-container li  {
 
-list-style-position: inside;
-list-style-type: none;
-list-style-position: inside;
-margin-left: 0;
-}
- 
 .facilities-wrap .facilities-container li li {
-       list-style-type: circle;
-margin-left: 10px;
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.facilities-wrap .facilities-container li li li {
+  list-style-type: none;
+  margin-left: 0px;
 }
  
 .toggle_container {
-border-bottom: none;
+  border-bottom: none;
 }
 
 @media (max-width: 960px) {

@@ -64,8 +64,8 @@ jQuery(function() {
 
 // Loads last on the page
 jQuery(window).load(function() {
-  if ($.browser.msie && $.browser.version == 10) {
-    $("html").addClass("ie10");
+  if (jQuery.browser.msie && jQuery.browser.version == 10) {
+    jQuery("html").addClass("ie10");
   }
   
   // If on IE8, load custom homepage slider images

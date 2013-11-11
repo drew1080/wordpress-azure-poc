@@ -44,13 +44,30 @@ class UpdraftPlus_Backup {
 		$this->updraft_dir = $updraftplus->backups_dir_location();
 
 		// false means 'tried + failed'; whereas 0 means 'not yet tried'
+		// Disallow binzip on OpenVZ when we're not sure there's plenty of memory
 		if ($this->binzip === 0 && (!defined('UPDRAFTPLUS_PREFERPCLZIP') || UPDRAFTPLUS_PREFERPCLZIP != true) && (!defined('UPDRAFTPLUS_NO_BINZIP') || !UPDRAFTPLUS_NO_BINZIP) && $updraftplus->current_resumption <9) {
-			$updraftplus->log('Checking if we have a zip executable available');
-			$binzip = $updraftplus->find_working_bin_zip();
-			if (is_string($binzip)) {
-				$updraftplus->log("Zip engine: found/will use a binary zip: $binzip");
-				$this->binzip = $binzip;
-				$this->use_zip_object = 'UpdraftPlus_BinZip';
+
+			if (@file_exists('/proc/user_beancounters') && @file_exists('/proc/meminfo') && @is_readable('/proc/meminfo')) {
+				$meminfo = @file_get_contents('/proc/meminfo', false, null, -1, 200);
+				if (is_string($meminfo) && preg_match('/MemTotal:\s+(\d+) kB/', $meminfo, $matches)) {
+					$memory_mb = $matches[1]/1024;
+					# If the report is of a large amount, then we're probably getting the total memory on the hypervisor (this has been observed), and don't really know the VPS's memory
+					$vz_log = "OpenVZ; reported memory: ".round($memory_mb, 1)." Mb";
+					if ($memory_mb < 1024 || $memory_mb > 8192) {
+						$openvz_lowmem = true;
+						$vz_log .= " (will not use BinZip)";
+					}
+					$updraftplus->log($vz_log);
+				}
+			}
+			if (empty($openvz_lowmem)) {
+				$updraftplus->log('Checking if we have a zip executable available');
+				$binzip = $updraftplus->find_working_bin_zip();
+				if (is_string($binzip)) {
+					$updraftplus->log("Zip engine: found/will use a binary zip: $binzip");
+					$this->binzip = $binzip;
+					$this->use_zip_object = 'UpdraftPlus_BinZip';
+				}
 			}
 		}
 
@@ -162,15 +179,19 @@ class UpdraftPlus_Backup {
 			$itext = (empty($this->index)) ? '' : ($this->index+1);
 			$full_path = $this->updraft_dir.'/'.$backup_file_basename.'-'.$whichone.$itext.'.zip';
 			if (file_exists($full_path.'.tmp')) {
-				$sha = sha1_file($full_path.'.tmp');
-				$updraftplus->jobdata_set('sha1-'.$whichone.$this->index, $sha);
-				@rename($full_path.'.tmp', $full_path);
-				$timetaken = max(microtime(true)-$this->zip_microtime_start, 0.000001);
-				$kbsize = filesize($full_path)/1024;
-				$rate = round($kbsize/$timetaken, 1);
-				$updraftplus->log("Created $whichone zip (".$this->index.") - ".round($kbsize,1)." Kb in ".round($timetaken,1)." s ($rate Kb/s) (SHA1 checksum: $sha)");
-				// We can now remove any left-over temporary files from this job
-				
+				if (@filesize($full_path.'.tmp') === 0) {
+					$updraftplus->log("Did not create $whichone zip (".$this->index.") - not needed");
+					@unlink($full_path.'.tmp');
+				} else {
+					$sha = sha1_file($full_path.'.tmp');
+					$updraftplus->jobdata_set('sha1-'.$whichone.$this->index, $sha);
+					@rename($full_path.'.tmp', $full_path);
+					$timetaken = max(microtime(true)-$this->zip_microtime_start, 0.000001);
+					$kbsize = filesize($full_path)/1024;
+					$rate = round($kbsize/$timetaken, 1);
+					$updraftplus->log("Created $whichone zip (".$this->index.") - ".round($kbsize,1)." Kb in ".round($timetaken,1)." s ($rate Kb/s) (SHA1 checksum: $sha)");
+					// We can now remove any left-over temporary files from this job
+				}
 			} elseif ($this->index > $original_index) {
 				$updraftplus->log("Did not create $whichone zip (".$this->index.") - not needed");
 			} else {

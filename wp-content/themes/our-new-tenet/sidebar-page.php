@@ -22,7 +22,7 @@
         <ul>
             <?php dynamic_sidebar( 'third-widget-area' ); ?>
         </ul>
-    <?php endif ?>
+    <?php endif; ?>
 	<ul>
 		<?php dynamic_sidebar( 'fourth-widget-area' ); ?>
 	</ul>

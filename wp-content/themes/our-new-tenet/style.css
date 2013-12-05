@@ -883,7 +883,9 @@ li.menu-item {
   text-align: right;
 }
 
-.menu-side-nav-container .menu-item a {
+.menu-side-nav-container .menu-item a
+/* added by Samir Joza 2013-12-05 */
+, .menu-exec-menu-container .menu-item a {
   font-weight: 400;
   font-family: Lato;
   border-bottom: none;
@@ -894,20 +896,26 @@ li.menu-item {
   padding: 8px 24px 8px 24px;
 }
 
-.menu-side-nav-container li.menu-item a:hover {
+.menu-side-nav-container li.menu-item a:hover 
+/* added by Samir Joza 2013-12-05 */
+, .menu-exec-menu-container li.menu-item a:hover {
   color: #3c3c39 !important;
   text-decoration: none !important;
   font-weight: normal;
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
-.menu-side-nav-container li.menu-item.current-menu-item a {
+.menu-side-nav-container li.menu-item.current-menu-item a
+/* added by Samir Joza 2013-12-05 */
+, .menu-exec-menu-container li.menu-item.current-menu-item a {
   color: #3c3c39 !important;
   font-weight: normal;
   background: url(images/toggle-rt-sm-orange.png) no-repeat 172px 14px;
 }
 
-.menu-side-nav-container ul.sub-menu li a {
+.menu-side-nav-container ul.sub-menu li a
+/* added by Samir Joza 2013-12-05 */
+, .menu-exec-menu-container ul.sub-menu li a {
   font-size: 11px;
   padding: 8px 22px 8px 0;
   width: 142px;
@@ -915,11 +923,15 @@ li.menu-item {
   line-height: 35%;
 }
 
-.menu-side-nav-container ul.sub-menu li:hover a {
+.menu-side-nav-container ul.sub-menu li:hover a
+/* added by Samir Joza 2013-12-05 */
+, .menu-exec-menu-container ul.sub-menu li:hover a {
   background: url(images/toggle-rt-sm-orange.png) no-repeat 149px 6px;
 }
 
-.menu-side-nav-container ul.sub-menu li.menu-item.current-menu-item a {
+.menu-side-nav-container ul.sub-menu li.menu-item.current-menu-item a
+/* added by Samir Joza 2013-12-05 */
+, .menu-exec-menu-container ul.sub-menu li.menu-item.current-menu-item a {
   background: url(images/toggle-rt-sm-orange.png) no-repeat 149px 6px;
 }
 

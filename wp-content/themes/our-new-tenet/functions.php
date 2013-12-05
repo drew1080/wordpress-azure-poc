@@ -436,4 +436,76 @@ function dd_remove_update_nag($value) {
   return $value;
 }
 
+/* added by Samir Joza 2013-12-03 */
+/* Generic function to check for a specific user role */
+/*   Usage:
+    // Define roles to check
+    $roles = array('editor','author');
+
+    // Check roles
+    $in_role = check_user_role($roles);
+
+    // Do something based on role
+    if ($in_role) {
+      // User in role, do something
+    } else {
+      // User not in role do something else
+    }
+*/
+
+function check_user_role($roles,$user_id=NULL) {
+    // Get user by ID, else get current user
+    if ($user_id)
+        $user = get_userdata($user_id);
+    else
+        $user = wp_get_current_user();
+ 
+    // No user found, return
+    if (empty($user))
+        return FALSE;
+ 
+    // Append administrator to roles, if necessary
+    if (!in_array('administrator',$roles))
+        $roles[] = 'administrator';
+ 
+    // Loop through user roles
+    foreach ($user->roles as $role) {
+        // Does user have role
+        if (in_array($role,$roles)) {
+            return TRUE;
+        }
+    }
+ 
+    // User not in roles
+    return FALSE;
+}
+
+/* 
+    Adding another widget Area for Sidebars on Employee and Executive Sides 
+    I had to segment the Navigation into 3 distinct sections to allow for the bottom image in the sidebar
+    to always be in the bottom, but allowing the Execuctive Navigation to be 
+    in the bottom part, BEFORE the Image
+*/
+if ( !function_exists( 'st_widgets_init' ) ) {
+	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Executive Pages Widget Area', 'skeleton' ),
+		'id' => 'third-widget-area',
+		'description' => __( 'Shown only on Executive Pages', 'skeleton' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+    
+	register_sidebar( array(
+		'name' => __( 'Pages Widget Area Bottom', 'skeleton' ),
+		'id' => 'fourth-widget-area',
+		'description' => __( 'Shown as last widget area on Pages', 'skeleton' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+}
 ?>

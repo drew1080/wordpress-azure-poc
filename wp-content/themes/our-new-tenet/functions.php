@@ -494,7 +494,7 @@ if ( !function_exists( 'st_widgets_init' ) ) {
 		'description' => __( 'Shown only on Executive Pages', 'skeleton' ),
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
+		'before_title' => '<h3 class="widget-title exec-title">',
 		'after_title' => '</h3>',
 	) );
     

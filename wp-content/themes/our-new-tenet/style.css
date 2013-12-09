@@ -2325,3 +2325,6 @@ div#message img {
 #footer {
   z-index:999999;
 }
+
+/*added 2013-12-09 y Samir Joza */
+.resource-icon {position: absolute;}

@@ -2329,3 +2329,7 @@ div#message img {
 
 /*added 2013-12-09 y Samir Joza */
 .resource-icon {position: absolute;}
+.exec-title {font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: right;}

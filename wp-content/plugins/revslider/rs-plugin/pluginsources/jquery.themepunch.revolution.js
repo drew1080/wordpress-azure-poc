@@ -689,6 +689,7 @@
 //				if (thumbconwidth<max) {
 				// DISABLE THIS BECAUSE ITS NOT WANTED
 				if(false) {
+				
 					jQuery(document).mousemove(function(e) {
 						jQuery('body').data('mousex',e.pageX);
 					});

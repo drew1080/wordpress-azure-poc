@@ -686,7 +686,8 @@
 				////////////////////////
 				// SLIDE TO POSITION  //
 				////////////////////////
-				if (thumbconwidth<max) {
+//				if (thumbconwidth<max) {
+				// DISABLE THIS BECAUSE ITS NOT WANTED
 					jQuery(document).mousemove(function(e) {
 						jQuery('body').data('mousex',e.pageX);
 					});

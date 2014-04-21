@@ -3,6 +3,12 @@
 
 include("functions/integration_update_widget.php");
 
+//Set php max upload settings
+
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
 add_shortcode('fast_facts', 'fast_facts_func');
 add_shortcode('submit_a_question', 'submit_a_question_func');
 
